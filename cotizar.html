@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carga · Liquidation Pros</title>
+<title>Cotizar envío · Liquidation Pros</title>
+<meta name="description" content="Estimado de flete al instante para tráileres de liquidación desde Texas a México y Texas, y cómo pedir la cotización oficial.">
 <meta name="theme-color" content="#111111">
 <link rel="stylesheet" href="css/site.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23d7202b'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='900' font-family='Arial' fill='white' text-anchor='middle'%3ELP%3C/text%3E%3C/svg%3E">
@@ -23,18 +24,23 @@
     </nav>
     <div class="hdr-actions">
       <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+      <a class="btn btn-wa btn-sm" data-wa href="#">WhatsApp</a>
     </div>
   </div>
 </header>
 <main id="main">
   <div class="wrap crumbs"><a href="index.html#loads">← <span data-i18n="back">Todas las cargas</span></a></div>
-  <div class="wrap detail" id="detail"></div>
+  <section class="sec">
+    <div class="wrap two">
+      <div>
+        <h1 data-i18n="quote_h">Cotizar envío</h1>
+        <p data-i18n="quote_sub" style="color:var(--ink-2)"></p>
+        <p data-i18n="faq5_a" style="color:var(--ink-2)"></p>
+      </div>
+      <div id="quote-page"></div>
+    </div>
+  </section>
 </main>
-<div class="sticky-cta" id="sticky" hidden></div>
-<dialog id="dlg" aria-labelledby="dlg-title">
-  <div class="dlg-head"><h2 id="dlg-title"></h2><button class="x" type="button" data-close aria-label="Cerrar / Close">×</button></div>
-  <div class="dlg-body" id="dlg-body"></div>
-</dialog>
 <footer class="ftr">
   <div class="wrap">
     <div><b style="color:#fff">Liquidation Pros LLC</b><p data-i18n="ftr_about" style="margin-top:.4rem"></p></div>

@@ -1,0 +1,77 @@
+{
+ "note": "Historical full-truckload freight paid on real shipments into Hidalgo/McAllen, TX (42 shipments). Ranges only; not a rate API.",
+ "lanes": [
+  {
+   "origin": "Hopkins, MN",
+   "destination": "Hidalgo, TX",
+   "n": 7,
+   "avg": 2543,
+   "lo": 1948,
+   "hi": 3250
+  },
+  {
+   "origin": "Orangeburg, SC",
+   "destination": "Hidalgo, TX",
+   "n": 4,
+   "avg": 2938,
+   "lo": 2800,
+   "hi": 3150
+  },
+  {
+   "origin": "Hopkins, MN",
+   "destination": "McAllen, TX",
+   "n": 4,
+   "avg": 2756,
+   "lo": 2343,
+   "hi": 3250
+  },
+  {
+   "origin": "Waxahachie, TX",
+   "destination": "Hidalgo, TX",
+   "n": 4,
+   "avg": 933,
+   "lo": 536,
+   "hi": 1172
+  },
+  {
+   "origin": "Lenexa, KS",
+   "destination": "Hidalgo, TX",
+   "n": 4,
+   "avg": 2479,
+   "lo": 1993,
+   "hi": 2726
+  },
+  {
+   "origin": "Fort Worth, TX",
+   "destination": "Hidalgo, TX",
+   "n": 3,
+   "avg": 549,
+   "lo": 211,
+   "hi": 1009
+  },
+  {
+   "origin": "Grand Prairie, TX",
+   "destination": "Hidalgo, TX",
+   "n": 2,
+   "avg": 2000,
+   "lo": 2000,
+   "hi": 2000
+  },
+  {
+   "origin": "Lancaster, TX",
+   "destination": "Upland, CA",
+   "n": 2,
+   "avg": 1812,
+   "lo": 1796,
+   "hi": 1828
+  },
+  {
+   "origin": "Charlotte, NC",
+   "destination": "Hidalgo, TX",
+   "n": 2,
+   "avg": 2234,
+   "lo": 2139,
+   "hi": 2328
+  }
+ ]
+}

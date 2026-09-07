@@ -2,24 +2,46 @@
 (function () {
   "use strict";
 
+  /* WhatsApp number for every button/link on the site (E.164, no "+"). Taken from BOL records — CONFIRM with Juan before publishing. */
+  const WHATSAPP = "13239613868";
+  const FREIGHTQUOTE_URL = "https://www.freightquote.com/"; // no-signup instant quote; URL params not verified, so we give a copyable summary
+
   /* ---------- i18n dictionary (single source for both languages) ---------- */
   const T = {
     es: {
       tagline: "Tráileres de liquidación · Texas → México",
+      nav_quote: "Cotizar envío",
+      lead_h2: "Entra a la lista de compradores", lead_sub: "Las cargas nuevas se avisan primero a la lista. Déjenos su WhatsApp y le escribimos cuando llegue algo que le sirva.",
+      f_wa: "WhatsApp", f_buy: "Qué compra", lead_submit: "Entrar a la lista",
+      lead_done: "Guardado. Se abrió WhatsApp y su correo con el mensaje listo; si no se abrieron, use los botones:",
+      sample_h: "Camión de muestra", sample_badge: "Muestra", sample_note_card: "Foto de muestra de un tráiler similar",
+      video_h: "Video del tráiler",
+      ship_seller: "Envío: lo controla el vendedor (cotiza aquí)", ship_pickup: "Recogida en",
+      quote_h: "Cotizar envío", quote_sub: "Estimado al instante con fletes reales que hemos pagado; después, la cotización oficial.",
+      q_load: "Carga", q_any_load: "Sin carga específica (sale de Hidalgo, TX)", q_dest: "Destino (ciudad, estado)", q_pallets: "Tarimas", q_btn: "Calcular estimado",
+      q_est: "Estimado de flete", q_based: "basado en", q_ships: "envíos reales", q_lane: "tramo de referencia", q_from: "desde",
+      q_disc: "Referencia histórica de fletes que pagamos en EE. UU.; no es una cotización. Cruce e importación a México no incluidos.",
+      q_mx: "Destino en México: el estimado cubre el tramo en EE. UU. hasta la frontera (Hidalgo / Reynosa). El tramo mexicano se cotiza aparte.",
+      q_mx_border: "Esta carga ya está en la frontera (Hidalgo, TX). El tramo mexicano se cotiza por WhatsApp.",
+      q_none: "No tenemos historial para ese destino. Pida la cotización oficial.",
+      q_official: "Cotización oficial", q_fq: "Cotizar en Freightquote.com (sin registro)", q_fq_p: "Copie este resumen y péguelo en el cotizador:",
+      q_copy: "Copiar resumen", q_copied: "Copiado ✓",
+      q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor (B-Stock). Le confirmamos el precio en 1 hora en horario de oficina.",
+      q_wa_lpos_p: "¿Prefiere que lo cotizemos nosotros? Escríbanos y le respondemos en 1 hora.",
       nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
       hero_h1: "Tráileres completos de Walmart y Target, a precio fijo. Sin subastas.",
       hero_lead: "Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega. Las cargas llegan y se venden en 24 horas: entre a la lista de espera para que le avisemos primero.",
       hero_cta_loads: "Ver cargas disponibles", hero_cta_wait: "Entrar a la lista de espera",
       fact_loads: "cargas disponibles", fact_window: "para vender cada carga", fact_border: "frontera con Reynosa",
-      hero_caption: "Foto real de un tráiler Target que vendimos (julio 2026).",
+      hero_caption: "Camión de muestra: foto real de un tráiler Walmart que recibimos (mayo 2026).",
       loads_h2: "Cargas disponibles", loads_sub: "Precio fijo por tráiler completo. Reserve o compre; primero en reservar, primero en cargar.",
       loads_sold_h2: "Vendidas recientemente", loads_sold_sub: "Para que vea lo que normalmente llega.",
       status_available: "Disponible", status_sold: "Vendida", status_reserved: "Reservada",
       units: "Unidades", pallets: "Tarimas", location: "Ubicación", weight: "Peso aprox.", condition: "Condición",
       price_pickup: "Precio recogiendo en Texas", price_pickup_short: "recogiendo en TX", per_unit: "por unidad",
       delivered_quote: "Puesto en su bodega: cotizamos", see_load: "Ver carga", reserve: "Reservar", buy: "Comprar ahora", quote: "Cotizar flete",
-      photo_pending: "Fotos pendientes", photo_pending_sub: "Se toman cuando el tráiler llega. Pídalas por WhatsApp.",
+      photo_pending: "Fotos pendientes", photo_pending_sub: "Se toman cuando el tráiler llega. Pídalas por WhatsApp.", photo_none_sample: "Sin fotos de muestra todavía.",
       how_h2: "Cómo funciona", how_sub: "Cuatro pasos. Sin cuenta, sin subasta.",
       how1_h: "Vea la carga", how1_p: "Unidades, tarimas, condición, ubicación y precio fijo en la misma pantalla.",
       how2_h: "Reserve o compre", how2_p: "Reservar aparta la carga 24 h mientras confirma pago. Comprar ahora la cierra.",
@@ -67,20 +89,38 @@
     },
     en: {
       tagline: "Liquidation truckloads · Texas → Mexico",
+      nav_quote: "Shipping quote",
+      lead_h2: "Join the buyer list", lead_sub: "New loads go to the list first. Leave your WhatsApp and we message you when a fit lands.",
+      f_wa: "WhatsApp", f_buy: "What you buy", lead_submit: "Join the list",
+      lead_done: "Saved. WhatsApp and your email app opened with the message ready; if they didn't, use the buttons:",
+      sample_h: "Sample truck", sample_badge: "Sample", sample_note_card: "Sample photo of a similar trailer",
+      video_h: "Trailer video",
+      ship_seller: "Shipping: seller-controlled (quote here)", ship_pickup: "Pickup in",
+      quote_h: "Shipping quote", quote_sub: "Instant estimate from real freight we have paid; then the official quote.",
+      q_load: "Load", q_any_load: "No specific load (ships from Hidalgo, TX)", q_dest: "Destination (city, state)", q_pallets: "Pallets", q_btn: "Estimate",
+      q_est: "Freight estimate", q_based: "based on", q_ships: "real shipments", q_lane: "reference lane", q_from: "from",
+      q_disc: "Historical reference from freight we paid in the US; not a quote. Mexico border crossing and import not included.",
+      q_mx: "Mexico destination: the estimate covers the US leg to the border (Hidalgo / Reynosa). The Mexican leg is quoted separately.",
+      q_mx_border: "This load is already at the border (Hidalgo, TX). The Mexican leg is quoted on WhatsApp.",
+      q_none: "No history for that destination. Ask for the official quote.",
+      q_official: "Official quote", q_fq: "Quote on Freightquote.com (no signup)", q_fq_p: "Copy this summary and paste it into the quote tool:",
+      q_copy: "Copy summary", q_copied: "Copied ✓",
+      q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller (B-Stock). We confirm the price within 1 hour during office hours.",
+      q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
       nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
       hero_h1: "Full Walmart and Target truckloads at a fixed price. No auctions.",
       hero_lead: "Buy the whole load today, pick up in Texas or ask for a delivered quote to your warehouse. Loads land and sell within 24 hours — join the waitlist to hear first.",
       hero_cta_loads: "See available loads", hero_cta_wait: "Join the waitlist",
       fact_loads: "loads available", fact_window: "to sell each load", fact_border: "on the Reynosa border",
-      hero_caption: "Real photo of a Target truckload we sold (July 2026).",
+      hero_caption: "Sample truck: real photo of a Walmart trailer we received (May 2026).",
       loads_h2: "Available loads", loads_sub: "Fixed price per full truckload. Reserve or buy; first to reserve, first to load.",
       loads_sold_h2: "Recently sold", loads_sold_sub: "So you can see what usually comes in.",
       status_available: "Available", status_sold: "Sold", status_reserved: "Reserved",
       units: "Units", pallets: "Pallets", location: "Location", weight: "Approx. weight", condition: "Condition",
       price_pickup: "Price picked up in Texas", price_pickup_short: "picked up in TX", per_unit: "per unit",
       delivered_quote: "Delivered to your warehouse: we quote", see_load: "View load", reserve: "Reserve", buy: "Buy now", quote: "Shipping quote",
-      photo_pending: "Photos pending", photo_pending_sub: "Taken when the trailer lands. Ask on WhatsApp.",
+      photo_pending: "Photos pending", photo_pending_sub: "Taken when the trailer lands. Ask on WhatsApp.", photo_none_sample: "No sample photos yet.",
       how_h2: "How it works", how_sub: "Four steps. No account, no auction.",
       how1_h: "Look at the load", how1_p: "Units, pallets, condition, location and fixed price on one screen.",
       how2_h: "Reserve or buy", how2_p: "Reserve holds the load 24 h while you confirm payment. Buy now closes it.",
@@ -154,23 +194,29 @@
   }
 
   /* ---------- contact links ---------- */
-  function waLink(text) { return "https://wa.me/" + DATA.contact.whatsapp_e164 + "?text=" + encodeURIComponent(text); }
+  function waLink(text) { return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text); }
   function mailLink(subject, body) { return "mailto:" + DATA.contact.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
 
   function fillContact() {
     const c = DATA.contact;
     document.querySelectorAll("[data-wa]").forEach((a) => { a.href = waLink(a.dataset.wa || (lang === "es" ? "Hola, vi su sitio de cargas." : "Hi, I saw your loads site.")); });
-    document.querySelectorAll("[data-tel]").forEach((a) => { a.href = "tel:+" + c.whatsapp_e164; a.textContent = c.phone_display; });
+    document.querySelectorAll("[data-tel]").forEach((a) => { a.href = "tel:+" + WHATSAPP; a.textContent = c.phone_display; });
     document.querySelectorAll("[data-mail]").forEach((a) => { a.href = "mailto:" + c.email; a.textContent = c.email; });
     document.querySelectorAll("[data-addr]").forEach((el) => { el.textContent = c.address; });
     document.querySelectorAll("[data-hours]").forEach((el) => { el.textContent = L(c.hours); });
   }
 
   /* ---------- cards ---------- */
+  const sampleOf = (load) => (DATA.sample_trucks && DATA.sample_trucks[load.sample]) || null;
   function photoBlock(load, cls) {
     if (load.photos && load.photos.length) {
       const p = load.photos[0];
       return `<img src="${esc(p.src)}" alt="${esc(L(p.alt))}" loading="lazy" width="1600" height="1200">`;
+    }
+    const sm = sampleOf(load);
+    if (sm && sm.photos.length) {
+      const p = sm.photos[0];
+      return `<img src="${esc(p.src)}" alt="${esc(t("sample_note_card"))}: ${esc(L(p.alt))}" loading="lazy" width="1600" height="1200"><span class="pill pill-warn sample-badge">${esc(t("sample_badge"))}</span>`;
     }
     return `<div class="ph-placeholder" role="img" aria-label="${esc(t("photo_pending"))}"><div><b>${esc(t("photo_pending"))}</b>${esc(t("photo_pending_sub"))}</div></div>`;
   }
@@ -195,6 +241,7 @@
           <div>${esc(t("location"))}: <b>${esc(load.location.city)}</b></div>
           <div>${esc(t("condition"))}: <b>${esc(t("cond_" + load.condition_code).split(" (")[0].split(",")[0])}</b></div>
         </div>
+        <div class="ship">${shipLine(load, href)}</div>
         <div class="price">
           <div><strong>${money(load.price_pickup)}</strong><br><small>${esc(t("price_pickup_short"))}</small></div>
           <div class="unit">${perUnit ? `<b>${money2(perUnit)}</b><br><small>${esc(t("per_unit"))}</small>` : `<small>${esc(t("delivered_quote"))}</small>`}</div>
@@ -204,6 +251,11 @@
           : `<div class="cta-row"><a class="btn btn-line btn-sm" href="${href}">${esc(t("see_load"))}</a></div>`}
       </div>
     </article>`;
+  }
+  function shipLine(load, href) {
+    return load.freight_control === "seller"
+      ? `🚚 <a href="${href}#quote">${esc(t("ship_seller"))}</a>`
+      : `📍 ${esc(t("ship_pickup"))} ${esc(load.location.city)} · <a href="${href}#quote">${esc(t("quote"))}</a>`;
   }
   function money2(n) { return new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
 
@@ -217,8 +269,8 @@
     const n = document.getElementById("fact-loads"); if (n) n.textContent = String(avail.length);
     const hp = document.getElementById("hero-photo");
     if (hp) {
-      const withPhoto = DATA.loads.find((l) => l.photos && l.photos.length);
-      hp.innerHTML = withPhoto ? `<img src="${esc(withPhoto.photos[0].src)}" alt="${esc(L(withPhoto.photos[0].alt))}" width="1600" height="1200" fetchpriority="high">` : "";
+      const p = DATA.sample_trucks.walmart.photos[0];
+      hp.innerHTML = `<img src="${esc(p.src)}" alt="${esc(L(p.alt))}" width="1600" height="1200" fetchpriority="high">`;
     }
   }
 
@@ -231,10 +283,17 @@
     document.title = `${L(load.title)} · ${load.id} · Liquidation Pros`;
     const perUnit = load.units && load.price_pickup ? load.price_pickup / load.units : null;
     const condKey = "cond_" + load.condition_code;
-    const photos = load.photos && load.photos.length
-      ? `<div class="gallery" id="gallery" aria-label="${esc(t("photos_h"))}">${load.photos.map((p, i) => `<figure id="ph${i}"><img src="${esc(p.src)}" alt="${esc(L(p.alt))}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1200"><figcaption>${esc(L(p.alt))}</figcaption></figure>`).join("")}</div>
-         <div class="thumbs">${load.photos.map((p, i) => `<button type="button" data-ph="${i}" aria-current="${i === 0}" aria-label="${lang === "es" ? "Foto" : "Photo"} ${i + 1}"><img src="${esc(p.src)}" alt="" loading="lazy"></button>`).join("")}</div>`
+    const sm = sampleOf(load);
+    const isSample = !(load.photos && load.photos.length) && sm && sm.photos.length;
+    const pics = isSample ? sm.photos : load.photos;
+    const gallery = (arr) => `<div class="gallery" id="gallery" aria-label="${esc(t("photos_h"))}">${arr.map((p, i) => `<figure id="ph${i}"><img src="${esc(p.src)}" alt="${esc(L(p.alt))}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1200"><figcaption>${esc(L(p.alt))}</figcaption></figure>`).join("")}</div>
+         <div class="thumbs">${arr.map((p, i) => `<button type="button" data-ph="${i}" aria-current="${i === 0}" aria-label="${lang === "es" ? "Foto" : "Photo"} ${i + 1}"><img src="${esc(p.src)}" alt="" loading="lazy"></button>`).join("")}</div>`;
+    const photos = pics && pics.length
+      ? (isSample ? `<div class="sample-head"><span class="pill pill-warn">${esc(L(sm.label))}</span><span>${esc(L(sm.note))}</span></div>` : "") + gallery(pics)
       : `<div class="gallery"><figure><div class="ph-placeholder"><div><b>${esc(t("photo_pending"))}</b>${esc(t("photo_pending_sub"))}</div></div></figure></div>`;
+    /* video slot: set load.video = {src, poster} in loads.json and it renders here */
+    const video = load.video && load.video.src
+      ? `<section class="block"><h2>${esc(t("video_h"))}</h2><video controls muted playsinline preload="none" poster="${esc(load.video.poster || "")}" src="${esc(load.video.src)}" width="1600" height="900"></video></section>` : "";
 
     let manifest;
     if (load.manifest && load.manifest.length) {
@@ -255,6 +314,7 @@
         </div>
         ${!isAvail ? `<div class="notice" style="margin-bottom:1rem">${esc(t("sold_banner"))} <a href="index.html#waitlist">${esc(t("nav_waitlist"))} →</a></div>` : ""}
         ${photos}
+        ${video}
         <div class="kv">
           <div><span>${esc(t("units"))}</span><b>${num(load.units)}</b></div>
           <div><span>${esc(t("pallets"))}</span><b>${esc(load.pallets)}</b></div>
@@ -264,6 +324,7 @@
         <section class="block"><h2>${esc(t("condition_h"))}</h2><div class="cond"><p><b>${esc(t(condKey))}.</b> ${esc(t(condKey + "_p"))}</p></div></section>
         <section class="block"><h2>${esc(t("manifest_h"))}</h2>${manifest}</section>
         <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(load.location.name)}, ${esc(load.location.city)}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
+        <section class="block" id="quote"><h2>${esc(t("quote_h"))}</h2><div id="quote-widget"></div></section>
       </div>
       <aside class="side">
         <div class="buybox" id="reserve">
@@ -276,12 +337,13 @@
           ${isAvail ? `<div class="actions">
             <button class="btn btn-red" data-open="reserve">${esc(t("reserve"))}</button>
             <button class="btn btn-dark" data-open="buy">${esc(t("buy"))}</button>
-            <button class="btn btn-line" data-open="quote">${esc(t("quote"))}</button>
+            <a class="btn btn-line" href="#quote">${esc(t("quote"))}</a>
             <a class="btn btn-wa" data-wa="${esc((lang === "es" ? "Hola, me interesa la carga " : "Hi, I'm interested in load ") + load.id + " (" + L(load.title) + ")")}" href="#">WhatsApp</a>
           </div>` : `<div class="actions"><a class="btn btn-red" href="index.html#waitlist">${esc(t("hero_cta_wait"))}</a></div>`}
           <p class="fine">${esc(t("window_note"))}<br>${esc(t("fine_buybox"))}</p>
         </div>
       </aside>`;
+    renderQuote(document.getElementById("quote-widget"), load);
     const sticky = document.getElementById("sticky");
     if (sticky) {
       sticky.hidden = !isAvail;
@@ -346,8 +408,7 @@
 
   function bindWaitlist() {
     const form = document.getElementById("f-wait");
-    if (!form) return;
-    form.addEventListener("submit", (e) => {
+    if (form) form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
       const f = Object.fromEntries(new FormData(form).entries());
@@ -368,17 +429,118 @@
     });
   }
 
+
+  /* ---------- shipping quote (lanes.json = real freight we paid; nearest lane by distance) ---------- */
+  // ponytail: road miles hard-coded per city; add a city here to extend the datalist. Upgrade path: geocode + haversine.
+  const DEST = { // [miles from Hidalgo TX, miles from Waco TX, country]
+    "Monterrey, NL": [150, 540, "MX"], "Reynosa, Tamps": [8, 400, "MX"], "Guadalajara, Jal": [600, 990, "MX"], "CDMX": [640, 1030, "MX"],
+    "San Luis Potosí, SLP": [430, 820, "MX"], "Saltillo, Coah": [200, 590, "MX"], "Querétaro, Qro": [560, 950, "MX"], "Matamoros, Tamps": [60, 460, "MX"], "Nuevo Laredo, Tamps": [160, 360, "MX"],
+    "Laredo, TX": [150, 350, "US"], "McAllen, TX": [10, 400, "US"], "Hidalgo, TX": [0, 400, "US"], "Houston, TX": [350, 185, "US"], "Dallas, TX": [500, 100, "US"], "San Antonio, TX": [240, 180, "US"], "Austin, TX": [320, 100, "US"],
+  };
+  const LANE_MILES = { "Hopkins, MN": 1450, "Orangeburg, SC": 1350, "Waxahachie, TX": 470, "Lenexa, KS": 950, "Fort Worth, TX": 500, "Grand Prairie, TX": 490, "Lancaster, TX": 1400, "Charlotte, NC": 1400 };
+  const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  function findDest(input) {
+    const q = norm(input).split(",")[0].trim();
+    if (!q) return null;
+    const keys = Object.keys(DEST);
+    const k = keys.find((d) => norm(d).split(",")[0] === q) || keys.find((d) => norm(d).startsWith(q));
+    return k ? { name: k, hidalgo: DEST[k][0], waco: DEST[k][1], mx: DEST[k][2] === "MX" } : null;
+  }
+  function estimate(originCity, destInput, pallets) {
+    const d = findDest(destInput);
+    if (!d) return null;
+    const fromWaco = /waco/i.test(originCity);
+    let miles = fromWaco ? d.waco : d.hidalgo;
+    if (d.mx) miles = fromWaco ? DEST["Hidalgo, TX"][1] : 0; // US leg to the border only
+    const lanes = (DATA.lanes || []).filter((l) => LANE_MILES[l.origin] != null);
+    if (!lanes.length) return { dest: d, miles, none: true };
+    if (miles === 0) return { dest: d, miles, border: true };
+    const lane = lanes.reduce((a, b) => Math.abs(LANE_MILES[b.origin] - miles) < Math.abs(LANE_MILES[a.origin] - miles) ? b : a);
+    // ponytail: linear scaling by distance (clamped) and pallet count; lanes are full-truck prices with no pallet data
+    const ratio = Math.min(1.5, Math.max(0.5, miles / LANE_MILES[lane.origin]));
+    const pf = Math.min(1, Math.max(0.4, (Number(pallets) || 26) / 26));
+    const r50 = (n) => Math.round(n * ratio * pf / 50) * 50;
+    return { dest: d, miles, lane, lo: r50(lane.lo), hi: r50(lane.hi), n: lane.n };
+  }
+  function renderQuote(root, load) {
+    if (!root) return;
+    const loads = DATA.loads.filter((l) => l.status === "available");
+    const sel = !load ? `<label>${esc(t("q_load"))}<select name="load"><option value="">${esc(t("q_any_load"))}</option>${loads.map((l) => `<option value="${esc(l.id)}">${esc(l.retailer)} · ${esc(l.id)} · ${esc(l.location.city)}</option>`).join("")}</select></label>` : "";
+    root.innerHTML = `<form class="form quote" novalidate>
+      ${sel}
+      <div class="row">
+        <label>${esc(t("q_dest"))} *<input name="dest" list="dest-list" required autocomplete="off" placeholder="Monterrey, NL"><datalist id="dest-list">${Object.keys(DEST).map((d) => `<option value="${esc(d)}">`).join("")}</datalist></label>
+        <label>${esc(t("q_pallets"))}<input name="pallets" type="number" min="1" max="30" inputmode="numeric" value="${load ? esc(String(load.pallets).split(/[–-]/).pop()) : 26}"></label>
+      </div>
+      <button class="btn btn-red" type="submit">${esc(t("q_btn"))}</button>
+      <div id="q-out" aria-live="polite"></div></form>`;
+    const form = root.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const f = Object.fromEntries(new FormData(form).entries());
+      const ld = load || DATA.loads.find((l) => l.id === f.load) || null;
+      const origin = ld ? ld.location.city : "Hidalgo, TX";
+      const seller = ld ? ld.freight_control === "seller" : false;
+      const est = estimate(origin, f.dest, f.pallets);
+      const out = form.querySelector("#q-out");
+      let html = "";
+      if (!est || est.none) html += `<div class="notice">${esc(t("q_none"))}</div>`;
+      else if (est.border) html += `<div class="notice">${esc(t("q_mx_border"))}</div>`;
+      else html += `<div class="est"><div class="est-main">${esc(t("q_est"))} ${esc(origin)} → ${esc(est.dest.name)}: <strong>${money(est.lo)} – ${money(est.hi)}</strong></div>
+        <div class="est-sub">${esc(t("q_based"))} ${est.n} ${esc(t("q_ships"))} · ${esc(t("q_lane"))} ${esc(est.lane.origin)} → ${esc(est.lane.destination)} (≈${num(LANE_MILES[est.lane.origin])} mi) · ${esc(f.pallets)} ${esc(t("q_pallets").toLowerCase())}</div>
+        ${est.dest.mx ? `<div class="est-sub">${esc(t("q_mx"))}</div>` : ""}<div class="est-sub">${esc(t("q_disc"))}</div></div>`;
+      const summary = [`Liquidation Pros LLC · ${t("q_official")}`, `Origin: ${origin}`, `Destination: ${est ? est.dest.name : f.dest}`, `Pallets: ${f.pallets} · dry van 53' · ~${ld && ld.weight_lb ? num(ld.weight_lb) : "30,000"} lb · general merchandise`, ld ? `Load: ${ld.id}` : null].filter(Boolean).join("\n");
+      const waText = (lang === "es" ? "Hola, quiero la cotización oficial de flete.\n" : "Hi, I'd like the official freight quote.\n") + summary;
+      html += `<div class="official"><h3>${esc(t("q_official"))}</h3>` + (seller
+        ? `<p>${esc(t("q_wa_p"))}</p><a class="btn btn-wa" href="${waLink(waText)}" target="_blank" rel="noopener">${esc(t("q_wa"))}</a>`
+        : `<p>${esc(t("q_fq_p"))}</p><textarea readonly rows="5" id="q-sum">${esc(summary)}</textarea>
+           <div class="cta-row"><button type="button" class="btn btn-line" id="q-copy">${esc(t("q_copy"))}</button><a class="btn btn-dark" href="${FREIGHTQUOTE_URL}" target="_blank" rel="noopener">${esc(t("q_fq"))}</a></div>
+           <p style="margin-top:.8rem">${esc(t("q_wa_lpos_p"))}</p><a class="btn btn-wa" href="${waLink(waText)}" target="_blank" rel="noopener">WhatsApp</a>`) + `</div>`;
+      out.innerHTML = html;
+      const cp = out.querySelector("#q-copy");
+      if (cp) cp.addEventListener("click", () => {
+        const ta = out.querySelector("#q-sum"); ta.select();
+        (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).catch(() => document.execCommand("copy")).finally(() => { cp.textContent = t("q_copied"); });
+      });
+      saveLocal("lpos.quotes", { ts: new Date().toISOString(), lang, origin, load: ld ? ld.id : null, ...f, est: est && est.lo != null ? [est.lo, est.hi] : null });
+      out.scrollIntoView({ block: "nearest" });
+    });
+  }
+
+  /* ---------- lead capture (hero): localStorage + WhatsApp + mailto leads@ ---------- */
+  function bindLead() {
+    const form = document.getElementById("f-lead");
+    if (!form) return;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const f = Object.fromEntries(new FormData(form).entries());
+      saveLocal("lpos.leads", { ts: new Date().toISOString(), lang, ...f });
+      const subject = `LEAD | ${f.name} | ${f.city}`;
+      const body = ["LEAD", `Nombre: ${f.name}`, `WhatsApp: ${f.phone}`, `Ciudad: ${f.city}`, `Compra: ${f.buy}`, `Presupuesto USD: ${f.budget || "-"}`, `Idioma: ${lang}`, `Fuente: sitio web ${new Date().toISOString().slice(0, 10)}`].join("\n");
+      const wa = waLink((lang === "es" ? "Hola, quiero entrar a la lista de compradores.\n" : "Hi, I want to join the buyer list.\n") + body);
+      const mail = "mailto:" + DATA.contact.leads_email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      const out = document.getElementById("lead-out");
+      out.innerHTML = `<div class="notice ok"><p style="margin:0 0 .6rem">${esc(t("lead_done"))}</p><div style="display:grid;gap:.5rem"><a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${esc(t("f_send_wa"))}</a><a class="btn btn-line" href="${mail}">${esc(t("f_send_mail"))}</a></div></div>`;
+      out.scrollIntoView({ block: "nearest" });
+      try { window.open(wa, "_blank", "noopener"); location.href = mail; } catch (err) {}
+    });
+  }
+
   /* ---------- boot ---------- */
   function render() {
     applyStatic();
     if (document.getElementById("loads-grid")) renderHome();
     if (document.getElementById("detail")) renderDetail();
+    if (document.getElementById("quote-page")) renderQuote(document.getElementById("quote-page"), null);
     fillContact();
   }
   document.addEventListener("click", (e) => {
     const b = e.target.closest(".lang button"); if (b) setLang(b.dataset.lang);
     if (e.target.closest("[data-close]")) document.getElementById("dlg").close();
   });
-  fetch("data/loads.json").then((r) => r.json()).then((d) => { DATA = d; render(); bindWaitlist(); })
+  Promise.all([fetch("data/loads.json").then((r) => r.json()), fetch("data/lanes.json").then((r) => r.json()).catch(() => ({ lanes: [] }))])
+    .then(([d, ln]) => { DATA = d; DATA.lanes = ln.lanes; render(); bindWaitlist(); bindLead(); })
     .catch(() => { const g = document.getElementById("loads-grid") || document.getElementById("detail"); if (g) g.innerHTML = `<div class="empty">${lang === "es" ? "No se pudieron cargar las cargas. Escríbanos por WhatsApp." : "Could not load the listings. Message us on WhatsApp."}</div>`; });
 })();

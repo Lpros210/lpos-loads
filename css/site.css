@@ -82,6 +82,29 @@ p { margin: 0 0 1em; }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
 .hero-photo figcaption { font-size: .75rem; color: #a9a9a9; padding: .4rem 0 0; }
 @media (min-width: 860px) { .hero .wrap { grid-template-columns: 1.1fr .9fr; align-items: center; } .hero { padding: 4rem 0; } }
+.hero-photo.strip { aspect-ratio: 16/7; }
+.hero-photo.strip img { object-position: center 60%; }
+
+/* Lead capture (hero) */
+.lead { background: #fff; color: var(--ink); border-radius: var(--radius); padding: 1.1rem; box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+.lead h2 { margin: 0 0 .25rem; font-size: 1.3rem; }
+.lead .lead-sub { color: var(--ink-2); font-size: .9rem; margin: 0 0 .3rem; }
+
+/* Sample truck labelling */
+.sample-badge { position: absolute; right: .6rem; bottom: .6rem; }
+.sample-head { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; font-size: .85rem; color: var(--ink-2); margin-bottom: .5rem; }
+video { width: 100%; height: auto; border-radius: var(--radius); background: #000; }
+.card .ship { font-size: .85rem; color: var(--ink-2); }
+.card .ship a { font-weight: 650; }
+
+/* Shipping quote */
+.quote .est { border: 1px solid var(--line); border-left: 4px solid var(--ok); border-radius: 8px; padding: .8rem 1rem; }
+.quote .est-main { font-size: 1rem; } .quote .est-main strong { font-size: 1.3rem; }
+.quote .est-sub { color: var(--muted); font-size: .8rem; margin-top: .35rem; }
+.quote .official { border-top: 1px solid var(--line); padding-top: .8rem; margin-top: .4rem; }
+.quote .official h3 { margin-bottom: .3rem; } .quote .official p { color: var(--ink-2); font-size: .92rem; }
+.quote textarea { width: 100%; font-family: ui-monospace, Consolas, monospace; font-size: .85rem; }
+.quote .cta-row { display: flex; gap: .5rem; flex-wrap: wrap; } .quote .cta-row .btn { flex: 1; }
 
 /* Sections */
 .sec { padding: 2.5rem 0; }
