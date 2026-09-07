@@ -44,6 +44,7 @@
       price_pickup: "Precio recogiendo en Texas", price_pickup_short: "recogiendo en TX", per_unit: "por unidad",
       delivered_quote: "Puesto en su bodega: cotizamos", see_load: "Ver carga", reserve: "Reservar", buy: "Comprar ahora", quote: "Cotizar flete",
       photo_pending: "Fotos pendientes", photo_pending_sub: "Se toman cuando el tráiler llega. Pídalas por WhatsApp.", photo_none_sample: "Sin fotos de muestra todavía.",
+      photo_next_h: "Fotos del próximo tráiler", photo_next_sub: "Aún no tenemos fotos de muestra de esta línea. Le enviamos fotos reales del próximo tráiler por WhatsApp en cuanto llega.", photo_next_cta: "Pedir fotos por WhatsApp",
       how_h2: "Cómo funciona", how_sub: "Cuatro pasos. Sin cuenta, sin subasta.",
       how1_h: "Vea la carga", how1_p: "Unidades, tarimas, condición, ubicación y precio fijo en la misma pantalla.",
       how2_h: "Reserve o compre", how2_p: "Reservar aparta la carga 24 h mientras confirma pago. Comprar ahora la cierra.",
@@ -130,6 +131,7 @@
       price_pickup: "Price picked up in Texas", price_pickup_short: "picked up in TX", per_unit: "per unit",
       delivered_quote: "Delivered to your warehouse: we quote", see_load: "View load", reserve: "Reserve", buy: "Buy now", quote: "Shipping quote",
       photo_pending: "Photos pending", photo_pending_sub: "Taken when the trailer lands. Ask on WhatsApp.", photo_none_sample: "No sample photos yet.",
+      photo_next_h: "Photos of the next trailer", photo_next_sub: "We don't have sample photos for this line yet. We'll send real photos of the next trailer over WhatsApp as soon as it lands.", photo_next_cta: "Ask for photos on WhatsApp",
       how_h2: "How it works", how_sub: "Four steps. No account, no auction.",
       how1_h: "Look at the load", how1_p: "Units, pallets, condition, location and fixed price on one screen.",
       how2_h: "Reserve or buy", how2_p: "Reserve holds the load 24 h while you confirm payment. Buy now closes it.",
@@ -240,6 +242,9 @@
     if (sm && sm.photos.length) {
       const p = sm.photos[0];
       return `<img src="${esc(p.src)}" alt="${esc(t("sample_note_card"))}: ${esc(L(p.alt))}" loading="lazy" width="1600" height="1200"><span class="pill pill-warn sample-badge">${esc(t("sample_badge"))}</span>`;
+    }
+    if (sm) {
+      return `<div class="ph-placeholder" role="img" aria-label="${esc(t("photo_next_h"))}"><div><b>${esc(t("photo_next_h"))} — ${esc(load.retailer)}</b>${esc(t("photo_next_sub"))}</div></div>`;
     }
     return `<div class="ph-placeholder" role="img" aria-label="${esc(t("photo_pending"))}"><div><b>${esc(t("photo_pending"))}</b>${esc(t("photo_pending_sub"))}</div></div>`;
   }
@@ -400,9 +405,10 @@
     const pics = isSample ? sm.photos : load.photos;
     const gallery = (arr) => `<div class="gallery" id="gallery" aria-label="${esc(t("photos_h"))}">${arr.map((p, i) => `<figure id="ph${i}"><img src="${esc(p.src)}" alt="${esc(L(p.alt))}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1200"><figcaption>${esc(L(p.alt))}</figcaption></figure>`).join("")}</div>
          <div class="thumbs">${arr.map((p, i) => `<button type="button" data-ph="${i}" aria-current="${i === 0}" aria-label="${lang === "es" ? "Foto" : "Photo"} ${i + 1}"><img src="${esc(p.src)}" alt="" loading="lazy"></button>`).join("")}</div>`;
+    const nextTrailerCard = `<div class="gallery"><figure><div class="ph-placeholder"><div><b>${esc(t("photo_next_h"))} — ${esc(load.retailer)}</b>${esc(t("photo_next_sub"))}<br><a class="btn btn-red btn-sm" data-wa="${esc((lang === "es" ? "Hola, quiero fotos del próximo tráiler " : "Hi, I'd like photos of the next ") + load.retailer + (lang === "es" ? "" : " trailer"))}" href="#" style="margin-top:.5rem;display:inline-block">${esc(t("photo_next_cta"))}</a></div></figure></div>`;
     const photos = pics && pics.length
       ? (isSample ? `<div class="sample-head"><span class="pill pill-warn">${esc(L(sm.label))}</span><span>${esc(L(sm.note))}</span></div>` : "") + gallery(pics)
-      : `<div class="gallery"><figure><div class="ph-placeholder"><div><b>${esc(t("photo_pending"))}</b>${esc(t("photo_pending_sub"))}</div></div></figure></div>`;
+      : (sm ? nextTrailerCard : `<div class="gallery"><figure><div class="ph-placeholder"><div><b>${esc(t("photo_pending"))}</b>${esc(t("photo_pending_sub"))}</div></div></figure></div>`);
     /* video slot: set load.video = {src, poster} in loads.json and it renders here */
     const video = load.video && load.video.src
       ? `<section class="block"><h2>${esc(t("video_h"))}</h2><video controls muted playsinline preload="none" poster="${esc(load.video.poster || "")}" src="${esc(load.video.src)}" width="1600" height="900"></video></section>` : "";
