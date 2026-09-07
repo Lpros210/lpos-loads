@@ -56,12 +56,17 @@
       f_offer: "Su oferta (USD)", f_offer_hint: "Ofertas razonables se responden el mismo día.",
       form_saved: "Guardado en este teléfono. Ahora envíelo por WhatsApp o correo para que lo recibamos:",
       faq_h2: "Preguntas frecuentes",
-      faq1_q: "¿Qué condición tiene la mercancía?", faq1_a: "Cargas Walmart RC Bulk son devoluciones de tienda y sobrantes sin revisar, mezcladas: nuevo en caja, caja abierta y algo dañado. No se garantiza pieza por pieza; se vende por tráiler completo tal como está.",
-      faq2_q: "¿Puedo ver el manifiesto?", faq2_a: "Sí. Cada carga trae el manifiesto (CSV) del vendedor con categorías y cantidades. Pídalo por WhatsApp con el número de carga.",
-      faq3_q: "¿Cuánto tiempo tengo para decidir?", faq3_a: "Las cargas se venden en 24 horas desde que llegan. Reservar aparta la carga 24 h; si no confirma pago, pasa al siguiente de la lista.",
-      faq4_q: "¿Cómo pago?", faq4_a: "Transferencia bancaria (wire/ACH) o depósito en USD. Emitimos factura formal desde Zoho. No aceptamos crédito en la primera compra.",
-      faq5_q: "¿Envían a México?", faq5_a: "Cotizamos flete hasta su bodega en México con transportistas conocidos. El cruce y la importación corren por cuenta del comprador o de su agente aduanal.",
-      faq6_q: "¿Venden por tarima?", faq6_a: "Normalmente por tráiler completo. Si una carga se abre por tarimas lo indicamos en la ficha.",
+      faq1_q: "¿Puedo ver el manifiesto antes de pagar?", faq1_a: "Sí — te enviamos el manifiesto para que revises el contenido y el valor estimado de venta al menudeo antes de comprometerte con una carga.",
+      faq2_q: "¿El precio incluye el flete o es solo la mercancía?", faq2_a: "El precio de la mercancía y el flete se cotizan por separado — así puedes elegir recoger tú mismo (Hidalgo/Waco, TX) o que te coticemos el flete hasta tu bodega. Te damos ambos números para que quede claro.",
+      faq3_q: "¿Ustedes organizan el flete o solo venden la mercancía?", faq3_a: "Las dos opciones — puedes organizar tu propio flete/recolección, o te cotizamos el flete usando costos reales recientes de esa ruta hasta tu bodega.",
+      faq4_q: "¿Dónde recojo la mercancía?", faq4_a: "La recolección es en nuestras ubicaciones de Hidalgo, TX y Waco, TX, según dónde esté la carga específica. Te confirmamos la dirección exacta una vez que tu carga esté lista.",
+      faq5_q: "¿Cómo confirmo que mi pago (Zelle/transferencia) ya fue recibido?", faq5_a: "Mándanos por WhatsApp una captura de pantalla o el número de confirmación de tu pago y lo verificamos y te confirmamos.",
+      faq6_q: "¿Con qué frecuencia tienen cargas nuevas disponibles?", faq6_a: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando de B-Stock. Escríbenos por WhatsApp y te decimos qué hay disponible ahora mismo.",
+      faq_see_all: "Ver todas las preguntas →",
+      faqp_h1: "Preguntas frecuentes", faqp_lead: "Respuestas directas a lo que más nos preguntan los compradores por WhatsApp. Si no está aquí, escríbenos.",
+      faqp_cta_h: "¿Otra pregunta?", faqp_cta_p: "Escríbenos por WhatsApp y te respondemos directo.", faqp_cta_btn: "Preguntar por WhatsApp",
+      faqp_t_manifests: "Manifiestos", faqp_t_pricing: "Precios y depósitos", faqp_t_freight: "Flete y cotizaciones",
+      faqp_t_pickup: "Recolección en Hidalgo / Waco, TX", faqp_t_payment: "Formas de pago", faqp_t_timing: "Disponibilidad",
       contact_h2: "Contacto", contact_sub: "Hablamos español e inglés. Respondemos más rápido por WhatsApp.",
       contact_wa: "WhatsApp", contact_phone: "Llamar", contact_mail: "Correo", contact_addr: "Bodega",
       contact_form_h: "Escríbanos", f_msg: "Mensaje",
@@ -135,12 +140,17 @@
       f_offer: "Your offer (USD)", f_offer_hint: "Reasonable offers get a same-day answer.",
       form_saved: "Saved on this device. Now send it on WhatsApp or email so we receive it:",
       faq_h2: "Frequently asked questions",
-      faq1_q: "What condition is the merchandise?", faq1_a: "Walmart RC Bulk loads are unsorted store returns and overstock, mixed: new in box, open box and some damaged. Not guaranteed piece by piece; sold by the full truckload as-is.",
-      faq2_q: "Can I see the manifest?", faq2_a: "Yes. Every load comes with the seller's manifest (CSV) with categories and quantities. Ask on WhatsApp with the load number.",
-      faq3_q: "How long do I have to decide?", faq3_a: "Loads sell within 24 hours of arrival. A reservation holds the load 24 h; if payment is not confirmed it goes to the next buyer on the list.",
-      faq4_q: "How do I pay?", faq4_a: "Bank wire/ACH or USD deposit. We issue a formal Zoho invoice. No credit on a first purchase.",
-      faq5_q: "Do you ship to Mexico?", faq5_a: "We quote freight to your warehouse in Mexico with carriers we know. Border crossing and import are the buyer's or their broker's responsibility.",
-      faq6_q: "Do you sell by the pallet?", faq6_a: "Usually by the full truckload. If a load is split into pallets we say so on the listing.",
+      faq1_q: "Can I see the manifest before I pay?", faq1_a: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load.",
+      faq2_q: "Does the price include freight, or is that separate?", faq2_a: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (Hidalgo/Waco, TX) or have us quote freight to your dock. We'll give you both numbers so it's clear.",
+      faq3_q: "Do you arrange freight, or do you only sell the merchandise?", faq3_a: "Both — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your dock.",
+      faq4_q: "Where do I pick up the merchandise?", faq4_a: "Pickup is available at our Hidalgo, TX and Waco, TX locations, depending on where the specific load is. We'll confirm the exact pickup address once your load is set.",
+      faq5_q: "How do I confirm my payment (Zelle/wire) was received?", faq5_a: "Send us a screenshot or confirmation number of your payment on WhatsApp and we'll verify it and confirm back to you.",
+      faq6_q: "How often do you have new loads available?", faq6_a: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in from B-Stock. Message us on WhatsApp and we'll tell you what's available right now.",
+      faq_see_all: "See all questions →",
+      faqp_h1: "Frequently asked questions", faqp_lead: "Direct answers to what buyers ask us most on WhatsApp. Not here? Message us.",
+      faqp_cta_h: "Another question?", faqp_cta_p: "Message us on WhatsApp and we'll answer directly.", faqp_cta_btn: "Ask on WhatsApp",
+      faqp_t_manifests: "Manifests", faqp_t_pricing: "Pricing & Deposits", faqp_t_freight: "Freight & Quotes",
+      faqp_t_pickup: "Pickup at Hidalgo / Waco, TX", faqp_t_payment: "Payment Methods", faqp_t_timing: "Timing / Availability",
       contact_h2: "Contact", contact_sub: "We speak Spanish and English. WhatsApp gets the fastest reply.",
       contact_wa: "WhatsApp", contact_phone: "Call", contact_mail: "Email", contact_addr: "Warehouse",
       contact_form_h: "Message us", f_msg: "Message",
@@ -300,6 +310,65 @@
         itemCondition: "https://schema.org/UsedCondition",
         seller: { "@type": "Organization", name: "Liquidation Pros LLC" },
       },
+    });
+  }
+
+  /* ---------- full FAQ page (preguntas.html) — verbatim from outputs/ads/FAQ_AND_ANSWERS_2026-09-07.md,
+     auto-answer-OK items plus any answer with no [ASSUMPTION]/[SUPUESTO] placeholder. Grouped by topic. */
+  const FAQS = [
+    { topic: "manifests", q: { es: "¿El manifiesto es real y viene de B-Stock, o es genérico?", en: "Is the manifest real and from B-Stock, or generic?" },
+      a: { es: "Real — nuestras cargas se consiguen a través de B-Stock (el propio marketplace de liquidación de Target y Walmart), así que los manifiestos vienen de los datos reales del listado del minorista, no de una plantilla genérica. Los manifiestos pueden tener un pequeño margen de error, igual que en toda la industria — es estándar.",
+             en: "Real — our loads are sourced through B-Stock (Target's and Walmart's own liquidation marketplace), so manifests come from the retailer's actual listing data, not a generic template. Manifests can still have small margin of error, same as every liquidator's — that's standard for this industry." } },
+    { topic: "manifests", q: { es: "¿Puedo ver el manifiesto antes de pagar?", en: "Can I see the manifest before I pay?" },
+      a: { es: "Sí — te enviamos el manifiesto para que revises el contenido y el valor estimado de venta al menudeo antes de comprometerte con una carga.",
+             en: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load." } },
+    { topic: "pricing", q: { es: "¿El precio incluye el flete o es solo la mercancía?", en: "Does the price include freight, or is that separate?" },
+      a: { es: "El precio de la mercancía y el flete se cotizan por separado — así puedes elegir recoger tú mismo (Hidalgo/Waco, TX) o que te coticemos el flete hasta tu bodega. Te damos ambos números para que quede claro.",
+             en: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (Hidalgo/Waco, TX) or have us quote freight to your dock. We'll give you both numbers so it's clear." } },
+    { topic: "freight", q: { es: "¿Ustedes organizan el flete o solo venden la mercancía?", en: "Do you arrange freight, or do you only sell the merchandise?" },
+      a: { es: "Las dos opciones — puedes organizar tu propio flete/recolección, o te cotizamos el flete usando costos reales recientes de esa ruta hasta tu bodega.",
+             en: "Both — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your dock." } },
+    { topic: "freight", q: { es: "¿Cuánto cuesta el flete de Waco o Hidalgo hasta mi bodega?", en: "How much does freight cost from Waco or Hidalgo to my warehouse?" },
+      a: { es: "Depende de la ruta, cantidad de tarimas, peso y si necesitas rampa hidráulica (liftgate). Mándanos por WhatsApp tu destino y el tamaño de la carga y te damos un estimado basado en cargas recientes comparables — el costo final se confirma con la transportista antes de darte un número en firme.",
+             en: "It depends on the lane, pallet count, weight, and whether you need a liftgate. Send us your destination and load size on WhatsApp and we'll give you an estimate based on comparable recent loads — final cost is confirmed with the carrier before you're quoted a firm number." } },
+    { topic: "freight", q: { es: "¿Puedo usar mi propio transportista para recoger la carga?", en: "Can I use my own trucker to pick up the load?" },
+      a: { es: "Sí — puedes mandar tu propio transportista a recoger en Hidalgo o Waco, TX. Solo confirma con nosotros la fecha/hora de recolección antes.",
+             en: "Yes — you're welcome to send your own trucker for pickup at Hidalgo or Waco, TX. Just confirm the pickup date/time with us first." } },
+    { topic: "freight", q: { es: "He tenido problemas con la transportista que ustedes usan — ¿qué pasa si el flete falla o se cancela?", en: "I've had problems with the carrier you use — what happens if freight fails or gets canceled?" },
+      a: { es: "Nos tomamos en serio la confiabilidad de la transportista y estamos trabajando activamente en problemas de flete en algunas rutas. Avísanos de inmediato si una recolección se reprograma o se cae una cita y lo escalamos — es un problema conocido que estamos resolviendo activamente, no algo que vamos a ignorar.",
+             en: "We take carrier reliability seriously and are actively working through freight issues on some lanes. Tell us right away if a pickup gets rescheduled or an appointment falls through and we'll escalate it — this is a known live issue we're actively fixing, not something we'll ignore." } },
+    { topic: "pickup", q: { es: "¿Dónde recojo la mercancía?", en: "Where do I pick up the merchandise?" },
+      a: { es: "La recolección es en nuestras ubicaciones de Hidalgo, TX y Waco, TX, según dónde esté la carga específica. Te confirmamos la dirección exacta una vez que tu carga esté lista.",
+             en: "Pickup is available at our Hidalgo, TX and Waco, TX locations, depending on where the specific load is. We'll confirm the exact pickup address once your load is set." } },
+    { topic: "pickup", q: { es: "¿Necesito cita para recoger o puedo llegar directo?", en: "Do I need an appointment to pick up, or can I just show up?" },
+      a: { es: "Por favor confirma una cita de recolección con nosotros primero por WhatsApp para tener la carga lista y el papeleo correcto preparado.",
+             en: "Please confirm a pickup appointment with us first on WhatsApp so we have the load ready and the right paperwork prepared." } },
+    { topic: "payment", q: { es: "¿Cómo confirmo que mi pago (Zelle/transferencia) ya fue recibido?", en: "How do I confirm my payment (Zelle/wire) was received?" },
+      a: { es: "Mándanos por WhatsApp una captura de pantalla o el número de confirmación de tu pago y lo verificamos y te confirmamos.",
+             en: "Send us a screenshot or confirmation number of your payment on WhatsApp and we'll verify it and confirm back to you." } },
+    { topic: "timing", q: { es: "¿Con qué frecuencia tienen cargas nuevas disponibles?", en: "How often do you have new loads available?" },
+      a: { es: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando de B-Stock. Escríbenos por WhatsApp y te decimos qué hay disponible ahora mismo.",
+             en: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in from B-Stock. Message us on WhatsApp and we'll tell you what's available right now." } },
+    { topic: "timing", q: { es: "¿Tienen mercancía disponible ahora mismo?", en: "Do you have merchandise available right now?" },
+      a: { es: "Escríbenos por WhatsApp y te decimos exactamente qué tenemos disponible hoy — la disponibilidad cambia rápido porque no almacenamos las cargas.",
+             en: "Message us on WhatsApp and we'll tell you exactly what's in and available today — availability changes fast since we don't warehouse loads." } },
+  ];
+  const FAQ_TOPICS = ["manifests", "pricing", "freight", "pickup", "payment", "timing"];
+  function renderFaqPage() {
+    const root = document.getElementById("faqp-root");
+    if (!root) return;
+    root.innerHTML = FAQ_TOPICS.map((topic) => {
+      const items = FAQS.filter((f) => f.topic === topic);
+      if (!items.length) return "";
+      return `<div class="faq-group"><h2>${esc(t("faqp_t_" + topic))}</h2><div class="faq">` +
+        items.map((f) => `<details><summary>${esc(L(f.q))}</summary><p>${esc(L(f.a))}</p></details>`).join("") +
+        `</div></div>`;
+    }).join("");
+    let ld = document.getElementById("ld-faq");
+    if (!ld) { ld = document.createElement("script"); ld.type = "application/ld+json"; ld.id = "ld-faq"; document.head.appendChild(ld); }
+    ld.textContent = JSON.stringify({
+      "@context": "https://schema.org", "@type": "FAQPage",
+      mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.q.es, acceptedAnswer: { "@type": "Answer", text: f.a.es } })),
     });
   }
 
@@ -564,6 +633,7 @@
     if (document.getElementById("loads-grid")) renderHome();
     if (document.getElementById("detail")) renderDetail();
     if (document.getElementById("quote-page")) renderQuote(document.getElementById("quote-page"), null);
+    renderFaqPage();
     fillContact();
   }
   document.addEventListener("click", (e) => {
