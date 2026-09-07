@@ -64,6 +64,9 @@ try:
         en_ok = all(en in body_en for _, _, en in KEYS_ES_EN)
         check("index.html EN: same 10 keys switch to English", en_ok,
               [en for _, _, en in KEYS_ES_EN if en not in body_en])
+        footer_links_ok = all(page.locator(f'footer a[href="{h}"]').count() > 0
+                               for h in ("privacidad.html", "terminos.html", "contacto.html"))
+        check("index.html footer: privacidad/terminos/contacto links present", footer_links_ok)
         ctx.close()
 
         # ---- 2. cotizar.html: for every lane, quote total (price + freight) >= floor, freight added not subtracted ----
@@ -103,6 +106,36 @@ try:
                       if l["retailer"] in FLOOR and l["retailer"] != "Amazon" and l["price_pickup"] < FLOOR[l["retailer"]]]
         check("data/loads.json: Walmart >= $12,500 / Target >= $10,000 floors", not floor_fail, floor_fail)
 
+        # ---- 2b. B116 launch-hygiene pages: load, zero console errors, EN/ES toggle, footer legal links present ----
+        LEGAL_PAGES = {
+            "privacidad.html": ("Aviso de privacidad", "Privacy notice"),
+            "terminos.html": ("Términos de venta", "Terms of sale"),
+            "contacto.html": ("Contacto", "Contact"),
+            "404.html": ("Página no encontrada", "Page not found"),
+        }
+        legal_fail = []
+        for page_name, (es_txt, en_txt) in LEGAL_PAGES.items():
+            errs = []
+            ctx = b.new_context(viewport={"width": 1280, "height": 900})
+            page = ctx.new_page()
+            page.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+            page.on("pageerror", lambda e: errs.append(str(e)))
+            page.goto(BASE + "/" + page_name); page.wait_for_timeout(200)
+            if errs:
+                legal_fail.append((page_name, "console errors", errs))
+            body = page.inner_text("body")
+            if es_txt not in body:
+                legal_fail.append((page_name, "ES text missing", es_txt))
+            for href in ("privacidad.html", "terminos.html", "contacto.html"):
+                if page.locator(f'a[href="{href}"]').count() == 0:
+                    legal_fail.append((page_name, "footer legal link missing", href))
+            page.click(".lang button[data-lang=en]"); page.wait_for_timeout(200)
+            body_en = page.inner_text("body")
+            if en_txt not in body_en:
+                legal_fail.append((page_name, "EN text missing after toggle", en_txt))
+            ctx.close()
+        check("privacidad/terminos/contacto/404: load, zero console errors, EN/ES toggle, footer legal links present", not legal_fail, legal_fail)
+
         # ---- 3. load.html: each id renders name/price/manifest table ----
         ctx = b.new_context(viewport={"width": 1280, "height": 900})
         page = ctx.new_page()
@@ -120,7 +153,8 @@ try:
         ctx.close()
 
         # ---- 4. no 404s for internal links/assets; no horizontal scroll at 375px ----
-        pages = ["index.html", "cotizar.html", "load.html?id=" + loads[0]["id"], "preguntas.html", "oferta.html"]
+        pages = ["index.html", "cotizar.html", "load.html?id=" + loads[0]["id"], "preguntas.html", "oferta.html",
+                  "privacidad.html", "terminos.html", "contacto.html", "404.html"]
         broken = []
         ctx = b.new_context(viewport={"width": 375, "height": 800})
         page = ctx.new_page()

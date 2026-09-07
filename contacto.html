@@ -3,20 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cotizar envío · Liquidation Pros</title>
-<meta name="description" content="Estimado de flete al instante para tráileres de liquidación desde Texas a México y Texas, y cómo pedir la cotización oficial.">
+<title>Contacto · Liquidation Pros</title>
+<meta name="description" content="Escríbanos por WhatsApp o correo. Recolección en Hidalgo, TX. Hablamos español e inglés.">
 <meta name="theme-color" content="#111111">
-<link rel="canonical" href="https://lpros210.github.io/lpos-loads/cotizar.html">
-<link rel="alternate" hreflang="es" href="https://lpros210.github.io/lpos-loads/cotizar.html">
-<link rel="alternate" hreflang="x-default" href="https://lpros210.github.io/lpos-loads/cotizar.html">
+<link rel="canonical" href="https://lpros210.github.io/lpos-loads/contacto.html">
+<link rel="alternate" hreflang="es" href="https://lpros210.github.io/lpos-loads/contacto.html">
+<link rel="alternate" hreflang="x-default" href="https://lpros210.github.io/lpos-loads/contacto.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Liquidation Pros">
 <meta property="og:locale" content="es_MX">
-<meta property="og:url" content="https://lpros210.github.io/lpos-loads/cotizar.html">
-<meta property="og:title" content="Cotizar envío · Liquidation Pros">
-<meta property="og:description" content="Estimado de flete al instante para tráileres de liquidación desde Texas a México y Texas, y cómo pedir la cotización oficial.">
-<meta property="og:image" content="https://lpros210.github.io/lpos-loads/assets/photos/sample/walmart-01.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://lpros210.github.io/lpos-loads/contacto.html">
+<meta property="og:title" content="Contacto · Liquidation Pros">
+<meta property="og:description" content="Escríbanos por WhatsApp o correo. Recolección en Hidalgo, TX. Hablamos español e inglés.">
 <link rel="stylesheet" href="css/site.css">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
@@ -33,7 +31,7 @@
       <a href="index.html#waitlist" data-i18n="nav_waitlist">Lista de espera</a>
       <a href="cotizar.html" data-i18n="nav_quote">Cotizar envío</a>
       <a href="preguntas.html" data-i18n="nav_faq">Preguntas</a>
-      <a href="index.html#contact" data-i18n="nav_contact">Contacto</a>
+      <a href="contacto.html" data-i18n="ftr_contact">Contacto</a>
     </nav>
     <div class="hdr-actions">
       <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
@@ -46,11 +44,26 @@
   <section class="sec">
     <div class="wrap two">
       <div>
-        <h1 data-i18n="quote_h">Cotizar envío</h1>
-        <p data-i18n="quote_sub" style="color:var(--ink-2)"></p>
-        <p data-i18n="faq5_a" style="color:var(--ink-2)"></p>
+        <h1 data-i18n="contactp_h1">Contacto</h1>
+        <p style="color:var(--ink-2)" data-i18n="contactp_lead"></p>
+        <ul class="contact-list">
+          <li><span class="pill" data-i18n="contact_wa">WhatsApp</span><a data-wa href="#" data-tel-text>WhatsApp</a></li>
+          <li><span class="pill" data-i18n="contact_phone">Llamar</span><a data-tel href="#"></a></li>
+          <li><span class="pill" data-i18n="contact_mail">Correo</span><a data-mail href="#"></a></li>
+          <li><span class="pill" data-i18n="contact_addr">Bodega</span><span data-addr></span></li>
+          <li><span class="pill">⏰</span><span data-hours></span></li>
+        </ul>
       </div>
-      <div id="quote-page"></div>
+      <form class="form" id="f-contact" novalidate>
+        <h3 data-i18n="contact_form_h">Escríbanos</h3>
+        <div class="row">
+          <label><span data-i18n="f_name">Nombre</span> *<input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="f_phone">WhatsApp</span> *<input name="phone" type="tel" required autocomplete="tel"></label>
+        </div>
+        <label><span data-i18n="f_msg">Mensaje</span> *<textarea name="msg" required></textarea></label>
+        <div id="contact-out"></div>
+        <button class="btn btn-dark" type="submit" data-i18n="f_send_wa">Enviar</button>
+      </form>
     </div>
   </section>
 </main>

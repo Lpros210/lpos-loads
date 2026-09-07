@@ -253,5 +253,7 @@ dialog .dlg-body { padding: 1.1rem; max-height: 75vh; overflow: auto; }
 .ftr .wrap { display: grid; gap: 1rem; }
 .ftr a { color: #fff; }
 .ftr .fine { color: #8f8f8f; font-size: .8rem; }
+.ftr-links { margin-top: .6rem; display: flex; flex-wrap: wrap; gap: .3rem .8rem; font-size: .85rem; }
+.ftr-links a { text-decoration: underline; text-underline-offset: 3px; }
 @media (min-width: 760px) { .ftr .wrap { grid-template-columns: 1fr 1fr 1fr; } }
 .empty { text-align: center; color: var(--muted); padding: 2rem; border: 1px dashed var(--line); border-radius: var(--radius); }
