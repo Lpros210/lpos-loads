@@ -266,7 +266,7 @@
 
   function fillContact() {
     const c = DATA.contact;
-    document.querySelectorAll("[data-wa]").forEach((a) => { a.href = waLink(a.dataset.wa || (lang === "es" ? "Hola, vi su sitio de cargas." : "Hi, I saw your loads site.")); });
+    document.querySelectorAll("[data-wa]").forEach((a) => { a.href = waLink(a.dataset.wa || (lang === "es" ? "Hola, vi su sitio de cargas." : "Hi, I saw your loads site.")); a.target = "_blank"; a.rel = "noopener"; });
     document.querySelectorAll("[data-tel]").forEach((a) => { a.href = "tel:+" + WHATSAPP; a.textContent = c.phone_display; });
     document.querySelectorAll("[data-mail]").forEach((a) => { a.href = "mailto:" + c.email; a.textContent = c.email; });
     document.querySelectorAll("[data-addr]").forEach((el) => { el.textContent = c.address; });
