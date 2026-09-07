@@ -73,7 +73,7 @@ p { margin: 0 0 1em; }
 .hero::after { content: ""; position: absolute; right: -10%; top: -30%; width: 55%; height: 160%; background: radial-gradient(closest-side, rgba(215,32,43,.28), transparent 70%); pointer-events: none; }
 .hero .wrap { position: relative; display: grid; gap: 1.5rem; }
 .hero .eyebrow { color: #ff6b73; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; margin-bottom: .75rem; }
-.hero p.lead { font-size: 1.1rem; color: #d6d6d6; max-width: 34rem; }
+.hero p.hero-sub { font-size: 1.1rem; color: #e8e8e8; max-width: 34rem; }
 .hero .cta { display: flex; flex-wrap: wrap; gap: .6rem; }
 .hero .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-top: .5rem; }
 .hero .facts div { border-left: 3px solid var(--red); padding-left: .7rem; }
