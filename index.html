@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquidation Pros · Tráileres de liquidación Walmart y Target · Texas → México</title>
+<meta name="description" content="Tráileres completos de liquidación (Walmart, Target, Sam's) a precio fijo, sin subastas. Recoja en Texas o cotice flete a México. Liquidation Pros LLC, Hidalgo, TX.">
+<meta name="theme-color" content="#111111">
+<link rel="stylesheet" href="css/site.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23d7202b'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='900' font-family='Arial' fill='white' text-anchor='middle'%3ELP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido / Skip to content</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">LP</span><span>Liquidation Pros<small data-i18n="tagline">Tráileres de liquidación · Texas → México</small></span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#loads" data-i18n="nav_loads">Cargas</a>
+      <a href="#how" data-i18n="nav_how">Cómo funciona</a>
+      <a href="#waitlist" data-i18n="nav_waitlist">Lista de espera</a>
+      <a href="#faq" data-i18n="nav_faq">Preguntas</a>
+      <a href="#contact" data-i18n="nav_contact">Contacto</a>
+    </nav>
+    <div class="hdr-actions">
+      <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+      <a class="btn btn-wa btn-sm" data-wa href="#">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow" data-i18n="hero_eyebrow">Mayorista B2B · Hidalgo, Texas</div>
+        <h1 data-i18n="hero_h1">Tráileres completos de Walmart y Target, a precio fijo. Sin subastas.</h1>
+        <p class="lead" data-i18n="hero_lead">Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega.</p>
+        <div class="cta">
+          <a class="btn btn-red" href="#loads" data-i18n="hero_cta_loads">Ver cargas disponibles</a>
+          <a class="btn btn-line" href="#waitlist" data-i18n="hero_cta_wait">Entrar a la lista de espera</a>
+        </div>
+        <div class="facts">
+          <div><b id="fact-loads">–</b><span data-i18n="fact_loads">cargas disponibles</span></div>
+          <div><b>24 h</b><span data-i18n="fact_window">para vender cada carga</span></div>
+          <div><b>Hidalgo, TX</b><span data-i18n="fact_border">frontera con Reynosa</span></div>
+        </div>
+      </div>
+      <figure class="hero-photo-wrap" style="margin:0">
+        <div class="hero-photo" id="hero-photo"></div>
+        <figcaption data-i18n="hero_caption">Foto real de un tráiler Target que vendimos (julio 2026).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="loads">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 data-i18n="loads_h2">Cargas disponibles</h2><p data-i18n="loads_sub">Precio fijo por tráiler completo.</p></div><span class="pill pill-live" data-i18n="status_available">Disponible</span></div>
+      <div class="grid" id="loads-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="how">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 data-i18n="how_h2">Cómo funciona</h2><p data-i18n="how_sub">Cuatro pasos.</p></div></div>
+      <div class="steps">
+        <div class="step"><h3 data-i18n="how1_h">Vea la carga</h3><p data-i18n="how1_p"></p></div>
+        <div class="step"><h3 data-i18n="how2_h">Reserve o compre</h3><p data-i18n="how2_p"></p></div>
+        <div class="step"><h3 data-i18n="how3_h">Pague</h3><p data-i18n="how3_p"></p></div>
+        <div class="step"><h3 data-i18n="how4_h">Recoja o se la enviamos</h3><p data-i18n="how4_p"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sold">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 data-i18n="loads_sold_h2">Vendidas recientemente</h2><p data-i18n="loads_sold_sub"></p></div></div>
+      <div class="grid" id="sold-grid"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="waitlist">
+    <div class="wrap two">
+      <div>
+        <h2 data-i18n="wait_h2">Lista de espera de compradores</h2>
+        <p data-i18n="wait_sub" style="color:var(--ink-2)"></p>
+      </div>
+      <form class="form" id="f-wait" novalidate>
+        <div class="row">
+          <label><span data-i18n="f_name">Nombre</span> *<input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="f_company">Empresa</span><input name="company" autocomplete="organization"></label>
+        </div>
+        <div class="row">
+          <label><span data-i18n="f_phone">WhatsApp</span> *<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+          <label><span data-i18n="f_email">Correo</span><input name="email" type="email" autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label><span data-i18n="f_city">Ciudad de entrega</span> *<input name="city" required placeholder="Monterrey, NL"></label>
+          <label><span data-i18n="f_retailers">Qué le interesa</span>
+            <select name="retailers"><option value="Walmart GM">Walmart GM</option><option value="Target GM">Target GM</option><option value="Sam's Club">Sam's Club</option><option value="Ropa / Clothing">Ropa / Clothing</option><option value="Zapatos / Shoes">Zapatos / Shoes</option><option value="HBA">HBA</option><option value="Muebles / Furniture">Muebles / Furniture</option><option value="Cualquiera / Any" data-i18n="any">Cualquiera</option></select></label>
+        </div>
+        <div class="row">
+          <label><span data-i18n="f_budget">Presupuesto por tráiler (USD)</span><input name="budget" inputmode="numeric" placeholder="13000"></label>
+          <label><span data-i18n="f_notes">Comentarios</span><input name="notes"></label>
+        </div>
+        <label class="check"><input type="checkbox" name="consent" required><span data-i18n="f_consent"></span></label>
+        <div id="wait-out"></div>
+        <button class="btn btn-red" type="submit" data-i18n="f_submit_wait">Entrar a la lista</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <h2 data-i18n="faq_h2">Preguntas frecuentes</h2>
+      <div class="faq">
+        <details><summary data-i18n="faq1_q"></summary><p data-i18n="faq1_a"></p></details>
+        <details><summary data-i18n="faq2_q"></summary><p data-i18n="faq2_a"></p></details>
+        <details><summary data-i18n="faq3_q"></summary><p data-i18n="faq3_a"></p></details>
+        <details><summary data-i18n="faq4_q"></summary><p data-i18n="faq4_a"></p></details>
+        <details><summary data-i18n="faq5_q"></summary><p data-i18n="faq5_a"></p></details>
+        <details><summary data-i18n="faq6_q"></summary><p data-i18n="faq6_a"></p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="contact">
+    <div class="wrap two">
+      <div>
+        <h2 data-i18n="contact_h2">Contacto</h2>
+        <p data-i18n="contact_sub" style="color:var(--ink-2)"></p>
+        <ul class="contact-list">
+          <li><span class="pill" data-i18n="contact_wa">WhatsApp</span><a data-wa href="#" data-tel-text>WhatsApp</a></li>
+          <li><span class="pill" data-i18n="contact_phone">Llamar</span><a data-tel href="#"></a></li>
+          <li><span class="pill" data-i18n="contact_mail">Correo</span><a data-mail href="#"></a></li>
+          <li><span class="pill" data-i18n="contact_addr">Bodega</span><span data-addr></span></li>
+          <li><span class="pill">⏰</span><span data-hours></span></li>
+        </ul>
+      </div>
+      <form class="form" id="f-contact" novalidate>
+        <h3 data-i18n="contact_form_h">Escríbanos</h3>
+        <div class="row">
+          <label><span data-i18n="f_name">Nombre</span> *<input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="f_phone">WhatsApp</span> *<input name="phone" type="tel" required autocomplete="tel"></label>
+        </div>
+        <label><span data-i18n="f_msg">Mensaje</span> *<textarea name="msg" required></textarea></label>
+        <div id="contact-out"></div>
+        <button class="btn btn-dark" type="submit" data-i18n="f_send_wa">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div><b style="color:#fff">Liquidation Pros LLC</b><p data-i18n="ftr_about" style="margin-top:.4rem"></p></div>
+    <div><b style="color:#fff" data-i18n="contact_h2">Contacto</b><p style="margin-top:.4rem"><a data-tel href="#"></a><br><a data-mail href="#"></a><br><span data-addr></span></p></div>
+    <div class="fine" data-i18n="ftr_fine"></div>
+  </div>
+</footer>
+<script src="js/app.js" defer></script>
+</body>
+</html>

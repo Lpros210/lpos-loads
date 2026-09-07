@@ -1,0 +1,214 @@
+{
+  "contact": {
+    "company": "Liquidation Pros LLC",
+    "whatsapp_e164": "13239613868",
+    "phone_display": "+1 (323) 961-3868",
+    "email": "juan@lpros.biz",
+    "address": "709 W Joe Pate Blvd, Hidalgo, TX 78557",
+    "hours": {
+      "es": "Lun–Sáb 8am–6pm (hora de Texas)",
+      "en": "Mon–Sat 8am–6pm (Texas time)"
+    }
+  },
+  "loads": [
+    {
+      "id": "WLMRT-OF4-0M1G",
+      "po": "PO-00782",
+      "zoho_po_id": "3313401000023059001",
+      "zoho_item_id": "3313401000019934003",
+      "sku": "N-WM-GM-TL",
+      "retailer": "Walmart",
+      "program": {
+        "es": "Walmart RC Bulk · Mercancía general",
+        "en": "Walmart RC Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo Walmart · Mercancía general",
+        "en": "Walmart Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sale_type": "fixed_or_reserve",
+      "units": 2536,
+      "pallets": "22–26",
+      "weight_lb": 30000,
+      "price_pickup": 13000,
+      "price_delivered": null,
+      "retail_value": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Walmart RC 9153 (drop trailer)",
+        "city": "Waco, TX",
+        "state": "TX"
+      },
+      "listed": "2026-09-05",
+      "closes_at": null,
+      "sale_window_h": 24,
+      "photos": [],
+      "photo_status": "pending",
+      "manifest": [],
+      "manifest_status": "csv_attached_in_zoho",
+      "categories_seen": []
+    },
+    {
+      "id": "WLMRT-OTN-84RC",
+      "po": "PO-00780",
+      "zoho_po_id": "3313401000022941107",
+      "zoho_item_id": "3313401000019934003",
+      "sku": "N-WM-GM-TL",
+      "retailer": "Walmart",
+      "program": {
+        "es": "Walmart RC Bulk · Mercancía general",
+        "en": "Walmart RC Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo Walmart · Mercancía general",
+        "en": "Walmart Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sale_type": "fixed_or_reserve",
+      "units": 1786,
+      "pallets": "27",
+      "weight_lb": 30000,
+      "price_pickup": 13000,
+      "price_delivered": null,
+      "retail_value": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Walmart RC 9153 (drop trailer)",
+        "city": "Waco, TX",
+        "state": "TX"
+      },
+      "listed": "2026-09-01",
+      "closes_at": null,
+      "sale_window_h": 24,
+      "photos": [],
+      "photo_status": "pending",
+      "manifest": [],
+      "manifest_status": "csv_attached_in_zoho",
+      "categories_seen": []
+    },
+    {
+      "id": "WLMRT-ONA-GHFP",
+      "po": "PO-00779",
+      "zoho_po_id": "3313401000022941001",
+      "zoho_item_id": "3313401000019934003",
+      "sku": "N-WM-GM-TL",
+      "retailer": "Walmart",
+      "program": {
+        "es": "Walmart RC Bulk · Mercancía general",
+        "en": "Walmart RC Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo Walmart · Mercancía general",
+        "en": "Walmart Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sale_type": "fixed_or_reserve",
+      "units": 2144,
+      "pallets": "22–26",
+      "weight_lb": 30000,
+      "price_pickup": 13000,
+      "price_delivered": null,
+      "retail_value": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Walmart RC 9153 (drop trailer)",
+        "city": "Waco, TX",
+        "state": "TX"
+      },
+      "listed": "2026-09-01",
+      "closes_at": null,
+      "sale_window_h": 24,
+      "photos": [],
+      "photo_status": "pending",
+      "manifest": [],
+      "manifest_status": "csv_attached_in_zoho",
+      "categories_seen": []
+    },
+    {
+      "id": "TGTW5-OR0-8MMR",
+      "po": null,
+      "zoho_po_id": null,
+      "zoho_item_id": "3313401000014188003",
+      "sku": "N-TG-GM-TL",
+      "retailer": "Target",
+      "program": {
+        "es": "Target · Mercancía general (salvage)",
+        "en": "Target · General Merchandise (salvage)"
+      },
+      "title": {
+        "es": "Tráiler completo Target · Hogar, juguetes, almacenaje",
+        "en": "Target Full Truckload · Home, toys, storage"
+      },
+      "status": "sold",
+      "sale_type": "fixed_or_reserve",
+      "units": null,
+      "pallets": "22–26",
+      "weight_lb": null,
+      "price_pickup": 6000,
+      "price_delivered": null,
+      "retail_value": null,
+      "condition_code": "salvage",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Hidalgo, TX",
+        "state": "TX"
+      },
+      "listed": "2026-07-13",
+      "closes_at": null,
+      "sale_window_h": 24,
+      "photos": [
+        {
+          "src": "assets/photos/tgtw5-truck-1.jpg",
+          "alt": {
+            "es": "Interior del tráiler: cajas de Kleenex, Sterilite y dulces",
+            "en": "Truck interior: Kleenex, Sterilite and candy cartons"
+          }
+        },
+        {
+          "src": "assets/photos/tgtw5-truck-2.jpg",
+          "alt": {
+            "es": "Tarimas de cajas Sterilite emplayadas",
+            "en": "Shrink-wrapped Sterilite storage pallets"
+          }
+        },
+        {
+          "src": "assets/photos/tgtw5-truck-3.jpg",
+          "alt": {
+            "es": "Juguete montable, sillas y cajas apiladas hasta el techo",
+            "en": "Ride-on toy, chairs and boxes stacked to the ceiling"
+          }
+        }
+      ],
+      "photo_status": "real",
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [
+        {
+          "es": "Almacenaje (Sterilite)",
+          "en": "Storage (Sterilite)"
+        },
+        {
+          "es": "Papel / consumibles (Kleenex)",
+          "en": "Paper / consumables (Kleenex)"
+        },
+        {
+          "es": "Juguetes",
+          "en": "Toys"
+        },
+        {
+          "es": "Muebles y sillas",
+          "en": "Furniture & seating"
+        },
+        {
+          "es": "Dulces",
+          "en": "Candy"
+        },
+        {
+          "es": "Artículos de bebé",
+          "en": "Baby gear"
+        }
+      ]
+    }
+  ]
+}
