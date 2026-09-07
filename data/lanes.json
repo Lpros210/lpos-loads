@@ -1,5 +1,5 @@
 {
- "note": "Historical full-truckload freight paid on real shipments (RXO invoices) plus carrier-arranged freight baked into B-Stock orders (CH Robinson). Ranges only; not a rate API.",
+ "note": "Historical full-truckload freight paid on real shipments, plus carrier-arranged freight baked into B-Stock orders. Ranges only; not a rate API.",
  "lanes": [
   {
    "origin": "Hopkins, MN",
@@ -9,7 +9,7 @@
    "median": 2478.0,
    "max": 3250.0,
    "last_date": "2026-07-22",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Orangeburg, SC",
@@ -19,7 +19,7 @@
    "median": 2900.0,
    "max": 3150.0,
    "last_date": "2026-08-03",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Hopkins, MN",
@@ -29,7 +29,7 @@
    "median": 2715.5,
    "max": 3250.0,
    "last_date": "2026-07-22",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Waxahachie, TX",
@@ -39,7 +39,7 @@
    "median": 1012.5,
    "max": 1172.11,
    "last_date": "2026-07-23",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Lenexa, KS",
@@ -49,7 +49,7 @@
    "median": 2598.68,
    "max": 2726.32,
    "last_date": "2026-07-23",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Fort Worth, TX",
@@ -59,7 +59,7 @@
    "median": 428.38,
    "max": 1009.0,
    "last_date": "2026-06-12",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Grand Prairie, TX",
@@ -69,7 +69,7 @@
    "median": 2000.0,
    "max": 2000.0,
    "last_date": "2026-08-11",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Lancaster, TX",
@@ -79,7 +79,7 @@
    "median": 1811.99,
    "max": 1827.98,
    "last_date": "2026-01-29",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Charlotte, NC",
@@ -89,7 +89,7 @@
    "median": 2233.5,
    "max": 2328.0,
    "last_date": "2025-06-30",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Columbus, OH",
@@ -99,7 +99,7 @@
    "median": 3200.0,
    "max": 3200.0,
    "last_date": "2026-07-23",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Nicholasville, KY",
@@ -109,7 +109,7 @@
    "median": 3000.0,
    "max": 3000.0,
    "last_date": "2026-01-27",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Lynwood, CA",
@@ -119,7 +119,7 @@
    "median": 3587.0,
    "max": 3587.0,
    "last_date": "2025-12-05",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Hopkins, MN",
@@ -129,7 +129,7 @@
    "median": 3355.0,
    "max": 3355.0,
    "last_date": "2025-11-19",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Richmond, VA",
@@ -139,7 +139,7 @@
    "median": 2512.0,
    "max": 2512.0,
    "last_date": "2025-11-04",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Lebanon, TN",
@@ -149,7 +149,7 @@
    "median": 1648.0,
    "max": 1648.0,
    "last_date": "2025-10-17",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Jeffersonville, IN",
@@ -159,7 +159,7 @@
    "median": 2293.0,
    "max": 2293.0,
    "last_date": "2025-06-11",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Jacksonville, FL",
@@ -169,7 +169,7 @@
    "median": 1131.0,
    "max": 1131.0,
    "last_date": "2026-04-08",
-   "basis": "rxo_invoice"
+   "basis": "paid_freight"
   },
   {
    "origin": "Waco, TX",
@@ -179,7 +179,7 @@
    "median": 3738.85,
    "max": 3738.85,
    "last_date": "2026-09-01",
-   "basis": "bstock_freight_chrobinson"
+   "basis": "paid_freight"
   },
   {
    "origin": "Waco, TX",
@@ -189,7 +189,7 @@
    "median": 1800.76,
    "max": 1800.76,
    "last_date": "2026-08-27",
-   "basis": "bstock_freight_chrobinson"
+   "basis": "paid_freight"
   },
   {
    "origin": "Waco, TX",
@@ -199,7 +199,7 @@
    "median": 1785.33,
    "max": 1785.33,
    "last_date": "2026-08-26",
-   "basis": "bstock_freight_chrobinson"
+   "basis": "paid_freight"
   },
   {
    "origin": "Las Vegas, NV",
@@ -209,7 +209,7 @@
    "median": 1650.99,
    "max": 1650.99,
    "last_date": "2026-09-03",
-   "basis": "bstock_freight_chrobinson"
+   "basis": "paid_freight"
   },
   {
    "origin": "Upper Marlboro, MD",
@@ -219,7 +219,7 @@
    "median": 2616.91,
    "max": 2616.91,
    "last_date": "2026-08-14",
-   "basis": "bstock_freight_chrobinson"
+   "basis": "paid_freight"
   },
   {
    "origin": "Hidalgo, TX",
