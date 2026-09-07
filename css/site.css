@@ -39,7 +39,7 @@ p { margin: 0 0 1em; }
 
 /* Header */
 .hdr { background: var(--black); color: #fff; position: sticky; top: 0; z-index: 50; border-bottom: 3px solid var(--red); }
-.hdr .wrap { display: flex; align-items: center; gap: 1rem; min-height: 60px; }
+.hdr .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; min-height: 60px; row-gap: .4rem; padding-block: .4rem; }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 800; letter-spacing: -0.01em; font-size: 1.05rem; }
 .brand .mark { width: 30px; height: 30px; border-radius: 6px; display: grid; place-items: center; overflow: hidden; flex-shrink: 0; }
 .brand .mark svg { display: block; width: 100%; height: 100%; }
@@ -190,9 +190,10 @@ video { width: 100%; height: auto; border-radius: var(--radius); background: #00
 .crumbs { font-size: .85rem; color: var(--muted); padding: .9rem 0 0; }
 .crumbs a { color: var(--ink-2); }
 .detail { display: grid; gap: 1.5rem; padding: 1rem 0 6rem; }
+.detail > .main { min-width: 0; }
 @media (min-width: 900px) { .detail { grid-template-columns: 1.15fr .85fr; align-items: start; padding-bottom: 3rem; } .detail .side { position: sticky; top: 76px; } }
-.gallery { display: flex; gap: .5rem; overflow-x: auto; scroll-snap-type: x mandatory; border-radius: var(--radius); -webkit-overflow-scrolling: touch; }
-.gallery figure { margin: 0; flex: 0 0 100%; scroll-snap-align: start; aspect-ratio: 4/3; background: var(--bg-2); border-radius: var(--radius); overflow: hidden; position: relative; }
+.gallery { display: flex; gap: .5rem; overflow-x: auto; scroll-snap-type: x mandatory; border-radius: var(--radius); -webkit-overflow-scrolling: touch; min-width: 0; }
+.gallery figure { margin: 0; flex: 0 0 100%; min-width: 0; scroll-snap-align: start; aspect-ratio: 4/3; background: var(--bg-2); border-radius: var(--radius); overflow: hidden; position: relative; }
 .gallery img { width: 100%; height: 100%; object-fit: cover; }
 .gallery figcaption { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font-size: .8rem; padding: 1.2rem .8rem .6rem; }
 .thumbs { display: flex; gap: .4rem; margin-top: .5rem; }
