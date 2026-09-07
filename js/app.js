@@ -87,6 +87,9 @@
       cond_returns_mixed_p: "Mercancía general de centro de devoluciones Walmart: nuevo en caja, caja abierta y piezas dañadas mezcladas. Sin clasificar. Se vende el tráiler completo tal como está.",
       cond_salvage: "Salvage (dañado / caja abierta)",
       cond_salvage_p: "Tarimas marcadas salvage por Target: empaques abiertos o dañados, producto usable en su mayoría. Se vende tal como está.",
+      cond_customer_returns: "Devoluciones de clientes, sin clasificar",
+      cond_customer_returns_p: "Pacas de devoluciones de clientes: ropa, calzado y mercancía general mezclada, sin clasificar. Se vende por tarima, precio fijo.",
+      amazon_h: "Pacas Amazon", amazon_sub: "Devoluciones de clientes por tarima — ropa, calzado y mercancía general mezclada. Precio fijo por tarima.",
       pickup_h: "Recogida en", pickup_p: "Usted o su transportista cargan en la ubicación indicada. Cita previa.",
       delivered_h: "Puesto en su bodega", delivered_p: "Cotizamos flete a la frontera o al interior de México. Diga su ciudad.",
       fine_buybox: "Precio fijo por tráiler completo, USD, sin impuesto de venta de EE. UU. Sin comisiones de plataforma.",
@@ -176,6 +179,9 @@
       cond_returns_mixed_p: "General merchandise from a Walmart return center: new in box, open box and damaged pieces mixed together. Unsorted. Sold as a full truckload, as-is.",
       cond_salvage: "Salvage (damaged / open box)",
       cond_salvage_p: "Pallets marked salvage by Target: open or damaged packaging, product mostly usable. Sold as-is.",
+      cond_customer_returns: "Customer returns, unsorted",
+      cond_customer_returns_p: "Customer-return pallets: clothing, footwear and general merchandise mixed together, unsorted. Sold per pallet, fixed price.",
+      amazon_h: "Amazon Pallets", amazon_sub: "Customer returns sold per pallet — mixed clothing, footwear and general merchandise. Fixed price per pallet.",
       pickup_h: "Picked up at", pickup_p: "You or your carrier load at the listed location. By appointment.",
       delivered_h: "Delivered to your warehouse", delivered_p: "We quote freight to the border or inland Mexico. Tell us your city.",
       fine_buybox: "Fixed price per full truckload, USD, no US sales tax. No platform fees.",
@@ -292,12 +298,14 @@
   function money2(n) { return new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
 
   function renderHome() {
-    const avail = DATA.loads.filter((l) => l.status === "available");
-    const sold = DATA.loads.filter((l) => l.status !== "available");
+    const avail = DATA.loads.filter((l) => l.status === "available" && l.retailer !== "Amazon");
+    const sold = DATA.loads.filter((l) => l.status !== "available" && l.retailer !== "Amazon");
     const g = document.getElementById("loads-grid");
     if (g) g.innerHTML = avail.length ? avail.map(card).join("") : `<div class="empty">${lang === "es" ? "No hay cargas publicadas ahora. Entre a la lista de espera." : "No loads listed right now. Join the waitlist."}</div>`;
     const s = document.getElementById("sold-grid");
     if (s) s.innerHTML = sold.map(card).join("");
+    const az = document.getElementById("amazon-grid");
+    if (az) { const azLoads = DATA.loads.filter((l) => l.retailer === "Amazon"); az.innerHTML = azLoads.length ? azLoads.map(card).join("") : ""; const azSec = document.getElementById("amazon"); if (azSec) azSec.hidden = !azLoads.length; }
     const n = document.getElementById("fact-loads"); if (n) n.textContent = String(avail.length);
     const hp = document.getElementById("hero-photo");
     if (hp) {

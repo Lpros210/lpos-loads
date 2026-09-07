@@ -93,6 +93,17 @@
         "en": "No Target sample-truck photos yet. Ask on WhatsApp."
       },
       "photos": []
+    },
+    "amazon": {
+      "label": {
+        "es": "Pacas Amazon",
+        "en": "Amazon Pallets"
+      },
+      "note": {
+        "es": "Aún no tenemos fotos propias de pacas Amazon. Pídalas por WhatsApp.",
+        "en": "No Amazon-pallet photos of our own yet. Ask on WhatsApp."
+      },
+      "photos": []
     }
   },
   "loads": [
@@ -697,6 +708,48 @@
         {
           "es": "Artículos de bebé",
           "en": "Baby gear"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-PACA-0907",
+      "po": null,
+      "retailer": "Amazon",
+      "program": {
+        "es": "Amazon · Devoluciones de clientes, por tarima",
+        "en": "Amazon · Customer returns, per pallet"
+      },
+      "title": {
+        "es": "Pacas Amazon · Devoluciones de clientes, mercancía general",
+        "en": "Amazon Pallets · Customer Returns, General Merchandise"
+      },
+      "status": "available",
+      "units": null,
+      "pallets": "1+",
+      "weight_lb": 500,
+      "price_pickup": 1250,
+      "price_delivered": null,
+      "condition_code": "customer_returns",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Hidalgo",
+        "state": "TX"
+      },
+      "freight_control": "seller",
+      "listed": "2026-09-07",
+      "photos": [],
+      "sample": "amazon",
+      "video": null,
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [
+        {
+          "es": "Ropa y calzado mixto",
+          "en": "Mixed apparel & footwear"
+        },
+        {
+          "es": "Mercancía general",
+          "en": "General merchandise"
         }
       ]
     }
