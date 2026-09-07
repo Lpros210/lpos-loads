@@ -274,6 +274,35 @@
     }
   }
 
+  /* ---------- per-load SEO: canonical/OG/meta + Product JSON-LD (page is client-rendered, so this fills in what the static <head> can't know) ---------- */
+  function setMeta(sel, attr, val) { const el = document.querySelector(sel); if (el) el.setAttribute(attr, val); }
+  function setLoadSeo(load) {
+    const base = "https://lpros210.github.io/lpos-loads/";
+    const url = base + "load.html?id=" + encodeURIComponent(load.id);
+    const desc = `${L(load.title)}. ${num(load.units)} unidades, ${load.pallets} tarimas, ${money(load.price_pickup)} recogiendo en ${load.location.city}.`;
+    setMeta('link[rel="canonical"]', "href", url);
+    setMeta('meta[property="og:url"]', "content", url);
+    setMeta('meta[property="og:title"]', "content", `${L(load.title)} · ${load.id} · Liquidation Pros`);
+    setMeta('meta[name="description"]', "content", desc);
+    setMeta('meta[property="og:description"]', "content", desc);
+    const img = (load.photos && load.photos[0]) || (sampleOf(load) && sampleOf(load).photos[0]);
+    if (img) setMeta('meta[property="og:image"]', "content", base + img.src);
+    let ld = document.getElementById("ld-product");
+    if (!ld) { ld = document.createElement("script"); ld.type = "application/ld+json"; ld.id = "ld-product"; document.head.appendChild(ld); }
+    ld.textContent = JSON.stringify({
+      "@context": "https://schema.org", "@type": "Product",
+      name: L(load.title), sku: load.id, description: desc,
+      brand: { "@type": "Brand", name: load.retailer },
+      ...(img ? { image: base + img.src } : {}),
+      offers: {
+        "@type": "Offer", url, priceCurrency: "USD", price: load.price_pickup,
+        availability: load.status === "available" ? "https://schema.org/InStock" : "https://schema.org/SoldOut",
+        itemCondition: "https://schema.org/UsedCondition",
+        seller: { "@type": "Organization", name: "Liquidation Pros LLC" },
+      },
+    });
+  }
+
   /* ---------- load detail ---------- */
   function renderDetail() {
     const id = new URLSearchParams(location.search).get("id");
@@ -281,6 +310,7 @@
     const root = document.getElementById("detail");
     if (!root) return;
     document.title = `${L(load.title)} · ${load.id} · Liquidation Pros`;
+    setLoadSeo(load);
     const perUnit = load.units && load.price_pickup ? load.price_pickup / load.units : null;
     const condKey = "cond_" + load.condition_code;
     const sm = sampleOf(load);
@@ -460,7 +490,7 @@
     const ratio = Math.min(1.5, Math.max(0.5, miles / LANE_MILES[lane.origin]));
     const pf = Math.min(1, Math.max(0.4, (Number(pallets) || 26) / 26));
     const r50 = (n) => Math.round(n * ratio * pf / 50) * 50;
-    return { dest: d, miles, lane, lo: r50(lane.lo), hi: r50(lane.hi), n: lane.n };
+    return { dest: d, miles, lane, lo: r50(lane.min), hi: r50(lane.max), n: lane.n };
   }
   function renderQuote(root, load) {
     if (!root) return;
