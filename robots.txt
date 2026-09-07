@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lpros210.github.io/lpos-loads/sitemap.xml
