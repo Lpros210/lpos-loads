@@ -28,6 +28,8 @@
       q_copy: "Copiar resumen", q_copied: "Copiado ✓",
       q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor (B-Stock). Le confirmamos el precio en 1 hora en horario de oficina.",
       q_wa_lpos_p: "¿Prefiere que lo cotizemos nosotros? Escríbanos y le respondemos en 1 hora.",
+      q_public: "Estimado público — sin envíos propios aún",
+      q_mx_border_crossing: "Cruce y pedimento a cargo del comprador",
       nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
       hero_h1: "Tráileres completos de Walmart y Target, a precio fijo. Sin subastas.",
@@ -112,6 +114,8 @@
       q_copy: "Copy summary", q_copied: "Copied ✓",
       q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller (B-Stock). We confirm the price within 1 hour during office hours.",
       q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
+      q_public: "Public estimate — no shipments yet",
+      q_mx_border_crossing: "Border crossing and customs clearance borne by buyer",
       nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
       hero_h1: "Full Walmart and Target truckloads at a fixed price. No auctions.",
@@ -204,8 +208,17 @@
   }
 
   /* ---------- contact links ---------- */
-  function waLink(text) { return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text); }
-  function mailLink(subject, body) { return "mailto:" + DATA.contact.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
+  /* UTM + A/B variant captured on oferta.html (ads landing) and stored under "lpos.utm" —
+     appended here so every WhatsApp/email CTA on the site (reserve, buy, quote, waitlist, contact)
+     carries the same campaign reference once a visitor has landed from an ad. */
+  function utmSuffix() {
+    let u; try { u = JSON.parse(localStorage.getItem("lpos.utm") || "null"); } catch (e) { u = null; }
+    if (!u) return "";
+    const ref = [u.utm_campaign, u.utm_content].filter(Boolean).join("/");
+    return ref ? "\n[ref: " + ref + "]" : "";
+  }
+  function waLink(text) { return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text + utmSuffix()); }
+  function mailLink(subject, body, email) { return "mailto:" + (email || DATA.contact.email) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body + utmSuffix()); }
 
   function fillContact() {
     const c = DATA.contact;
@@ -559,7 +572,7 @@
     const ratio = Math.min(1.5, Math.max(0.5, miles / LANE_MILES[lane.origin]));
     const pf = Math.min(1, Math.max(0.4, (Number(pallets) || 26) / 26));
     const r50 = (n) => Math.round(n * ratio * pf / 50) * 50;
-    return { dest: d, miles, lane, lo: r50(lane.min), hi: r50(lane.max), n: lane.n };
+    return { dest: d, miles, lane, lo: r50(lane.min), hi: r50(lane.max), n: lane.n, basis: lane.basis };
   }
   function renderQuote(root, load) {
     if (!root) return;
@@ -586,9 +599,13 @@
       let html = "";
       if (!est || est.none) html += `<div class="notice">${esc(t("q_none"))}</div>`;
       else if (est.border) html += `<div class="notice">${esc(t("q_mx_border"))}</div>`;
-      else html += `<div class="est"><div class="est-main">${esc(t("q_est"))} ${esc(origin)} → ${esc(est.dest.name)}: <strong>${money(est.lo)} – ${money(est.hi)}</strong></div>
-        <div class="est-sub">${esc(t("q_based"))} ${est.n} ${esc(t("q_ships"))} · ${esc(t("q_lane"))} ${esc(est.lane.origin)} → ${esc(est.lane.destination)} (≈${num(LANE_MILES[est.lane.origin])} mi) · ${esc(f.pallets)} ${esc(t("q_pallets").toLowerCase())}</div>
-        ${est.dest.mx ? `<div class="est-sub">${esc(t("q_mx"))}</div>` : ""}<div class="est-sub">${esc(t("q_disc"))}</div></div>`;
+      else {
+        const isPublic = est.basis === "public_estimate" || est.n === 0;
+        html += `<div class="est">${isPublic ? `<div class="est-sub" style="color:var(--warn);margin-bottom:.5rem"><b>${esc(t("q_public"))}</b></div>` : ""}
+        <div class="est-main">${esc(t("q_est"))} ${esc(origin)} → ${esc(est.dest.name)}: <strong>${money(est.lo)} – ${money(est.hi)}</strong></div>
+        <div class="est-sub">${isPublic ? `${esc(t("q_public"))}` : `${esc(t("q_based"))} ${est.n} ${esc(t("q_ships"))}`} · ${esc(t("q_lane"))} ${esc(est.lane.origin)} → ${esc(est.lane.destination)} (≈${num(LANE_MILES[est.lane.origin])} mi) · ${esc(f.pallets)} ${esc(t("q_pallets").toLowerCase())}</div>
+        ${est.dest.mx ? `<div class="est-sub">${esc(t("q_mx"))}<br><b>${esc(t("q_mx_border_crossing"))}</b></div>` : ""}<div class="est-sub">${esc(t("q_disc"))}</div></div>`;
+      }
       const summary = [`Liquidation Pros LLC · ${t("q_official")}`, `Origin: ${origin}`, `Destination: ${est ? est.dest.name : f.dest}`, `Pallets: ${f.pallets} · dry van 53' · ~${ld && ld.weight_lb ? num(ld.weight_lb) : "30,000"} lb · general merchandise`, ld ? `Load: ${ld.id}` : null].filter(Boolean).join("\n");
       const waText = (lang === "es" ? "Hola, quiero la cotización oficial de flete.\n" : "Hi, I'd like the official freight quote.\n") + summary;
       html += `<div class="official"><h3>${esc(t("q_official"))}</h3>` + (seller
@@ -619,7 +636,7 @@
       const subject = `LEAD | ${f.name} | ${f.city}`;
       const body = ["LEAD", `Nombre: ${f.name}`, `WhatsApp: ${f.phone}`, `Ciudad: ${f.city}`, `Compra: ${f.buy}`, `Presupuesto USD: ${f.budget || "-"}`, `Idioma: ${lang}`, `Fuente: sitio web ${new Date().toISOString().slice(0, 10)}`].join("\n");
       const wa = waLink((lang === "es" ? "Hola, quiero entrar a la lista de compradores.\n" : "Hi, I want to join the buyer list.\n") + body);
-      const mail = "mailto:" + DATA.contact.leads_email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      const mail = mailLink(subject, body, DATA.contact.leads_email);
       const out = document.getElementById("lead-out");
       out.innerHTML = `<div class="notice ok"><p style="margin:0 0 .6rem">${esc(t("lead_done"))}</p><div style="display:grid;gap:.5rem"><a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${esc(t("f_send_wa"))}</a><a class="btn btn-line" href="${mail}">${esc(t("f_send_mail"))}</a></div></div>`;
       out.scrollIntoView({ block: "nearest" });
