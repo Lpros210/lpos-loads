@@ -52,7 +52,7 @@ p { margin: 0 0 1em; }
 .hdr-actions { margin-left: auto; display: flex; gap: .5rem; align-items: center; }
 .nav ~ .hdr-actions { margin-left: 0; }
 .lang { display: inline-flex; border: 1px solid #555; border-radius: 999px; overflow: hidden; }
-.lang button { background: transparent; color: #ddd; border: 0; padding: .35rem .7rem; cursor: pointer; font-weight: 600; font-size: .85rem; min-height: 36px; }
+.lang button { background: transparent; color: #ddd; border: 0; padding: .35rem .7rem; cursor: pointer; font-weight: 600; font-size: .85rem; min-height: 44px; }
 .lang button[aria-pressed="true"] { background: #fff; color: var(--black); }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 46px; padding: .6rem 1.1rem; border-radius: 8px; border: 1px solid transparent; font-weight: 700; text-decoration: none; cursor: pointer; transition: background .15s, transform .05s; }
 .btn:active { transform: translateY(1px); }
@@ -64,7 +64,7 @@ p { margin: 0 0 1em; }
 .btn-line:hover { border-color: var(--ink); }
 .btn-wa { background: #1fa855; color: #fff; }
 .btn-wa:hover { background: #178a45; }
-.btn-sm { min-height: 38px; padding: .4rem .8rem; font-size: .9rem; }
+.btn-sm { min-height: 44px; padding: .4rem .8rem; font-size: .9rem; }
 .btn-block { width: 100%; }
 @media (min-width: 860px) { .nav { display: flex; } }
 
