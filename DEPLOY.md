@@ -1,6 +1,6 @@
 # Publish the LPOS site (2 commands, ~1 minute)
 
-The site is staged and committed in this folder (`work/lpos-loads-pages`, branch `main`, commit fbebcd7 (legal pages, E2E 11/11, pricing floors, Pacas Amazon, trust strip)).
+The site is staged and committed in this folder (`work/lpos-loads-pages`, branch `main`, commit 7d20a49 (Open WhatsApp CTAs in new tab)).
 GitHub CLI is already logged in as **Lpros210**. Claude's auto-mode classifier blocks the publish
 command, so run these yourself from this folder (or allow `gh repo create` / `gh api` in Claude's
 Bash permission rules and say "publish the site").
