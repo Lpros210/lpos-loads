@@ -14,9 +14,11 @@ sitemap.xml regen note already in that file).
 """
 import json, os, re
 
+from site_config import PHONE_E164
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://lpros210.github.io/lpos-loads/"
-WA = "https://wa.me/13239613868"
+WA = "https://wa.me/" + PHONE_E164
 
 with open(os.path.join(ROOT, "data", "loads.json"), encoding="utf-8") as f:
     LOADS = json.load(f)
@@ -28,7 +30,7 @@ ORG = {
     "name": "Liquidation Pros LLC",
     "url": BASE,
     "image": BASE + "assets/photos/sample/walmart-01.jpg",
-    "telephone": "+13239613868",
+    "telephone": "+" + PHONE_E164,
     "email": "juan@lpros.biz",
     "priceRange": "$$",
     "address": {
@@ -53,7 +55,7 @@ ORG = {
     "contactPoint": [{
         "@type": "ContactPoint",
         "contactType": "sales",
-        "telephone": "+13239613868",
+        "telephone": "+" + PHONE_E164,
         "url": WA,
         "areaServed": ["US", "MX"],
         "availableLanguage": ["Spanish", "English"],

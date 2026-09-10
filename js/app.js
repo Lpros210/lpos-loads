@@ -2,7 +2,10 @@
 (function () {
   "use strict";
 
-  /* WhatsApp number for every button/link on the site (E.164, no "+"). Taken from BOL records — CONFIRM with Juan before publishing. */
+  /* WhatsApp number for every button/link on the site (E.164, no "+"). Taken from BOL records — CONFIRM with Juan before publishing.
+     Single source of truth is tools/site_config.py (PHONE_E164) — the static JSON-LD in every
+     page's <script type="application/ld+json"> blocks is generated from that file by
+     tools/gen_seo.py. This constant has no build step, so keep it matching PHONE_E164 by hand. */
   const WHATSAPP = "13239613868";
   const FREIGHTQUOTE_URL = "https://www.freightquote.com/"; // no-signup instant quote; URL params not verified, so we give a copyable summary
 
