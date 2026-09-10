@@ -5,6 +5,9 @@
   <url><loc>https://lpros210.github.io/lpos-loads/cotizar.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/oferta.html</loc><changefreq>weekly</changefreq><priority>0.4</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/preguntas.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/contacto.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/privacidad.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/terminos.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=WLMRT-OF4-0M1G</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=WLMRT-OTN-84RC</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=WLMRT-ONA-GHFP</loc><changefreq>daily</changefreq><priority>0.8</priority></url>

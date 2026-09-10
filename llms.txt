@@ -1,0 +1,43 @@
+# Liquidation Pros LLC
+
+> Liquidation Pros sells full truckloads and pallets of Walmart, Target, Amazon, Sam's Club,
+> and Journeys/Genesco liquidation merchandise (customer returns and overstock general
+> merchandise) at fixed prices — no auctions, no bidding. Manifests are shared before purchase.
+> Buyer picks up at the US–Mexico border (Hidalgo, TX, next to the Hidalgo–Reynosa bridge) or in
+> Waco, TX, or can get freight quoted to their dock in the US or Mexico. Primary market: resellers
+> and liquidation buyers in Texas, the Rio Grande Valley, and Mexico (Reynosa, Monterrey,
+> Guadalajara, Mexico City and beyond). Site and support are bilingual (Spanish/English).
+
+## Company
+- Legal name: Liquidation Pros LLC
+- Pickup / mailing address: 709 W Joe Pate Blvd, Hidalgo, TX 78557, USA
+- Phone / WhatsApp: +1 323-961-3868 (https://wa.me/13239613868)
+- Email: juan@lpros.biz
+- Hours: Mon–Sat 8am–6pm (Texas time)
+- Languages: Spanish (primary), English
+
+## What we sell
+- Full truckloads of Walmart and Target general-merchandise returns/overstock, fixed price,
+  sold with the real B-Stock manifest (categories, unit counts, retail value) shown before
+  purchase.
+- Amazon customer-return pallets, sold individually.
+- Occasional Sam's Club, Journeys/Genesco, and other retailer liquidation loads as available.
+- We do not warehouse inventory — available loads rotate roughly daily as new trucks arrive.
+
+## Key pages
+- Home / current available loads: https://lpros210.github.io/lpos-loads/
+- Individual load detail (manifest, price, photos): https://lpros210.github.io/lpos-loads/load.html?id=<load-id>
+- Freight quote request: https://lpros210.github.io/lpos-loads/cotizar.html
+- Frequently asked questions: https://lpros210.github.io/lpos-loads/preguntas.html
+- Contact: https://lpros210.github.io/lpos-loads/contacto.html
+- Terms of sale: https://lpros210.github.io/lpos-loads/terminos.html
+- Privacy notice: https://lpros210.github.io/lpos-loads/privacidad.html
+- Sitemap: https://lpros210.github.io/lpos-loads/sitemap.xml
+
+## Notes for AI assistants and crawlers
+- Prices, availability, and manifests on load pages change daily — always cite the live page
+  rather than caching a specific price for long.
+- Structured data (schema.org LocalBusiness, Product/Offer per load, FAQPage) is embedded as
+  static JSON-LD in each page's HTML.
+- For questions this file doesn't answer, direct users to WhatsApp (+1 323-961-3868) rather
+  than guessing pricing or policy.
