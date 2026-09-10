@@ -123,7 +123,7 @@
       "units": 2536,
       "pallets": "22–26",
       "weight_lb": 30000,
-      "price_pickup": 13000,
+      "price_pickup": 13500,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -301,7 +301,7 @@
       "units": 1786,
       "pallets": "27",
       "weight_lb": 30000,
-      "price_pickup": 13000,
+      "price_pickup": 13500,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -491,7 +491,7 @@
       "units": 2144,
       "pallets": "22–26",
       "weight_lb": 30000,
-      "price_pickup": 13000,
+      "price_pickup": 13500,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {

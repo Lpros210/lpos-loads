@@ -72,10 +72,14 @@
       faqp_cta_h: "¿Otra pregunta?", faqp_cta_p: "Escríbenos por WhatsApp y te respondemos directo.", faqp_cta_btn: "Preguntar por WhatsApp",
       faqp_t_manifests: "Manifiestos", faqp_t_pricing: "Precios y depósitos", faqp_t_freight: "Flete y cotizaciones",
       faqp_t_pickup: "Recolección en Hidalgo / Waco, TX", faqp_t_payment: "Formas de pago", faqp_t_timing: "Disponibilidad",
+      faqp_t_border: "Recoja en la frontera",
+      border_h: "Recoja en la frontera / Border pickup",
+      border_p: "Recolección en 709 W Joe Pate Blvd, Hidalgo, TX 78557 — a un paso del puente Hidalgo–Reynosa. El flete arreglado por el vendedor en estas rutas cortas de Texas puede costar $4–7 por milla; recogiendo usted mismo en la frontera, cargas comparables corren más cerca de $2 por milla. Antes de cruzar tenga listo: identificación del chofer, transportista y placas, ventana de recolección confirmada, comprobante de pago recibido, RFC del exportador, pedimento de exportación y persona de contacto en sitio.",
+      border_line_h: "Recolección:", border_faq_link: "Ver la opción de recoger en la frontera para ahorrar en flete →",
       contact_h2: "Contacto", contact_sub: "Hablamos español e inglés. Respondemos más rápido por WhatsApp.",
       contact_wa: "WhatsApp", contact_phone: "Llamar", contact_mail: "Correo", contact_addr: "Bodega",
       contact_form_h: "Escríbanos", f_msg: "Mensaje",
-      ftr_about: "Liquidation Pros LLC compra tráileres de liquidación de Walmart, Target, Sam's Club y otros directamente en EE. UU. y los vende a mayoristas en Texas y México.",
+      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de Walmart, Target, JCPenney, Sam's Club y Journeys directamente en EE. UU. y los vende a mayoristas, saliendo de McAllen/Hidalgo, TX y Guadalajara.",
       ftr_fine: "Precios en USD, recogiendo en Texas salvo indicación. Mercancía vendida tal como está. Los nombres de tiendas son marcas de sus dueños y se usan solo para describir el origen.",
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
@@ -180,10 +184,14 @@
       faqp_cta_h: "Another question?", faqp_cta_p: "Message us on WhatsApp and we'll answer directly.", faqp_cta_btn: "Ask on WhatsApp",
       faqp_t_manifests: "Manifests", faqp_t_pricing: "Pricing & Deposits", faqp_t_freight: "Freight & Quotes",
       faqp_t_pickup: "Pickup at Hidalgo / Waco, TX", faqp_t_payment: "Payment Methods", faqp_t_timing: "Timing / Availability",
+      faqp_t_border: "Border pickup",
+      border_h: "Recoja en la frontera / Border pickup",
+      border_p: "Pickup at 709 W Joe Pate Blvd, Hidalgo, TX 78557 — steps from the Hidalgo–Reynosa bridge. Seller-arranged freight on these short Texas lanes can run $4–7 per mile; picking up yourself at the border, comparable hauls run closer to $2 per mile. Before you cross, have ready: driver ID, carrier name and tractor/trailer plates, a confirmed pickup window, proof of payment received, exporter RFC, export pedimento or corresponding customs document, and an on-site contact to sign the packing list.",
+      border_line_h: "Pickup:", border_faq_link: "See the border pickup option to save on freight →",
       contact_h2: "Contact", contact_sub: "We speak Spanish and English. WhatsApp gets the fastest reply.",
       contact_wa: "WhatsApp", contact_phone: "Call", contact_mail: "Email", contact_addr: "Warehouse",
       contact_form_h: "Message us", f_msg: "Message",
-      ftr_about: "Liquidation Pros LLC buys Walmart, Target, Sam's Club and other liquidation truckloads directly in the US and sells them to wholesalers in Texas and Mexico.",
+      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from Walmart, Target, JCPenney, Sam's Club and Journeys directly in the US and sells them to wholesalers, shipping out of McAllen/Hidalgo, TX and Guadalajara.",
       ftr_fine: "Prices in USD, picked up in Texas unless stated. Merchandise sold as-is. Retailer names are trademarks of their owners and are used only to describe origin.",
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
@@ -328,6 +336,7 @@
       : `📍 ${esc(t("ship_pickup"))} ${esc(load.location.city)} · <a href="${href}#quote">${esc(t("quote"))}</a>`;
   }
   function money2(n) { return new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
+  function isBorderPickup(load) { return /hidalgo/i.test(load.location.city); }
 
   function renderHome() {
     const avail = DATA.loads.filter((l) => l.status === "available" && l.retailer !== "Amazon");
@@ -414,15 +423,21 @@
     { topic: "timing", q: { es: "¿Tienen mercancía disponible ahora mismo?", en: "Do you have merchandise available right now?" },
       a: { es: "Escríbanos por WhatsApp y le decimos exactamente qué tenemos disponible hoy — la disponibilidad cambia rápido porque no almacenamos las cargas.",
              en: "Message us on WhatsApp and we'll tell you exactly what's in and available today — availability changes fast since we don't warehouse loads." } },
+    { topic: "border", q: { es: "¿Puedo recoger directo en la frontera para ahorrar en flete?", en: "Can I pick up directly at the border to save on freight?" },
+      a: { es: "Sí — recolección en 709 W Joe Pate Blvd, Hidalgo, TX 78557, a un paso del puente Hidalgo–Reynosa. El flete arreglado por el vendedor en estas rutas cortas de Texas puede costar $4–7 por milla; recogiendo usted mismo en la frontera, cargas comparables corren más cerca de $2 por milla.",
+             en: "Yes — pickup is at 709 W Joe Pate Blvd, Hidalgo, TX 78557, steps from the Hidalgo–Reynosa bridge. Seller-arranged freight on these short Texas lanes can run $4–7 per mile; picking up yourself at the border, comparable hauls run closer to $2 per mile." } },
+    { topic: "border", q: { es: "¿Qué necesito para cruzar la carga a México como exportador?", en: "What do I need to cross the load into Mexico as the exporter?" },
+      a: { es: "Antes de que liberemos la carga tenga listo: identificación oficial del chofer, nombre de la transportista y placas del tractocamión/remolque, ventana de recolección confirmada, comprobante de pago recibido (wire o Zelle), RFC del exportador, pedimento de exportación o documento aduanal correspondiente, y una persona de contacto en sitio para firmar la lista de empaque.",
+             en: "Before we release the load, have ready: official driver ID, carrier name and tractor/trailer plates, a confirmed pickup window, proof of payment received (wire or Zelle), exporter RFC, export pedimento or the corresponding customs document, and an on-site contact to sign the packing list." } },
   ];
-  const FAQ_TOPICS = ["manifests", "pricing", "freight", "pickup", "payment", "timing"];
+  const FAQ_TOPICS = ["manifests", "pricing", "freight", "pickup", "border", "payment", "timing"];
   function renderFaqPage() {
     const root = document.getElementById("faqp-root");
     if (!root) return;
     root.innerHTML = FAQ_TOPICS.map((topic) => {
       const items = FAQS.filter((f) => f.topic === topic);
       if (!items.length) return "";
-      return `<div class="faq-group"><h2>${esc(t("faqp_t_" + topic))}</h2><div class="faq">` +
+      return `<div class="faq-group" id="faq-${esc(topic)}"><h2>${esc(t("faqp_t_" + topic))}</h2><div class="faq">` +
         items.map((f) => `<details><summary>${esc(L(f.q))}</summary><p>${esc(L(f.a))}</p></details>`).join("") +
         `</div></div>`;
     }).join("");
@@ -486,6 +501,7 @@
         <section class="block"><h2>${esc(t("condition_h"))}</h2><div class="cond"><p><b>${esc(t(condKey))}.</b> ${esc(t(condKey + "_p"))}</p></div></section>
         <section class="block"><h2>${esc(t("manifest_h"))}</h2>${manifest}</section>
         <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(load.location.name)}, ${esc(load.location.city)}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
+        <section class="block"><h2>${esc(t("border_h"))}</h2><div class="notice"><p>${isBorderPickup(load) ? esc(t("border_p")) : `${esc(t("border_line_h"))} ${esc(load.location.city)}. <a href="preguntas.html#faq-border">${esc(t("border_faq_link"))}</a>`}</p></div></section>
         <section class="block" id="quote"><h2>${esc(t("quote_h"))}</h2><div id="quote-widget"></div></section>
       </div>
       <aside class="side">
