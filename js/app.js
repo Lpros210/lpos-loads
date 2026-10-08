@@ -20,19 +20,19 @@
       sample_h: "Tráiler de muestra", sample_badge: "Muestra", sample_note_card: "Foto de muestra de un tráiler similar",
       video_h: "Video del tráiler",
       ship_seller: "Envío: lo controla el vendedor (cotiza aquí)", ship_pickup: "Recogida en",
-      quote_h: "Cotizar envío", quote_sub: "Estimado al instante con fletes reales que hemos pagado; después, la cotización oficial.",
-      q_load: "Carga", q_any_load: "Sin carga específica (sale de Hidalgo, TX)", q_dest: "Destino (ciudad, estado)", q_pallets: "Tarimas", q_btn: "Calcular estimado",
-      q_est: "Estimado de flete", q_based: "basado en", q_ships: "envíos reales", q_lane: "tramo de referencia", q_from: "desde",
-      q_disc: "Referencia histórica de fletes que pagamos en EE. UU.; no es una cotización. Cruce e importación a México no incluidos.",
-      q_mx: "Destino en México: el estimado cubre el tramo en EE. UU. hasta la frontera (Hidalgo / Reynosa). El tramo mexicano se cotiza aparte.",
-      q_mx_border: "Esta carga ya está en la frontera (Hidalgo, TX). El tramo mexicano se cotiza por WhatsApp.",
-      q_none: "No tenemos historial para ese destino. Pida la cotización oficial.",
+      quote_h: "Cotizar envío", quote_sub: "Pida la cotización oficial de flete — recogida y envío dentro de EE. UU. solamente.",
+      q_load: "Carga", q_any_load: "Sin carga específica (sale de Hidalgo, TX)", q_dest: "Código postal (EE. UU.)", q_dest_hint: "Solo destinos en EE. UU. — no enviamos a México.", q_pallets: "Tarimas", q_btn: "Pedir cotización",
+      q_generic: "El flete varía según destino y transportista — pida la cotización oficial abajo. No mostramos un estimado en dólares porque los fletes cambian seguido.",
       q_official: "Cotización oficial", q_fq: "Cotizar en Freightquote.com (sin registro)", q_fq_p: "Copie este resumen y péguelo en el cotizador:",
       q_copy: "Copiar resumen", q_copied: "Copiado ✓",
       q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor. Le confirmamos el precio en 1 hora en horario de oficina.",
       q_wa_lpos_p: "¿Prefiere que lo coticemos nosotros? Escríbanos y le respondemos en 1 hora.",
-      q_public: "Estimado público — sin envíos propios aún",
-      q_mx_border_crossing: "Cruce y pedimento a cargo del comprador",
+      mx_ref_h: "¿Envía a México?", mx_ref_p: "Liquidation Pros solo recoge/envía dentro de EE. UU. Si necesita mover la mercancía a México, usted organiza su propio flete — estas empresas manejan cruces fronterizos EE. UU.–México por Laredo. No estamos afiliados con ellas y no respondemos por su servicio, precio ni ningún problema con el cruce.",
+      mx_ref_rxo: "transportista que ya hemos usado; opera instalación de cruce fronterizo cerca del World Trade Bridge en Laredo.",
+      mx_ref_ryder: "instalación en Laredo y patio en Nuevo Laredo.",
+      mx_ref_mallory: "oficina en Laredo, ~28 años en transporte y aduana transfronteriza.",
+      mx_ref_usat: "servicio transfronterizo en Laredo con socios de agencia aduanal.",
+      mx_ref_disclaimer: "Empresas que pueden ayudar, según su propia información pública — no es una recomendación ni garantía.",
       nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_guide: "Guía", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
       hero_h1: "Tráileres completos de liquidación, a precio fijo. Sin subastas.",
@@ -56,10 +56,14 @@
       how1_h: "Vea la carga", how1_p: "Unidades, tarimas, condición, ubicación y precio fijo en la misma pantalla.",
       how2_h: "Reserve o compre", how2_p: "Reservar aparta la carga 24 h mientras confirma pago. Comprar ahora la cierra.",
       how3_h: "Pague", how3_p: "Transferencia, wire o depósito. Le enviamos factura de Zoho al confirmar.",
-      how4_h: "Recoja o se la enviamos", how4_p: "Recoja con su transportista o pídanos flete a Reynosa, Monterrey, Guadalajara o CDMX.",
+      how4_h: "Recoja o se la enviamos", how4_p: "Recoja con su transportista o pídanos flete a su bodega en EE. UU. No enviamos a México — vea opciones de transportistas de cruce fronterizo si lo necesita.",
       wait_h2: "Lista de espera de compradores", wait_sub: "Las cargas nuevas se avisan primero a la lista. Díganos qué busca y le escribimos por WhatsApp cuando llegue algo que le sirva.",
       f_name: "Nombre", f_company: "Empresa (opcional)", f_phone: "WhatsApp / teléfono", f_email: "Correo (opcional)", f_city: "Ciudad de entrega",
       notify_email: "Correo electrónico", notify_submit: "Avíseme por correo",
+      other_cat_h: "Otras categorías", other_cat_sub: "Agotado por ahora. Deje su correo y le avisamos cuando haya disponibilidad.",
+      status_soldout: "Agotado",
+      cat_walmart_title: "Mercancía general Walmart", cat_walmart_desc: "Tráileres completos de devoluciones y sobrantes Walmart. Disponibilidad variable — por ahora agotado.",
+      cat_amazon_title: "Pacas de devoluciones Amazon", cat_amazon_desc: "Tarimas de devoluciones de clientes Amazon, vendidas por pieza. Por ahora agotado.",
       f_retailers: "Qué le interesa", f_budget: "Presupuesto por tráiler (USD)", f_notes: "Comentarios",
       f_consent: "Acepto que Liquidation Pros me contacte por WhatsApp o correo sobre cargas disponibles.",
       f_submit_wait: "Entrar a la lista", f_send_wa: "Enviar por WhatsApp", f_send_mail: "Enviar por correo",
@@ -85,7 +89,7 @@
       contact_h2: "Contacto", contact_sub: "Hablamos español e inglés. Respondemos más rápido por WhatsApp.",
       contact_wa: "WhatsApp", contact_phone: "Llamar", contact_mail: "Correo", contact_addr: "Bodega",
       contact_form_h: "Escríbanos", f_msg: "Mensaje",
-      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de las principales fuentes de liquidación directamente en EE. UU. y los vende a mayoristas, saliendo de Hidalgo y Waco, TX y de Guadalajara.",
+      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de las principales fuentes de liquidación directamente en EE. UU. y los vende a mayoristas, con recolección en Hidalgo y Waco, TX.",
       ftr_fine: "Precios en USD, recogiendo en Texas salvo indicación. Mercancía vendida tal como está. Los nombres de tiendas son marcas de sus dueños y se usan solo para describir el origen.",
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
@@ -117,7 +121,7 @@
       cond_customer_returns_p: "Pacas de devoluciones de clientes: ropa, calzado y mercancía general mezclada, sin clasificar. Se vende por tarima, precio fijo.",
       returns_h: "Pacas de devoluciones", returns_sub: "Devoluciones de clientes por tarima — ropa, calzado y mercancía general mezclada. Precio fijo por tarima.",
       pickup_h: "Recogida en", pickup_p: "Usted o su transportista cargan en la ubicación indicada. Cita previa.",
-      delivered_h: "Puesto en su bodega", delivered_p: "Cotizamos flete a la frontera o al interior de México. Diga su ciudad.",
+      delivered_h: "Puesto en su bodega", delivered_p: "Cotizamos flete a su bodega en EE. UU. Diga su ciudad. No enviamos a México.",
       fine_buybox: "Precio fijo por tráiler completo, USD, sin impuesto de venta de EE. UU. Sin comisiones de plataforma.",
       wa_open: "Se abrirá WhatsApp con el mensaje listo.", mail_open: "Se abrirá su correo con el mensaje listo.",
       dlg_reserve: "Reservar esta carga", dlg_buy: "Comprar esta carga", dlg_quote: "Cotizar flete", dlg_wait: "Lista de espera",
@@ -135,19 +139,19 @@
       sample_h: "Sample truck", sample_badge: "Sample", sample_note_card: "Sample photo of a similar trailer",
       video_h: "Trailer video",
       ship_seller: "Shipping: seller-controlled (quote here)", ship_pickup: "Pickup in",
-      quote_h: "Shipping quote", quote_sub: "Instant estimate from real freight we have paid; then the official quote.",
-      q_load: "Load", q_any_load: "No specific load (ships from Hidalgo, TX)", q_dest: "Destination (city, state)", q_pallets: "Pallets", q_btn: "Estimate",
-      q_est: "Freight estimate", q_based: "based on", q_ships: "real shipments", q_lane: "reference lane", q_from: "from",
-      q_disc: "Historical reference from freight we paid in the US; not a quote. Mexico border crossing and import not included.",
-      q_mx: "Mexico destination: the estimate covers the US leg to the border (Hidalgo / Reynosa). The Mexican leg is quoted separately.",
-      q_mx_border: "This load is already at the border (Hidalgo, TX). The Mexican leg is quoted on WhatsApp.",
-      q_none: "No history for that destination. Ask for the official quote.",
+      quote_h: "Shipping quote", quote_sub: "Request the official freight quote — pickup and shipping within the US only.",
+      q_load: "Load", q_any_load: "No specific load (ships from Hidalgo, TX)", q_dest: "ZIP code (US)", q_dest_hint: "US destinations only — we do not ship to Mexico.", q_pallets: "Pallets", q_btn: "Request quote",
+      q_generic: "Freight varies by destination and carrier — request the official quote below. We don't show a dollar estimate here because freight costs change often.",
       q_official: "Official quote", q_fq: "Quote on Freightquote.com (no signup)", q_fq_p: "Copy this summary and paste it into the quote tool:",
       q_copy: "Copy summary", q_copied: "Copied ✓",
       q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller. We confirm the price within 1 hour during office hours.",
       q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
-      q_public: "Public estimate — no shipments yet",
-      q_mx_border_crossing: "Border crossing and customs clearance borne by buyer",
+      mx_ref_h: "Shipping to Mexico?", mx_ref_p: "Liquidation Pros only picks up/ships within the US. If you need to move the merchandise into Mexico, you arrange your own freight — these companies handle US–Mexico cross-border shipping via Laredo. We are not affiliated with them and are not responsible for their service, pricing, or any issues with cross-border delivery.",
+      mx_ref_rxo: "a carrier we've used before; runs a cross-border facility near the World Trade Bridge in Laredo.",
+      mx_ref_ryder: "Laredo facility plus a Nuevo Laredo yard.",
+      mx_ref_mallory: "Laredo office, ~28 years in cross-border trucking and customs.",
+      mx_ref_usat: "Laredo transborder service with customs-brokerage partners.",
+      mx_ref_disclaimer: "Companies that may be able to help, per their own public information — not an endorsement or guarantee.",
       nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_guide: "Guide", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
       hero_h1: "Full liquidation truckloads at a fixed price. No auctions.",
@@ -171,10 +175,14 @@
       how1_h: "Look at the load", how1_p: "Units, pallets, condition, location and fixed price on one screen.",
       how2_h: "Reserve or buy", how2_p: "Reserve holds the load 24 h while you confirm payment. Buy now closes it.",
       how3_h: "Pay", how3_p: "Wire, ACH or deposit. We send a Zoho invoice on confirmation.",
-      how4_h: "Pick up or we ship", how4_p: "Pick up with your carrier or ask us for freight to Reynosa, Monterrey, Guadalajara or CDMX.",
+      how4_h: "Pick up or we ship", how4_p: "Pick up with your carrier or ask us for freight to your US warehouse. We don't ship to Mexico — see cross-border carrier options if you need one.",
       wait_h2: "Buyer waitlist", wait_sub: "New loads go to the waitlist first. Tell us what you want and we message you on WhatsApp when a fit lands.",
       f_name: "Name", f_company: "Company (optional)", f_phone: "WhatsApp / phone", f_email: "Email (optional)", f_city: "Delivery city",
       notify_email: "Email address", notify_submit: "Notify me by email",
+      other_cat_h: "Other categories", other_cat_sub: "Sold out for now. Leave your email and we'll notify you when available.",
+      status_soldout: "Sold out",
+      cat_walmart_title: "Walmart general merchandise", cat_walmart_desc: "Full truckloads of Walmart returns and overstock. Availability varies — sold out for now.",
+      cat_amazon_title: "Amazon customer-return pallets", cat_amazon_desc: "Amazon customer-return pallets, sold by the piece. Sold out for now.",
       f_retailers: "What you want", f_budget: "Budget per truckload (USD)", f_notes: "Notes",
       f_consent: "I agree that Liquidation Pros may contact me on WhatsApp or email about available loads.",
       f_submit_wait: "Join the waitlist", f_send_wa: "Send via WhatsApp", f_send_mail: "Send via email",
@@ -200,7 +208,7 @@
       contact_h2: "Contact", contact_sub: "We speak Spanish and English. WhatsApp gets the fastest reply.",
       contact_wa: "WhatsApp", contact_phone: "Call", contact_mail: "Email", contact_addr: "Warehouse",
       contact_form_h: "Message us", f_msg: "Message",
-      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from major retail liquidation sources directly in the US and sells them to wholesalers, shipping out of Hidalgo and Waco, TX and Guadalajara.",
+      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from major retail liquidation sources directly in the US and sells them to wholesalers, with pickup in Hidalgo and Waco, TX.",
       ftr_fine: "Prices in USD, picked up in Texas unless stated. Merchandise sold as-is. Retailer names are trademarks of their owners and are used only to describe origin.",
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
@@ -232,7 +240,7 @@
       cond_customer_returns_p: "Customer-return pallets: clothing, footwear and general merchandise mixed together, unsorted. Sold per pallet, fixed price.",
       returns_h: "Return Pallets", returns_sub: "Customer returns sold per pallet — mixed clothing, footwear and general merchandise. Fixed price per pallet.",
       pickup_h: "Picked up at", pickup_p: "You or your carrier load at the listed location. By appointment.",
-      delivered_h: "Delivered to your warehouse", delivered_p: "We quote freight to the border or inland Mexico. Tell us your city.",
+      delivered_h: "Delivered to your warehouse", delivered_p: "We quote freight to your US warehouse. Tell us your city. We do not ship to Mexico.",
       fine_buybox: "Fixed price per full truckload, USD, no US sales tax. No platform fees.",
       wa_open: "WhatsApp will open with the message ready.", mail_open: "Your email app will open with the message ready.",
       dlg_reserve: "Reserve this load", dlg_buy: "Buy this load", dlg_quote: "Shipping quote", dlg_wait: "Waitlist",
@@ -367,11 +375,11 @@
     return `<div class="sourcing"><p class="sourcing-head">${head}</p><div class="sourcing-grid">` +
       items.map((i) => `<article class="src-card"><span class="pill pill-warn">${tag}</span><div class="src-kind">${i[0]}</div><h3>${i[1]}</h3><p>${i[2]}</p></article>`).join("") +
       `</div><p class="sourcing-note">${note}</p>
-      <form class="form notify-form" id="f-notify" novalidate>
+      <form class="form notify-form" novalidate>
         <label>${esc(t("notify_email"))}<input type="email" name="email" required placeholder="tu@email.com" autocomplete="email"></label>
         <button class="btn btn-red" type="submit">${esc(cta)}</button>
       </form>
-      <div id="notify-out"></div></div>`;
+      <div class="notify-out"></div></div>`;
   }
 
   function renderHome() {
@@ -632,17 +640,29 @@
   // visitor sends it themselves via WhatsApp or email. Re-bound on every
   // renderHome() call since the form is only in the DOM when there are 0
   // available loads (recreated by innerHTML each render).
+  // One handler for every ".notify-form" on the page (the empty-inventory
+  // form plus one per sold-out category card). Each form carries
+  // data-category so we know which list a signup belongs to; output goes
+  // to the next sibling ".notify-out". Bound once per form node -- the
+  // empty-inventory form is recreated by innerHTML on every renderHome(),
+  // but the category-card forms are static markup that would otherwise
+  // get a duplicate listener on every language toggle re-render.
   function bindNotify() {
-    const form = document.getElementById("f-notify");
-    if (!form) return;
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-      const f = Object.fromEntries(new FormData(form).entries());
-      saveLocal("lpos.notify", { ts: new Date().toISOString(), lang, ...f });
-      const subject = (lang === "es" ? "Avíseme de la próxima carga" : "Notify me of the next load") + " · Liquidation Pros";
-      const body = `${subject}\n\n${t("notify_email")}: ${f.email}`;
-      showSendLinks(document.getElementById("notify-out"), subject, body);
+    document.querySelectorAll(".notify-form").forEach((form) => {
+      if (form.dataset.bound) return;
+      form.dataset.bound = "1";
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!form.reportValidity()) return;
+        const f = Object.fromEntries(new FormData(form).entries());
+        const category = form.dataset.category || "general";
+        saveLocal("lpos.notify", { ts: new Date().toISOString(), lang, category, ...f });
+        const catLabel = category === "walmart" ? "Walmart" : category === "amazon" ? "Amazon" : (lang === "es" ? "próxima carga" : "next load");
+        const subject = (lang === "es" ? `Avíseme: ${catLabel}` : `Notify me: ${catLabel}`) + " · Liquidation Pros";
+        const body = `${subject}\n\n${t("notify_email")}: ${f.email}`;
+        const out = form.nextElementSibling;
+        if (out) showSendLinks(out, subject, body);
+      });
     });
   }
 
@@ -670,50 +690,36 @@
   }
 
 
-  /* ---------- shipping quote (lanes.json = real freight we paid; nearest lane by distance) ---------- */
-  // ponytail: road miles hard-coded per city; add a city here to extend the datalist. Upgrade path: geocode + haversine.
-  const DEST = { // [miles from Hidalgo TX, miles from Waco TX, country]
-    "Monterrey, NL": [150, 540, "MX"], "Reynosa, Tamps": [8, 400, "MX"], "Guadalajara, Jal": [600, 990, "MX"], "CDMX": [640, 1030, "MX"],
-    "San Luis Potosí, SLP": [430, 820, "MX"], "Saltillo, Coah": [200, 590, "MX"], "Querétaro, Qro": [560, 950, "MX"], "Matamoros, Tamps": [60, 460, "MX"], "Nuevo Laredo, Tamps": [160, 360, "MX"],
-    "Laredo, TX": [150, 350, "US"], "McAllen, TX": [10, 400, "US"], "Hidalgo, TX": [0, 400, "US"], "Houston, TX": [350, 185, "US"], "Dallas, TX": [500, 100, "US"], "San Antonio, TX": [240, 180, "US"], "Austin, TX": [320, 100, "US"],
-  };
-  const LANE_MILES = { "Hopkins, MN": 1450, "Orangeburg, SC": 1350, "Waxahachie, TX": 470, "Lenexa, KS": 950, "Fort Worth, TX": 500, "Grand Prairie, TX": 490, "Lancaster, TX": 1400, "Charlotte, NC": 1400 };
-  const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-  function findDest(input) {
-    const q = norm(input).split(",")[0].trim();
-    if (!q) return null;
-    const keys = Object.keys(DEST);
-    const k = keys.find((d) => norm(d).split(",")[0] === q) || keys.find((d) => norm(d).startsWith(q));
-    return k ? { name: k, hidalgo: DEST[k][0], waco: DEST[k][1], mx: DEST[k][2] === "MX" } : null;
-  }
-  function estimate(originCity, destInput, pallets) {
-    const d = findDest(destInput);
-    if (!d) return null;
-    const fromWaco = /waco/i.test(originCity);
-    let miles = fromWaco ? d.waco : d.hidalgo;
-    if (d.mx) miles = fromWaco ? DEST["Hidalgo, TX"][1] : 0; // US leg to the border only
-    const lanes = (DATA.lanes || []).filter((l) => LANE_MILES[l.origin] != null);
-    if (!lanes.length) return { dest: d, miles, none: true };
-    if (miles === 0) return { dest: d, miles, border: true };
-    const lane = lanes.reduce((a, b) => Math.abs(LANE_MILES[b.origin] - miles) < Math.abs(LANE_MILES[a.origin] - miles) ? b : a);
-    // ponytail: linear scaling by distance (clamped) and pallet count; lanes are full-truck prices with no pallet data
-    const ratio = Math.min(1.5, Math.max(0.5, miles / LANE_MILES[lane.origin]));
-    const pf = Math.min(1, Math.max(0.4, (Number(pallets) || 26) / 26));
-    const r50 = (n) => Math.round(n * ratio * pf / 50) * 50;
-    return { dest: d, miles, lane, lo: r50(lane.min), hi: r50(lane.max), n: lane.n, basis: lane.basis };
-  }
+  /* ---------- shipping quote ----------
+     R-NOMXFREIGHT: LPOS picks up/ships within the US only -- it does not arrange or
+     quote cross-border freight into Mexico, and this widget no longer shows an instant
+     dollar estimate (it was derived from a handful of historical lanes that don't
+     reflect current freight costs and actively misled buyers). It now only collects a
+     destination ZIP + pallet count as reference for the official human-quoted
+     WhatsApp/Freightquote path below. */
   function renderQuote(root, load) {
     if (!root) return;
     const loads = DATA.loads.filter((l) => l.status === "available");
-    const sel = !load ? `<label>${esc(t("q_load"))}<select name="load"><option value="">${esc(t("q_any_load"))}</option>${loads.map((l) => `<option value="${esc(l.id)}">${esc(l.retailer)} · ${esc(l.id)} · ${esc(l.location.city)}</option>`).join("")}</select></label>` : "";
+    const sel = !load ? `<label>${esc(t("q_load"))}<select name="load"><option value="">${esc(t("q_any_load"))}</option>${loads.map((l) => `<option value="${esc(l.id)}">${esc(L(l.program))} \u00b7 ${esc(l.id)} \u00b7 ${esc(l.location.city)}</option>`).join("")}</select></label>` : "";
     root.innerHTML = `<form class="form quote" novalidate>
       ${sel}
       <div class="row">
-        <label>${esc(t("q_dest"))} *<input name="dest" list="dest-list" required autocomplete="off" placeholder="Monterrey, NL"><datalist id="dest-list">${Object.keys(DEST).map((d) => `<option value="${esc(d)}">`).join("")}</datalist></label>
-        <label>${esc(t("q_pallets"))}<input name="pallets" type="number" min="1" max="30" inputmode="numeric" value="${load ? esc(String(load.pallets).split(/[–-]/).pop()) : 26}"></label>
+        <label>${esc(t("q_dest"))} *<input name="dest" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="78501" autocomplete="postal-code"><span class="hint">${esc(t("q_dest_hint"))}</span></label>
+        <label>${esc(t("q_pallets"))}<input name="pallets" type="number" min="1" max="30" inputmode="numeric" value="${load ? esc(String(load.pallets).split(/[\u2013-]/).pop()) : 26}"></label>
       </div>
       <button class="btn btn-red" type="submit">${esc(t("q_btn"))}</button>
-      <div id="q-out" aria-live="polite"></div></form>`;
+      <div id="q-out" aria-live="polite"></div></form>
+      <div class="mx-referral">
+        <h3>${esc(t("mx_ref_h"))}</h3>
+        <p>${esc(t("mx_ref_p"))}</p>
+        <ul>
+          <li><b>RXO</b> \u2014 ${esc(t("mx_ref_rxo"))}</li>
+          <li><b>Ryder</b> \u2014 ${esc(t("mx_ref_ryder"))}</li>
+          <li><b>Mallory Group</b> \u2014 ${esc(t("mx_ref_mallory"))}</li>
+          <li><b>USA Truck</b> \u2014 ${esc(t("mx_ref_usat"))}</li>
+        </ul>
+        <p class="hint">${esc(t("mx_ref_disclaimer"))}</p>
+      </div>`;
     const form = root.querySelector("form");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -722,20 +728,10 @@
       const ld = load || DATA.loads.find((l) => l.id === f.load) || null;
       const origin = ld ? ld.location.city : "Hidalgo, TX";
       const seller = ld ? ld.freight_control === "seller" : false;
-      const est = estimate(origin, f.dest, f.pallets);
       const out = form.querySelector("#q-out");
-      let html = "";
-      if (!est || est.none) html += `<div class="notice">${esc(t("q_none"))}</div>`;
-      else if (est.border) html += `<div class="notice">${esc(t("q_mx_border"))}</div>`;
-      else {
-        const isPublic = est.basis === "public_estimate" || est.n === 0;
-        html += `<div class="est">${isPublic ? `<div class="est-sub" style="color:var(--warn);margin-bottom:.5rem"><b>${esc(t("q_public"))}</b></div>` : ""}
-        <div class="est-main">${esc(t("q_est"))} ${esc(origin)} → ${esc(est.dest.name)}: <strong>${money(est.lo)} – ${money(est.hi)}</strong></div>
-        <div class="est-sub">${isPublic ? `${esc(t("q_public"))}` : `${esc(t("q_based"))} ${est.n} ${esc(t("q_ships"))}`} · ${esc(t("q_lane"))} ${esc(est.lane.origin)} → ${esc(est.lane.destination)} (≈${num(LANE_MILES[est.lane.origin])} mi) · ${esc(f.pallets)} ${esc(t("q_pallets").toLowerCase())}</div>
-        ${est.dest.mx ? `<div class="est-sub">${esc(t("q_mx"))}<br><b>${esc(t("q_mx_border_crossing"))}</b></div>` : ""}<div class="est-sub">${esc(t("q_disc"))}</div></div>`;
-      }
-      const summary = [`Liquidation Pros LLC · ${t("q_official")}`, `Origin: ${origin}`, `Destination: ${est ? est.dest.name : f.dest}`, `Pallets: ${f.pallets} · dry van 53' · ~${ld && ld.weight_lb ? num(ld.weight_lb) : "30,000"} lb · general merchandise`, ld ? `Load: ${ld.id}` : null].filter(Boolean).join("\n");
-      const waText = (lang === "es" ? "Hola, quiero la cotización oficial de flete.\n" : "Hi, I'd like the official freight quote.\n") + summary;
+      let html = `<div class="notice">${esc(t("q_generic"))}</div>`;
+      const summary = [`Liquidation Pros LLC \u00b7 ${t("q_official")}`, `Origin: ${origin}`, `Destination ZIP: ${f.dest}`, `Pallets: ${f.pallets} \u00b7 dry van 53' \u00b7 ~${ld && ld.weight_lb ? num(ld.weight_lb) : "30,000"} lb \u00b7 general merchandise`, ld ? `Load: ${ld.id}` : null].filter(Boolean).join("\n");
+      const waText = (lang === "es" ? "Hola, quiero la cotizaci\u00f3n oficial de flete.\n" : "Hi, I'd like the official freight quote.\n") + summary;
       html += `<div class="official"><h3>${esc(t("q_official"))}</h3>` + (seller
         ? `<p>${esc(t("q_wa_p"))}</p><a class="btn btn-wa" href="${waLink(waText)}" target="_blank" rel="noopener">${esc(t("q_wa"))}</a>`
         : `<p>${esc(t("q_fq_p"))}</p><textarea readonly rows="5" id="q-sum">${esc(summary)}</textarea>
@@ -747,10 +743,11 @@
         const ta = out.querySelector("#q-sum"); ta.select();
         (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).catch(() => document.execCommand("copy")).finally(() => { cp.textContent = t("q_copied"); });
       });
-      saveLocal("lpos.quotes", { ts: new Date().toISOString(), lang, origin, load: ld ? ld.id : null, ...f, est: est && est.lo != null ? [est.lo, est.hi] : null });
+      saveLocal("lpos.quotes", { ts: new Date().toISOString(), lang, origin, dest: f.dest, pallets: f.pallets, load: ld ? ld.id : null });
       out.scrollIntoView({ block: "nearest" });
     });
   }
+
 
   /* ---------- lead capture (hero): localStorage + WhatsApp + mailto leads@ ---------- */
   function bindLead() {

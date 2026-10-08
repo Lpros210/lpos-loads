@@ -277,7 +277,7 @@
           <label><span data-i18n="f_wa">WhatsApp</span> *<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+52 81 1234 5678"></label>
         </div>
         <div class="row">
-          <label><span data-i18n="f_city">Ciudad de entrega</span> *<input name="city" required placeholder="Monterrey, NL"></label>
+          <label><span data-i18n="f_city">Ciudad de entrega</span> *<input name="city" required placeholder="San Antonio, TX"></label>
           <label><span data-i18n="f_buy">Qué compra</span>
             <select name="buy"><option value="Mercancía general / General merchandise">Mercancía general / General merchandise</option><option value="Ropa / Clothing">Ropa / Clothing</option><option value="Zapatos / Shoes">Zapatos / Shoes</option><option value="HBA">HBA</option><option value="Muebles / Furniture">Muebles / Furniture</option><option value="Cualquiera / Any" data-i18n="any">Cualquiera</option></select></label>
         </div>
@@ -314,6 +314,34 @@
     <div class="wrap">
       <div class="sec-head"><div><h2 data-i18n="loads_h2">Cargas disponibles</h2><p data-i18n="loads_sub">Precio fijo por tráiler completo.</p></div><span class="pill pill-live" data-i18n="status_available">Disponible</span></div>
       <div class="grid" id="loads-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="other-cats">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 data-i18n="other_cat_h">Otras categorías</h2><p data-i18n="other_cat_sub">Agotado por ahora. Deje su correo y le avisamos cuando haya disponibilidad.</p></div></div>
+      <div class="sourcing-grid">
+        <article class="src-card">
+          <span class="pill pill-sold" data-i18n="status_soldout">Agotado</span>
+          <h3 data-i18n="cat_walmart_title">Mercancía general Walmart</h3>
+          <p data-i18n="cat_walmart_desc">Tráileres completos de devoluciones y sobrantes Walmart. Disponibilidad variable — por ahora agotado.</p>
+          <form class="form notify-form" data-category="walmart" novalidate>
+            <label><span data-i18n="notify_email">Correo electrónico</span><input type="email" name="email" required placeholder="tu@email.com" autocomplete="email"></label>
+            <button class="btn btn-red btn-sm" type="submit" data-i18n="notify_submit">Avíseme por correo</button>
+          </form>
+          <div class="notify-out"></div>
+        </article>
+        <article class="src-card">
+          <span class="pill pill-sold" data-i18n="status_soldout">Agotado</span>
+          <h3 data-i18n="cat_amazon_title">Pacas de devoluciones Amazon</h3>
+          <p data-i18n="cat_amazon_desc">Tarimas de devoluciones de clientes Amazon, vendidas por pieza. Por ahora agotado.</p>
+          <form class="form notify-form" data-category="amazon" novalidate>
+            <label><span data-i18n="notify_email">Correo electrónico</span><input type="email" name="email" required placeholder="tu@email.com" autocomplete="email"></label>
+            <button class="btn btn-red btn-sm" type="submit" data-i18n="notify_submit">Avíseme por correo</button>
+          </form>
+          <div class="notify-out"></div>
+        </article>
+      </div>
     </div>
   </section>
 
