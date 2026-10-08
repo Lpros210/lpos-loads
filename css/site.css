@@ -104,6 +104,10 @@ p { margin: 0 0 1em; }
 .sample-badge { position: absolute; right: .6rem; bottom: .6rem; }
 .sample-head { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; font-size: .85rem; color: var(--ink-2); margin-bottom: .5rem; }
 video { width: 100%; height: auto; border-radius: var(--radius); background: #000; }
+
+/* Real receiving video proof (home) */
+.video-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
 .card .ship { font-size: .85rem; color: var(--ink-2); }
 .card .ship a { font-weight: 650; }
 
