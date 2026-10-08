@@ -59,6 +59,7 @@
       how4_h: "Recoja o se la enviamos", how4_p: "Recoja con su transportista o pídanos flete a Reynosa, Monterrey, Guadalajara o CDMX.",
       wait_h2: "Lista de espera de compradores", wait_sub: "Las cargas nuevas se avisan primero a la lista. Díganos qué busca y le escribimos por WhatsApp cuando llegue algo que le sirva.",
       f_name: "Nombre", f_company: "Empresa (opcional)", f_phone: "WhatsApp / teléfono", f_email: "Correo (opcional)", f_city: "Ciudad de entrega",
+      notify_email: "Correo electrónico", notify_submit: "Avíseme por correo",
       f_retailers: "Qué le interesa", f_budget: "Presupuesto por tráiler (USD)", f_notes: "Comentarios",
       f_consent: "Acepto que Liquidation Pros me contacte por WhatsApp o correo sobre cargas disponibles.",
       f_submit_wait: "Entrar a la lista", f_send_wa: "Enviar por WhatsApp", f_send_mail: "Enviar por correo",
@@ -173,6 +174,7 @@
       how4_h: "Pick up or we ship", how4_p: "Pick up with your carrier or ask us for freight to Reynosa, Monterrey, Guadalajara or CDMX.",
       wait_h2: "Buyer waitlist", wait_sub: "New loads go to the waitlist first. Tell us what you want and we message you on WhatsApp when a fit lands.",
       f_name: "Name", f_company: "Company (optional)", f_phone: "WhatsApp / phone", f_email: "Email (optional)", f_city: "Delivery city",
+      notify_email: "Email address", notify_submit: "Notify me by email",
       f_retailers: "What you want", f_budget: "Budget per truckload (USD)", f_notes: "Notes",
       f_consent: "I agree that Liquidation Pros may contact me on WhatsApp or email about available loads.",
       f_submit_wait: "Join the waitlist", f_send_wa: "Send via WhatsApp", f_send_mail: "Send via email",
@@ -364,7 +366,12 @@
     const cta = es ? "Avíseme de la próxima carga" : "Notify me of the next load";
     return `<div class="sourcing"><p class="sourcing-head">${head}</p><div class="sourcing-grid">` +
       items.map((i) => `<article class="src-card"><span class="pill pill-warn">${tag}</span><div class="src-kind">${i[0]}</div><h3>${i[1]}</h3><p>${i[2]}</p></article>`).join("") +
-      `</div><p class="sourcing-note">${note}</p><a class="btn btn-red" href="#waitlist">${cta}</a></div>`;
+      `</div><p class="sourcing-note">${note}</p>
+      <form class="form notify-form" id="f-notify" novalidate>
+        <label>${esc(t("notify_email"))}<input type="email" name="email" required placeholder="tu@email.com" autocomplete="email"></label>
+        <button class="btn btn-red" type="submit">${esc(cta)}</button>
+      </form>
+      <div id="notify-out"></div></div>`;
   }
 
   function renderHome() {
@@ -376,6 +383,7 @@
     const sold = DATA.loads.filter((l) => l.status !== "available" && !isAmazon(l));
     const g = document.getElementById("loads-grid");
     if (g) g.innerHTML = avail.length ? avail.map(card).join("") : sourcingNext();
+    bindNotify();
     { const sec = document.getElementById("loads"); if (sec) { const pl = sec.querySelector(".sec-head .pill-live"), sp = sec.querySelector(".sec-head p"); if (pl) pl.style.display = avail.length ? "" : "none"; if (sp && !avail.length) sp.textContent = lang === "es" ? "Próximamente" : "Coming up"; } } // R3754: no green "Disponible" pill / fixed-price copy over an empty list
     const s = document.getElementById("sold-grid");
     if (s) s.innerHTML = sold.map(card).join("");
@@ -616,6 +624,26 @@
     out.innerHTML = `<div class="notice ok"><p style="margin:0 0 .6rem">${esc(t("form_saved"))}</p>
       <div style="display:grid;gap:.5rem"><a class="btn btn-wa" href="${waLink(body)}" target="_blank" rel="noopener">${esc(t("f_send_wa"))}</a><a class="btn btn-line" href="${mailLink(subject, body)}">${esc(t("f_send_mail"))}</a></div></div>`;
     out.scrollIntoView({ block: "nearest" });
+  }
+
+  // Simple email-only "notify me" capture for the empty-inventory state -- no
+  // budget/qualification fields, unlike the full waitlist form. Same no-backend
+  // pattern as every other form on this static site: saved locally, then the
+  // visitor sends it themselves via WhatsApp or email. Re-bound on every
+  // renderHome() call since the form is only in the DOM when there are 0
+  // available loads (recreated by innerHTML each render).
+  function bindNotify() {
+    const form = document.getElementById("f-notify");
+    if (!form) return;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const f = Object.fromEntries(new FormData(form).entries());
+      saveLocal("lpos.notify", { ts: new Date().toISOString(), lang, ...f });
+      const subject = (lang === "es" ? "Avíseme de la próxima carga" : "Notify me of the next load") + " · Liquidation Pros";
+      const body = `${subject}\n\n${t("notify_email")}: ${f.email}`;
+      showSendLinks(document.getElementById("notify-out"), subject, body);
+    });
   }
 
   function bindWaitlist() {
