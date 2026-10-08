@@ -12,7 +12,7 @@
   /* ---------- i18n dictionary (single source for both languages) ---------- */
   const T = {
     es: {
-      tagline: "Tráileres de liquidación · Texas → México",
+      tagline: "Tráileres de liquidación · Texas, EE. UU.",
       nav_quote: "Cotizar envío",
       lead_h2: "Entre a la lista de compradores", lead_sub: "Las cargas nuevas se avisan primero a la lista. Déjenos su WhatsApp y le escribimos cuando llegue algo que le sirva.",
       f_wa: "WhatsApp", f_buy: "Qué compra", lead_submit: "Entrar a la lista",
@@ -125,7 +125,7 @@
       any: "Cualquiera",
     },
     en: {
-      tagline: "Liquidation truckloads · Texas → Mexico",
+      tagline: "Liquidation truckloads · Texas, USA",
       nav_quote: "Shipping quote",
       lead_h2: "Join the buyer list", lead_sub: "New loads go to the list first. Leave your WhatsApp and we message you when a fit lands.",
       f_wa: "WhatsApp", f_buy: "What you buy", lead_submit: "Join the list",
@@ -240,9 +240,9 @@
   };
 
   /* ---------- state ---------- */
-  let lang = "es";
-  try { lang = localStorage.getItem("lpos.lang") || "es"; } catch (e) {}
-  if (lang !== "en") lang = "es"; // Spanish-first default; EN only when the buyer chose it
+  let lang = "en";
+  try { lang = localStorage.getItem("lpos.lang") || "en"; } catch (e) {}
+  if (lang !== "es") lang = "en"; // English-first default; ES only when the buyer chose it
   let DATA = null;
   const t = (k) => (T[lang] && T[lang][k]) || T.es[k] || k;
   const L = (obj) => (obj && typeof obj === "object" ? (obj[lang] || obj.es || "") : (obj || ""));
