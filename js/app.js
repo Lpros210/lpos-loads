@@ -107,6 +107,9 @@
       manifest_none: "Esta carga se vendió sin manifiesto por categoría. Categorías vistas en el tráiler:",
       cat: "Categoría", qty: "Unidades", retail: "Valor de tienda", note: "Nota",
       retail_note: "Valor de tienda ≠ precio de reventa.",
+      manifest_gate_p: "Vea el manifiesto completo por categoría dejando sus datos de contacto — así confirma que no es una plantilla genérica.",
+      manifest_gate_submit: "Ver manifiesto completo",
+      disclosure_card: "Pago antes de recolección. El flete corre por cuenta del comprador.", disclosure_link: "Ver FAQ de flete →",
       cond_returns_mixed: "Devoluciones y sobrantes sin revisar, mezclados",
       cond_returns_mixed_p: "Mercancía general de un centro de devoluciones: nuevo en caja, caja abierta y piezas dañadas mezcladas. Sin clasificar. Se vende el tráiler completo tal como está.",
       cond_salvage: "Salvage (dañado / caja abierta)",
@@ -220,6 +223,9 @@
       manifest_none: "This load sold without a category manifest. Categories seen in the truck:",
       cat: "Category", qty: "Units", retail: "Retail value", note: "Note",
       retail_note: "Retail value ≠ resale price.",
+      manifest_gate_p: "See the full category-by-category manifest by leaving your contact details — that way you can confirm it isn't a generic template.",
+      manifest_gate_submit: "View full manifest",
+      disclosure_card: "Payment due before pickup. Freight is the buyer's responsibility.", disclosure_link: "See freight FAQ →",
       cond_returns_mixed: "Unsorted returns and overstock, mixed",
       cond_returns_mixed_p: "General merchandise from a retail return center: new in box, open box and damaged pieces mixed together. Unsorted. Sold as a full truckload, as-is.",
       cond_salvage: "Salvage (damaged / open box)",
@@ -325,6 +331,7 @@
           <div>${esc(t("condition"))}: <b>${esc(t("cond_" + load.condition_code).split(" (")[0].split(",")[0])}</b></div>
         </div>
         <div class="ship">${shipLine(load, href)}</div>
+        <div class="disclosure">${esc(t("disclosure_card"))} <a href="preguntas.html#faq-freight">${esc(t("disclosure_link"))}</a></div>
         <div class="price">
           <div><strong>${money(load.price_pickup)}</strong><br><small>${esc(t("price_pickup_short"))}</small></div>
           <div class="unit">${perUnit ? `<b>${money2(perUnit)}</b><br><small>${esc(t("per_unit"))}</small>` : `<small>${esc(t("delivered_quote"))}</small>`}</div>
@@ -490,6 +497,44 @@
     });
   }
 
+  /* ---------- manifest gate: a real per-category manifest is a buyer-trust
+     signal (see FAQ: "is the manifest real or generic"), so gate it behind a
+     name+email+phone contact capture instead of a heavy compliance check.
+     Same no-backend pattern as every other form here: saveLocal() now,
+     fetch() later once Juan picks an endpoint (see
+     outputs/continuous-cto/SITE_LEAD_CAPTURE_FORMS_VS_WEBFORM_2026-09-29.md).
+     Unlocking once (any load) unlocks every manifest for the session. */
+  function manifestUnlocked() { try { return localStorage.getItem("lpos.manifest_unlocked") === "1"; } catch (e) { return false; } }
+  function manifestTable(load) {
+    return `<div class="table-wrap"><table><thead><tr><th>${esc(t("cat"))}</th><th class="num">${esc(t("qty"))}</th><th class="num">${esc(t("retail"))}</th><th>${esc(t("note"))}</th></tr></thead><tbody>${load.manifest.map((m) => `<tr><td>${esc(L(m.category))}</td><td class="num">${num(m.units)}</td><td class="num">${money(m.retail)}</td><td>${esc(L(m.note))}</td></tr>`).join("")}</tbody></table></div><p class="hint" style="color:var(--muted);font-size:.8rem;margin-top:.5rem">${esc(t("retail_note"))}</p>`;
+  }
+  function manifestGate(load) {
+    const cats = (load.manifest || []).map((m) => esc(L(m.category))).join(", ");
+    return `<div class="notice"><p style="margin:0 0 .6rem">${esc(t("manifest_gate_p"))}</p>
+      ${cats ? `<p class="hint" style="color:var(--muted);font-size:.85rem;margin:0 0 .8rem">${esc(t("cat"))}: ${cats}</p>` : ""}
+      <form class="form" id="f-manifest-gate" novalidate>
+        <div class="row">
+          <label>${esc(t("f_name"))} *<input name="name" required autocomplete="name"></label>
+          <label>${esc(t("f_phone"))} *<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+        </div>
+        <label>${esc(t("f_email"))} *<input name="email" type="email" required autocomplete="email"></label>
+        <label class="check"><input type="checkbox" name="consent" required><span>${esc(t("f_consent"))}</span></label>
+        <button class="btn btn-red" type="submit">${esc(t("manifest_gate_submit"))}</button>
+      </form></div>`;
+  }
+  function bindManifestGate(load) {
+    const form = document.getElementById("f-manifest-gate");
+    if (!form) return;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const f = Object.fromEntries(new FormData(form).entries());
+      saveLocal("lpos.manifest_leads", { ts: new Date().toISOString(), lang, load: load.id, ...f });
+      try { localStorage.setItem("lpos.manifest_unlocked", "1"); } catch (err) {}
+      renderDetail();
+    });
+  }
+
   /* ---------- load detail ---------- */
   function renderDetail() {
     const id = new URLSearchParams(location.search).get("id");
@@ -515,7 +560,7 @@
 
     let manifest;
     if (load.manifest && load.manifest.length) {
-      manifest = `<div class="table-wrap"><table><thead><tr><th>${esc(t("cat"))}</th><th class="num">${esc(t("qty"))}</th><th class="num">${esc(t("retail"))}</th><th>${esc(t("note"))}</th></tr></thead><tbody>${load.manifest.map((m) => `<tr><td>${esc(L(m.category))}</td><td class="num">${num(m.units)}</td><td class="num">${money(m.retail)}</td><td>${esc(L(m.note))}</td></tr>`).join("")}</tbody></table></div><p class="hint" style="color:var(--muted);font-size:.8rem;margin-top:.5rem">${esc(t("retail_note"))}</p>`;
+      manifest = manifestUnlocked() ? manifestTable(load) : manifestGate(load);
     } else if (load.manifest_status === "csv_attached_in_zoho") {
       manifest = `<div class="notice">${esc(t("manifest_pending"))} <a data-wa="${esc((lang === "es" ? "Hola, me interesa el manifiesto de la carga " : "Hi, I'd like the manifest for load ") + load.id)}" href="#">WhatsApp →</a></div>`;
     } else {
@@ -574,6 +619,7 @@
     }));
     document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => openDialog(b.dataset.open, load)));
     if (location.hash === "#reserve" && isAvail) setTimeout(() => openDialog("reserve", load), 200);
+    bindManifestGate(load);
   }
 
   /* ---------- dialogs / forms (localStorage + WhatsApp/mailto) ---------- */
