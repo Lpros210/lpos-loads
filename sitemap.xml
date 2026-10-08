@@ -9,5 +9,10 @@
   <url><loc>https://lpros210.github.io/lpos-loads/contacto.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/privacidad.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/terminos.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=LP-XAJI</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=LP-0Y6D</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=LP-PBHS</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=LP-AHXT</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=LP-HV3A</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://lpros210.github.io/lpos-loads/load.html?id=LP-WYIU</loc><changefreq>weekly</changefreq><priority>0.3</priority></url>
 </urlset>

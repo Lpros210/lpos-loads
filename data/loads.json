@@ -97,6 +97,241 @@
   },
   "loads": [
     {
+      "id": "LP-XAJI",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 10267,
+      "pallets": "27",
+      "weight_lb": null,
+      "price_pickup": 10919.17,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio, TX",
+        "state": "TX"
+      },
+      "freight_control": "seller",
+      "listed": "2026-10-07",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 10267,
+          "retail": 126943.48,
+          "note": {
+            "es": "29.4% ropa/calzado/accesorios por conteo de piezas. 3 de 27 tarimas aún sin manifiesto por SKU.",
+            "en": "29.4% clothing/footwear/accessories by piece count. 3 of 27 pallets not yet itemized by SKU."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-0Y6D",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 14665,
+      "pallets": "27",
+      "weight_lb": null,
+      "price_pickup": 11337.22,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio, TX",
+        "state": "TX"
+      },
+      "freight_control": "seller",
+      "listed": "2026-10-07",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 14665,
+          "retail": 135686.17,
+          "note": {
+            "es": "16.5% ropa/calzado/accesorios por conteo de piezas. 5 de 27 tarimas aún sin manifiesto por SKU.",
+            "en": "16.5% clothing/footwear/accessories by piece count. 5 of 27 pallets not yet itemized by SKU."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-PBHS",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 10062,
+      "pallets": "23",
+      "weight_lb": null,
+      "price_pickup": 9671.46,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio, TX",
+        "state": "TX"
+      },
+      "freight_control": "seller",
+      "listed": "2026-10-07",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 10062,
+          "retail": 113734.06,
+          "note": {
+            "es": "22.3% ropa/calzado/accesorios por conteo de piezas. 2 de 23 tarimas aún sin manifiesto por SKU.",
+            "en": "22.3% clothing/footwear/accessories by piece count. 2 of 23 pallets not yet itemized by SKU."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-AHXT",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 25670,
+      "pallets": "24",
+      "weight_lb": null,
+      "price_pickup": 8314.54,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio, TX",
+        "state": "TX"
+      },
+      "freight_control": "seller",
+      "listed": "2026-10-07",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 25670,
+          "retail": 119543.45,
+          "note": {
+            "es": "9.9% ropa/calzado/accesorios por conteo de piezas. 1 de 24 tarimas aún sin manifiesto por SKU.",
+            "en": "9.9% clothing/footwear/accessories by piece count. 1 of 24 pallets not yet itemized by SKU."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-HV3A",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 24719,
+      "pallets": "27",
+      "weight_lb": null,
+      "price_pickup": 12019.65,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio, TX",
+        "state": "TX"
+      },
+      "freight_control": "seller",
+      "listed": "2026-10-07",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 24719,
+          "retail": 152989.31,
+          "note": {
+            "es": "11.1% ropa/calzado/accesorios por conteo de piezas. 6 de 27 tarimas aún sin manifiesto por SKU.",
+            "en": "11.1% clothing/footwear/accessories by piece count. 6 of 27 pallets not yet itemized by SKU."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
       "id": "LP-WYIU",
       "po": null,
       "retailer": "Liquidation Pros",
