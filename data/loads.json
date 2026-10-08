@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-09-07",
+    "generated": "2026-09-18",
     "public": true
   },
   "contact": {
@@ -15,67 +15,67 @@
     }
   },
   "sample_trucks": {
-    "walmart": {
+    "gm": {
       "label": {
-        "es": "Camión de muestra · Walmart",
-        "en": "Sample truck · Walmart"
+        "es": "Camión de muestra",
+        "en": "Sample truck"
       },
       "note": {
-        "es": "Fotos reales de tráileres Walmart que recibimos (mayo 2026). Son de muestra: no son de esta carga.",
-        "en": "Real photos of Walmart trailers we received (May 2026). Samples only — not this exact load."
+        "es": "Fotos reales de tráileres que recibimos (mayo 2026). Son de muestra: no son de esta carga.",
+        "en": "Real photos of trailers we received (May 2026). Samples only — not this exact load."
       },
       "photos": [
         {
-          "src": "assets/photos/sample/walmart-01.jpg",
+          "src": "assets/photos/sample/gm-01.jpg",
           "alt": {
-            "es": "Remolque completo, fila tras fila de tarimas de mercancía general de Walmart envueltas.",
-            "en": "Full trailer, row after row of wrapped Walmart GM pallets."
+            "es": "Remolque completo, fila tras fila de tarimas de mercancía general  envueltas.",
+            "en": "Full trailer, row after row of wrapped GM pallets."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-02.jpg",
+          "src": "assets/photos/sample/gm-02.jpg",
           "alt": {
             "es": "Vista del pasillo del mismo cargamento, con cajas de juguetes y temporada a la vista.",
             "en": "Aisle view down the same load, toy and seasonal cartons visible."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-03.jpg",
+          "src": "assets/photos/sample/gm-03.jpg",
           "alt": {
             "es": "Dos tarimas limpias y envueltas con cajas de marca, listas para enviar.",
             "en": "Two clean wrapped pallets with branded cartons, ready to ship."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-04.jpg",
+          "src": "assets/photos/sample/gm-04.jpg",
           "alt": {
-            "es": "Tarima en el patio con cajas de marca Walmart lista para recoger.",
-            "en": "Dockyard pallet of Walmart-branded cartons staged for pickup."
+            "es": "Tarima en el patio con cajas de marca lista para recoger.",
+            "en": "Dockyard pallet of branded cartons staged for pickup."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-05.jpg",
+          "src": "assets/photos/sample/gm-05.jpg",
           "alt": {
-            "es": "Tarima de calzado con las etiquetas originales de liquidación de Walmart.",
-            "en": "Footwear pallet with original Walmart clearance price tags still on."
+            "es": "Tarima de calzado con las etiquetas originales de liquidación .",
+            "en": "Footwear pallet with original clearance price tags still on."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-06.jpg",
+          "src": "assets/photos/sample/gm-06.jpg",
           "alt": {
             "es": "Dos tarimas una junto a la otra, cajas mixtas de mercancía general.",
             "en": "Two pallets side by side, mixed general-merchandise cartons."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-07.jpg",
+          "src": "assets/photos/sample/gm-07.jpg",
           "alt": {
             "es": "Dos filas completas de tarimas en el pasillo de un remolque cargado.",
             "en": "Two full pallet rows down a loaded trailer aisle."
           }
         },
         {
-          "src": "assets/photos/sample/walmart-08.jpg",
+          "src": "assets/photos/sample/gm-08.jpg",
           "alt": {
             "es": "Tarima de artículos deportivos con equipo de campamento: tiendas y bolsas de dormir.",
             "en": "Sporting-goods pallet with camping gear — tents and sleeping bags."
@@ -83,589 +83,33 @@
         }
       ]
     },
-    "target": {
+    "salvage": {
       "label": {
-        "es": "Camión de muestra · Target",
-        "en": "Sample truck · Target"
+        "es": "Camión de muestra",
+        "en": "Sample truck"
       },
       "note": {
-        "es": "Aún no tenemos fotos de muestra de tráileres Target. Pídalas por WhatsApp.",
-        "en": "No Target sample-truck photos yet. Ask on WhatsApp."
-      },
-      "photos": []
-    },
-    "amazon": {
-      "label": {
-        "es": "Pacas Amazon",
-        "en": "Amazon Pallets"
-      },
-      "note": {
-        "es": "Aún no tenemos fotos propias de pacas Amazon. Pídalas por WhatsApp.",
-        "en": "No Amazon-pallet photos of our own yet. Ask on WhatsApp."
+        "es": "Aún no tenemos fotos de muestra de este tipo de carga. Pídalas por WhatsApp.",
+        "en": "No sample-truck photos for this load type yet. Ask on WhatsApp."
       },
       "photos": []
     }
   },
   "loads": [
     {
-      "id": "WLMRT-OF4-0M1G",
-      "po": "PO-00782",
-      "retailer": "Walmart",
-      "program": {
-        "es": "Walmart RC Bulk · Mercancía general",
-        "en": "Walmart RC Bulk · General Merchandise"
-      },
-      "title": {
-        "es": "Tráiler completo Walmart · Mercancía general",
-        "en": "Walmart Full Truckload · General Merchandise"
-      },
-      "status": "available",
-      "units": 2536,
-      "pallets": "22–26",
-      "weight_lb": 30000,
-      "price_pickup": 13500,
-      "price_delivered": null,
-      "condition_code": "returns_mixed",
-      "location": {
-        "name": "Walmart RC 9153 (drop trailer)",
-        "city": "Waco, TX",
-        "state": "TX"
-      },
-      "freight_control": "seller",
-      "listed": "2026-09-05",
-      "photos": [],
-      "sample": "walmart",
-      "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "General Merchandise",
-            "en": "General Merchandise"
-          },
-          "units": 1682,
-          "retail": 53565.2,
-          "note": {
-            "es": "69% del valor de tienda",
-            "en": "69% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Electronics",
-            "en": "Electronics"
-          },
-          "units": 417,
-          "retail": 12325.74,
-          "note": {
-            "es": "16% del valor de tienda",
-            "en": "16% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Books & Media",
-            "en": "Books & Media"
-          },
-          "units": 177,
-          "retail": 4046.29,
-          "note": {
-            "es": "5% del valor de tienda",
-            "en": "5% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Home & Storage",
-            "en": "Home & Storage"
-          },
-          "units": 58,
-          "retail": 2193.07,
-          "note": {
-            "es": "3% del valor de tienda",
-            "en": "3% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Furniture",
-            "en": "Furniture"
-          },
-          "units": 30,
-          "retail": 1939.46,
-          "note": {
-            "es": "2% del valor de tienda",
-            "en": "2% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Outdoor & Sporting Goods",
-            "en": "Outdoor & Sporting Goods"
-          },
-          "units": 103,
-          "retail": 1774.57,
-          "note": {
-            "es": "2% del valor de tienda",
-            "en": "2% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Toys & Games",
-            "en": "Toys & Games"
-          },
-          "units": 27,
-          "retail": 773.99,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Apparel & Footwear",
-            "en": "Apparel & Footwear"
-          },
-          "units": 12,
-          "retail": 405.82,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Beauty & Personal Care",
-            "en": "Beauty & Personal Care"
-          },
-          "units": 8,
-          "retail": 247.45,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Office & School Supplies",
-            "en": "Office & School Supplies"
-          },
-          "units": 12,
-          "retail": 244.69,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Baby & Kids Gear",
-            "en": "Baby & Kids Gear"
-          },
-          "units": 4,
-          "retail": 95.6,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Kitchen & Dining",
-            "en": "Kitchen & Dining"
-          },
-          "units": 6,
-          "retail": 89.42,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
-    },
-    {
-      "id": "WLMRT-OTN-84RC",
-      "po": "PO-00780",
-      "retailer": "Walmart",
-      "program": {
-        "es": "Walmart RC Bulk · Mercancía general",
-        "en": "Walmart RC Bulk · General Merchandise"
-      },
-      "title": {
-        "es": "Tráiler completo Walmart · Mercancía general",
-        "en": "Walmart Full Truckload · General Merchandise"
-      },
-      "status": "available",
-      "units": 1786,
-      "pallets": "27",
-      "weight_lb": 30000,
-      "price_pickup": 13500,
-      "price_delivered": null,
-      "condition_code": "returns_mixed",
-      "location": {
-        "name": "Walmart RC 9153 (drop trailer)",
-        "city": "Waco, TX",
-        "state": "TX"
-      },
-      "freight_control": "seller",
-      "listed": "2026-09-01",
-      "photos": [],
-      "sample": "walmart",
-      "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "General Merchandise",
-            "en": "General Merchandise"
-          },
-          "units": 1113,
-          "retail": 38481.29,
-          "note": {
-            "es": "65% del valor de tienda",
-            "en": "65% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Electronics",
-            "en": "Electronics"
-          },
-          "units": 264,
-          "retail": 7418.03,
-          "note": {
-            "es": "13% del valor de tienda",
-            "en": "13% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Home & Storage",
-            "en": "Home & Storage"
-          },
-          "units": 89,
-          "retail": 3283.23,
-          "note": {
-            "es": "6% del valor de tienda",
-            "en": "6% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Outdoor & Sporting Goods",
-            "en": "Outdoor & Sporting Goods"
-          },
-          "units": 65,
-          "retail": 3272.12,
-          "note": {
-            "es": "6% del valor de tienda",
-            "en": "6% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Furniture",
-            "en": "Furniture"
-          },
-          "units": 34,
-          "retail": 2018.24,
-          "note": {
-            "es": "3% del valor de tienda",
-            "en": "3% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Toys & Games",
-            "en": "Toys & Games"
-          },
-          "units": 82,
-          "retail": 1512.08,
-          "note": {
-            "es": "3% del valor de tienda",
-            "en": "3% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Apparel & Footwear",
-            "en": "Apparel & Footwear"
-          },
-          "units": 18,
-          "retail": 968.38,
-          "note": {
-            "es": "2% del valor de tienda",
-            "en": "2% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Baby & Kids Gear",
-            "en": "Baby & Kids Gear"
-          },
-          "units": 45,
-          "retail": 909.71,
-          "note": {
-            "es": "2% del valor de tienda",
-            "en": "2% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Books & Media",
-            "en": "Books & Media"
-          },
-          "units": 33,
-          "retail": 378.58,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Kitchen & Dining",
-            "en": "Kitchen & Dining"
-          },
-          "units": 10,
-          "retail": 330.39,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Beauty & Personal Care",
-            "en": "Beauty & Personal Care"
-          },
-          "units": 20,
-          "retail": 279.15,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Automotive",
-            "en": "Automotive"
-          },
-          "units": 8,
-          "retail": 209.9,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Office & School Supplies",
-            "en": "Office & School Supplies"
-          },
-          "units": 5,
-          "retail": 37.06,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
-    },
-    {
-      "id": "WLMRT-ONA-GHFP",
-      "po": "PO-00779",
-      "retailer": "Walmart",
-      "program": {
-        "es": "Walmart RC Bulk · Mercancía general",
-        "en": "Walmart RC Bulk · General Merchandise"
-      },
-      "title": {
-        "es": "Tráiler completo Walmart · Mercancía general",
-        "en": "Walmart Full Truckload · General Merchandise"
-      },
-      "status": "available",
-      "units": 2144,
-      "pallets": "22–26",
-      "weight_lb": 30000,
-      "price_pickup": 13500,
-      "price_delivered": null,
-      "condition_code": "returns_mixed",
-      "location": {
-        "name": "Walmart RC 9153 (drop trailer)",
-        "city": "Waco, TX",
-        "state": "TX"
-      },
-      "freight_control": "seller",
-      "listed": "2026-09-01",
-      "photos": [],
-      "sample": "walmart",
-      "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "General Merchandise",
-            "en": "General Merchandise"
-          },
-          "units": 1665,
-          "retail": 42316.87,
-          "note": {
-            "es": "68% del valor de tienda",
-            "en": "68% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Furniture",
-            "en": "Furniture"
-          },
-          "units": 52,
-          "retail": 7375.37,
-          "note": {
-            "es": "12% del valor de tienda",
-            "en": "12% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Electronics",
-            "en": "Electronics"
-          },
-          "units": 163,
-          "retail": 4901.16,
-          "note": {
-            "es": "8% del valor de tienda",
-            "en": "8% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Home & Storage",
-            "en": "Home & Storage"
-          },
-          "units": 75,
-          "retail": 3110.84,
-          "note": {
-            "es": "5% del valor de tienda",
-            "en": "5% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Outdoor & Sporting Goods",
-            "en": "Outdoor & Sporting Goods"
-          },
-          "units": 30,
-          "retail": 1767.41,
-          "note": {
-            "es": "3% del valor de tienda",
-            "en": "3% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Baby & Kids Gear",
-            "en": "Baby & Kids Gear"
-          },
-          "units": 47,
-          "retail": 873.13,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Toys & Games",
-            "en": "Toys & Games"
-          },
-          "units": 26,
-          "retail": 641.14,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Kitchen & Dining",
-            "en": "Kitchen & Dining"
-          },
-          "units": 53,
-          "retail": 334.37,
-          "note": {
-            "es": "1% del valor de tienda",
-            "en": "1% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Apparel & Footwear",
-            "en": "Apparel & Footwear"
-          },
-          "units": 9,
-          "retail": 211.44,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Automotive",
-            "en": "Automotive"
-          },
-          "units": 5,
-          "retail": 165.09,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Office & School Supplies",
-            "en": "Office & School Supplies"
-          },
-          "units": 11,
-          "retail": 105.9,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        },
-        {
-          "category": {
-            "es": "Beauty & Personal Care",
-            "en": "Beauty & Personal Care"
-          },
-          "units": 8,
-          "retail": 79.64,
-          "note": {
-            "es": "0% del valor de tienda",
-            "en": "0% of retail value"
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
-    },
-    {
-      "id": "TGTW5-OR0-8MMR",
+      "id": "LP-WYIU",
       "po": null,
-      "retailer": "Target",
+      "retailer": "Liquidation Pros",
       "program": {
-        "es": "Target · Mercancía general (salvage)",
-        "en": "Target · General Merchandise (salvage)"
+        "es": "Mercancía general (salvage)",
+        "en": "General Merchandise (salvage)"
       },
       "title": {
-        "es": "Tráiler completo Target · Hogar, juguetes, almacenaje",
-        "en": "Target Full Truckload · Home, toys, storage"
+        "es": "Tráiler completo · Hogar, juguetes, almacenaje",
+        "en": "Full Truckload · Home, toys, storage"
       },
       "status": "sold",
+      "sold_verified": false,
       "units": null,
       "pallets": "22–26",
       "weight_lb": null,
@@ -680,7 +124,7 @@
       "freight_control": "lpos",
       "listed": "2026-07-13",
       "photos": [],
-      "sample": "target",
+      "sample": "salvage",
       "video": null,
       "manifest": [],
       "manifest_status": "none",
@@ -708,48 +152,6 @@
         {
           "es": "Artículos de bebé",
           "en": "Baby gear"
-        }
-      ]
-    },
-    {
-      "id": "AMZN-PACA-0907",
-      "po": null,
-      "retailer": "Amazon",
-      "program": {
-        "es": "Amazon · Devoluciones de clientes, por tarima",
-        "en": "Amazon · Customer returns, per pallet"
-      },
-      "title": {
-        "es": "Pacas Amazon · Devoluciones de clientes, mercancía general",
-        "en": "Amazon Pallets · Customer Returns, General Merchandise"
-      },
-      "status": "available",
-      "units": null,
-      "pallets": "1+",
-      "weight_lb": 500,
-      "price_pickup": 1250,
-      "price_delivered": null,
-      "condition_code": "customer_returns",
-      "location": {
-        "name": "Liquidation Pros",
-        "city": "Hidalgo",
-        "state": "TX"
-      },
-      "freight_control": "seller",
-      "listed": "2026-09-07",
-      "photos": [],
-      "sample": "amazon",
-      "video": null,
-      "manifest": [],
-      "manifest_status": "none",
-      "categories_seen": [
-        {
-          "es": "Ropa y calzado mixto",
-          "en": "Mixed apparel & footwear"
-        },
-        {
-          "es": "Mercancía general",
-          "en": "General merchandise"
         }
       ]
     }

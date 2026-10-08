@@ -29,17 +29,17 @@
       q_none: "No tenemos historial para ese destino. Pida la cotización oficial.",
       q_official: "Cotización oficial", q_fq: "Cotizar en Freightquote.com (sin registro)", q_fq_p: "Copie este resumen y péguelo en el cotizador:",
       q_copy: "Copiar resumen", q_copied: "Copiado ✓",
-      q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor (B-Stock). Le confirmamos el precio en 1 hora en horario de oficina.",
+      q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor. Le confirmamos el precio en 1 hora en horario de oficina.",
       q_wa_lpos_p: "¿Prefiere que lo coticemos nosotros? Escríbanos y le respondemos en 1 hora.",
       q_public: "Estimado público — sin envíos propios aún",
       q_mx_border_crossing: "Cruce y pedimento a cargo del comprador",
-      nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_faq: "Preguntas", nav_contact: "Contacto",
+      nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_guide: "Guía", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
-      hero_h1: "Tráileres completos de Walmart y Target, a precio fijo. Sin subastas.",
+      hero_h1: "Tráileres completos de liquidación, a precio fijo. Sin subastas.",
       hero_lead: "Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega. Las cargas llegan y se venden en 24 horas: entre a la lista de espera para que le avisemos primero.",
       hero_cta_loads: "Ver cargas disponibles", hero_cta_wait: "Entrar a la lista de espera",
       fact_loads: "cargas disponibles", fact_window: "para vender cada carga", fact_border: "frontera con Reynosa",
-      hero_caption: "Tráiler de muestra: foto real de un tráiler Walmart que recibimos (mayo 2026).",
+      hero_caption: "Tráiler de muestra: foto real de un tráiler que recibimos (mayo 2026).",
       trust_noauction: "Sin subastas — usted decide", trust_flatprice: "Precio fijo antes de comprometerse",
       trust_manifest: "Manifiesto real, no plantilla", trust_whatsapp: "Respuesta directa por WhatsApp",
       loads_h2: "Cargas disponibles", loads_sub: "Precio fijo por tráiler completo. Reserve o compre; primero en reservar, primero en cargar.",
@@ -50,7 +50,7 @@
       delivered_quote: "Puesto en su bodega: cotizamos", see_load: "Ver carga", reserve: "Reservar", buy: "Comprar ahora", quote: "Cotizar flete",
       photo_pending: "Fotos pendientes", photo_pending_sub: "Se toman cuando el tráiler llega. Pídalas por WhatsApp.", photo_none_sample: "Sin fotos de muestra todavía.",
       photo_next_h: "Fotos del próximo tráiler", photo_next_sub: "Aún no tenemos fotos de muestra de esta línea. Le enviamos fotos reales del próximo tráiler por WhatsApp en cuanto llega.", photo_next_cta: "Pedir fotos por WhatsApp",
-      how_h2: "Cómo funciona", how_sub: "Cuatro pasos. Sin cuenta, sin subasta.",
+      how_guide: "¿Cómo compro?", how_h2: "Cómo funciona", how_sub: "Cuatro pasos. Sin cuenta, sin subasta.",
       how1_h: "Vea la carga", how1_p: "Unidades, tarimas, condición, ubicación y precio fijo en la misma pantalla.",
       how2_h: "Reserve o compre", how2_p: "Reservar aparta la carga 24 h mientras confirma pago. Comprar ahora la cierra.",
       how3_h: "Pague", how3_p: "Transferencia, wire o depósito. Le enviamos factura de Zoho al confirmar.",
@@ -69,7 +69,7 @@
       faq3_q: "¿Ustedes organizan el flete o solo venden la mercancía?", faq3_a: "Las dos opciones — puede organizar su propio flete/recolección, o le cotizamos el flete usando costos reales recientes de esa ruta hasta su bodega.",
       faq4_q: "¿Dónde recojo la mercancía?", faq4_a: "La recolección es en nuestras ubicaciones de Hidalgo, TX y Waco, TX, según dónde esté la carga específica. Le confirmamos la dirección exacta una vez que su carga esté lista.",
       faq5_q: "¿Cómo confirmo que mi pago (Zelle/transferencia) ya fue recibido?", faq5_a: "Mándenos por WhatsApp una captura de pantalla o el número de confirmación de su pago y lo verificamos y le confirmamos.",
-      faq6_q: "¿Con qué frecuencia tienen cargas nuevas disponibles?", faq6_a: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando de B-Stock. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
+      faq6_q: "¿Con qué frecuencia tienen cargas nuevas disponibles?", faq6_a: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
       faq_see_all: "Ver todas las preguntas →",
       faqp_h1: "Preguntas frecuentes", faqp_lead: "Respuestas directas a lo que más nos preguntan los compradores por WhatsApp. Si no está aquí, escríbenos.",
       faqp_cta_h: "¿Otra pregunta?", faqp_cta_p: "Escríbenos por WhatsApp y te respondemos directo.", faqp_cta_btn: "Preguntar por WhatsApp",
@@ -82,7 +82,7 @@
       contact_h2: "Contacto", contact_sub: "Hablamos español e inglés. Respondemos más rápido por WhatsApp.",
       contact_wa: "WhatsApp", contact_phone: "Llamar", contact_mail: "Correo", contact_addr: "Bodega",
       contact_form_h: "Escríbanos", f_msg: "Mensaje",
-      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de Walmart, Target, JCPenney, Sam's Club y Journeys directamente en EE. UU. y los vende a mayoristas, saliendo de McAllen/Hidalgo, TX y Guadalajara.",
+      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de las principales fuentes de liquidación directamente en EE. UU. y los vende a mayoristas, saliendo de Hidalgo y Waco, TX y de Guadalajara.",
       ftr_fine: "Precios en USD, recogiendo en Texas salvo indicación. Mercancía vendida tal como está. Los nombres de tiendas son marcas de sus dueños y se usan solo para describir el origen.",
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
@@ -107,12 +107,12 @@
       cat: "Categoría", qty: "Unidades", retail: "Valor de tienda", note: "Nota",
       retail_note: "Valor de tienda ≠ precio de reventa.",
       cond_returns_mixed: "Devoluciones y sobrantes sin revisar, mezclados",
-      cond_returns_mixed_p: "Mercancía general de centro de devoluciones Walmart: nuevo en caja, caja abierta y piezas dañadas mezcladas. Sin clasificar. Se vende el tráiler completo tal como está.",
+      cond_returns_mixed_p: "Mercancía general de un centro de devoluciones: nuevo en caja, caja abierta y piezas dañadas mezcladas. Sin clasificar. Se vende el tráiler completo tal como está.",
       cond_salvage: "Salvage (dañado / caja abierta)",
-      cond_salvage_p: "Tarimas marcadas salvage por Target: empaques abiertos o dañados, producto usable en su mayoría. Se vende tal como está.",
+      cond_salvage_p: "Tarimas marcadas salvage: empaques abiertos o dañados, producto usable en su mayoría. Se vende tal como está.",
       cond_customer_returns: "Devoluciones de clientes, sin clasificar",
       cond_customer_returns_p: "Pacas de devoluciones de clientes: ropa, calzado y mercancía general mezclada, sin clasificar. Se vende por tarima, precio fijo.",
-      amazon_h: "Pacas Amazon", amazon_sub: "Devoluciones de clientes por tarima — ropa, calzado y mercancía general mezclada. Precio fijo por tarima.",
+      returns_h: "Pacas de devoluciones", returns_sub: "Devoluciones de clientes por tarima — ropa, calzado y mercancía general mezclada. Precio fijo por tarima.",
       pickup_h: "Recogida en", pickup_p: "Usted o su transportista cargan en la ubicación indicada. Cita previa.",
       delivered_h: "Puesto en su bodega", delivered_p: "Cotizamos flete a la frontera o al interior de México. Diga su ciudad.",
       fine_buybox: "Precio fijo por tráiler completo, USD, sin impuesto de venta de EE. UU. Sin comisiones de plataforma.",
@@ -141,17 +141,17 @@
       q_none: "No history for that destination. Ask for the official quote.",
       q_official: "Official quote", q_fq: "Quote on Freightquote.com (no signup)", q_fq_p: "Copy this summary and paste it into the quote tool:",
       q_copy: "Copy summary", q_copied: "Copied ✓",
-      q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller (B-Stock). We confirm the price within 1 hour during office hours.",
+      q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller. We confirm the price within 1 hour during office hours.",
       q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
       q_public: "Public estimate — no shipments yet",
       q_mx_border_crossing: "Border crossing and customs clearance borne by buyer",
-      nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_faq: "FAQ", nav_contact: "Contact",
+      nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_guide: "Guide", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
-      hero_h1: "Full Walmart and Target truckloads at a fixed price. No auctions.",
+      hero_h1: "Full liquidation truckloads at a fixed price. No auctions.",
       hero_lead: "Buy the whole load today, pick up in Texas or ask for a delivered quote to your warehouse. Loads land and sell within 24 hours — join the waitlist to hear first.",
       hero_cta_loads: "See available loads", hero_cta_wait: "Join the waitlist",
       fact_loads: "loads available", fact_window: "to sell each load", fact_border: "on the Reynosa border",
-      hero_caption: "Sample truck: real photo of a Walmart trailer we received (May 2026).",
+      hero_caption: "Sample truck: real photo of a trailer we received (May 2026).",
       trust_noauction: "No auctions — you decide", trust_flatprice: "Flat price before you commit",
       trust_manifest: "Real manifest, not a template", trust_whatsapp: "Direct answers on WhatsApp",
       loads_h2: "Available loads", loads_sub: "Fixed price per full truckload. Reserve or buy; first to reserve, first to load.",
@@ -162,7 +162,7 @@
       delivered_quote: "Delivered to your warehouse: we quote", see_load: "View load", reserve: "Reserve", buy: "Buy now", quote: "Shipping quote",
       photo_pending: "Photos pending", photo_pending_sub: "Taken when the trailer lands. Ask on WhatsApp.", photo_none_sample: "No sample photos yet.",
       photo_next_h: "Photos of the next trailer", photo_next_sub: "We don't have sample photos for this line yet. We'll send real photos of the next trailer over WhatsApp as soon as it lands.", photo_next_cta: "Ask for photos on WhatsApp",
-      how_h2: "How it works", how_sub: "Four steps. No account, no auction.",
+      how_guide: "How do I buy?", how_h2: "How it works", how_sub: "Four steps. No account, no auction.",
       how1_h: "Look at the load", how1_p: "Units, pallets, condition, location and fixed price on one screen.",
       how2_h: "Reserve or buy", how2_p: "Reserve holds the load 24 h while you confirm payment. Buy now closes it.",
       how3_h: "Pay", how3_p: "Wire, ACH or deposit. We send a Zoho invoice on confirmation.",
@@ -181,7 +181,7 @@
       faq3_q: "Do you arrange freight, or do you only sell the merchandise?", faq3_a: "Both — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your dock.",
       faq4_q: "Where do I pick up the merchandise?", faq4_a: "Pickup is available at our Hidalgo, TX and Waco, TX locations, depending on where the specific load is. We'll confirm the exact pickup address once your load is set.",
       faq5_q: "How do I confirm my payment (Zelle/wire) was received?", faq5_a: "Send us a screenshot or confirmation number of your payment on WhatsApp and we'll verify it and confirm back to you.",
-      faq6_q: "How often do you have new loads available?", faq6_a: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in from B-Stock. Message us on WhatsApp and we'll tell you what's available right now.",
+      faq6_q: "How often do you have new loads available?", faq6_a: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in. Message us on WhatsApp and we'll tell you what's available right now.",
       faq_see_all: "See all questions →",
       faqp_h1: "Frequently asked questions", faqp_lead: "Direct answers to what buyers ask us most on WhatsApp. Not here? Message us.",
       faqp_cta_h: "Another question?", faqp_cta_p: "Message us on WhatsApp and we'll answer directly.", faqp_cta_btn: "Ask on WhatsApp",
@@ -194,7 +194,7 @@
       contact_h2: "Contact", contact_sub: "We speak Spanish and English. WhatsApp gets the fastest reply.",
       contact_wa: "WhatsApp", contact_phone: "Call", contact_mail: "Email", contact_addr: "Warehouse",
       contact_form_h: "Message us", f_msg: "Message",
-      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from Walmart, Target, JCPenney, Sam's Club and Journeys directly in the US and sells them to wholesalers, shipping out of McAllen/Hidalgo, TX and Guadalajara.",
+      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from major retail liquidation sources directly in the US and sells them to wholesalers, shipping out of Hidalgo and Waco, TX and Guadalajara.",
       ftr_fine: "Prices in USD, picked up in Texas unless stated. Merchandise sold as-is. Retailer names are trademarks of their owners and are used only to describe origin.",
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
@@ -219,12 +219,12 @@
       cat: "Category", qty: "Units", retail: "Retail value", note: "Note",
       retail_note: "Retail value ≠ resale price.",
       cond_returns_mixed: "Unsorted returns and overstock, mixed",
-      cond_returns_mixed_p: "General merchandise from a Walmart return center: new in box, open box and damaged pieces mixed together. Unsorted. Sold as a full truckload, as-is.",
+      cond_returns_mixed_p: "General merchandise from a retail return center: new in box, open box and damaged pieces mixed together. Unsorted. Sold as a full truckload, as-is.",
       cond_salvage: "Salvage (damaged / open box)",
-      cond_salvage_p: "Pallets marked salvage by Target: open or damaged packaging, product mostly usable. Sold as-is.",
+      cond_salvage_p: "Pallets marked salvage: open or damaged packaging, product mostly usable. Sold as-is.",
       cond_customer_returns: "Customer returns, unsorted",
       cond_customer_returns_p: "Customer-return pallets: clothing, footwear and general merchandise mixed together, unsorted. Sold per pallet, fixed price.",
-      amazon_h: "Amazon Pallets", amazon_sub: "Customer returns sold per pallet — mixed clothing, footwear and general merchandise. Fixed price per pallet.",
+      returns_h: "Return Pallets", returns_sub: "Customer returns sold per pallet — mixed clothing, footwear and general merchandise. Fixed price per pallet.",
       pickup_h: "Picked up at", pickup_p: "You or your carrier load at the listed location. By appointment.",
       delivered_h: "Delivered to your warehouse", delivered_p: "We quote freight to the border or inland Mexico. Tell us your city.",
       fine_buybox: "Fixed price per full truckload, USD, no US sales tax. No platform fees.",
@@ -341,19 +341,46 @@
   function money2(n) { return new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
   function isBorderPickup(load) { return /hidalgo/i.test(load.location.city); }
 
+  // R3754: empty-inventory state. Shown only when no load is "available".
+  // Generic load types, no prices, no retailer names, no order numbers: nothing here is an offer.
+  function sourcingNext() {
+    const es = lang === "es";
+    const items = es ? [
+      ["Tráiler completo", "Mercancía general", "Hogar, juguetes, almacenaje y artículos variados. Entre 22 y 26 tarimas, entrega en el Valle de Texas."],
+      ["Tráiler completo", "Mixto con manifiesto", "Tráiler con lista de piezas por tarima, para comprar sabiendo qué trae. Entre 23 y 27 tarimas."],
+      ["Tarimas sueltas", "Ropa y calzado", "Lotes de 2 a 10 tarimas de ropa, ropa infantil y zapatos, vendidos por pieza o por tarima."]
+    ] : [
+      ["Full truckload", "General merchandise", "Home, toys, storage and assorted items. 22 to 26 pallets, delivered in the Rio Grande Valley."],
+      ["Full truckload", "Mixed, with manifest", "A truckload with a per-pallet item list, so you buy knowing what is inside. 23 to 27 pallets."],
+      ["Loose pallets", "Clothing and shoes", "Lots of 2 to 10 pallets of apparel, kids wear and shoes, sold by the piece or by the pallet."]
+    ];
+    const head = es ? "Hoy no hay cargas disponibles. Esto es lo que estamos buscando:" : "No loads available today. This is what we are sourcing:";
+    const tag = es ? "En búsqueda" : "Sourcing";
+    const note = es ? "Aún no son ofertas ni tienen precio. Las cargas se venden en menos de 24 horas: deje su WhatsApp y le avisamos antes de publicarlas." : "These are not offers yet and have no price. Loads sell within 24 hours: leave your WhatsApp and we message you before they are posted.";
+    const cta = es ? "Avíseme de la próxima carga" : "Notify me of the next load";
+    return `<div class="sourcing"><p class="sourcing-head">${head}</p><div class="sourcing-grid">` +
+      items.map((i) => `<article class="src-card"><span class="pill pill-warn">${tag}</span><div class="src-kind">${i[0]}</div><h3>${i[1]}</h3><p>${i[2]}</p></article>`).join("") +
+      `</div><p class="sourcing-note">${note}</p><a class="btn btn-red" href="#waitlist">${cta}</a></div>`;
+  }
+
   function renderHome() {
-    const avail = DATA.loads.filter((l) => l.status === "available" && l.retailer !== "Amazon");
-    const sold = DATA.loads.filter((l) => l.status !== "available" && l.retailer !== "Amazon");
+    // R2561: id prefix, not the (possibly scrubbed/"confidential") retailer
+    // text field, decides the Amazon section -- see outputs/continuous-cto/
+    // SITE_RETAILER_INTERNAL_FIELD_FIX_2026-09-26.md.
+    const isAmazon = (l) => /^AMZN-/.test(l.id);
+    const avail = DATA.loads.filter((l) => l.status === "available" && !isAmazon(l));
+    const sold = DATA.loads.filter((l) => l.status !== "available" && !isAmazon(l));
     const g = document.getElementById("loads-grid");
-    if (g) g.innerHTML = avail.length ? avail.map(card).join("") : `<div class="empty">${lang === "es" ? "No hay cargas publicadas ahora. Entre a la lista de espera." : "No loads listed right now. Join the waitlist."}</div>`;
+    if (g) g.innerHTML = avail.length ? avail.map(card).join("") : sourcingNext();
+    { const sec = document.getElementById("loads"); if (sec) { const pl = sec.querySelector(".sec-head .pill-live"), sp = sec.querySelector(".sec-head p"); if (pl) pl.style.display = avail.length ? "" : "none"; if (sp && !avail.length) sp.textContent = lang === "es" ? "Próximamente" : "Coming up"; } } // R3754: no green "Disponible" pill / fixed-price copy over an empty list
     const s = document.getElementById("sold-grid");
     if (s) s.innerHTML = sold.map(card).join("");
-    const az = document.getElementById("amazon-grid");
-    if (az) { const azLoads = DATA.loads.filter((l) => l.retailer === "Amazon"); az.innerHTML = azLoads.length ? azLoads.map(card).join("") : ""; const azSec = document.getElementById("amazon"); if (azSec) azSec.hidden = !azLoads.length; }
+    const az = document.getElementById("returns-grid");
+    if (az) { const azLoads = DATA.loads.filter(isAmazon); az.innerHTML = azLoads.length ? azLoads.map(card).join("") : ""; const azSec = document.getElementById("returns"); if (azSec) azSec.hidden = !azLoads.length; }
     const n = document.getElementById("fact-loads"); if (n) n.textContent = String(avail.length);
     const hp = document.getElementById("hero-photo");
     if (hp) {
-      const p = DATA.sample_trucks.walmart.photos[0];
+      const p = DATA.sample_trucks.gm.photos[0];
       hp.innerHTML = `<img src="${esc(p.src)}" alt="${esc(L(p.alt))}" width="1600" height="1200" fetchpriority="high">`;
     }
   }
@@ -390,9 +417,9 @@
   /* ---------- full FAQ page (preguntas.html) — verbatim from outputs/ads/FAQ_AND_ANSWERS_2026-09-07.md,
      auto-answer-OK items plus any answer with no [ASSUMPTION]/[SUPUESTO] placeholder. Grouped by topic. */
   const FAQS = [
-    { topic: "manifests", q: { es: "¿El manifiesto es real y viene de B-Stock, o es genérico?", en: "Is the manifest real and from B-Stock, or generic?" },
-      a: { es: "Real — nuestras cargas se consiguen a través de B-Stock (el propio marketplace de liquidación de Target y Walmart), así que los manifiestos vienen de los datos reales del listado del minorista, no de una plantilla genérica. Los manifiestos pueden tener un pequeño margen de error, igual que en toda la industria — es estándar.",
-             en: "Real — our loads are sourced through B-Stock (Target's and Walmart's own liquidation marketplace), so manifests come from the retailer's actual listing data, not a generic template. Manifests can still have small margin of error, same as every liquidator's — that's standard for this industry." } },
+    { topic: "manifests", q: { es: "¿El manifiesto es real o es genérico?", en: "Is the manifest real, or generic?" },
+      a: { es: "Real — los manifiestos vienen de los datos reales del listado del minorista, no de una plantilla genérica. Los manifiestos pueden tener un pequeño margen de error, igual que en toda la industria — es estándar.",
+             en: "Real — manifests come from the retailer's actual listing data, not a generic template. Manifests can still have small margin of error, same as every liquidator's — that's standard for this industry." } },
     { topic: "manifests", q: { es: "¿Puedo ver el manifiesto antes de pagar?", en: "Can I see the manifest before I pay?" },
       a: { es: "Sí — le enviamos el manifiesto para que revise el contenido y el valor estimado de venta al menudeo antes de comprometerse con una carga.",
              en: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load." } },
@@ -421,8 +448,8 @@
       a: { es: "Mándenos por WhatsApp una captura de pantalla o el número de confirmación de su pago y lo verificamos y le confirmamos.",
              en: "Send us a screenshot or confirmation number of your payment on WhatsApp and we'll verify it and confirm back to you." } },
     { topic: "timing", q: { es: "¿Con qué frecuencia tienen cargas nuevas disponibles?", en: "How often do you have new loads available?" },
-      a: { es: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando de B-Stock. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
-             en: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in from B-Stock. Message us on WhatsApp and we'll tell you what's available right now." } },
+      a: { es: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
+             en: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in. Message us on WhatsApp and we'll tell you what's available right now." } },
     { topic: "timing", q: { es: "¿Tienen mercancía disponible ahora mismo?", en: "Do you have merchandise available right now?" },
       a: { es: "Escríbanos por WhatsApp y le decimos exactamente qué tenemos disponible hoy — la disponibilidad cambia rápido porque no almacenamos las cargas.",
              en: "Message us on WhatsApp and we'll tell you exactly what's in and available today — availability changes fast since we don't warehouse loads." } },

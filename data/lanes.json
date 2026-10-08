@@ -1,5 +1,5 @@
 {
- "note": "Historical full-truckload freight paid on real shipments, plus carrier-arranged freight baked into B-Stock orders. Ranges only; not a rate API.",
+ "note": "Historical full-truckload freight paid on real shipments, plus carrier-arranged freight baked into merchandise orders. Ranges only; not a rate API.",
  "lanes": [
   {
    "origin": "Hopkins, MN",

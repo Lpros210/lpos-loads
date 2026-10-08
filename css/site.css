@@ -257,3 +257,14 @@ dialog .dlg-body { padding: 1.1rem; max-height: 75vh; overflow: auto; }
 .ftr-links a { text-decoration: underline; text-underline-offset: 3px; }
 @media (min-width: 760px) { .ftr .wrap { grid-template-columns: 1fr 1fr 1fr; } }
 .empty { text-align: center; color: var(--muted); padding: 2rem; border: 1px dashed var(--line); border-radius: var(--radius); }
+
+/* R3754 sourcing-next cards (empty inventory) */
+.sourcing { grid-column: 1 / -1; }
+.sourcing-head { font-weight: 700; margin: 0 0 1rem; }
+.sourcing-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .sourcing-grid { grid-template-columns: repeat(3, 1fr); } }
+.src-card { border: 1px solid var(--line); border-top: 3px solid var(--red); border-radius: var(--radius); background: #fff; padding: 1rem 1.1rem; }
+.src-card .src-kind { margin-top: .75rem; font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--red-dark); font-weight: 700; }
+.src-card h3 { margin: .15rem 0 .4rem; }
+.src-card p { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.sourcing-note { color: var(--muted); max-width: 60ch; margin: 1rem 0; }

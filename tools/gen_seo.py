@@ -101,7 +101,7 @@ PRODUCTS = {
 # pricing, freight, pickup, border, payment, timing) — verbatim ES text, source
 # outputs/ads/FAQ_AND_ANSWERS_2026-09-07.md.
 FAQS_ES = [
-    "¿El manifiesto es real y viene de B-Stock, o es genérico?",
+    "¿El manifiesto es real o es genérico?",
     "¿Puedo ver el manifiesto antes de pagar?",
     "¿El precio incluye el flete o es solo la mercancía?",
     "¿Ustedes organizan el flete o solo venden la mercancía?",
@@ -117,7 +117,7 @@ FAQS_ES = [
     "¿Qué necesito para cruzar la carga a México como exportador?",
 ]
 FAQ_ANSWERS_ES = [
-    "Real — nuestras cargas se consiguen a través de B-Stock (el propio marketplace de liquidación de Target y Walmart), así que los manifiestos vienen de los datos reales del listado del minorista, no de una plantilla genérica. Los manifiestos pueden tener un pequeño margen de error, igual que en toda la industria — es estándar.",
+    "Real — los manifiestos vienen de los datos reales del listado del minorista, no de una plantilla genérica. Los manifiestos pueden tener un pequeño margen de error, igual que en toda la industria — es estándar.",
     "Sí — le enviamos el manifiesto para que revise el contenido y el valor estimado de venta al menudeo antes de comprometerse con una carga.",
     "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (Hidalgo/Waco, TX) o que le coticemos el flete hasta su bodega. Le damos ambos números para que quede claro.",
     "Las dos opciones — puede organizar su propio flete/recolección, o le cotizamos el flete usando costos reales recientes de esa ruta hasta su bodega.",
@@ -127,7 +127,7 @@ FAQ_ANSWERS_ES = [
     "La recolección es en nuestras ubicaciones de Hidalgo, TX y Waco, TX, según dónde esté la carga específica. Le confirmamos la dirección exacta una vez que su carga esté lista.",
     "Por favor confirme una cita de recolección con nosotros primero por WhatsApp para tener la carga lista y el papeleo correcto preparado.",
     "Mándenos por WhatsApp una captura de pantalla o el número de confirmación de su pago y lo verificamos y le confirmamos.",
-    "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando de B-Stock. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
+    "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
     "Escríbanos por WhatsApp y le decimos exactamente qué tenemos disponible hoy — la disponibilidad cambia rápido porque no almacenamos las cargas.",
     "Sí — recolección en 709 W Joe Pate Blvd, Hidalgo, TX 78557, a un paso del puente Hidalgo–Reynosa. El flete arreglado por el vendedor en estas rutas cortas de Texas puede costar $4–7 por milla; recogiendo usted mismo en la frontera, cargas comparables corren más cerca de $2 por milla.",
     "Antes de que liberemos la carga tenga listo: identificación oficial del chofer, nombre de la transportista y placas del tractocamión/remolque, ventana de recolección confirmada, comprobante de pago recibido (wire o Zelle), RFC del exportador, pedimento de exportación o documento aduanal correspondiente, y una persona de contacto en sitio para firmar la lista de empaque.",
