@@ -119,12 +119,6 @@ video { width: 100%; height: auto; border-radius: var(--radius); background: #00
 .quote .official h3 { margin-bottom: .3rem; } .quote .official p { color: var(--ink-2); font-size: .92rem; }
 .quote textarea { width: 100%; font-family: ui-monospace, Consolas, monospace; font-size: .85rem; }
 .quote .cta-row { display: flex; gap: .5rem; flex-wrap: wrap; } .quote .cta-row .btn { flex: 1; }
-.mx-referral { border-top: 1px dashed var(--line); margin-top: 1.2rem; padding-top: 1rem; }
-.mx-referral h3 { margin: 0 0 .3rem; font-size: 1rem; }
-.mx-referral p { color: var(--ink-2); font-size: .9rem; margin: 0 0 .5rem; }
-.mx-referral ul { margin: 0 0 .5rem; padding-left: 1.1rem; font-size: .9rem; }
-.mx-referral li { margin-bottom: .3rem; }
-.mx-referral .hint { font-size: .78rem; }
 
 /* Sections */
 .sec { padding: 2.5rem 0; }

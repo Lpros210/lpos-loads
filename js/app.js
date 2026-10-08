@@ -27,12 +27,6 @@
       q_copy: "Copiar resumen", q_copied: "Copiado ✓",
       q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor. Le confirmamos el precio en 1 hora en horario de oficina.",
       q_wa_lpos_p: "¿Prefiere que lo coticemos nosotros? Escríbanos y le respondemos en 1 hora.",
-      mx_ref_h: "¿Envía a México?", mx_ref_p: "Liquidation Pros solo recoge/envía dentro de EE. UU. Si necesita mover la mercancía a México, usted organiza su propio flete — estas empresas manejan cruces fronterizos EE. UU.–México por Laredo. No estamos afiliados con ellas y no respondemos por su servicio, precio ni ningún problema con el cruce.",
-      mx_ref_rxo: "transportista que ya hemos usado; opera instalación de cruce fronterizo cerca del World Trade Bridge en Laredo.",
-      mx_ref_ryder: "instalación en Laredo y patio en Nuevo Laredo.",
-      mx_ref_mallory: "oficina en Laredo, ~28 años en transporte y aduana transfronteriza.",
-      mx_ref_usat: "servicio transfronterizo en Laredo con socios de agencia aduanal.",
-      mx_ref_disclaimer: "Empresas que pueden ayudar, según su propia información pública — no es una recomendación ni garantía.",
       nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_guide: "Guía", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
       hero_h1: "Tráileres completos de liquidación, a precio fijo. Sin subastas.",
@@ -146,12 +140,6 @@
       q_copy: "Copy summary", q_copied: "Copied ✓",
       q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller. We confirm the price within 1 hour during office hours.",
       q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
-      mx_ref_h: "Shipping to Mexico?", mx_ref_p: "Liquidation Pros only picks up/ships within the US. If you need to move the merchandise into Mexico, you arrange your own freight — these companies handle US–Mexico cross-border shipping via Laredo. We are not affiliated with them and are not responsible for their service, pricing, or any issues with cross-border delivery.",
-      mx_ref_rxo: "a carrier we've used before; runs a cross-border facility near the World Trade Bridge in Laredo.",
-      mx_ref_ryder: "Laredo facility plus a Nuevo Laredo yard.",
-      mx_ref_mallory: "Laredo office, ~28 years in cross-border trucking and customs.",
-      mx_ref_usat: "Laredo transborder service with customs-brokerage partners.",
-      mx_ref_disclaimer: "Companies that may be able to help, per their own public information — not an endorsement or guarantee.",
       nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_guide: "Guide", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
       hero_h1: "Full liquidation truckloads at a fixed price. No auctions.",
@@ -708,18 +696,7 @@
         <label>${esc(t("q_pallets"))}<input name="pallets" type="number" min="1" max="30" inputmode="numeric" value="${load ? esc(String(load.pallets).split(/[\u2013-]/).pop()) : 26}"></label>
       </div>
       <button class="btn btn-red" type="submit">${esc(t("q_btn"))}</button>
-      <div id="q-out" aria-live="polite"></div></form>
-      <div class="mx-referral">
-        <h3>${esc(t("mx_ref_h"))}</h3>
-        <p>${esc(t("mx_ref_p"))}</p>
-        <ul>
-          <li><b>RXO</b> \u2014 ${esc(t("mx_ref_rxo"))}</li>
-          <li><b>Ryder</b> \u2014 ${esc(t("mx_ref_ryder"))}</li>
-          <li><b>Mallory Group</b> \u2014 ${esc(t("mx_ref_mallory"))}</li>
-          <li><b>USA Truck</b> \u2014 ${esc(t("mx_ref_usat"))}</li>
-        </ul>
-        <p class="hint">${esc(t("mx_ref_disclaimer"))}</p>
-      </div>`;
+      <div id="q-out" aria-live="polite"></div></form>`;
     const form = root.querySelector("form");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
