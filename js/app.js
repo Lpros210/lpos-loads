@@ -7,6 +7,9 @@
      page's <script type="application/ld+json"> blocks is generated from that file by
      tools/gen_seo.py. This constant has no build step, so keep it matching PHONE_E164 by hand. */
   const WHATSAPP = "19569966545";
+  /* ANALYTICS (intentionally empty): no Meta Pixel / GA4 / Google Ads IDs exist yet. When they do, add the tag
+     snippets (see outputs/continuous-cto/LEAD_FLOW_TRACKING_GO_LIVE_CHECK_2026-10-10.md, patch P2) and set IDs here:
+     const TRACKING = { META_PIXEL_ID: "", GA4_ID: "", GOOGLE_ADS_ID: "" }; */
   const FREIGHTQUOTE_URL = "https://www.freightquote.com/"; // no-signup instant quote; URL params not verified, so we give a copyable summary
 
   /* ---------- i18n dictionary (single source for both languages) ---------- */
@@ -16,7 +19,7 @@
       nav_quote: "Cotizar envío",
       lead_h2: "Entre a la lista de compradores", lead_sub: "Las cargas nuevas se avisan primero a la lista. Déjenos su WhatsApp y le escribimos cuando llegue algo que le sirva.",
       f_wa: "WhatsApp", f_buy: "Qué compra", lead_submit: "Entrar a la lista",
-      lead_done: "Guardado. Se abrió WhatsApp y su correo con el mensaje listo; si no se abrieron, use los botones:",
+      lead_done: "Guardado. Se abrió WhatsApp con su mensaje: toque Enviar ahí. Si no, use los botones:",
       sample_h: "Tráiler de muestra", sample_badge: "Muestra", sample_note_card: "Foto de muestra de un tráiler similar",
       video_h: "Video del tráiler",
       ship_seller: "Recogida: el comprador arregla su transporte (cotiza aquí)", ship_pickup: "Recogida en", pickup_label: "Texas (ubicación confirmada al reservar)", price_tbd: "Precio al confirmar",
@@ -60,10 +63,10 @@
       cat_ecom_title: "Pacas de devoluciones de comercio electrónico", cat_ecom_desc: "Tarimas de devoluciones de clientes de comercio electrónico, vendidas por pieza. Por ahora agotado.",
       f_retailers: "Qué le interesa", f_budget: "Presupuesto por tráiler (USD)", f_notes: "Comentarios",
       f_consent: "Acepto que Liquidation Pros me contacte por WhatsApp o correo sobre cargas disponibles.",
-      f_submit_wait: "Entrar a la lista", f_send_wa: "Enviar por WhatsApp", f_send_mail: "Enviar por correo",
+      f_submit_wait: "Entrar a la lista", f_send_wa: "Abrir WhatsApp para enviar", wa_blocked: "Guardado. Su navegador bloqueó la ventana: toque \"Abrir WhatsApp para enviar\" para que recibamos su solicitud.", f_send_mail: "Enviar por correo",
       f_qty: "Tarimas o unidades", f_dest: "Destino (ciudad, estado)", f_zip: "Código postal / CP",
       f_offer: "Su oferta (USD)", f_offer_hint: "Ofertas razonables se responden el mismo día.",
-      form_saved: "Guardado en este teléfono. Ahora envíelo por WhatsApp o correo para que lo recibamos:",
+      form_saved: "Guardado. Se abrió WhatsApp con su mensaje: toque Enviar ahí. Si no, envíelo por WhatsApp o correo para que lo recibamos:",
       faq_h2: "Preguntas frecuentes",
       faq1_q: "¿Puedo ver el manifiesto antes de pagar?", faq1_a: "Sí — le enviamos el manifiesto para que revise el contenido y el valor estimado de venta al menudeo antes de comprometerse con una carga.",
       faq2_q: "¿El precio incluye el flete o es solo la mercancía?", faq2_a: "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (en Texas) o que le coticemos el flete hasta su bodega en EE. UU. No enviamos a México. Le damos ambos números para que quede claro.",
@@ -130,7 +133,7 @@
       nav_quote: "Shipping quote",
       lead_h2: "Join the buyer list", lead_sub: "New loads go to the list first. Leave your WhatsApp and we message you when a fit lands.",
       f_wa: "WhatsApp", f_buy: "What you buy", lead_submit: "Join the list",
-      lead_done: "Saved. WhatsApp and your email app opened with the message ready; if they didn't, use the buttons:",
+      lead_done: "Saved. WhatsApp opened with your message: tap Send there. If not, use the buttons:",
       sample_h: "Sample truck", sample_badge: "Sample", sample_note_card: "Sample photo of a similar trailer",
       video_h: "Trailer video",
       ship_seller: "Pickup: buyer arranges transport (quote here)", ship_pickup: "Pickup in", pickup_label: "Texas (location confirmed on reservation)", price_tbd: "Price on confirmation",
@@ -174,10 +177,10 @@
       cat_ecom_title: "E-commerce customer-return pallets", cat_ecom_desc: "E-commerce customer-return pallets, sold by the piece. Sold out for now.",
       f_retailers: "What you want", f_budget: "Budget per truckload (USD)", f_notes: "Notes",
       f_consent: "I agree that Liquidation Pros may contact me on WhatsApp or email about available loads.",
-      f_submit_wait: "Join the waitlist", f_send_wa: "Send via WhatsApp", f_send_mail: "Send via email",
+      f_submit_wait: "Join the waitlist", f_send_wa: "Open WhatsApp to send", wa_blocked: "Saved. Your browser blocked the popup: tap \"Open WhatsApp to send\" so we receive your request.", f_send_mail: "Send via email",
       f_qty: "Pallets or units", f_dest: "Destination (city, state)", f_zip: "ZIP / postal code",
       f_offer: "Your offer (USD)", f_offer_hint: "Reasonable offers get a same-day answer.",
-      form_saved: "Saved on this device. Now send it on WhatsApp or email so we receive it:",
+      form_saved: "Saved. WhatsApp opened with your message: tap Send there. If not, send it on WhatsApp or email so we receive it:",
       faq_h2: "Frequently asked questions",
       faq1_q: "Can I see the manifest before I pay?", faq1_a: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load.",
       faq2_q: "Does the price include freight, or is that separate?", faq2_a: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (in Texas) or have us quote freight to your US warehouse (we do not ship to Mexico). We'll give you both numbers so it's clear.",
@@ -271,11 +274,25 @@
   /* UTM + A/B variant captured on oferta.html (ads landing) and stored under "lpos.utm" —
      appended here so every WhatsApp/email CTA on the site (reserve, buy, quote, waitlist, contact)
      carries the same campaign reference once a visitor has landed from an ad. */
+  const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
+  function getUtm() { try { return JSON.parse(localStorage.getItem("lpos.utm") || "null") || {}; } catch (e) { return {}; } }
+  /* First-touch capture on ANY landing page: written once, never overwritten by later visits. */
+  (function () {
+    try {
+      const qs = new URLSearchParams(location.search), u = {};
+      UTM_KEYS.forEach((k) => { if (qs.get(k)) u[k] = qs.get(k); });
+      if (Object.keys(u).length && !UTM_KEYS.some((k) => getUtm()[k])) {
+        u.ts = new Date().toISOString(); u.landing = location.pathname;
+        localStorage.setItem("lpos.utm", JSON.stringify(u));
+      }
+    } catch (e) {}
+  })();
   function utmSuffix() {
-    let u; try { u = JSON.parse(localStorage.getItem("lpos.utm") || "null"); } catch (e) { u = null; }
-    if (!u) return "";
-    const ref = [u.utm_campaign, u.utm_content].filter(Boolean).join("/");
-    return ref ? "\n[ref: " + ref + "]" : "";
+    const u = getUtm();
+    const ref = [u.utm_source, u.utm_campaign, u.utm_content].filter(Boolean).join("/");
+    const ids = ["gclid", "fbclid"].filter((k) => u[k]).map((k) => k + "=" + u[k]).join(" ");
+    const all = [ref, ids].filter(Boolean).join(" ");
+    return all ? "\n[ref: " + all + "]" : "";
   }
   function waLink(text) { return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text + utmSuffix()); }
   function mailLink(subject, body, email) { return "mailto:" + (email || DATA.contact.email) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body + utmSuffix()); }
@@ -620,9 +637,13 @@
   function saveLocal(key, rec) {
     try { const arr = JSON.parse(localStorage.getItem(key) || "[]"); arr.push(rec); localStorage.setItem(key, JSON.stringify(arr)); } catch (e) {}
   }
+  /* Opens WhatsApp right after submit (inside the click gesture). If the browser blocks the popup the
+     visible "Open WhatsApp to send" button is the fallback; the lead is also saved in localStorage. */
+  function openWA(url) { try { const w = window.open(url, "_blank"); if (w) { w.opener = null; return true; } } catch (e) {} return false; }
   function showSendLinks(out, subject, body) {
-    out.innerHTML = `<div class="notice ok"><p style="margin:0 0 .6rem">${esc(t("form_saved"))}</p>
-      <div style="display:grid;gap:.5rem"><a class="btn btn-wa" href="${waLink(body)}" target="_blank" rel="noopener">${esc(t("f_send_wa"))}</a><a class="btn btn-line" href="${mailLink(subject, body)}">${esc(t("f_send_mail"))}</a></div></div>`;
+    const wa = waLink(body), opened = openWA(wa);
+    out.innerHTML = `<div class="notice ok" role="status"><p style="margin:0 0 .6rem">${esc(t(opened ? "form_saved" : "wa_blocked"))}</p>
+      <div style="display:grid;gap:.5rem"><a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${esc(t("f_send_wa"))}</a><a class="btn btn-line" href="${mailLink(subject, body)}">${esc(t("f_send_mail"))}</a></div></div>`;
     out.scrollIntoView({ block: "nearest" });
   }
 
@@ -724,6 +745,7 @@
         const ta = out.querySelector("#q-sum"); ta.select();
         (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).catch(() => document.execCommand("copy")).finally(() => { cp.textContent = t("q_copied"); });
       });
+      openWA(waLink(waText));
       saveLocal("lpos.quotes", { ts: new Date().toISOString(), lang, origin, dest: f.dest, pallets: f.pallets, load: ld ? ld.id : null });
       out.scrollIntoView({ block: "nearest" });
     });
@@ -746,7 +768,7 @@
       const out = document.getElementById("lead-out");
       out.innerHTML = `<div class="notice ok"><p style="margin:0 0 .6rem">${esc(t("lead_done"))}</p><div style="display:grid;gap:.5rem"><a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${esc(t("f_send_wa"))}</a><a class="btn btn-line" href="${mail}">${esc(t("f_send_mail"))}</a></div></div>`;
       out.scrollIntoView({ block: "nearest" });
-      try { window.open(wa, "_blank", "noopener"); location.href = mail; } catch (err) {}
+      if (!openWA(wa)) out.querySelector("p").textContent = t("wa_blocked");
     });
   }
 

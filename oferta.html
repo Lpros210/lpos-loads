@@ -181,8 +181,9 @@
     var vc = VARIANTS[v];
     document.getElementById("v-headline").textContent = vc.headline;
     document.getElementById("v-primary").textContent = vc.primary;
-    var utm = { utm_source: qs.get("utm_source") || "", utm_campaign: qs.get("utm_campaign") || "", utm_content: qs.get("utm_content") || "", v: v, ts: new Date().toISOString() };
-    try { localStorage.setItem("lpos.utm", JSON.stringify(utm)); } catch (e) {}
+    // first-touch UTM/click ids are stored by js/app.js (never overwritten); only the A/B variant is kept here
+    try { localStorage.setItem("lpos.variant", v); } catch (e) {}
+    var utm = { utm_source: qs.get("utm_source") || "", utm_campaign: qs.get("utm_campaign") || "", utm_content: qs.get("utm_content") || "" };
     var ref = [utm.utm_campaign, utm.utm_content].filter(Boolean).join("/");
     document.getElementById("wa-cta").dataset.wa = vc.wa + (ref ? "\n[ref: " + ref + "]" : "");
   })();
