@@ -7,9 +7,27 @@
      page's <script type="application/ld+json"> blocks is generated from that file by
      tools/gen_seo.py. This constant has no build step, so keep it matching PHONE_E164 by hand. */
   const WHATSAPP = "19569966545";
-  /* ANALYTICS (intentionally empty): no Meta Pixel / GA4 / Google Ads IDs exist yet. When they do, add the tag
-     snippets (see outputs/continuous-cto/LEAD_FLOW_TRACKING_GO_LIVE_CHECK_2026-10-10.md, patch P2) and set IDs here:
-     const TRACKING = { META_PIXEL_ID: "", GA4_ID: "", GOOGLE_ADS_ID: "" }; */
+  /* ANALYTICS: GA4 property "www.lpros.com - GA4" (existing, verified live 2026-10-10). Meta Pixel / Google Ads
+     conversion IDs: none confirmed yet (see outputs/continuous-cto/TRACKING_IDS_CHECK_2026-10-10.md); set them here when chosen. */
+  const TRACKING = { GA4_ID: "G-X6LHSY1HBH", META_PIXEL_ID: "", GOOGLE_ADS_ID: "" };
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  if (TRACKING.GA4_ID) {
+    const gs = document.createElement("script");
+    gs.async = true;
+    gs.src = "https://www.googletagmanager.com/gtag/js?id=" + TRACKING.GA4_ID;
+    document.head.appendChild(gs);
+    gtag("js", new Date());
+    gtag("config", TRACKING.GA4_ID);
+  }
+  /* Lead events: WhatsApp / phone clicks and every form submit (forms then open WhatsApp). */
+  document.addEventListener("click", function (e) {
+    const a = e.target.closest && e.target.closest('a[href*="wa.me/"], a[href^="tel:"]');
+    if (a) gtag("event", a.href.indexOf("tel:") === 0 ? "click_call" : "click_whatsapp", { link_url: a.href.split("?")[0], page_path: location.pathname });
+  }, true);
+  document.addEventListener("submit", function (e) {
+    gtag("event", "generate_lead", { form_id: (e.target && e.target.id) || "form", page_path: location.pathname });
+  }, true);
   const FREIGHTQUOTE_URL = "https://www.freightquote.com/"; // no-signup instant quote; URL params not verified, so we give a copyable summary
 
   /* ---------- i18n dictionary (single source for both languages) ---------- */
@@ -91,7 +109,7 @@
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
       priv_lead: "Este aviso explica, en lenguaje sencillo, qué datos recopilamos cuando usted usa el formulario de cotización o nos escribe por WhatsApp, y cómo los usamos.",
-      priv_collect_h: "Qué datos recopilamos", priv_collect_p: "Cuando llena el formulario de cotización, lista de espera o contacto, o nos escribe por WhatsApp, guardamos: su nombre, número de WhatsApp/teléfono, ciudad de entrega o destino, qué le interesa comprar, presupuesto (si lo indica) y cualquier comentario que nos deje. No pedimos ni guardamos datos de tarjeta de pago en el sitio.",
+      priv_collect_h: "Qué datos recopilamos", priv_collect_p: "Cuando llena el formulario de cotización, lista de espera o contacto, o nos escribe por WhatsApp, guardamos: su nombre, número de WhatsApp/teléfono, ciudad de entrega o destino, qué le interesa comprar, presupuesto (si lo indica) y cualquier comentario que nos deje. No pedimos ni guardamos datos de tarjeta de pago en el sitio. También usamos Google Analytics para contar visitas y clics (páginas vistas, clics a WhatsApp o teléfono, envíos de formularios); Google puede usar cookies para esto.",
       priv_use_h: "Para qué los usamos", priv_use_p: "Solo para responder su cotización o solicitud, avisarle de cargas disponibles que coincidan con lo que busca, y coordinar recolección o flete. No los usamos para nada más.",
       priv_share_h: "No vendemos sus datos", priv_share_p: "Liquidation Pros LLC no vende ni renta su información a terceros. Sus datos solo se usan internamente para atenderlo.",
       priv_delete_h: "Cómo pedir que borremos sus datos", priv_delete_p: "Escríbanos por WhatsApp o al correo juan@lpros.biz pidiendo que eliminemos su información y lo hacemos.",
@@ -205,7 +223,7 @@
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
       priv_lead: "This notice explains, in plain language, what data we collect when you use the quote form or message us on WhatsApp, and how we use it.",
-      priv_collect_h: "What data we collect", priv_collect_p: "When you fill in the quote, waitlist or contact form, or message us on WhatsApp, we save: your name, WhatsApp/phone number, delivery city or destination, what you're interested in buying, budget (if given) and any notes you leave. We do not ask for or store payment card data on the site.",
+      priv_collect_h: "What data we collect", priv_collect_p: "When you fill in the quote, waitlist or contact form, or message us on WhatsApp, we save: your name, WhatsApp/phone number, delivery city or destination, what you're interested in buying, budget (if given) and any notes you leave. We do not ask for or store payment card data on the site. We also use Google Analytics to count visits and clicks (page views, WhatsApp/phone clicks, form submits); Google may use cookies for this.",
       priv_use_h: "What we use it for", priv_use_p: "Only to answer your quote or request, tell you about available loads that match what you're looking for, and coordinate pickup or freight. We do not use it for anything else.",
       priv_share_h: "We do not sell your data", priv_share_p: "Liquidation Pros LLC does not sell or rent your information to third parties. Your data is only used internally to help you.",
       priv_delete_h: "How to request deletion", priv_delete_p: "Message us on WhatsApp or email juan@lpros.biz asking us to delete your information and we will.",
