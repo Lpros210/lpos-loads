@@ -110,8 +110,6 @@ video { width: 100%; height: auto; border-radius: var(--radius); background: #00
 @media (min-width: 760px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
 .card .ship { font-size: .85rem; color: var(--ink-2); }
 .card .ship a { font-weight: 650; }
-.card .disclosure { font-size: .78rem; color: var(--muted); margin-top: .15rem; }
-.card .disclosure a { color: inherit; }
 
 /* Shipping quote */
 .quote .est { border: 1px solid var(--line); border-left: 4px solid var(--ok); border-radius: 8px; padding: .8rem 1rem; }

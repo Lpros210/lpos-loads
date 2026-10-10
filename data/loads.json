@@ -5,7 +5,7 @@
   },
   "contact": {
     "company": "Liquidation Pros LLC",
-    "phone_display": "+1 (323) 961-3868",
+    "phone_display": "+1 (956) 996-6545",
     "email": "juan@lpros.biz",
     "leads_email": "leads@lpros.biz",
     "address": "709 W Joe Pate Blvd, Hidalgo, TX 78557",
@@ -99,7 +99,7 @@
     {
       "id": "LP-XAJI",
       "po": null,
-      "retailer": "Target",
+      "retailer": "Liquidation Pros",
       "program": {
         "es": "Bulk · Mercancía general",
         "en": "Bulk · General Merchandise"
@@ -108,20 +108,20 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "available",
+      "status": "on_hold",
       "sold_verified": false,
       "units": 10267,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": 10919.17,
+      "price_pickup": null,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
         "name": "Liquidation Pros",
-        "city": "San Antonio, TX",
+        "city": "Texas",
         "state": "TX"
       },
-      "freight_control": "seller",
+      "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
       "sample": null,
@@ -146,7 +146,7 @@
     {
       "id": "LP-0Y6D",
       "po": null,
-      "retailer": "Target",
+      "retailer": "Liquidation Pros",
       "program": {
         "es": "Bulk · Mercancía general",
         "en": "Bulk · General Merchandise"
@@ -155,20 +155,20 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "available",
+      "status": "on_hold",
       "sold_verified": false,
       "units": 14665,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": 11337.22,
+      "price_pickup": null,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
         "name": "Liquidation Pros",
-        "city": "San Antonio, TX",
+        "city": "Texas",
         "state": "TX"
       },
-      "freight_control": "seller",
+      "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
       "sample": null,
@@ -193,7 +193,7 @@
     {
       "id": "LP-PBHS",
       "po": null,
-      "retailer": "Target",
+      "retailer": "Liquidation Pros",
       "program": {
         "es": "Bulk · Mercancía general",
         "en": "Bulk · General Merchandise"
@@ -202,20 +202,20 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "available",
+      "status": "on_hold",
       "sold_verified": false,
       "units": 10062,
       "pallets": "23",
       "weight_lb": null,
-      "price_pickup": 9671.46,
+      "price_pickup": null,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
         "name": "Liquidation Pros",
-        "city": "San Antonio, TX",
+        "city": "Texas",
         "state": "TX"
       },
-      "freight_control": "seller",
+      "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
       "sample": null,
@@ -240,7 +240,7 @@
     {
       "id": "LP-AHXT",
       "po": null,
-      "retailer": "Target",
+      "retailer": "Liquidation Pros",
       "program": {
         "es": "Bulk · Mercancía general",
         "en": "Bulk · General Merchandise"
@@ -249,20 +249,20 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "available",
+      "status": "on_hold",
       "sold_verified": false,
       "units": 25670,
       "pallets": "24",
       "weight_lb": null,
-      "price_pickup": 8314.54,
+      "price_pickup": null,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
         "name": "Liquidation Pros",
-        "city": "San Antonio, TX",
+        "city": "Texas",
         "state": "TX"
       },
-      "freight_control": "seller",
+      "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
       "sample": null,
@@ -287,7 +287,7 @@
     {
       "id": "LP-HV3A",
       "po": null,
-      "retailer": "Target",
+      "retailer": "Liquidation Pros",
       "program": {
         "es": "Bulk · Mercancía general",
         "en": "Bulk · General Merchandise"
@@ -296,20 +296,20 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "available",
+      "status": "on_hold",
       "sold_verified": false,
       "units": 24719,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": 12019.65,
+      "price_pickup": null,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
         "name": "Liquidation Pros",
-        "city": "San Antonio, TX",
+        "city": "Texas",
         "state": "TX"
       },
-      "freight_control": "seller",
+      "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
       "sample": null,
@@ -353,7 +353,7 @@
       "condition_code": "salvage",
       "location": {
         "name": "Liquidation Pros",
-        "city": "Hidalgo, TX",
+        "city": "Texas",
         "state": "TX"
       },
       "freight_control": "lpos",

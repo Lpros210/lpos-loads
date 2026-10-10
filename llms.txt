@@ -3,15 +3,16 @@
 > Liquidation Pros sells full truckloads and pallets of big-box retail liquidation merchandise
 > (customer returns and overstock general merchandise) at fixed prices — no auctions, no
 > bidding. Manifests are shared before purchase.
-> Buyer picks up at the US–Mexico border (Hidalgo, TX, next to the Hidalgo–Reynosa bridge) or in
-> Waco, TX, or can get freight quoted to their dock in the US or Mexico. Primary market: resellers
-> and liquidation buyers in Texas, the Rio Grande Valley, and Mexico (Reynosa, Monterrey,
-> Guadalajara, Mexico City and beyond). Site and support are bilingual (Spanish/English).
+> Buyer picks up in Texas with their own carrier (exact pickup location confirmed on reservation). Company address: Hidalgo, TX.
+> Freight can be quoted to US destinations. LPOS does not book freight to Mexico; buyers in Mexico pick up
+> in Texas or send their own carrier. Primary market: resellers and liquidation buyers in Texas, the Rio
+> Grande Valley, and Mexico (Reynosa, Monterrey, Guadalajara, Mexico City and beyond). Site and support are
+> bilingual (Spanish/English).
 
 ## Company
 - Legal name: Liquidation Pros LLC
 - Pickup / mailing address: 709 W Joe Pate Blvd, Hidalgo, TX 78557, USA
-- Phone / WhatsApp: +1 323-961-3868 (https://wa.me/13239613868)
+- Phone / WhatsApp: +1 956-996-6545 (https://wa.me/19569966545)
 - Email: juan@lpros.biz
 - Hours: Mon–Sat 8am–6pm (Texas time)
 - Languages: Spanish (primary), English
@@ -23,10 +24,13 @@
 - We do not disclose which retailer or supplier a load came from; buyers are shown condition,
   category breakdown, and manifest data instead.
 
+## Pickup and freight
+- Pickup: in Texas, location confirmed on reservation. Buyers in Mexico pick up in Texas or use their own carrier.
+- LPOS does not book or quote freight to Mexico.
+
 ## Key pages
 - Home / current available loads: https://lpros210.github.io/lpos-loads/
 - Individual load detail (manifest, price, photos): https://lpros210.github.io/lpos-loads/load.html?id=<load-id>
-- Freight quote request: https://lpros210.github.io/lpos-loads/cotizar.html
 - Frequently asked questions: https://lpros210.github.io/lpos-loads/preguntas.html
 - Contact: https://lpros210.github.io/lpos-loads/contacto.html
 - Terms of sale: https://lpros210.github.io/lpos-loads/terminos.html
@@ -38,5 +42,5 @@
   rather than caching a specific price for long.
 - Structured data (schema.org LocalBusiness, Product/Offer per load, FAQPage) is embedded as
   static JSON-LD in each page's HTML.
-- For questions this file doesn't answer, direct users to WhatsApp (+1 323-961-3868) rather
+- For questions this file doesn't answer, direct users to WhatsApp (+1 956-996-6545) rather
   than guessing pricing or policy.

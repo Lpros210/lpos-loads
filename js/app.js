@@ -6,33 +6,33 @@
      Single source of truth is tools/site_config.py (PHONE_E164) — the static JSON-LD in every
      page's <script type="application/ld+json"> blocks is generated from that file by
      tools/gen_seo.py. This constant has no build step, so keep it matching PHONE_E164 by hand. */
-  const WHATSAPP = "13239613868";
+  const WHATSAPP = "19569966545";
   const FREIGHTQUOTE_URL = "https://www.freightquote.com/"; // no-signup instant quote; URL params not verified, so we give a copyable summary
 
   /* ---------- i18n dictionary (single source for both languages) ---------- */
   const T = {
     es: {
-      tagline: "Tráileres de liquidación · Texas, EE. UU.",
+      tagline: "Tráileres de liquidación · Recoja en Texas",
       nav_quote: "Cotizar envío",
       lead_h2: "Entre a la lista de compradores", lead_sub: "Las cargas nuevas se avisan primero a la lista. Déjenos su WhatsApp y le escribimos cuando llegue algo que le sirva.",
       f_wa: "WhatsApp", f_buy: "Qué compra", lead_submit: "Entrar a la lista",
       lead_done: "Guardado. Se abrió WhatsApp y su correo con el mensaje listo; si no se abrieron, use los botones:",
       sample_h: "Tráiler de muestra", sample_badge: "Muestra", sample_note_card: "Foto de muestra de un tráiler similar",
       video_h: "Video del tráiler",
-      ship_seller: "Envío: lo controla el vendedor (cotiza aquí)", ship_pickup: "Recogida en",
+      ship_seller: "Recogida: el comprador arregla su transporte (cotiza aquí)", ship_pickup: "Recogida en", pickup_label: "Texas (ubicación confirmada al reservar)", price_tbd: "Precio al confirmar",
       quote_h: "Cotizar envío", quote_sub: "Pida la cotización oficial de flete — recogida y envío dentro de EE. UU. solamente.",
-      q_load: "Carga", q_any_load: "Sin carga específica (sale de Hidalgo, TX)", q_dest: "Código postal (EE. UU.)", q_dest_hint: "Solo destinos en EE. UU. — no enviamos a México.", q_pallets: "Tarimas", q_btn: "Pedir cotización",
+      q_load: "Carga", q_any_load: "Sin carga específica (recoge en Texas)", q_dest: "Código postal (EE. UU.)", q_dest_hint: "Solo destinos en EE. UU. — no enviamos a México.", q_pallets: "Tarimas", q_btn: "Pedir cotización",
       q_generic: "El flete varía según destino y transportista — pida la cotización oficial abajo. No mostramos un estimado en dólares porque los fletes cambian seguido.",
       q_official: "Cotización oficial", q_fq: "Cotizar en Freightquote.com (sin registro)", q_fq_p: "Copie este resumen y péguelo en el cotizador:",
       q_copy: "Copiar resumen", q_copied: "Copiado ✓",
-      q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo coordina el vendedor. Le confirmamos el precio en 1 hora en horario de oficina.",
+      q_wa: "Cotización oficial en 1 hora por WhatsApp", q_wa_p: "En esta carga el flete lo arregla el comprador con su propio transportista. Si necesita cotización de entrega, le confirmamos el precio en 1 hora en horario de oficina.",
       q_wa_lpos_p: "¿Prefiere que lo coticemos nosotros? Escríbanos y le respondemos en 1 hora.",
       nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_guide: "Guía", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
       hero_h1: "Tráileres completos de liquidación, a precio fijo. Sin subastas.",
-      hero_lead: "Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega. Las cargas llegan y se venden en 24 horas: entre a la lista de espera para que le avisemos primero.",
+      hero_lead: "Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega. Las cargas se venden rápido: entre a la lista de espera para que le avisemos primero.",
       hero_cta_loads: "Ver cargas disponibles", hero_cta_wait: "Entrar a la lista de espera",
-      fact_loads: "cargas disponibles", fact_window: "para vender cada carga", fact_border: "frontera con Reynosa",
+      fact_loads: "cargas disponibles", fact_window: "precio fijo por tráiler", fact_border: "recoja con su transportista",
       hero_caption: "Tráiler de muestra: foto real de un tráiler que recibimos (mayo 2026).",
       trust_noauction: "Sin subastas — usted decide", trust_flatprice: "Precio fijo antes de comprometerse",
       trust_manifest: "Manifiesto real, no plantilla", trust_whatsapp: "Respuesta directa por WhatsApp",
@@ -40,7 +40,7 @@
       receiving_play: "Toque para reproducir",
       loads_h2: "Cargas disponibles", loads_sub: "Precio fijo por tráiler completo. Reserve o compre; primero en reservar, primero en cargar.",
       loads_sold_h2: "Vendidas recientemente", loads_sold_sub: "Para que vea lo que normalmente llega.",
-      status_available: "Disponible", status_sold: "Vendida", status_reserved: "Reservada",
+      status_available: "Disponible", status_sold: "Vendida", status_reserved: "Reservada", status_on_hold: "En espera",
       units: "Unidades", pallets: "Tarimas", location: "Ubicación", weight: "Peso aprox.", condition: "Condición",
       price_pickup: "Precio recogiendo en Texas", price_pickup_short: "recogiendo en TX", per_unit: "por unidad",
       delivered_quote: "Puesto en su bodega: cotizamos", see_load: "Ver carga", reserve: "Reservar", buy: "Comprar ahora", quote: "Cotizar flete",
@@ -50,14 +50,14 @@
       how1_h: "Vea la carga", how1_p: "Unidades, tarimas, condición, ubicación y precio fijo en la misma pantalla.",
       how2_h: "Reserve o compre", how2_p: "Reservar aparta la carga 24 h mientras confirma pago. Comprar ahora la cierra.",
       how3_h: "Pague", how3_p: "Transferencia, wire o depósito. Le enviamos factura de Zoho al confirmar.",
-      how4_h: "Recoja o se la enviamos", how4_p: "Recoja con su transportista o pídanos flete a su bodega en EE. UU. No enviamos a México — vea opciones de transportistas de cruce fronterizo si lo necesita.",
+      how4_h: "Recoja o se la enviamos", how4_p: "Recoja con su propio transportista en Texas (ubicación confirmada al reservar), o pídanos flete a su bodega en EE. UU. No enviamos a México. Si su transportista cruza a México, esa parte la coordina usted.",
       wait_h2: "Lista de espera de compradores", wait_sub: "Las cargas nuevas se avisan primero a la lista. Díganos qué busca y le escribimos por WhatsApp cuando llegue algo que le sirva.",
       f_name: "Nombre", f_company: "Empresa (opcional)", f_phone: "WhatsApp / teléfono", f_email: "Correo (opcional)", f_city: "Ciudad de entrega",
       notify_email: "Correo electrónico", notify_submit: "Avíseme por correo",
       other_cat_h: "Otras categorías", other_cat_sub: "Agotado por ahora. Deje su correo y le avisamos cuando haya disponibilidad.",
       status_soldout: "Agotado",
-      cat_walmart_title: "Mercancía general Walmart", cat_walmart_desc: "Tráileres completos de devoluciones y sobrantes Walmart. Disponibilidad variable — por ahora agotado.",
-      cat_amazon_title: "Pacas de devoluciones Amazon", cat_amazon_desc: "Tarimas de devoluciones de clientes Amazon, vendidas por pieza. Por ahora agotado.",
+      cat_retail_title: "Mercancía general de cadena minorista", cat_retail_desc: "Tráileres completos de devoluciones y sobrantes de una cadena minorista de EE. UU. Disponibilidad variable — por ahora agotado.",
+      cat_ecom_title: "Pacas de devoluciones de comercio electrónico", cat_ecom_desc: "Tarimas de devoluciones de clientes de comercio electrónico, vendidas por pieza. Por ahora agotado.",
       f_retailers: "Qué le interesa", f_budget: "Presupuesto por tráiler (USD)", f_notes: "Comentarios",
       f_consent: "Acepto que Liquidation Pros me contacte por WhatsApp o correo sobre cargas disponibles.",
       f_submit_wait: "Entrar a la lista", f_send_wa: "Enviar por WhatsApp", f_send_mail: "Enviar por correo",
@@ -66,24 +66,24 @@
       form_saved: "Guardado en este teléfono. Ahora envíelo por WhatsApp o correo para que lo recibamos:",
       faq_h2: "Preguntas frecuentes",
       faq1_q: "¿Puedo ver el manifiesto antes de pagar?", faq1_a: "Sí — le enviamos el manifiesto para que revise el contenido y el valor estimado de venta al menudeo antes de comprometerse con una carga.",
-      faq2_q: "¿El precio incluye el flete o es solo la mercancía?", faq2_a: "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (Hidalgo/Waco, TX) o que le coticemos el flete hasta su bodega. Le damos ambos números para que quede claro.",
-      faq3_q: "¿Ustedes organizan el flete o solo venden la mercancía?", faq3_a: "Las dos opciones — puede organizar su propio flete/recolección, o le cotizamos el flete usando costos reales recientes de esa ruta hasta su bodega.",
-      faq4_q: "¿Dónde recojo la mercancía?", faq4_a: "La recolección es en nuestras ubicaciones de Hidalgo, TX y Waco, TX, según dónde esté la carga específica. Le confirmamos la dirección exacta una vez que su carga esté lista.",
+      faq2_q: "¿El precio incluye el flete o es solo la mercancía?", faq2_a: "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (en Texas) o que le coticemos el flete hasta su bodega en EE. UU. No enviamos a México. Le damos ambos números para que quede claro.",
+      faq3_q: "¿Ustedes organizan el flete o solo venden la mercancía?", faq3_a: "Las dos opciones — puede organizar su propio flete/recolección, o le cotizamos el flete usando costos reales recientes de esa ruta hasta su bodega en EE. UU.",
+      faq4_q: "¿Dónde recojo la mercancía?", faq4_a: "La recolección es en Texas. Le confirmamos la ubicación y la dirección exacta al reservar su carga.",
       faq5_q: "¿Cómo confirmo que mi pago (Zelle/transferencia) ya fue recibido?", faq5_a: "Mándenos por WhatsApp una captura de pantalla o el número de confirmación de su pago y lo verificamos y le confirmamos.",
       faq6_q: "¿Con qué frecuencia tienen cargas nuevas disponibles?", faq6_a: "Nos movemos rápido — no almacenamos inventario, así que las cargas rotan en cuestión de un día tras llegar. La disponibilidad depende de lo que esté entrando. Escríbanos por WhatsApp y le decimos qué hay disponible ahora mismo.",
       faq_see_all: "Ver todas las preguntas →",
       faqp_h1: "Preguntas frecuentes", faqp_lead: "Respuestas directas a lo que más nos preguntan los compradores por WhatsApp. Si no está aquí, escríbenos.",
       faqp_cta_h: "¿Otra pregunta?", faqp_cta_p: "Escríbenos por WhatsApp y te respondemos directo.", faqp_cta_btn: "Preguntar por WhatsApp",
       faqp_t_manifests: "Manifiestos", faqp_t_pricing: "Precios y depósitos", faqp_t_freight: "Flete y cotizaciones",
-      faqp_t_pickup: "Recolección en Hidalgo / Waco, TX", faqp_t_payment: "Formas de pago", faqp_t_timing: "Disponibilidad",
+      faqp_t_pickup: "Recolección en Texas", faqp_t_payment: "Formas de pago", faqp_t_timing: "Disponibilidad",
       faqp_t_border: "Recoja en la frontera",
-      border_h: "Recoja en la frontera / Border pickup",
-      border_p: "Recolección en 709 W Joe Pate Blvd, Hidalgo, TX 78557 — a un paso del puente Hidalgo–Reynosa. El flete arreglado por el vendedor en estas rutas cortas de Texas puede costar $4–7 por milla; recogiendo usted mismo en la frontera, cargas comparables corren más cerca de $2 por milla. Antes de cruzar tenga listo: identificación del chofer, transportista y placas, ventana de recolección confirmada, comprobante de pago recibido, RFC del exportador, pedimento de exportación y persona de contacto en sitio.",
-      border_line_h: "Recolección:", border_faq_link: "Ver la opción de recoger en la frontera para ahorrar en flete →",
+      border_h: "Recolección en Texas / Texas pickup",
+      border_p: "Recolección en Texas; la ubicación exacta se confirma al reservar. Usted recoge con su propio transportista; no organizamos flete ni cruce a México. Antes de cruzar tenga listo: identificación del chofer, transportista y placas, ventana de recolección confirmada, comprobante de pago recibido, RFC del exportador, pedimento de exportación y persona de contacto en sitio.",
+      border_line_h: "Recolección:", border_faq_link: "Ver la opción de recoger usted mismo para ahorrar en flete →",
       contact_h2: "Contacto", contact_sub: "Hablamos español e inglés. Respondemos más rápido por WhatsApp.",
       contact_wa: "WhatsApp", contact_phone: "Llamar", contact_mail: "Correo", contact_addr: "Bodega",
       contact_form_h: "Escríbanos", f_msg: "Mensaje",
-      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de las principales fuentes de liquidación directamente en EE. UU. y los vende a mayoristas, con recolección en Hidalgo y Waco, TX.",
+      ftr_about: "Liquidation Pros LLC compra tráileres y tarimas de liquidación de las principales fuentes de liquidación directamente en EE. UU. y los vende a mayoristas, con recolección en Texas.",
       ftr_fine: "Precios en USD, recogiendo en Texas salvo indicación. Mercancía vendida tal como está. Los nombres de tiendas son marcas de sus dueños y se usan solo para describir el origen.",
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
@@ -95,21 +95,18 @@
       term_h1: "Términos de venta", term_updated: "Última actualización: septiembre 2026",
       term_lead: "Resumen simple de cómo vendemos: sin letra chica más allá de lo siguiente.",
       term_asis_h: "Mercancía tal como está", term_asis_p: "Toda la mercancía es liquidación (devoluciones, sobrantes o salvage) y se vende tal como está, según el manifiesto que le compartimos. No aceptamos devoluciones por condición ya descrita en el manifiesto.",
-      term_pickup_h: "Recolección o flete", term_pickup_p: "La recolección es en Hidalgo, TX (u otra ubicación indicada en la carga). Si necesita que se la enviemos dentro de EE. UU., el flete se cotiza aparte, por separado del precio de la mercancía. Para destinos en México no organizamos ni cotizamos el flete transfronterizo: puede recoger usted mismo, mandar su propio transportista, o indicarnos la empresa de flete de su preferencia para que recoja en nuestra bodega de Hidalgo, TX.",
+      term_pickup_h: "Recolección o flete", term_pickup_p: "La recolección es en Texas (ubicación confirmada al reservar). Si necesita que se la enviemos, el flete se cotiza aparte, por separado del precio de la mercancía.",
       term_price_h: "Precios en dólares", term_price_p: "Todos los precios publicados están en USD. No hay comisión de plataforma ni impuesto de venta de EE. UU. sobre el precio de recogida.",
       term_noauction_h: "Sin subastas", term_noauction_p: "Vendemos a precio fijo publicado, primero en reservar/comprar, primero en cargar. No subastamos las cargas.",
       term_payment_h: "Pago antes de liberar la carga", term_payment_p: "La mercancía se libera para recolección o envío hasta confirmar el pago completo.",
       contactp_h1: "Contacto", contactp_lead: "Hablamos español e inglés. WhatsApp es lo más rápido.",
       e404_h1: "Página no encontrada", e404_p: "El enlace puede estar mal escrito o la página ya no existe.", e404_cta: "Volver al inicio",
-      back: "Todas las cargas", ref: "Ref.", listed: "Llegó", sale_window: "Se vende en 24 h", window_note: "Ventana de venta: 24 h desde que llega el tráiler. Primero en reservar, primero en cargar.",
+      back: "Todas las cargas", ref: "Ref.", listed: "Llegó", sale_window: "Primero en reservar", window_note: "Primero en reservar, primero en cargar.",
       condition_h: "Condición", manifest_h: "Manifiesto por categoría", photos_h: "Fotos del tráiler",
       manifest_pending: "El manifiesto completo (CSV del vendedor) está disponible. Pídalo por WhatsApp con la referencia de la carga; el desglose por categoría se mostrará aquí cuando lo importemos.",
       manifest_none: "Esta carga se vendió sin manifiesto por categoría. Categorías vistas en el tráiler:",
       cat: "Categoría", qty: "Unidades", retail: "Valor de tienda", note: "Nota",
       retail_note: "Valor de tienda ≠ precio de reventa.",
-      manifest_gate_p: "Vea el manifiesto completo por categoría dejando sus datos de contacto — así confirma que no es una plantilla genérica.",
-      manifest_gate_submit: "Ver manifiesto completo",
-      disclosure_card: "Pago antes de recolección. El flete corre por cuenta del comprador.", disclosure_link: "Ver FAQ de flete →",
       cond_returns_mixed: "Devoluciones y sobrantes sin revisar, mezclados",
       cond_returns_mixed_p: "Mercancía general de un centro de devoluciones: nuevo en caja, caja abierta y piezas dañadas mezcladas. Sin clasificar. Se vende el tráiler completo tal como está.",
       cond_salvage: "Salvage (dañado / caja abierta)",
@@ -124,31 +121,32 @@
       dlg_reserve: "Reservar esta carga", dlg_buy: "Comprar esta carga", dlg_quote: "Cotizar flete", dlg_wait: "Lista de espera",
       opt_pickup: "Recojo en Texas", opt_delivered: "Puesto en mi bodega (cotizar)",
       sold_banner: "Esta carga ya se vendió. Entre a la lista de espera para la siguiente.",
+      hold_banner: "Esta carga está en espera y no está a la venta por ahora. Entre a la lista de espera para la siguiente.",
       err_required: "Faltan datos obligatorios.",
       any: "Cualquiera",
     },
     en: {
-      tagline: "Liquidation truckloads · Texas, USA",
+      tagline: "Liquidation truckloads · Pickup in Texas",
       nav_quote: "Shipping quote",
       lead_h2: "Join the buyer list", lead_sub: "New loads go to the list first. Leave your WhatsApp and we message you when a fit lands.",
       f_wa: "WhatsApp", f_buy: "What you buy", lead_submit: "Join the list",
       lead_done: "Saved. WhatsApp and your email app opened with the message ready; if they didn't, use the buttons:",
       sample_h: "Sample truck", sample_badge: "Sample", sample_note_card: "Sample photo of a similar trailer",
       video_h: "Trailer video",
-      ship_seller: "Shipping: seller-controlled (quote here)", ship_pickup: "Pickup in",
+      ship_seller: "Pickup: buyer arranges transport (quote here)", ship_pickup: "Pickup in", pickup_label: "Texas (location confirmed on reservation)", price_tbd: "Price on confirmation",
       quote_h: "Shipping quote", quote_sub: "Request the official freight quote — pickup and shipping within the US only.",
-      q_load: "Load", q_any_load: "No specific load (ships from Hidalgo, TX)", q_dest: "ZIP code (US)", q_dest_hint: "US destinations only — we do not ship to Mexico.", q_pallets: "Pallets", q_btn: "Request quote",
+      q_load: "Load", q_any_load: "No specific load (pickup in Texas)", q_dest: "ZIP code (US)", q_dest_hint: "US destinations only — we do not ship to Mexico.", q_pallets: "Pallets", q_btn: "Request quote",
       q_generic: "Freight varies by destination and carrier — request the official quote below. We don't show a dollar estimate here because freight costs change often.",
       q_official: "Official quote", q_fq: "Quote on Freightquote.com (no signup)", q_fq_p: "Copy this summary and paste it into the quote tool:",
       q_copy: "Copy summary", q_copied: "Copied ✓",
-      q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is coordinated by the seller. We confirm the price within 1 hour during office hours.",
+      q_wa: "Official quote in 1 hour on WhatsApp", q_wa_p: "Freight on this load is arranged by the buyer with their own carrier. If you need a delivery quote, we confirm the price within 1 hour during office hours.",
       q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
       nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_guide: "Guide", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
       hero_h1: "Full liquidation truckloads at a fixed price. No auctions.",
-      hero_lead: "Buy the whole load today, pick up in Texas or ask for a delivered quote to your warehouse. Loads land and sell within 24 hours — join the waitlist to hear first.",
+      hero_lead: "Buy the whole load today, pick up in Texas or ask for a delivered quote to your warehouse. Loads sell fast — join the waitlist to hear first.",
       hero_cta_loads: "See available loads", hero_cta_wait: "Join the waitlist",
-      fact_loads: "loads available", fact_window: "to sell each load", fact_border: "on the Reynosa border",
+      fact_loads: "loads available", fact_window: "fixed price per truckload", fact_border: "pickup with your own carrier",
       hero_caption: "Sample truck: real photo of a trailer we received (May 2026).",
       trust_noauction: "No auctions — you decide", trust_flatprice: "Flat price before you commit",
       trust_manifest: "Real manifest, not a template", trust_whatsapp: "Direct answers on WhatsApp",
@@ -156,7 +154,7 @@
       receiving_play: "Tap to play",
       loads_h2: "Available loads", loads_sub: "Fixed price per full truckload. Reserve or buy; first to reserve, first to load.",
       loads_sold_h2: "Recently sold", loads_sold_sub: "So you can see what usually comes in.",
-      status_available: "Available", status_sold: "Sold", status_reserved: "Reserved",
+      status_available: "Available", status_sold: "Sold", status_reserved: "Reserved", status_on_hold: "On hold",
       units: "Units", pallets: "Pallets", location: "Location", weight: "Approx. weight", condition: "Condition",
       price_pickup: "Price picked up in Texas", price_pickup_short: "picked up in TX", per_unit: "per unit",
       delivered_quote: "Delivered to your warehouse: we quote", see_load: "View load", reserve: "Reserve", buy: "Buy now", quote: "Shipping quote",
@@ -166,14 +164,14 @@
       how1_h: "Look at the load", how1_p: "Units, pallets, condition, location and fixed price on one screen.",
       how2_h: "Reserve or buy", how2_p: "Reserve holds the load 24 h while you confirm payment. Buy now closes it.",
       how3_h: "Pay", how3_p: "Wire, ACH or deposit. We send a Zoho invoice on confirmation.",
-      how4_h: "Pick up or we ship", how4_p: "Pick up with your carrier or ask us for freight to your US warehouse. We don't ship to Mexico — see cross-border carrier options if you need one.",
+      how4_h: "Pick up or we ship", how4_p: "Pick up with your own carrier in Texas (location confirmed on reservation), or ask us for freight to your US warehouse. We don't ship to Mexico. If your carrier crosses into Mexico, you arrange that part.",
       wait_h2: "Buyer waitlist", wait_sub: "New loads go to the waitlist first. Tell us what you want and we message you on WhatsApp when a fit lands.",
       f_name: "Name", f_company: "Company (optional)", f_phone: "WhatsApp / phone", f_email: "Email (optional)", f_city: "Delivery city",
       notify_email: "Email address", notify_submit: "Notify me by email",
       other_cat_h: "Other categories", other_cat_sub: "Sold out for now. Leave your email and we'll notify you when available.",
       status_soldout: "Sold out",
-      cat_walmart_title: "Walmart general merchandise", cat_walmart_desc: "Full truckloads of Walmart returns and overstock. Availability varies — sold out for now.",
-      cat_amazon_title: "Amazon customer-return pallets", cat_amazon_desc: "Amazon customer-return pallets, sold by the piece. Sold out for now.",
+      cat_retail_title: "General merchandise from a major US retailer", cat_retail_desc: "Full truckloads of returns and overstock from a major US retailer. Availability varies — sold out for now.",
+      cat_ecom_title: "E-commerce customer-return pallets", cat_ecom_desc: "E-commerce customer-return pallets, sold by the piece. Sold out for now.",
       f_retailers: "What you want", f_budget: "Budget per truckload (USD)", f_notes: "Notes",
       f_consent: "I agree that Liquidation Pros may contact me on WhatsApp or email about available loads.",
       f_submit_wait: "Join the waitlist", f_send_wa: "Send via WhatsApp", f_send_mail: "Send via email",
@@ -182,24 +180,24 @@
       form_saved: "Saved on this device. Now send it on WhatsApp or email so we receive it:",
       faq_h2: "Frequently asked questions",
       faq1_q: "Can I see the manifest before I pay?", faq1_a: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load.",
-      faq2_q: "Does the price include freight, or is that separate?", faq2_a: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (Hidalgo/Waco, TX) or have us quote freight to your dock. We'll give you both numbers so it's clear.",
-      faq3_q: "Do you arrange freight, or do you only sell the merchandise?", faq3_a: "Both — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your dock.",
-      faq4_q: "Where do I pick up the merchandise?", faq4_a: "Pickup is available at our Hidalgo, TX and Waco, TX locations, depending on where the specific load is. We'll confirm the exact pickup address once your load is set.",
+      faq2_q: "Does the price include freight, or is that separate?", faq2_a: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (in Texas) or have us quote freight to your US warehouse (we do not ship to Mexico). We'll give you both numbers so it's clear.",
+      faq3_q: "Do you arrange freight, or do you only sell the merchandise?", faq3_a: "Both — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your US warehouse.",
+      faq4_q: "Where do I pick up the merchandise?", faq4_a: "Pickup is in Texas. We confirm the location and exact address when you reserve your load.",
       faq5_q: "How do I confirm my payment (Zelle/wire) was received?", faq5_a: "Send us a screenshot or confirmation number of your payment on WhatsApp and we'll verify it and confirm back to you.",
       faq6_q: "How often do you have new loads available?", faq6_a: "We move fast — we don't warehouse inventory, so loads turn over roughly within a day of arrival. Availability depends on what's coming in. Message us on WhatsApp and we'll tell you what's available right now.",
       faq_see_all: "See all questions →",
       faqp_h1: "Frequently asked questions", faqp_lead: "Direct answers to what buyers ask us most on WhatsApp. Not here? Message us.",
       faqp_cta_h: "Another question?", faqp_cta_p: "Message us on WhatsApp and we'll answer directly.", faqp_cta_btn: "Ask on WhatsApp",
       faqp_t_manifests: "Manifests", faqp_t_pricing: "Pricing & Deposits", faqp_t_freight: "Freight & Quotes",
-      faqp_t_pickup: "Pickup at Hidalgo / Waco, TX", faqp_t_payment: "Payment Methods", faqp_t_timing: "Timing / Availability",
+      faqp_t_pickup: "Pickup in Texas", faqp_t_payment: "Payment Methods", faqp_t_timing: "Timing / Availability",
       faqp_t_border: "Border pickup",
-      border_h: "Recoja en la frontera / Border pickup",
-      border_p: "Pickup at 709 W Joe Pate Blvd, Hidalgo, TX 78557 — steps from the Hidalgo–Reynosa bridge. Seller-arranged freight on these short Texas lanes can run $4–7 per mile; picking up yourself at the border, comparable hauls run closer to $2 per mile. Before you cross, have ready: driver ID, carrier name and tractor/trailer plates, a confirmed pickup window, proof of payment received, exporter RFC, export pedimento or corresponding customs document, and an on-site contact to sign the packing list.",
-      border_line_h: "Pickup:", border_faq_link: "See the border pickup option to save on freight →",
+      border_h: "Recolección en Texas / Texas pickup",
+      border_p: "Pickup in Texas; the exact location is confirmed on reservation. You pick up with your own carrier; we do not arrange freight or the border crossing into Mexico. Before you cross, have ready: driver ID, carrier name and tractor/trailer plates, a confirmed pickup window, proof of payment received, exporter RFC, export pedimento or corresponding customs document, and an on-site contact to sign the packing list.",
+      border_line_h: "Pickup:", border_faq_link: "See the self-pickup option to save on freight →",
       contact_h2: "Contact", contact_sub: "We speak Spanish and English. WhatsApp gets the fastest reply.",
       contact_wa: "WhatsApp", contact_phone: "Call", contact_mail: "Email", contact_addr: "Warehouse",
       contact_form_h: "Message us", f_msg: "Message",
-      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from major retail liquidation sources directly in the US and sells them to wholesalers, with pickup in Hidalgo and Waco, TX.",
+      ftr_about: "Liquidation Pros LLC buys liquidation truckloads and pallets from major retail liquidation sources directly in the US and sells them to wholesalers, with pickup in Texas.",
       ftr_fine: "Prices in USD, picked up in Texas unless stated. Merchandise sold as-is. Retailer names are trademarks of their owners and are used only to describe origin.",
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
@@ -211,21 +209,18 @@
       term_h1: "Terms of sale", term_updated: "Last updated: September 2026",
       term_lead: "A plain summary of how we sell: no fine print beyond the following.",
       term_asis_h: "Merchandise sold as-is", term_asis_p: "All merchandise is liquidation stock (returns, overstock or salvage) and is sold as-is, per the manifest we share with you. We do not accept returns for condition already described in the manifest.",
-      term_pickup_h: "Pickup or freight", term_pickup_p: "Pickup is at Hidalgo, TX (or another location noted on the load). If you need us to ship it within the US, freight is quoted separately from the merchandise price. For Mexico-bound buyers, we do not book or quote cross-border freight ourselves: pick up with your own transport, send your own trucking company, or tell us which freight company you prefer and they can collect it from our Hidalgo, TX warehouse.",
+      term_pickup_h: "Pickup or freight", term_pickup_p: "Pickup is in Texas (location confirmed on reservation). If you need us to ship it, freight is quoted separately from the merchandise price.",
       term_price_h: "Prices in US dollars", term_price_p: "All posted prices are in USD. There is no platform fee or US sales tax on the pickup price.",
       term_noauction_h: "No auctions", term_noauction_p: "We sell at a fixed posted price, first to reserve/buy, first to load. We do not auction loads.",
       term_payment_h: "Payment before release", term_payment_p: "Merchandise is released for pickup or shipping only after payment is confirmed in full.",
       contactp_h1: "Contact", contactp_lead: "We speak Spanish and English. WhatsApp is fastest.",
       e404_h1: "Page not found", e404_p: "The link may be mistyped, or the page no longer exists.", e404_cta: "Back to home",
-      back: "All loads", ref: "Ref.", listed: "Landed", sale_window: "Sells in 24 h", window_note: "Sale window: 24 h from when the trailer lands. First to reserve, first to load.",
+      back: "All loads", ref: "Ref.", listed: "Landed", sale_window: "First to reserve", window_note: "First to reserve, first to load.",
       condition_h: "Condition", manifest_h: "Manifest by category", photos_h: "Truck photos",
       manifest_pending: "The full manifest (seller CSV) is available. Ask on WhatsApp with the load reference; the category breakdown will show here once imported.",
       manifest_none: "This load sold without a category manifest. Categories seen in the truck:",
       cat: "Category", qty: "Units", retail: "Retail value", note: "Note",
       retail_note: "Retail value ≠ resale price.",
-      manifest_gate_p: "See the full category-by-category manifest by leaving your contact details — that way you can confirm it isn't a generic template.",
-      manifest_gate_submit: "View full manifest",
-      disclosure_card: "Payment due before pickup. Freight is the buyer's responsibility.", disclosure_link: "See freight FAQ →",
       cond_returns_mixed: "Unsorted returns and overstock, mixed",
       cond_returns_mixed_p: "General merchandise from a retail return center: new in box, open box and damaged pieces mixed together. Unsorted. Sold as a full truckload, as-is.",
       cond_salvage: "Salvage (damaged / open box)",
@@ -240,18 +235,20 @@
       dlg_reserve: "Reserve this load", dlg_buy: "Buy this load", dlg_quote: "Shipping quote", dlg_wait: "Waitlist",
       opt_pickup: "I pick up in Texas", opt_delivered: "Delivered to my warehouse (quote)",
       sold_banner: "This load has sold. Join the waitlist for the next one.",
+      hold_banner: "This load is on hold and not for sale right now. Join the waitlist for the next one.",
       err_required: "Required fields are missing.",
       any: "Any",
     },
   };
 
   /* ---------- state ---------- */
-  let lang = "en";
-  try { lang = localStorage.getItem("lpos.lang") || "en"; } catch (e) {}
-  if (lang !== "es") lang = "en"; // English-first default; ES only when the buyer chose it
+  let lang = "es";
+  try { lang = localStorage.getItem("lpos.lang") || "es"; } catch (e) {}
+  if (lang !== "en") lang = "es"; // Spanish-first default; EN only when the buyer chose it
   let DATA = null;
   const t = (k) => (T[lang] && T[lang][k]) || T.es[k] || k;
   const L = (obj) => (obj && typeof obj === "object" ? (obj[lang] || obj.es || "") : (obj || ""));
+  const priceTxt = (l) => l.price_pickup == null ? t("price_tbd") : money(l.price_pickup);
   const money = (n) => n == null ? "—" : new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
   const num = (n) => n == null ? "—" : new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US").format(n);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -327,13 +324,12 @@
         <div class="meta">
           <div>${esc(t("units"))}: <b>${num(load.units)}</b></div>
           <div>${esc(t("pallets"))}: <b>${esc(load.pallets)}</b></div>
-          <div>${esc(t("location"))}: <b>${esc(load.location.city)}</b></div>
+          <div>${esc(t("location"))}: <b>${esc(t("pickup_label"))}</b></div>
           <div>${esc(t("condition"))}: <b>${esc(t("cond_" + load.condition_code).split(" (")[0].split(",")[0])}</b></div>
         </div>
         <div class="ship">${shipLine(load, href)}</div>
-        <div class="disclosure">${esc(t("disclosure_card"))} <a href="preguntas.html#faq-freight">${esc(t("disclosure_link"))}</a></div>
         <div class="price">
-          <div><strong>${money(load.price_pickup)}</strong><br><small>${esc(t("price_pickup_short"))}</small></div>
+          <div><strong>${priceTxt(load)}</strong><br><small>${esc(t("price_pickup_short"))}</small></div>
           <div class="unit">${perUnit ? `<b>${money2(perUnit)}</b><br><small>${esc(t("per_unit"))}</small>` : `<small>${esc(t("delivered_quote"))}</small>`}</div>
         </div>
         ${load.status === "available"
@@ -345,10 +341,10 @@
   function shipLine(load, href) {
     return load.freight_control === "seller"
       ? `🚚 <a href="${href}#quote">${esc(t("ship_seller"))}</a>`
-      : `📍 ${esc(t("ship_pickup"))} ${esc(load.location.city)} · <a href="${href}#quote">${esc(t("quote"))}</a>`;
+      : `📍 ${esc(t("ship_pickup"))} ${esc(t("pickup_label"))} · <a href="${href}#quote">${esc(t("quote"))}</a>`;
   }
   function money2(n) { return new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
-  function isBorderPickup(load) { return /hidalgo/i.test(load.location.city); }
+  function isBorderPickup(load) { return false; } // pickup city unconfirmed per load; generic Texas copy only
 
   // R3754: empty-inventory state. Shown only when no load is "available".
   // Generic load types, no prices, no retailer names, no order numbers: nothing here is an offer.
@@ -365,7 +361,7 @@
     ];
     const head = es ? "Hoy no hay cargas disponibles. Esto es lo que estamos buscando:" : "No loads available today. This is what we are sourcing:";
     const tag = es ? "En búsqueda" : "Sourcing";
-    const note = es ? "Aún no son ofertas ni tienen precio. Las cargas se venden en menos de 24 horas: deje su WhatsApp y le avisamos antes de publicarlas." : "These are not offers yet and have no price. Loads sell within 24 hours: leave your WhatsApp and we message you before they are posted.";
+    const note = es ? "Aún no son ofertas ni tienen precio. Las cargas se venden rápido: deje su WhatsApp y le avisamos antes de publicarlas." : "These are not offers yet and have no price. Loads sell fast: leave your WhatsApp and we message you before they are posted.";
     const cta = es ? "Avíseme de la próxima carga" : "Notify me of the next load";
     return `<div class="sourcing"><p class="sourcing-head">${head}</p><div class="sourcing-grid">` +
       items.map((i) => `<article class="src-card"><span class="pill pill-warn">${tag}</span><div class="src-kind">${i[0]}</div><h3>${i[1]}</h3><p>${i[2]}</p></article>`).join("") +
@@ -379,19 +375,20 @@
 
   function renderHome() {
     // R2561: id prefix, not the (possibly scrubbed/"confidential") retailer
-    // text field, decides the Amazon section -- see outputs/continuous-cto/
+    // text field, decides the e-commerce section -- see outputs/continuous-cto/
     // SITE_RETAILER_INTERNAL_FIELD_FIX_2026-09-26.md.
-    const isAmazon = (l) => /^AMZN-/.test(l.id);
-    const avail = DATA.loads.filter((l) => l.status === "available" && !isAmazon(l));
-    const sold = DATA.loads.filter((l) => l.status !== "available" && !isAmazon(l));
+    const isEcom = (l) => /^AMZN-/.test(l.id);
+    const avail = DATA.loads.filter((l) => l.status === "available" && !isEcom(l));
+    const held = DATA.loads.filter((l) => l.status === "on_hold" && !isEcom(l));
+    const sold = DATA.loads.filter((l) => l.status !== "available" && l.status !== "on_hold" && !isEcom(l));
     const g = document.getElementById("loads-grid");
-    if (g) g.innerHTML = avail.length ? avail.map(card).join("") : sourcingNext();
+    if (g) g.innerHTML = (avail.length || held.length) ? avail.concat(held).map(card).join("") : sourcingNext();
     bindNotify();
     { const sec = document.getElementById("loads"); if (sec) { const pl = sec.querySelector(".sec-head .pill-live"), sp = sec.querySelector(".sec-head p"); if (pl) pl.style.display = avail.length ? "" : "none"; if (sp && !avail.length) sp.textContent = lang === "es" ? "Próximamente" : "Coming up"; } } // R3754: no green "Disponible" pill / fixed-price copy over an empty list
     const s = document.getElementById("sold-grid");
     if (s) s.innerHTML = sold.map(card).join("");
     const az = document.getElementById("returns-grid");
-    if (az) { const azLoads = DATA.loads.filter(isAmazon); az.innerHTML = azLoads.length ? azLoads.map(card).join("") : ""; const azSec = document.getElementById("returns"); if (azSec) azSec.hidden = !azLoads.length; }
+    if (az) { const ecLoads = DATA.loads.filter(isEcom); az.innerHTML = ecLoads.length ? ecLoads.map(card).join("") : ""; const azSec = document.getElementById("returns"); if (azSec) azSec.hidden = !ecLoads.length; }
     const n = document.getElementById("fact-loads"); if (n) n.textContent = String(avail.length);
     const hp = document.getElementById("hero-photo");
     if (hp) {
@@ -405,7 +402,7 @@
   function setLoadSeo(load) {
     const base = "https://lpros210.github.io/lpos-loads/";
     const url = base + "load.html?id=" + encodeURIComponent(load.id);
-    const desc = `${L(load.title)}. ${num(load.units)} unidades, ${load.pallets} tarimas, ${money(load.price_pickup)} recogiendo en ${load.location.city}.`;
+    const desc = `${L(load.title)}. ${num(load.units)} unidades, ${load.pallets} tarimas, ${priceTxt(load)} recogiendo en Texas.`;
     setMeta('link[rel="canonical"]', "href", url);
     setMeta('meta[property="og:url"]', "content", url);
     setMeta('meta[property="og:title"]', "content", `${L(load.title)} · ${load.id} · Liquidation Pros`);
@@ -420,9 +417,9 @@
       name: L(load.title), sku: load.id, description: desc,
       brand: { "@type": "Brand", name: load.retailer },
       ...(img ? { image: base + img.src } : {}),
-      offers: {
+      offers: load.price_pickup == null ? undefined : {
         "@type": "Offer", url, priceCurrency: "USD", price: load.price_pickup,
-        availability: load.status === "available" ? "https://schema.org/InStock" : "https://schema.org/SoldOut",
+        availability: load.status === "available" ? "https://schema.org/InStock" : load.status === "on_hold" ? "https://schema.org/OutOfStock" : "https://schema.org/SoldOut",
         itemCondition: "https://schema.org/UsedCondition",
         seller: { "@type": "Organization", name: "Liquidation Pros LLC" },
       },
@@ -439,26 +436,23 @@
       a: { es: "Sí — le enviamos el manifiesto para que revise el contenido y el valor estimado de venta al menudeo antes de comprometerse con una carga.",
              en: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load." } },
     { topic: "pricing", q: { es: "¿El precio incluye el flete o es solo la mercancía?", en: "Does the price include freight, or is that separate?" },
-      a: { es: "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (Hidalgo/Waco, TX) o que le coticemos el flete hasta su bodega. Le damos ambos números para que quede claro.",
-             en: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (Hidalgo/Waco, TX) or have us quote freight to your dock. We'll give you both numbers so it's clear." } },
+      a: { es: "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (en Texas) o que le coticemos el flete hasta su bodega en EE. UU. No enviamos a México. Le damos ambos números para que quede claro.",
+             en: "Merchandise price and freight are quoted separately — that lets you choose your own pickup (in Texas) or have us quote freight to your US warehouse (we do not ship to Mexico). We'll give you both numbers so it's clear." } },
     { topic: "freight", q: { es: "¿Ustedes organizan el flete o solo venden la mercancía?", en: "Do you arrange freight, or do you only sell the merchandise?" },
-      a: { es: "Las dos opciones dentro de EE. UU. — puede organizar su propio flete/recolección, o le cotizamos el flete usando costos reales recientes de esa ruta hasta su bodega. Para México no organizamos ni cotizamos flete transfronterizo: recoja usted mismo, mande su propio transportista, o indíquenos su empresa de flete preferida para que recoja en nuestra bodega de Hidalgo, TX.",
-             en: "Both, within the US — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your dock. For Mexico, we don't book or quote cross-border freight ourselves: pick up yourself, send your own trucker, or tell us your preferred freight company so they can collect it from our Hidalgo, TX warehouse." } },
-    { topic: "freight", q: { es: "¿Cuánto cuesta el flete de Waco o Hidalgo hasta mi bodega?", en: "How much does freight cost from Waco or Hidalgo to my warehouse?" },
+      a: { es: "Las dos opciones — puede organizar su propio flete/recolección, o le cotizamos el flete usando costos reales recientes de esa ruta hasta su bodega en EE. UU.",
+             en: "Both — you're welcome to arrange your own pickup/trucking, or we can quote freight for you based on real recent lane costs to get it to your US warehouse." } },
+    { topic: "freight", q: { es: "¿Cuánto cuesta el flete desde Texas hasta mi bodega en EE. UU.?", en: "How much does freight cost from Texas to my US warehouse?" },
       a: { es: "Depende de la ruta, cantidad de tarimas, peso y si necesita rampa hidráulica. Mándenos por WhatsApp su destino y el tamaño de la carga y le damos un estimado basado en cargas recientes comparables — el costo final se confirma con la transportista antes de darle un número en firme.",
              en: "It depends on the lane, pallet count, weight, and whether you need a liftgate. Send us your destination and load size on WhatsApp and we'll give you an estimate based on comparable recent loads — final cost is confirmed with the carrier before you're quoted a firm number." } },
     { topic: "freight", q: { es: "¿Puedo usar mi propio transportista para recoger la carga?", en: "Can I use my own trucker to pick up the load?" },
-      a: { es: "Sí — puede mandar su propio transportista a recoger en Hidalgo o Waco, TX. Solo confirme con nosotros la fecha/hora de recolección antes.",
-             en: "Yes — you're welcome to send your own trucker for pickup at Hidalgo or Waco, TX. Just confirm the pickup date/time with us first." } },
+      a: { es: "Sí — puede mandar su propio transportista a recoger en Texas. Solo confirme con nosotros la fecha/hora de recolección antes.",
+             en: "Yes — you're welcome to send your own trucker for pickup in Texas. Just confirm the pickup date/time with us first." } },
     { topic: "freight", q: { es: "He tenido problemas con la transportista que ustedes usan — ¿qué pasa si el flete falla o se cancela?", en: "I've had problems with the carrier you use — what happens if freight fails or gets canceled?" },
       a: { es: "Nos tomamos en serio la confiabilidad de la transportista y estamos trabajando activamente en problemas de flete en algunas rutas. Avísenos de inmediato si una recolección se reprograma o se cae una cita y lo escalamos — es un problema conocido que estamos resolviendo activamente, no algo que vamos a ignorar.",
              en: "We take carrier reliability seriously and are actively working through freight issues on some lanes. Tell us right away if a pickup gets rescheduled or an appointment falls through and we'll escalate it — this is a known live issue we're actively fixing, not something we'll ignore." } },
-    { topic: "freight", q: { es: "¿Conocen empresas que manejen el flete transfronterizo a México?", en: "Do you know companies that handle cross-border freight to Mexico?" },
-      a: { es: "No organizamos ni cotizamos ese flete, pero aquí hay empresas independientes que sí lo manejan, para que las contacte directamente: Unis Logistics (unisco.com), Nuvocargo (nuvocargo.com), EELCO / Redwood Logistics (redwoodlogistics.com), Mallory Group (mallorygroup.com) y Control Terrestre (controlterrestre.com). Son empresas independientes — no las organizamos, verificamos ni nos responsabilizamos por su servicio; usted contrata directamente con ellas.",
-             en: "We don't arrange or quote that freight, but here are independent companies that do, for you to contact directly: Unis Logistics (unisco.com), Nuvocargo (nuvocargo.com), EELCO / Redwood Logistics (redwoodlogistics.com), Mallory Group (mallorygroup.com) and Control Terrestre (controlterrestre.com). These are independent companies — we don't arrange, vet, or take responsibility for their service; you contract with them directly." } },
     { topic: "pickup", q: { es: "¿Dónde recojo la mercancía?", en: "Where do I pick up the merchandise?" },
-      a: { es: "La recolección es en nuestras ubicaciones de Hidalgo, TX y Waco, TX, según dónde esté la carga específica. Le confirmamos la dirección exacta una vez que su carga esté lista.",
-             en: "Pickup is available at our Hidalgo, TX and Waco, TX locations, depending on where the specific load is. We'll confirm the exact pickup address once your load is set." } },
+      a: { es: "La recolección es en Texas. Le confirmamos la ubicación y la dirección exacta al reservar su carga.",
+             en: "Pickup is in Texas. We confirm the location and exact address when you reserve your load." } },
     { topic: "pickup", q: { es: "¿Necesito cita para recoger o puedo llegar directo?", en: "Do I need an appointment to pick up, or can I just show up?" },
       a: { es: "Por favor confirme una cita de recolección con nosotros primero por WhatsApp para tener la carga lista y el papeleo correcto preparado.",
              en: "Please confirm a pickup appointment with us first on WhatsApp so we have the load ready and the right paperwork prepared." } },
@@ -471,9 +465,9 @@
     { topic: "timing", q: { es: "¿Tienen mercancía disponible ahora mismo?", en: "Do you have merchandise available right now?" },
       a: { es: "Escríbanos por WhatsApp y le decimos exactamente qué tenemos disponible hoy — la disponibilidad cambia rápido porque no almacenamos las cargas.",
              en: "Message us on WhatsApp and we'll tell you exactly what's in and available today — availability changes fast since we don't warehouse loads." } },
-    { topic: "border", q: { es: "¿Puedo recoger directo en la frontera para ahorrar en flete?", en: "Can I pick up directly at the border to save on freight?" },
-      a: { es: "Sí — recolección en 709 W Joe Pate Blvd, Hidalgo, TX 78557, a un paso del puente Hidalgo–Reynosa. El flete arreglado por el vendedor en estas rutas cortas de Texas puede costar $4–7 por milla; recogiendo usted mismo en la frontera, cargas comparables corren más cerca de $2 por milla.",
-             en: "Yes — pickup is at 709 W Joe Pate Blvd, Hidalgo, TX 78557, steps from the Hidalgo–Reynosa bridge. Seller-arranged freight on these short Texas lanes can run $4–7 per mile; picking up yourself at the border, comparable hauls run closer to $2 per mile." } },
+    { topic: "border", q: { es: "¿Puedo recoger con mi propio transportista para ahorrar en flete?", en: "Can I pick up with my own carrier to save on freight?" },
+      a: { es: "Sí — recolección en Texas; la ubicación exacta se confirma al reservar. Usted recoge con su propio transportista; no organizamos flete ni cruce a México.",
+             en: "Yes — pickup is in Texas; the exact location is confirmed on reservation. You pick up with your own carrier; we do not arrange freight or the border crossing into Mexico." } },
     { topic: "border", q: { es: "¿Qué necesito para cruzar la carga a México como exportador?", en: "What do I need to cross the load into Mexico as the exporter?" },
       a: { es: "Antes de que liberemos la carga tenga listo: identificación oficial del chofer, nombre de la transportista y placas del tractocamión/remolque, ventana de recolección confirmada, comprobante de pago recibido (wire o Zelle), RFC del exportador, pedimento de exportación o documento aduanal correspondiente, y una persona de contacto en sitio para firmar la lista de empaque.",
              en: "Before we release the load, have ready: official driver ID, carrier name and tractor/trailer plates, a confirmed pickup window, proof of payment received (wire or Zelle), exporter RFC, export pedimento or the corresponding customs document, and an on-site contact to sign the packing list." } },
@@ -494,44 +488,6 @@
     ld.textContent = JSON.stringify({
       "@context": "https://schema.org", "@type": "FAQPage",
       mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.q.es, acceptedAnswer: { "@type": "Answer", text: f.a.es } })),
-    });
-  }
-
-  /* ---------- manifest gate: a real per-category manifest is a buyer-trust
-     signal (see FAQ: "is the manifest real or generic"), so gate it behind a
-     name+email+phone contact capture instead of a heavy compliance check.
-     Same no-backend pattern as every other form here: saveLocal() now,
-     fetch() later once Juan picks an endpoint (see
-     outputs/continuous-cto/SITE_LEAD_CAPTURE_FORMS_VS_WEBFORM_2026-09-29.md).
-     Unlocking once (any load) unlocks every manifest for the session. */
-  function manifestUnlocked() { try { return localStorage.getItem("lpos.manifest_unlocked") === "1"; } catch (e) { return false; } }
-  function manifestTable(load) {
-    return `<div class="table-wrap"><table><thead><tr><th>${esc(t("cat"))}</th><th class="num">${esc(t("qty"))}</th><th class="num">${esc(t("retail"))}</th><th>${esc(t("note"))}</th></tr></thead><tbody>${load.manifest.map((m) => `<tr><td>${esc(L(m.category))}</td><td class="num">${num(m.units)}</td><td class="num">${money(m.retail)}</td><td>${esc(L(m.note))}</td></tr>`).join("")}</tbody></table></div><p class="hint" style="color:var(--muted);font-size:.8rem;margin-top:.5rem">${esc(t("retail_note"))}</p>`;
-  }
-  function manifestGate(load) {
-    const cats = (load.manifest || []).map((m) => esc(L(m.category))).join(", ");
-    return `<div class="notice"><p style="margin:0 0 .6rem">${esc(t("manifest_gate_p"))}</p>
-      ${cats ? `<p class="hint" style="color:var(--muted);font-size:.85rem;margin:0 0 .8rem">${esc(t("cat"))}: ${cats}</p>` : ""}
-      <form class="form" id="f-manifest-gate" novalidate>
-        <div class="row">
-          <label>${esc(t("f_name"))} *<input name="name" required autocomplete="name"></label>
-          <label>${esc(t("f_phone"))} *<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
-        </div>
-        <label>${esc(t("f_email"))} *<input name="email" type="email" required autocomplete="email"></label>
-        <label class="check"><input type="checkbox" name="consent" required><span>${esc(t("f_consent"))}</span></label>
-        <button class="btn btn-red" type="submit">${esc(t("manifest_gate_submit"))}</button>
-      </form></div>`;
-  }
-  function bindManifestGate(load) {
-    const form = document.getElementById("f-manifest-gate");
-    if (!form) return;
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-      const f = Object.fromEntries(new FormData(form).entries());
-      saveLocal("lpos.manifest_leads", { ts: new Date().toISOString(), lang, load: load.id, ...f });
-      try { localStorage.setItem("lpos.manifest_unlocked", "1"); } catch (err) {}
-      renderDetail();
     });
   }
 
@@ -560,7 +516,7 @@
 
     let manifest;
     if (load.manifest && load.manifest.length) {
-      manifest = manifestUnlocked() ? manifestTable(load) : manifestGate(load);
+      manifest = `<div class="table-wrap"><table><thead><tr><th>${esc(t("cat"))}</th><th class="num">${esc(t("qty"))}</th><th class="num">${esc(t("retail"))}</th><th>${esc(t("note"))}</th></tr></thead><tbody>${load.manifest.map((m) => `<tr><td>${esc(L(m.category))}</td><td class="num">${num(m.units)}</td><td class="num">${money(m.retail)}</td><td>${esc(L(m.note))}</td></tr>`).join("")}</tbody></table></div><p class="hint" style="color:var(--muted);font-size:.8rem;margin-top:.5rem">${esc(t("retail_note"))}</p>`;
     } else if (load.manifest_status === "csv_attached_in_zoho") {
       manifest = `<div class="notice">${esc(t("manifest_pending"))} <a data-wa="${esc((lang === "es" ? "Hola, me interesa el manifiesto de la carga " : "Hi, I'd like the manifest for load ") + load.id)}" href="#">WhatsApp →</a></div>`;
     } else {
@@ -575,28 +531,28 @@
           <h1>${esc(L(load.title))}</h1>
           <div class="sub">${statusPill(load)} <span>${esc(t("ref"))} ${esc(load.id)}</span>${load.po ? `<span>· ${esc(load.po)}</span>` : ""}<span>· ${esc(t("listed"))} ${esc(fmtDate(load.listed))}</span></div>
         </div>
-        ${!isAvail ? `<div class="notice" style="margin-bottom:1rem">${esc(t("sold_banner"))} <a href="index.html#waitlist">${esc(t("nav_waitlist"))} →</a></div>` : ""}
+        ${!isAvail ? `<div class="notice" style="margin-bottom:1rem">${esc(load.status === "on_hold" ? t("hold_banner") : t("sold_banner"))} <a href="index.html#waitlist">${esc(t("nav_waitlist"))} →</a></div>` : ""}
         ${photos}
         ${video}
         <div class="kv">
           <div><span>${esc(t("units"))}</span><b>${num(load.units)}</b></div>
           <div><span>${esc(t("pallets"))}</span><b>${esc(load.pallets)}</b></div>
           <div><span>${esc(t("weight"))}</span><b>${load.weight_lb ? num(load.weight_lb) + " lb" : "—"}</b></div>
-          <div><span>${esc(t("location"))}</span><b>${esc(load.location.city)}</b></div>
+          <div><span>${esc(t("location"))}</span><b>${esc(t("pickup_label"))}</b></div>
         </div>
         <section class="block"><h2>${esc(t("condition_h"))}</h2><div class="cond"><p><b>${esc(t(condKey))}.</b> ${esc(t(condKey + "_p"))}</p></div></section>
         <section class="block"><h2>${esc(t("manifest_h"))}</h2>${manifest}</section>
-        <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(load.location.name)}, ${esc(load.location.city)}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
-        <section class="block"><h2>${esc(t("border_h"))}</h2><div class="notice"><p>${isBorderPickup(load) ? esc(t("border_p")) : `${esc(t("border_line_h"))} ${esc(load.location.city)}. <a href="preguntas.html#faq-border">${esc(t("border_faq_link"))}</a>`}</p></div></section>
+        <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(t("pickup_label"))}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
+        <section class="block"><h2>${esc(t("border_h"))}</h2><div class="notice"><p>${isBorderPickup(load) ? esc(t("border_p")) : `${esc(t("border_line_h"))} ${esc(t("pickup_label"))}. <a href="preguntas.html#faq-border">${esc(t("border_faq_link"))}</a>`}</p></div></section>
         <section class="block" id="quote"><h2>${esc(t("quote_h"))}</h2><div id="quote-widget"></div></section>
       </div>
       <aside class="side">
         <div class="buybox" id="reserve">
-          <div class="p-main"><strong>${money(load.price_pickup)}</strong><span>USD</span></div>
+          <div class="p-main"><strong>${priceTxt(load)}</strong><span>USD</span></div>
           <div class="p-sub">${esc(t("price_pickup"))}${perUnit ? ` · ${money2(perUnit)} ${esc(t("per_unit"))}` : ""}</div>
           <div class="opts">
-            <div class="opt"><div><b>${esc(t("opt_pickup"))}</b><small>${esc(load.location.city)}</small></div><div class="amt">${money(load.price_pickup)}</div></div>
-            <div class="opt"><div><b>${esc(t("opt_delivered"))}</b><small>MX / TX</small></div><div class="amt">${load.price_delivered ? money(load.price_delivered) : (lang === "es" ? "Cotizar" : "Quote")}</div></div>
+            <div class="opt"><div><b>${esc(t("opt_pickup"))}</b><small>${esc(t("pickup_label"))}</small></div><div class="amt">${priceTxt(load)}</div></div>
+            <div class="opt"><div><b>${esc(t("opt_delivered"))}</b><small>TX</small></div><div class="amt">${load.price_delivered ? money(load.price_delivered) : (lang === "es" ? "Cotizar" : "Quote")}</div></div>
           </div>
           ${isAvail ? `<div class="actions">
             <button class="btn btn-red" data-open="reserve">${esc(t("reserve"))}</button>
@@ -611,7 +567,7 @@
     const sticky = document.getElementById("sticky");
     if (sticky) {
       sticky.hidden = !isAvail;
-      sticky.innerHTML = `<div class="price">${money(load.price_pickup)}<small>${esc(t("price_pickup_short"))}</small></div><button class="btn btn-red" data-open="reserve">${esc(t("reserve"))}</button><a class="btn btn-wa" data-wa="${esc((lang === "es" ? "Hola, me interesa la carga " : "Hi, I'm interested in load ") + load.id)}" href="#" aria-label="WhatsApp">WA</a>`;
+      sticky.innerHTML = `<div class="price">${priceTxt(load)}<small>${esc(t("price_pickup_short"))}</small></div><button class="btn btn-red" data-open="reserve">${esc(t("reserve"))}</button><a class="btn btn-wa" data-wa="${esc((lang === "es" ? "Hola, me interesa la carga " : "Hi, I'm interested in load ") + load.id)}" href="#" aria-label="WhatsApp">WA</a>`;
     }
     root.querySelectorAll("[data-ph]").forEach((b) => b.addEventListener("click", () => {
       document.getElementById("ph" + b.dataset.ph).scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
@@ -619,7 +575,6 @@
     }));
     document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => openDialog(b.dataset.open, load)));
     if (location.hash === "#reserve" && isAvail) setTimeout(() => openDialog("reserve", load), 200);
-    bindManifestGate(load);
   }
 
   /* ---------- dialogs / forms (localStorage + WhatsApp/mailto) ---------- */
@@ -629,7 +584,7 @@
     document.getElementById("dlg-title").textContent = t("dlg_" + kind);
     document.getElementById("dlg-body").innerHTML = `
       <form class="form" id="f-${kind}" novalidate>
-        <div class="notice" style="background:var(--bg-2);border-left-color:var(--black)"><b>${esc(load.retailer)} · ${esc(load.id)}</b> · ${money(load.price_pickup)} ${esc(t("price_pickup_short"))}</div>
+        <div class="notice" style="background:var(--bg-2);border-left-color:var(--black)"><b>${esc(load.retailer)} · ${esc(load.id)}</b> · ${priceTxt(load)} ${esc(t("price_pickup_short"))}</div>
         <div class="row">
           <label>${esc(t("f_name"))} *<input name="name" required autocomplete="name"></label>
           <label>${esc(t("f_company"))}<input name="company" autocomplete="organization"></label>
@@ -654,7 +609,7 @@
       const rec = { kind, load: load.id, ts: new Date().toISOString(), lang, ...f };
       saveLocal("lpos.requests", rec);
       const subject = `${t("dlg_" + kind)} · ${load.id}`;
-      const body = [subject, `${load.retailer} · ${L(load.title)}`, `${t("price_pickup")}: ${money(load.price_pickup)}`, "",
+      const body = [subject, `${load.retailer} · ${L(load.title)}`, `${t("price_pickup")}: ${priceTxt(load)}`, "",
         `${t("f_name")}: ${f.name}`, f.company ? `${t("f_company")}: ${f.company}` : null, `${t("f_phone")}: ${f.phone}`, f.email ? `${t("f_email")}: ${f.email}` : null,
         f.delivery ? `${lang === "es" ? "Entrega" : "Delivery"}: ${f.delivery === "pickup" ? t("opt_pickup") : t("opt_delivered")}` : null,
         f.dest ? `${t("f_dest")}: ${f.dest} ${f.zip || ""}` : null, f.offer ? `${t("f_offer")}: ${f.offer}` : null, f.notes ? `${t("f_notes")}: ${f.notes}` : null].filter(Boolean).join("\n");
@@ -694,7 +649,7 @@
         const f = Object.fromEntries(new FormData(form).entries());
         const category = form.dataset.category || "general";
         saveLocal("lpos.notify", { ts: new Date().toISOString(), lang, category, ...f });
-        const catLabel = category === "walmart" ? "Walmart" : category === "amazon" ? "Amazon" : (lang === "es" ? "próxima carga" : "next load");
+        const catLabel = category === "retail_gm" ? (lang === "es" ? "mercancía general" : "general merchandise") : category === "ecommerce_returns" ? (lang === "es" ? "devoluciones de comercio electrónico" : "e-commerce returns") : (lang === "es" ? "próxima carga" : "next load");
         const subject = (lang === "es" ? `Avíseme: ${catLabel}` : `Notify me: ${catLabel}`) + " · Liquidation Pros";
         const body = `${subject}\n\n${t("notify_email")}: ${f.email}`;
         const out = form.nextElementSibling;
@@ -737,7 +692,7 @@
   function renderQuote(root, load) {
     if (!root) return;
     const loads = DATA.loads.filter((l) => l.status === "available");
-    const sel = !load ? `<label>${esc(t("q_load"))}<select name="load"><option value="">${esc(t("q_any_load"))}</option>${loads.map((l) => `<option value="${esc(l.id)}">${esc(L(l.program))} \u00b7 ${esc(l.id)} \u00b7 ${esc(l.location.city)}</option>`).join("")}</select></label>` : "";
+    const sel = !load ? `<label>${esc(t("q_load"))}<select name="load"><option value="">${esc(t("q_any_load"))}</option>${loads.map((l) => `<option value="${esc(l.id)}">${esc(L(l.program))} \u00b7 ${esc(l.id)} \u00b7 TX</option>`).join("")}</select></label>` : "";
     root.innerHTML = `<form class="form quote" novalidate>
       ${sel}
       <div class="row">
@@ -752,7 +707,7 @@
       if (!form.reportValidity()) return;
       const f = Object.fromEntries(new FormData(form).entries());
       const ld = load || DATA.loads.find((l) => l.id === f.load) || null;
-      const origin = ld ? ld.location.city : "Hidalgo, TX";
+      const origin = ld ? ld.location.city : "Texas";
       const seller = ld ? ld.freight_control === "seller" : false;
       const out = form.querySelector("#q-out");
       let html = `<div class="notice">${esc(t("q_generic"))}</div>`;

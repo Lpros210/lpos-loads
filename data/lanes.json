@@ -172,36 +172,6 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Waco, TX",
-   "destination": "El Paso, TX",
-   "n": 1,
-   "min": 3738.85,
-   "median": 3738.85,
-   "max": 3738.85,
-   "last_date": "2026-09-01",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Waco, TX",
-   "destination": "Alamo, TX",
-   "n": 1,
-   "min": 1800.76,
-   "median": 1800.76,
-   "max": 1800.76,
-   "last_date": "2026-08-27",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Waco, TX",
-   "destination": "Pharr, TX",
-   "n": 1,
-   "min": 1785.33,
-   "median": 1785.33,
-   "max": 1785.33,
-   "last_date": "2026-08-26",
-   "basis": "paid_freight"
-  },
-  {
    "origin": "Las Vegas, NV",
    "destination": "Bakersfield, CA",
    "n": 1,
