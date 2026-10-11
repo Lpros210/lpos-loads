@@ -21,64 +21,50 @@
         "en": "Sample truck"
       },
       "note": {
-        "es": "Fotos reales de tráileres que recibimos (mayo 2026). Son de muestra: no son de esta carga.",
-        "en": "Real photos of trailers we received (May 2026). Samples only — not this exact load."
+        "es": "Fotos reales de tarimas de salvamento de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
+        "en": "Real photos of Target salvage pallets we received (October 2026). Samples only — not this exact load."
       },
       "photos": [
         {
           "src": "assets/photos/sample/gm-01.jpg",
           "alt": {
-            "es": "Remolque completo, fila tras fila de tarimas de mercancía general  envueltas.",
-            "en": "Full trailer, row after row of wrapped GM pallets."
+            "es": "Tarima envuelta con el logo de Target y formulario de tarima de salvamento.",
+            "en": "Wrapped pallet with the Target bullseye logo and salvage pallet ID form."
           }
         },
         {
           "src": "assets/photos/sample/gm-02.jpg",
           "alt": {
-            "es": "Vista del pasillo del mismo cargamento, con cajas de juguetes y temporada a la vista.",
-            "en": "Aisle view down the same load, toy and seasonal cartons visible."
+            "es": "Cajas Sterilite apiladas con etiqueta de Bullseye's Playground.",
+            "en": "Stacked Sterilite cartons with a Bullseye's Playground label."
           }
         },
         {
           "src": "assets/photos/sample/gm-03.jpg",
           "alt": {
-            "es": "Dos tarimas limpias y envueltas con cajas de marca, listas para enviar.",
-            "en": "Two clean wrapped pallets with branded cartons, ready to ship."
+            "es": "Tarima de cajas Sterilite envueltas con etiqueta verde de salvamento.",
+            "en": "Pallet of wrapped Sterilite cartons with a green salvage tag."
           }
         },
         {
           "src": "assets/photos/sample/gm-04.jpg",
           "alt": {
-            "es": "Tarima en el patio con cajas de marca lista para recoger.",
-            "en": "Dockyard pallet of branded cartons staged for pickup."
+            "es": "Logo de Target y formulario de tarima de salvamento sobre cajas Sterilite.",
+            "en": "Target bullseye logo and salvage pallet ID form above Sterilite cartons."
           }
         },
         {
           "src": "assets/photos/sample/gm-05.jpg",
           "alt": {
-            "es": "Tarima de calzado con las etiquetas originales de liquidación .",
-            "en": "Footwear pallet with original clearance price tags still on."
+            "es": "Caja con el logo de target.com y etiqueta de salvamento a la vista.",
+            "en": "Carton printed with the target.com logo and a salvage tag visible."
           }
         },
         {
           "src": "assets/photos/sample/gm-06.jpg",
           "alt": {
-            "es": "Dos tarimas una junto a la otra, cajas mixtas de mercancía general.",
-            "en": "Two pallets side by side, mixed general-merchandise cartons."
-          }
-        },
-        {
-          "src": "assets/photos/sample/gm-07.jpg",
-          "alt": {
-            "es": "Dos filas completas de tarimas en el pasillo de un remolque cargado.",
-            "en": "Two full pallet rows down a loaded trailer aisle."
-          }
-        },
-        {
-          "src": "assets/photos/sample/gm-08.jpg",
-          "alt": {
-            "es": "Tarima de artículos deportivos con equipo de campamento: tiendas y bolsas de dormir.",
-            "en": "Sporting-goods pallet with camping gear — tents and sleeping bags."
+            "es": "Cajas Sterilite envueltas con formulario de tarima de salvamento.",
+            "en": "Wrapped Sterilite cartons with a salvage pallet ID form."
           }
         }
       ]
@@ -124,7 +110,7 @@
       "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
-      "sample": null,
+      "sample": "gm",
       "video": null,
       "manifest": [
         {
@@ -171,7 +157,7 @@
       "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
-      "sample": null,
+      "sample": "gm",
       "video": null,
       "manifest": [
         {
@@ -218,7 +204,7 @@
       "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
-      "sample": null,
+      "sample": "gm",
       "video": null,
       "manifest": [
         {
@@ -265,7 +251,7 @@
       "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
-      "sample": null,
+      "sample": "gm",
       "video": null,
       "manifest": [
         {
@@ -312,7 +298,7 @@
       "freight_control": "buyer",
       "listed": "2026-10-07",
       "photos": [],
-      "sample": null,
+      "sample": "gm",
       "video": null,
       "manifest": [
         {
