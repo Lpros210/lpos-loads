@@ -17,18 +17,18 @@
   "sample_trucks": {
     "gm": {
       "label": {
-        "es": "Camión de muestra",
-        "en": "Sample truck"
+        "es": "Fotos de muestra",
+        "en": "Sample photos"
       },
       "note": {
-        "es": "Fotos reales de tarimas de salvamento de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
+        "es": "Fotos reales de tarimas salvage de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
         "en": "Real photos of Target salvage pallets we received (October 2026). Samples only — not this exact load."
       },
       "photos": [
         {
           "src": "assets/photos/sample/gm-01.jpg",
           "alt": {
-            "es": "Tarima envuelta con el logo de Target y formulario de tarima de salvamento.",
+            "es": "Tarima envuelta con el logo de Target y formulario de tarima salvage.",
             "en": "Wrapped pallet with the Target bullseye logo and salvage pallet ID form."
           }
         },
@@ -42,28 +42,28 @@
         {
           "src": "assets/photos/sample/gm-03.jpg",
           "alt": {
-            "es": "Tarima de cajas Sterilite envueltas con etiqueta verde de salvamento.",
+            "es": "Tarima de cajas Sterilite envueltas con etiqueta salvage verde.",
             "en": "Pallet of wrapped Sterilite cartons with a green salvage tag."
           }
         },
         {
           "src": "assets/photos/sample/gm-04.jpg",
           "alt": {
-            "es": "Logo de Target y formulario de tarima de salvamento sobre cajas Sterilite.",
+            "es": "Logo de Target y formulario de tarima salvage sobre cajas Sterilite.",
             "en": "Target bullseye logo and salvage pallet ID form above Sterilite cartons."
           }
         },
         {
           "src": "assets/photos/sample/gm-05.jpg",
           "alt": {
-            "es": "Caja con el logo de target.com y etiqueta de salvamento a la vista.",
+            "es": "Caja con el logo de target.com y etiqueta salvage a la vista.",
             "en": "Carton printed with the target.com logo and a salvage tag visible."
           }
         },
         {
           "src": "assets/photos/sample/gm-06.jpg",
           "alt": {
-            "es": "Cajas Sterilite envueltas con formulario de tarima de salvamento.",
+            "es": "Cajas Sterilite envueltas con formulario de tarima salvage.",
             "en": "Wrapped Sterilite cartons with a salvage pallet ID form."
           }
         }
