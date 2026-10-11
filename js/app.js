@@ -69,8 +69,8 @@
       photo_next_h: "Fotos del próximo tráiler", photo_next_sub: "Aún no tenemos fotos de muestra de esta línea. Le enviamos fotos reales del próximo tráiler por WhatsApp en cuanto llega.", photo_next_cta: "Pedir fotos por WhatsApp",
       how_guide: "¿Cómo compro?", how_h2: "Cómo funciona", how_sub: "Cuatro pasos. Sin cuenta, sin subasta.",
       how1_h: "Vea la carga", how1_p: "Unidades, tarimas, condición, ubicación y precio fijo en la misma pantalla.",
-      how2_h: "Reserve o compre", how2_p: "Reservar aparta la carga 24 h mientras confirma pago. Comprar ahora la cierra.",
-      how3_h: "Pague", how3_p: "Transferencia, wire o depósito. Le enviamos factura de Zoho al confirmar.",
+      how2_h: "Reserve o compre", how2_p: "Pida la carga y le confirmamos disponibilidad y precio. La carga es suya cuando su pago completo llega al banco. Primero el pago completo; no apartamos cargas.",
+      how3_h: "Pague", how3_p: "Pago completo por transferencia o wire antes de liberar la carga. Le enviamos factura al confirmar.",
       how4_h: "Recoja o se la enviamos", how4_p: "Recoja con su propio transportista en Texas (ubicación confirmada al reservar), o pídanos flete a su bodega en EE. UU. No enviamos a México. Si su transportista cruza a México, esa parte la coordina usted.",
       wait_h2: "Lista de espera de compradores", wait_sub: "Las cargas nuevas se avisan primero a la lista. Díganos qué busca y le escribimos por WhatsApp cuando llegue algo que le sirva.",
       f_name: "Nombre", f_company: "Empresa (opcional)", f_phone: "WhatsApp / teléfono", f_email: "Correo (opcional)", f_city: "Ciudad de entrega",
@@ -95,7 +95,7 @@
       faq_see_all: "Ver todas las preguntas →",
       faqp_h1: "Preguntas frecuentes", faqp_lead: "Respuestas directas a lo que más nos preguntan los compradores por WhatsApp. Si no está aquí, escríbenos.",
       faqp_cta_h: "¿Otra pregunta?", faqp_cta_p: "Escríbenos por WhatsApp y te respondemos directo.", faqp_cta_btn: "Preguntar por WhatsApp",
-      faqp_t_manifests: "Manifiestos", faqp_t_pricing: "Precios y depósitos", faqp_t_freight: "Flete y cotizaciones",
+      faqp_t_manifests: "Manifiestos", faqp_t_pricing: "Precios y pagos", faqp_t_freight: "Flete y cotizaciones",
       faqp_t_pickup: "Recolección en Texas", faqp_t_payment: "Formas de pago", faqp_t_timing: "Disponibilidad",
       faqp_t_border: "Recoja en la frontera",
       border_h: "Recolección en Texas / Texas pickup",
@@ -109,7 +109,7 @@
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
       priv_lead: "Este aviso explica, en lenguaje sencillo, qué datos recopilamos cuando usted usa el formulario de cotización o nos escribe por WhatsApp, y cómo los usamos.",
-      priv_collect_h: "Qué datos recopilamos", priv_collect_p: "Cuando llena el formulario de cotización, lista de espera o contacto, o nos escribe por WhatsApp, guardamos: su nombre, número de WhatsApp/teléfono, ciudad de entrega o destino, qué le interesa comprar, presupuesto (si lo indica) y cualquier comentario que nos deje. No pedimos ni guardamos datos de tarjeta de pago en el sitio. También usamos Google Analytics para contar visitas y clics (páginas vistas, clics a WhatsApp o teléfono, envíos de formularios); Google puede usar cookies para esto.",
+      priv_collect_h: "Qué datos recopilamos", priv_collect_p: "Cuando llena el formulario de cotización, lista de espera o contacto, o nos escribe por WhatsApp, guardamos: su nombre, número de WhatsApp/teléfono, ciudad de entrega o destino, qué le interesa comprar, presupuesto (si lo indica) y cualquier comentario que nos deje. No pedimos ni guardamos datos de tarjeta de pago en el sitio. También usamos Google Analytics para contar visitas y clics (páginas vistas, clics a WhatsApp o teléfono, envíos de formularios); Google puede usar cookies para esto. Los formularios se guardan en nuestro CRM (Zoho).",
       priv_use_h: "Para qué los usamos", priv_use_p: "Solo para responder su cotización o solicitud, avisarle de cargas disponibles que coincidan con lo que busca, y coordinar recolección o flete. No los usamos para nada más.",
       priv_share_h: "No vendemos sus datos", priv_share_p: "Liquidation Pros LLC no vende ni renta su información a terceros. Sus datos solo se usan internamente para atenderlo.",
       priv_delete_h: "Cómo pedir que borremos sus datos", priv_delete_p: "Escríbanos por WhatsApp o al correo juan@lpros.biz pidiendo que eliminemos su información y lo hacemos.",
@@ -183,8 +183,8 @@
       photo_next_h: "Photos of the next trailer", photo_next_sub: "We don't have sample photos for this line yet. We'll send real photos of the next trailer over WhatsApp as soon as it lands.", photo_next_cta: "Ask for photos on WhatsApp",
       how_guide: "How do I buy?", how_h2: "How it works", how_sub: "Four steps. No account, no auction.",
       how1_h: "Look at the load", how1_p: "Units, pallets, condition, location and fixed price on one screen.",
-      how2_h: "Reserve or buy", how2_p: "Reserve holds the load 24 h while you confirm payment. Buy now closes it.",
-      how3_h: "Pay", how3_p: "Wire, ACH or deposit. We send a Zoho invoice on confirmation.",
+      how2_h: "Reserve or buy", how2_p: "Request the load and we confirm availability and price. The load is yours when your full payment clears our bank. Full payment first; we do not hold loads.",
+      how3_h: "Pay", how3_p: "Full payment by wire or ACH before the load is released. We send an invoice on confirmation.",
       how4_h: "Pick up or we ship", how4_p: "Pick up with your own carrier in Texas (location confirmed on reservation), or ask us for freight to your US warehouse. We don't ship to Mexico. If your carrier crosses into Mexico, you arrange that part.",
       wait_h2: "Buyer waitlist", wait_sub: "New loads go to the waitlist first. Tell us what you want and we message you on WhatsApp when a fit lands.",
       f_name: "Name", f_company: "Company (optional)", f_phone: "WhatsApp / phone", f_email: "Email (optional)", f_city: "Delivery city",
@@ -209,7 +209,7 @@
       faq_see_all: "See all questions →",
       faqp_h1: "Frequently asked questions", faqp_lead: "Direct answers to what buyers ask us most on WhatsApp. Not here? Message us.",
       faqp_cta_h: "Another question?", faqp_cta_p: "Message us on WhatsApp and we'll answer directly.", faqp_cta_btn: "Ask on WhatsApp",
-      faqp_t_manifests: "Manifests", faqp_t_pricing: "Pricing & Deposits", faqp_t_freight: "Freight & Quotes",
+      faqp_t_manifests: "Manifests", faqp_t_pricing: "Pricing & Payment", faqp_t_freight: "Freight & Quotes",
       faqp_t_pickup: "Pickup in Texas", faqp_t_payment: "Payment Methods", faqp_t_timing: "Timing / Availability",
       faqp_t_border: "Border pickup",
       border_h: "Recolección en Texas / Texas pickup",
@@ -223,7 +223,7 @@
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
       priv_lead: "This notice explains, in plain language, what data we collect when you use the quote form or message us on WhatsApp, and how we use it.",
-      priv_collect_h: "What data we collect", priv_collect_p: "When you fill in the quote, waitlist or contact form, or message us on WhatsApp, we save: your name, WhatsApp/phone number, delivery city or destination, what you're interested in buying, budget (if given) and any notes you leave. We do not ask for or store payment card data on the site. We also use Google Analytics to count visits and clicks (page views, WhatsApp/phone clicks, form submits); Google may use cookies for this.",
+      priv_collect_h: "What data we collect", priv_collect_p: "When you fill in the quote, waitlist or contact form, or message us on WhatsApp, we save: your name, WhatsApp/phone number, delivery city or destination, what you're interested in buying, budget (if given) and any notes you leave. We do not ask for or store payment card data on the site. We also use Google Analytics to count visits and clicks (page views, WhatsApp/phone clicks, form submits); Google may use cookies for this. Form submissions are stored in our CRM (Zoho).",
       priv_use_h: "What we use it for", priv_use_p: "Only to answer your quote or request, tell you about available loads that match what you're looking for, and coordinate pickup or freight. We do not use it for anything else.",
       priv_share_h: "We do not sell your data", priv_share_p: "Liquidation Pros LLC does not sell or rent your information to third parties. Your data is only used internally to help you.",
       priv_delete_h: "How to request deletion", priv_delete_p: "Message us on WhatsApp or email juan@lpros.biz asking us to delete your information and we will.",
@@ -637,6 +637,7 @@
         <button class="btn btn-red btn-block" type="submit">${esc(isBuy ? t("buy") : isQuote ? t("quote") : t("reserve"))}</button>
       </form>`;
     const form = document.getElementById("f-" + kind);
+    addHoney(form);
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
@@ -652,7 +653,38 @@
     });
     d.showModal();
   }
+  /* Server-side lead capture -> Zoho CRM Leads via CRM Web-to-Lead (no new paid account).
+     ONE-TIME SETUP (Zoho CRM > Setup > Developer Space > Web Forms > Leads form > Generate): paste the generated form's
+     action URL into LEAD_ENDPOINT and its hidden inputs (xnQsjsdp, xmIwtLD, actionType, returnURL) into LEAD_HIDDEN.
+     Until set, nothing is sent (forms still save locally and open WhatsApp). Honeypot "website" (see addHoney) drops bots. */
+  const LEAD_ENDPOINT = "";
+  const LEAD_HIDDEN = {};
+  function addHoney(form) {
+    if (form.querySelector('input[name="website"]')) return;
+    const d = document.createElement("div");
+    d.setAttribute("aria-hidden", "true");
+    d.style.cssText = "position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden";
+    d.innerHTML = '<label>Website<input name="website" tabindex="-1" autocomplete="off"></label>';
+    form.appendChild(d);
+  }
+  function sendLead(key, rec) {
+    if (!LEAD_ENDPOINT || key === "lpos.quotes" || rec.website) return;
+    try {
+      const u = getUtm(), first = String(rec.name || "").trim().split(/\s+/);
+      const p = new URLSearchParams(LEAD_HIDDEN);
+      p.set("Last Name", first.length > 1 ? first.slice(1).join(" ") : first[0] || "Sitio web");
+      if (first.length > 1) p.set("First Name", first[0]);
+      p.set("Company", rec.company || "Sitio web");
+      if (rec.email) p.set("Email", rec.email);
+      if (rec.phone) p.set("Mobile", rec.phone);
+      if (rec.city || rec.dest) p.set("City", rec.city || rec.dest);
+      p.set("Lead Source", "Website");
+      p.set("Description", ["form: " + key.replace("lpos.", ""), "lang: " + rec.lang, rec.buy && "buy: " + rec.buy, rec.retailers && "wants: " + rec.retailers, rec.budget && "budget: " + rec.budget, rec.offer && "offer: " + rec.offer, rec.load && "load: " + rec.load, (rec.notes || rec.msg) && "notes: " + (rec.notes || rec.msg), "page: " + location.pathname, "utm: " + JSON.stringify(u)].filter(Boolean).join("\n"));
+      fetch(LEAD_ENDPOINT, { method: "POST", mode: "no-cors", body: p, keepalive: true }).catch(() => {});
+    } catch (e) {}
+  }
   function saveLocal(key, rec) {
+    sendLead(key, rec);
     try { const arr = JSON.parse(localStorage.getItem(key) || "[]"); arr.push(rec); localStorage.setItem(key, JSON.stringify(arr)); } catch (e) {}
   }
   /* Opens WhatsApp right after submit (inside the click gesture). If the browser blocks the popup the
@@ -792,6 +824,7 @@
 
   /* ---------- boot ---------- */
   function render() {
+    document.querySelectorAll("form").forEach(addHoney);
     applyStatic();
     if (document.getElementById("loads-grid")) renderHome();
     if (document.getElementById("detail")) renderDetail();
