@@ -542,8 +542,11 @@
     const gallery = (arr) => `<div class="gallery" id="gallery" aria-label="${esc(t("photos_h"))}">${arr.map((p, i) => `<figure id="ph${i}"><img src="${esc(p.src)}" alt="${esc(L(p.alt))}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1200"><figcaption>${esc(L(p.alt))}</figcaption></figure>`).join("")}</div>
          <div class="thumbs">${arr.map((p, i) => `<button type="button" data-ph="${i}" aria-current="${i === 0}" aria-label="${lang === "es" ? "Foto" : "Photo"} ${i + 1}"><img src="${esc(p.src)}" alt="" loading="lazy"></button>`).join("")}</div>`;
     const nextTrailerCard = `<div class="gallery"><figure><div class="ph-placeholder"><div><b>${esc(t("photo_next_h"))} — ${esc(load.retailer)}</b>${esc(t("photo_next_sub"))}<br><a class="btn btn-red btn-sm" data-wa="${esc((lang === "es" ? "Hola, quiero fotos del próximo tráiler " : "Hi, I'd like photos of the next ") + load.retailer + (lang === "es" ? "" : " trailer"))}" href="#" style="margin-top:.5rem;display:inline-block">${esc(t("photo_next_cta"))}</a></div></figure></div>`;
+    const sampleVideos = (isSample && sm.videos && sm.videos.length)
+      ? `<div class="gallery sample-videos">${sm.videos.map((v) => `<figure><video controls preload="metadata" playsinline src="${esc(v.src)}"></video><figcaption>${esc(L(v.alt))}</figcaption></figure>`).join("")}</div>`
+      : "";
     const photos = pics && pics.length
-      ? (isSample ? `<div class="sample-head"><span class="pill pill-warn">${esc(L(sm.label))}</span><span>${esc(L(sm.note))}</span></div>` : "") + gallery(pics)
+      ? (isSample ? `<div class="sample-head"><span class="pill pill-warn">${esc(L(sm.label))}</span><span>${esc(L(sm.note))}</span></div>` : "") + gallery(pics) + sampleVideos
       : (sm ? nextTrailerCard : `<div class="gallery"><figure><div class="ph-placeholder"><div><b>${esc(t("photo_pending"))}</b>${esc(t("photo_pending_sub"))}</div></div></figure></div>`);
     /* video slot: set load.video = {src, poster} in loads.json and it renders here */
     const video = load.video && load.video.src

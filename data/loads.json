@@ -17,13 +17,43 @@
   "sample_trucks": {
     "gm": {
       "label": {
-        "es": "Fotos de muestra",
-        "en": "Sample photos"
+        "es": "Fotos y videos de muestra",
+        "en": "Sample photos and videos"
       },
       "note": {
-        "es": "Fotos reales de tarimas salvage de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
-        "en": "Real photos of Target salvage pallets we received (October 2026). Samples only — not this exact load."
+        "es": "Fotos y video reales de tarimas salvage de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
+        "en": "Real photos and video of Target salvage pallets we received (October 2026). Samples only — not this exact load."
       },
+      "videos": [
+        {
+          "src": "assets/video/sample-gm-01.mp4",
+          "alt": {
+            "es": "Video de muestra: recibo de tarima Target salvage en el almacén.",
+            "en": "Sample video: receiving a Target salvage pallet at the warehouse."
+          }
+        },
+        {
+          "src": "assets/video/sample-gm-02.mp4",
+          "alt": {
+            "es": "Video de muestra: descarga de cajas Target salvage.",
+            "en": "Sample video: unloading Target salvage cartons."
+          }
+        },
+        {
+          "src": "assets/video/sample-gm-03.mp4",
+          "alt": {
+            "es": "Video de muestra: inspección de tarimas Target salvage recibidas.",
+            "en": "Sample video: inspecting received Target salvage pallets."
+          }
+        },
+        {
+          "src": "assets/video/sample-gm-04.mp4",
+          "alt": {
+            "es": "Video de muestra: tarimas Target salvage apiladas en el almacén.",
+            "en": "Sample video: Target salvage pallets stacked at the warehouse."
+          }
+        }
+      ],
       "photos": [
         {
           "src": "assets/photos/sample/gm-01.jpg",
