@@ -124,7 +124,7 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "on_hold",
+      "status": "available",
       "sold_verified": false,
       "units": 10267,
       "pallets": "27",
@@ -171,7 +171,7 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "on_hold",
+      "status": "available",
       "sold_verified": false,
       "units": 14665,
       "pallets": "27",
@@ -218,7 +218,7 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "on_hold",
+      "status": "available",
       "sold_verified": false,
       "units": 10062,
       "pallets": "23",
@@ -265,7 +265,7 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "on_hold",
+      "status": "available",
       "sold_verified": false,
       "units": 25670,
       "pallets": "24",
@@ -312,7 +312,7 @@
         "es": "Tráiler completo · Mercancía general",
         "en": "Full Truckload · General Merchandise"
       },
-      "status": "on_hold",
+      "status": "available",
       "sold_verified": false,
       "units": 24719,
       "pallets": "27",
