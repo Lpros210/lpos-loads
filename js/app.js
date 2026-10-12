@@ -85,6 +85,11 @@
       f_qty: "Tarimas o unidades", f_dest: "Destino (ciudad, estado)", f_zip: "Código postal / CP",
       f_offer: "Su oferta (USD)", f_offer_hint: "Ofertas razonables se responden el mismo día.",
       form_saved: "Guardado. Se abrió WhatsApp con su mensaje: toque Enviar ahí. Si no, envíelo por WhatsApp o correo para que lo recibamos:",
+      auth_login: "Iniciar sesión", auth_signup: "Crear cuenta", auth_password: "Contraseña",
+      auth_no_account: "¿No tiene cuenta?", auth_have_account: "¿Ya tiene cuenta?",
+      auth_not_ready: "El inicio de sesión aún no está disponible. Contáctenos por WhatsApp.",
+      auth_check_email: "Revise su correo para confirmar su cuenta, luego inicie sesión.",
+      auth_error: "No se pudo completar. Intente de nuevo.",
       faq_h2: "Preguntas frecuentes",
       faq1_q: "¿Puedo ver el manifiesto antes de pagar?", faq1_a: "Sí — le enviamos el manifiesto para que revise el contenido y el valor estimado de venta al menudeo antes de comprometerse con una carga.",
       faq2_q: "¿El precio incluye el flete o es solo la mercancía?", faq2_a: "El precio de la mercancía y el flete se cotizan por separado — así puede elegir recoger usted mismo (en Texas) o que le coticemos el flete hasta su bodega en EE. UU. No enviamos a México. Le damos ambos números para que quede claro.",
@@ -198,6 +203,11 @@
       f_submit_wait: "Join the waitlist", f_send_wa: "Open WhatsApp to send", wa_blocked: "Saved. Your browser blocked the popup: tap \"Open WhatsApp to send\" so we receive your request.", f_send_mail: "Send via email",
       f_qty: "Pallets or units", f_dest: "Destination (city, state)", f_zip: "ZIP / postal code",
       f_offer: "Your offer (USD)", f_offer_hint: "Reasonable offers get a same-day answer.",
+      auth_login: "Log in", auth_signup: "Create account", auth_password: "Password",
+      auth_no_account: "No account?", auth_have_account: "Already have an account?",
+      auth_not_ready: "Login isn't available yet. Reach us on WhatsApp instead.",
+      auth_check_email: "Check your email to confirm your account, then log in.",
+      auth_error: "Couldn't complete that. Please try again.",
       form_saved: "Saved. WhatsApp opened with your message: tap Send there. If not, send it on WhatsApp or email so we receive it:",
       faq_h2: "Frequently asked questions",
       faq1_q: "Can I see the manifest before I pay?", faq1_a: "Yes — we send the manifest so you can review contents and estimated retail value before you commit to a load.",
@@ -611,12 +621,63 @@
       document.getElementById("ph" + b.dataset.ph).scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
       root.querySelectorAll("[data-ph]").forEach((x) => x.setAttribute("aria-current", x === b));
     }));
-    document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => openDialog(b.dataset.open, load)));
-    if (location.hash === "#reserve" && isAvail) setTimeout(() => openDialog("reserve", load), 200);
+    document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", async () => {
+      const kind = b.dataset.open;
+      if (kind === "reserve") {
+        const session = window.LPOS_AUTH ? await window.LPOS_AUTH.getSession() : null;
+        if (!session) { openAuthDialog(load); return; }
+      }
+      openDialog(kind, load);
+    }));
+    if (location.hash === "#reserve" && isAvail) setTimeout(async () => {
+      const session = window.LPOS_AUTH ? await window.LPOS_AUTH.getSession() : null;
+      openDialog(session ? "reserve" : null, load) || (session ? null : openAuthDialog(load));
+    }, 200);
+  }
+
+  /* ---------- login / signup (gates the Reserve button; see js/auth.js) ---------- */
+  function openAuthDialog(load) {
+    const d = document.getElementById("dlg");
+    let mode = "login";
+    const render = () => {
+      document.getElementById("dlg-title").textContent = t(mode === "login" ? "auth_login" : "auth_signup");
+      document.getElementById("dlg-body").innerHTML = `
+        <form class="form" id="f-auth" novalidate>
+          <label>${esc(t("f_email"))} *<input name="email" type="email" required autocomplete="email"></label>
+          <label>${esc(t("auth_password"))} *<input name="password" type="password" required minlength="6" autocomplete="${mode === "login" ? "current-password" : "new-password"}"></label>
+          <div id="auth-out"></div>
+          <button class="btn btn-red btn-block" type="submit">${esc(t(mode === "login" ? "auth_login" : "auth_signup"))}</button>
+          <p class="hint" style="margin-top:.6rem">${esc(t(mode === "login" ? "auth_no_account" : "auth_have_account"))} <a href="#" id="auth-switch">${esc(t(mode === "login" ? "auth_signup" : "auth_login"))}</a></p>
+        </form>`;
+      document.getElementById("auth-switch").addEventListener("click", (e) => { e.preventDefault(); mode = mode === "login" ? "signup" : "login"; render(); });
+      const form = document.getElementById("f-auth");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!form.reportValidity()) return;
+        const f = Object.fromEntries(new FormData(form).entries());
+        const out = document.getElementById("auth-out");
+        out.textContent = "";
+        if (!window.LPOS_AUTH || !window.LPOS_AUTH.getClient()) {
+          out.innerHTML = `<div class="notice">${esc(t("auth_not_ready"))}</div>`;
+          return;
+        }
+        try {
+          const res = mode === "login" ? await window.LPOS_AUTH.signIn(f.email, f.password) : await window.LPOS_AUTH.signUp(f.email, f.password);
+          if (res.error) throw res.error;
+          if (mode === "signup" && !res.data.session) { out.innerHTML = `<div class="notice">${esc(t("auth_check_email"))}</div>`; return; }
+          openDialog("reserve", load);
+        } catch (err) {
+          out.innerHTML = `<div class="notice">${esc((err && err.message) || t("auth_error"))}</div>`;
+        }
+      });
+    };
+    render();
+    d.showModal();
   }
 
   /* ---------- dialogs / forms (localStorage + WhatsApp/mailto) ---------- */
   function openDialog(kind, load) {
+    if (!kind) return;
     const d = document.getElementById("dlg");
     const isQuote = kind === "quote", isBuy = kind === "buy";
     document.getElementById("dlg-title").textContent = t("dlg_" + kind);
