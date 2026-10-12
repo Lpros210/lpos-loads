@@ -876,7 +876,7 @@
       const f = Object.fromEntries(new FormData(form).entries());
       saveLocal("lpos.leads", { ts: new Date().toISOString(), lang, ...f });
       const subject = `LEAD | ${f.name} | ${f.city}`;
-      const body = ["LEAD", `Nombre: ${f.name}`, `WhatsApp: ${f.phone}`, `Ciudad: ${f.city}`, `Compra: ${f.buy}`, `Presupuesto USD: ${f.budget || "-"}`, `Idioma: ${lang}`, `Fuente: sitio web ${new Date().toISOString().slice(0, 10)}`].join("\n");
+      const body = ["LEAD", `Nombre: ${f.name}`, `WhatsApp: ${f.phone}`, `Ciudad: ${f.city}`, `Compra: ${f.buy}`, `Idioma: ${lang}`, `Fuente: sitio web ${new Date().toISOString().slice(0, 10)}`].join("\n");
       const wa = waLink((lang === "es" ? "Hola, quiero entrar a la lista de compradores.\n" : "Hi, I want to join the buyer list.\n") + body);
       const mail = mailLink(subject, body, DATA.contact.leads_email);
       const out = document.getElementById("lead-out");
