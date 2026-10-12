@@ -21,36 +21,36 @@
         "en": "Sample photos and videos"
       },
       "note": {
-        "es": "Fotos y video reales de tarimas salvage de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
-        "en": "Real photos and video of Target salvage pallets we received (October 2026). Samples only — not this exact load."
+        "es": "Fotos y video reales de tarimas de devoluciones de clientes y retiros de anaquel de Target que recibimos (octubre 2026). Son de muestra: no son de esta carga.",
+        "en": "Real photos and video of Target customer-returns and shelf-pull pallets we received (October 2026). Samples only — not this exact load."
       },
       "videos": [
         {
           "src": "assets/video/sample-gm-01.mp4",
           "alt": {
-            "es": "Video de muestra: recibo de tarima Target salvage en el almacén.",
-            "en": "Sample video: receiving a Target salvage pallet at the warehouse."
+            "es": "Video de muestra: recibo de tarima de devoluciones y retiros de anaquel de Target en el almacén.",
+            "en": "Sample video: receiving a Target customer-returns and shelf-pull pallet at the warehouse."
           }
         },
         {
           "src": "assets/video/sample-gm-02.mp4",
           "alt": {
-            "es": "Video de muestra: descarga de cajas Target salvage.",
-            "en": "Sample video: unloading Target salvage cartons."
+            "es": "Video de muestra: descarga de cajas de devoluciones y retiros de anaquel de Target.",
+            "en": "Sample video: unloading Target customer-returns and shelf-pull cartons."
           }
         },
         {
           "src": "assets/video/sample-gm-03.mp4",
           "alt": {
-            "es": "Video de muestra: inspección de tarimas Target salvage recibidas.",
-            "en": "Sample video: inspecting received Target salvage pallets."
+            "es": "Video de muestra: inspección de tarimas de devoluciones y retiros de anaquel de Target recibidas.",
+            "en": "Sample video: inspecting received Target customer-returns and shelf-pull pallets."
           }
         },
         {
           "src": "assets/video/sample-gm-04.mp4",
           "alt": {
-            "es": "Video de muestra: tarimas Target salvage apiladas en el almacén.",
-            "en": "Sample video: Target salvage pallets stacked at the warehouse."
+            "es": "Video de muestra: tarimas de devoluciones y retiros de anaquel de Target apiladas en el almacén.",
+            "en": "Sample video: Target customer-returns and shelf-pull pallets stacked at the warehouse."
           }
         }
       ],
@@ -58,8 +58,8 @@
         {
           "src": "assets/photos/sample/gm-01.jpg",
           "alt": {
-            "es": "Tarima envuelta con el logo de Target y formulario de tarima salvage.",
-            "en": "Wrapped pallet with the Target bullseye logo and salvage pallet ID form."
+            "es": "Tarima envuelta con el logo de Target y formulario de tarima de devoluciones y retiros de anaquel.",
+            "en": "Wrapped pallet with the Target bullseye logo and customer-returns/shelf-pull pallet ID form."
           }
         },
         {
@@ -72,29 +72,29 @@
         {
           "src": "assets/photos/sample/gm-03.jpg",
           "alt": {
-            "es": "Tarima de cajas Sterilite envueltas con etiqueta salvage verde.",
-            "en": "Pallet of wrapped Sterilite cartons with a green salvage tag."
+            "es": "Tarima de cajas Sterilite envueltas con etiqueta verde de devoluciones y retiros de anaquel.",
+            "en": "Pallet of wrapped Sterilite cartons with a green customer-returns/shelf-pull tag."
           }
         },
         {
           "src": "assets/photos/sample/gm-04.jpg",
           "alt": {
-            "es": "Logo de Target y formulario de tarima salvage sobre cajas Sterilite.",
-            "en": "Target bullseye logo and salvage pallet ID form above Sterilite cartons."
+            "es": "Logo de Target y formulario de tarima de devoluciones y retiros de anaquel sobre cajas Sterilite.",
+            "en": "Target bullseye logo and customer-returns/shelf-pull pallet ID form above Sterilite cartons."
           }
         },
         {
           "src": "assets/photos/sample/gm-05.jpg",
           "alt": {
-            "es": "Caja con el logo de target.com y etiqueta salvage a la vista.",
-            "en": "Carton printed with the target.com logo and a salvage tag visible."
+            "es": "Caja con el logo de target.com y etiqueta de devoluciones y retiros de anaquel a la vista.",
+            "en": "Carton printed with the target.com logo and a customer-returns/shelf-pull tag visible."
           }
         },
         {
           "src": "assets/photos/sample/gm-06.jpg",
           "alt": {
-            "es": "Cajas Sterilite envueltas con formulario de tarima salvage.",
-            "en": "Wrapped Sterilite cartons with a salvage pallet ID form."
+            "es": "Cajas Sterilite envueltas con formulario de tarima de devoluciones y retiros de anaquel.",
+            "en": "Wrapped Sterilite cartons with a customer-returns/shelf-pull pallet ID form."
           }
         }
       ]
@@ -352,8 +352,8 @@
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Mercancía general (salvage)",
-        "en": "General Merchandise (salvage)"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
         "es": "Tráiler completo · Hogar, juguetes, almacenaje",
