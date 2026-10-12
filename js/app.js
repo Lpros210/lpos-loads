@@ -85,7 +85,7 @@
       f_qty: "Tarimas o unidades", f_dest: "Destino (ciudad, estado)", f_zip: "Código postal / CP",
       f_offer: "Su oferta (USD)", f_offer_hint: "Ofertas razonables se responden el mismo día.",
       form_saved: "Guardado. Se abrió WhatsApp con su mensaje: toque Enviar ahí. Si no, envíelo por WhatsApp o correo para que lo recibamos:",
-      auth_login: "Iniciar sesión", auth_signup: "Crear cuenta", auth_password: "Contraseña",
+      auth_login: "Iniciar sesión", auth_signup: "Crear cuenta", auth_email: "Correo", auth_password: "Contraseña",
       auth_no_account: "¿No tiene cuenta?", auth_have_account: "¿Ya tiene cuenta?",
       auth_not_ready: "El inicio de sesión aún no está disponible. Contáctenos por WhatsApp.",
       auth_check_email: "Revise su correo para confirmar su cuenta, luego inicie sesión.",
@@ -203,7 +203,7 @@
       f_submit_wait: "Join the waitlist", f_send_wa: "Open WhatsApp to send", wa_blocked: "Saved. Your browser blocked the popup: tap \"Open WhatsApp to send\" so we receive your request.", f_send_mail: "Send via email",
       f_qty: "Pallets or units", f_dest: "Destination (city, state)", f_zip: "ZIP / postal code",
       f_offer: "Your offer (USD)", f_offer_hint: "Reasonable offers get a same-day answer.",
-      auth_login: "Log in", auth_signup: "Create account", auth_password: "Password",
+      auth_login: "Log in", auth_signup: "Create account", auth_email: "Email", auth_password: "Password",
       auth_no_account: "No account?", auth_have_account: "Already have an account?",
       auth_not_ready: "Login isn't available yet. Reach us on WhatsApp instead.",
       auth_check_email: "Check your email to confirm your account, then log in.",
@@ -643,7 +643,7 @@
       document.getElementById("dlg-title").textContent = t(mode === "login" ? "auth_login" : "auth_signup");
       document.getElementById("dlg-body").innerHTML = `
         <form class="form" id="f-auth" novalidate>
-          <label>${esc(t("f_email"))} *<input name="email" type="email" required autocomplete="email"></label>
+          <label>${esc(t("auth_email"))} *<input name="email" type="email" required autocomplete="email"></label>
           <label>${esc(t("auth_password"))} *<input name="password" type="password" required minlength="6" autocomplete="${mode === "login" ? "current-password" : "new-password"}"></label>
           <div id="auth-out"></div>
           <button class="btn btn-red btn-block" type="submit">${esc(t(mode === "login" ? "auth_login" : "auth_signup"))}</button>
