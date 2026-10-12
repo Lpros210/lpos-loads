@@ -631,7 +631,7 @@
     }));
     if (location.hash === "#reserve" && isAvail) setTimeout(async () => {
       const session = window.LPOS_AUTH ? await window.LPOS_AUTH.getSession() : null;
-      openDialog(session ? "reserve" : null, load) || (session ? null : openAuthDialog(load));
+      if (session) openDialog("reserve", load); else openAuthDialog(load);
     }, 200);
   }
 
