@@ -61,7 +61,7 @@
       receiving_play: "Toque para reproducir",
       loads_h2: "Cargas disponibles", loads_sub: "Precio fijo por tráiler completo. Reserve o compre; primero en reservar, primero en cargar.",
       loads_sold_h2: "Vendidas recientemente", loads_sold_sub: "Para que vea lo que normalmente llega.",
-      status_available: "Disponible", status_sold: "Vendida", status_reserved: "Reservada", status_on_hold: "En espera",
+      status_available: "Disponible", status_sold: "Vendida", status_reserved: "Reservada", status_on_hold: "En espera", status_pending: "Pendiente",
       units: "Unidades", pallets: "Tarimas", location: "Ubicación", weight: "Peso aprox.", condition: "Condición",
       price_pickup: "Precio recogiendo en Texas", price_pickup_short: "recogiendo en TX", per_unit: "por unidad",
       delivered_quote: "Puesto en su bodega: cotizamos", see_load: "Ver carga", reserve: "Reservar", buy: "Comprar ahora", quote: "Cotizar flete",
@@ -148,6 +148,7 @@
       opt_pickup: "Recojo en Texas", opt_delivered: "Puesto en mi bodega (cotizar)",
       sold_banner: "Esta carga ya se vendió. Entre a la lista de espera para la siguiente.",
       hold_banner: "Esta carga está en espera y no está a la venta por ahora. Entre a la lista de espera para la siguiente.",
+      pending_banner: "Esta carga ya está reservada/vendida y no está disponible por ahora. Entre a la lista de espera para la siguiente.",
       err_required: "Faltan datos obligatorios.",
       any: "Cualquiera",
     },
@@ -180,7 +181,7 @@
       receiving_play: "Tap to play",
       loads_h2: "Available loads", loads_sub: "Fixed price per full truckload. Reserve or buy; first to reserve, first to load.",
       loads_sold_h2: "Recently sold", loads_sold_sub: "So you can see what usually comes in.",
-      status_available: "Available", status_sold: "Sold", status_reserved: "Reserved", status_on_hold: "On hold",
+      status_available: "Available", status_sold: "Sold", status_reserved: "Reserved", status_on_hold: "On hold", status_pending: "Pending",
       units: "Units", pallets: "Pallets", location: "Location", weight: "Approx. weight", condition: "Condition",
       price_pickup: "Price picked up in Texas", price_pickup_short: "picked up in TX", per_unit: "per unit",
       delivered_quote: "Delivered to your warehouse: we quote", see_load: "View load", reserve: "Reserve", buy: "Buy now", quote: "Shipping quote",
@@ -267,6 +268,7 @@
       opt_pickup: "I pick up in Texas", opt_delivered: "Delivered to my warehouse (quote)",
       sold_banner: "This load has sold. Join the waitlist for the next one.",
       hold_banner: "This load is on hold and not for sale right now. Join the waitlist for the next one.",
+      pending_banner: "This load is reserved/sold and not available right now. Join the waitlist for the next one.",
       err_required: "Required fields are missing.",
       any: "Any",
     },
@@ -353,7 +355,7 @@
   }
   function statusPill(load) {
     const k = "status_" + load.status;
-    const cls = load.status === "available" ? "pill-live" : "pill-sold";
+    const cls = load.status === "available" ? "pill-live" : load.status === "pending" ? "pill-warn" : "pill-sold";
     return `<span class="pill ${cls}">${esc(t(k))}</span>`;
   }
   function card(load) {
@@ -425,9 +427,11 @@
     const isEcom = (l) => /^AMZN-/.test(l.id);
     const avail = DATA.loads.filter((l) => l.status === "available" && !isEcom(l));
     const held = DATA.loads.filter((l) => l.status === "on_hold" && !isEcom(l));
-    const sold = DATA.loads.filter((l) => l.status !== "available" && l.status !== "on_hold" && !isEcom(l));
+    const pending = DATA.loads.filter((l) => l.status === "pending" && !isEcom(l));
+    const sold = DATA.loads.filter((l) => l.status !== "available" && l.status !== "on_hold" && l.status !== "pending" && !isEcom(l));
     const g = document.getElementById("loads-grid");
-    if (g) g.innerHTML = (avail.length || held.length) ? avail.concat(held).map(card).join("") : sourcingNext();
+    // R-pending-sort: status is the primary sort key -- available, then on-hold, then pending, always below available.
+    if (g) g.innerHTML = (avail.length || held.length || pending.length) ? avail.concat(held, pending).map(card).join("") : sourcingNext();
     bindNotify();
     { const sec = document.getElementById("loads"); if (sec) { const pl = sec.querySelector(".sec-head .pill-live"), sp = sec.querySelector(".sec-head p"); if (pl) pl.style.display = avail.length ? "" : "none"; if (sp && !avail.length) sp.textContent = lang === "es" ? "Próximamente" : "Coming up"; } } // R3754: no green "Disponible" pill / fixed-price copy over an empty list
     const s = document.getElementById("sold-grid");
@@ -464,7 +468,7 @@
       ...(img ? { image: base + img.src } : {}),
       offers: load.price_pickup == null ? undefined : {
         "@type": "Offer", url, priceCurrency: "USD", price: load.price_pickup,
-        availability: load.status === "available" ? "https://schema.org/InStock" : load.status === "on_hold" ? "https://schema.org/OutOfStock" : "https://schema.org/SoldOut",
+        availability: load.status === "available" ? "https://schema.org/InStock" : (load.status === "on_hold" || load.status === "pending") ? "https://schema.org/OutOfStock" : "https://schema.org/SoldOut",
         itemCondition: "https://schema.org/UsedCondition",
         seller: { "@type": "Organization", name: "Liquidation Pros LLC" },
       },
@@ -579,7 +583,7 @@
           <h1>${esc(L(load.title))}</h1>
           <div class="sub">${statusPill(load)} <span>${esc(t("ref"))} ${esc(load.id)}</span>${load.po ? `<span>· ${esc(load.po)}</span>` : ""}<span>· ${esc(t("listed"))} ${esc(fmtDate(load.listed))}</span></div>
         </div>
-        ${!isAvail ? `<div class="notice" style="margin-bottom:1rem">${esc(load.status === "on_hold" ? t("hold_banner") : t("sold_banner"))} <a href="index.html#waitlist">${esc(t("nav_waitlist"))} →</a></div>` : ""}
+        ${!isAvail ? `<div class="notice" style="margin-bottom:1rem">${esc(load.status === "on_hold" ? t("hold_banner") : load.status === "pending" ? t("pending_banner") : t("sold_banner"))} <a href="index.html#waitlist">${esc(t("nav_waitlist"))} →</a></div>` : ""}
         ${photos}
         ${video}
         <div class="kv">
