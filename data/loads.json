@@ -405,6 +405,241 @@
           "en": "Baby gear"
         }
       ]
+    },
+    {
+      "id": "LP-HBRP",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 15317,
+      "pallets": "23",
+      "weight_lb": null,
+      "price_pickup": 8400,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 15317,
+          "retail": 107817.09,
+          "note": {
+            "es": "13.3% ropa/calzado/accesorios por conteo de piezas. Carga combinada de tarimas manifestadas de devoluciones de clientes y retiros de anaquel de mercancía general de varios lotes.",
+            "en": "13.3% clothing/footwear/accessories by piece count. Combined load of manifested customer-returns and shelf-pull general-merchandise pallets from multiple lots."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-OIG8",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 10050,
+      "pallets": "23",
+      "weight_lb": null,
+      "price_pickup": 7427,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 10050,
+          "retail": 88680.28,
+          "note": {
+            "es": "12.8% ropa/calzado/accesorios por conteo de piezas. Carga combinada de tarimas manifestadas de devoluciones de clientes y retiros de anaquel de mercancía general de varios lotes.",
+            "en": "12.8% clothing/footwear/accessories by piece count. Combined load of manifested customer-returns and shelf-pull general-merchandise pallets from multiple lots."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-F1CB",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 11206,
+      "pallets": "23",
+      "weight_lb": null,
+      "price_pickup": 8279,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 11206,
+          "retail": 103769.99,
+          "note": {
+            "es": "18.0% ropa/calzado/accesorios por conteo de piezas. Carga combinada de tarimas manifestadas de devoluciones de clientes y retiros de anaquel de mercancía general de varios lotes.",
+            "en": "18.0% clothing/footwear/accessories by piece count. Combined load of manifested customer-returns and shelf-pull general-merchandise pallets from multiple lots."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-FNO6",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 14077,
+      "pallets": "23",
+      "weight_lb": null,
+      "price_pickup": 8770,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 14077,
+          "retail": 112186.68,
+          "note": {
+            "es": "14.4% ropa/calzado/accesorios por conteo de piezas. Carga combinada de tarimas manifestadas de devoluciones de clientes y retiros de anaquel de mercancía general de varios lotes.",
+            "en": "14.4% clothing/footwear/accessories by piece count. Combined load of manifested customer-returns and shelf-pull general-merchandise pallets from multiple lots."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-B9M8",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 9441,
+      "pallets": "22",
+      "weight_lb": null,
+      "price_pickup": 7010,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 9441,
+          "retail": 84842.11,
+          "note": {
+            "es": "15.0% ropa/calzado/accesorios por conteo de piezas. Carga combinada de tarimas manifestadas de devoluciones de clientes y retiros de anaquel de mercancía general de varios lotes.",
+            "en": "15.0% clothing/footwear/accessories by piece count. Combined load of manifested customer-returns and shelf-pull general-merchandise pallets from multiple lots."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
     }
   ]
 }
