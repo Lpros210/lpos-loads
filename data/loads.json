@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-10-20",
+    "generated": "2026-10-22",
     "public": true
   },
   "contact": {
@@ -752,7 +752,7 @@
       "units": 12379,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": 18167,
+      "price_pickup": 14936,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -921,6 +921,121 @@
         }
       ],
       "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-VQ2M",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 14162,
+      "pallets": "25",
+      "weight_lb": null,
+      "price_pickup": 11552,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-22",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [
+        {
+          "category": {
+            "es": "Mercancía general (incluye ropa/calzado)",
+            "en": "General merchandise (includes clothing/footwear)"
+          },
+          "units": 14162,
+          "retail": 154456.25,
+          "note": {
+            "es": "30.5% ropa/calzado/accesorios por conteo de piezas.",
+            "en": "30.5% clothing/footwear/accessories by piece count."
+          }
+        }
+      ],
+      "manifest_status": "parsed",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-ZF8K",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": null,
+      "pallets": "26",
+      "weight_lb": null,
+      "price_pickup": 13405,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-22",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": []
+    },
+    {
+      "id": "LP-DW5H",
+      "po": null,
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Bulk · Mercancía general",
+        "en": "Bulk · General Merchandise"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general",
+        "en": "Full Truckload · General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": null,
+      "pallets": "26",
+      "weight_lb": null,
+      "price_pickup": 11009,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-10-22",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "manifest": [],
+      "manifest_status": "none",
       "categories_seen": []
     }
   ]
