@@ -725,8 +725,8 @@
      ONE-TIME SETUP (Zoho CRM > Setup > Developer Space > Web Forms > Leads form > Generate): paste the generated form's
      action URL into LEAD_ENDPOINT and its hidden inputs (xnQsjsdp, xmIwtLD, actionType, returnURL) into LEAD_HIDDEN.
      Until set, nothing is sent (forms still save locally and open WhatsApp). Honeypot "website" (see addHoney) drops bots. */
-  const LEAD_ENDPOINT = "";
-  const LEAD_HIDDEN = {};
+  const LEAD_ENDPOINT = "https://crm.zoho.com/crm/WebToLeadForm";
+  const LEAD_HIDDEN = { xnQsjsdp: "6c04bcbb155dafd7131cd32f2a8918ad2a0259cc208917fba20a6c2267aef4d3", xmIwtLD: "f361a53796c5122305d5f49d479ba39acab74b69c8d6d1460620faa0fa330c67081a64d4476b558bd07f4cd8dbe4b667", actionType: "TGVhZHM=", returnURL: "https://www.lpros.biz/" };
   function addHoney(form) {
     if (form.querySelector('input[name="website"]')) return;
     const d = document.createElement("div");
@@ -746,7 +746,7 @@
       if (rec.email) p.set("Email", rec.email);
       if (rec.phone) p.set("Mobile", rec.phone);
       if (rec.city || rec.dest) p.set("City", rec.city || rec.dest);
-      p.set("Lead Source", "Website");
+      p.set("Lead Source", "Web Download"); // picklist has no "Website"; the webform also tags every lead "website"
       p.set("Description", ["form: " + key.replace("lpos.", ""), "lang: " + rec.lang, rec.buy && "buy: " + rec.buy, rec.retailers && "wants: " + rec.retailers, rec.budget && "budget: " + rec.budget, rec.offer && "offer: " + rec.offer, rec.load && "load: " + rec.load, (rec.notes || rec.msg) && "notes: " + (rec.notes || rec.msg), "page: " + location.pathname, "utm: " + JSON.stringify(u)].filter(Boolean).join("\n"));
       fetch(LEAD_ENDPOINT, { method: "POST", mode: "no-cors", body: p, keepalive: true }).catch(() => {});
     } catch (e) {}
