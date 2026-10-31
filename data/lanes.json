@@ -1,8 +1,8 @@
 {
- "note": "Historical full-truckload freight paid on real shipments, plus carrier-arranged freight baked into merchandise orders. Ranges only; not a rate API.",
+ "note": "Historical full-truckload freight paid on real shipments, by origin REGION (no city), plus public estimates. Ranges only; not a rate API.",
  "lanes": [
   {
-   "origin": "Hopkins, MN",
+   "origin": "Upper Midwest",
    "destination": "Hidalgo, TX",
    "n": 7,
    "min": 1948.0,
@@ -12,18 +12,18 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Orangeburg, SC",
+   "origin": "Southeast (Carolinas)",
    "destination": "Hidalgo, TX",
-   "n": 4,
-   "min": 2800.0,
-   "median": 2900.0,
+   "n": 6,
+   "min": 2139.0,
+   "median": 2677.83,
    "max": 3150.0,
    "last_date": "2026-08-03",
    "basis": "paid_freight"
   },
   {
-   "origin": "Hopkins, MN",
-   "destination": "Mcallen, TX",
+   "origin": "Upper Midwest",
+   "destination": "McAllen, TX",
    "n": 4,
    "min": 2343.0,
    "median": 2715.5,
@@ -32,17 +32,17 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Waxahachie, TX",
+   "origin": "North Texas",
    "destination": "Hidalgo, TX",
-   "n": 4,
-   "min": 535.52,
-   "median": 1012.5,
-   "max": 1172.11,
-   "last_date": "2026-07-23",
+   "n": 9,
+   "min": 210.95,
+   "median": 1037.24,
+   "max": 2000.0,
+   "last_date": "2026-08-11",
    "basis": "paid_freight"
   },
   {
-   "origin": "Lenexa, KS",
+   "origin": "Central Plains",
    "destination": "Hidalgo, TX",
    "n": 4,
    "min": 1993.0,
@@ -52,28 +52,8 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Fort Worth, TX",
-   "destination": "Hidalgo, TX",
-   "n": 3,
-   "min": 210.95,
-   "median": 428.38,
-   "max": 1009.0,
-   "last_date": "2026-06-12",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Grand Prairie, TX",
-   "destination": "Hidalgo, TX",
-   "n": 2,
-   "min": 2000.0,
-   "median": 2000.0,
-   "max": 2000.0,
-   "last_date": "2026-08-11",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Lancaster, TX",
-   "destination": "Upland, CA",
+   "origin": "North Texas",
+   "destination": "Southern California",
    "n": 2,
    "min": 1796.0,
    "median": 1811.99,
@@ -82,37 +62,27 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Charlotte, NC",
+   "origin": "Midwest (Ohio Valley)",
    "destination": "Hidalgo, TX",
    "n": 2,
-   "min": 2139.0,
-   "median": 2233.5,
-   "max": 2328.0,
-   "last_date": "2025-06-30",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Columbus, OH",
-   "destination": "Hidalgo, TX",
-   "n": 1,
-   "min": 3200.0,
-   "median": 3200.0,
+   "min": 2293.0,
+   "median": 2746.5,
    "max": 3200.0,
    "last_date": "2026-07-23",
    "basis": "paid_freight"
   },
   {
-   "origin": "Nicholasville, KY",
+   "origin": "Mid-South",
    "destination": "Hidalgo, TX",
-   "n": 1,
-   "min": 3000.0,
-   "median": 3000.0,
+   "n": 2,
+   "min": 1648.0,
+   "median": 2324.0,
    "max": 3000.0,
    "last_date": "2026-01-27",
    "basis": "paid_freight"
   },
   {
-   "origin": "Lynwood, CA",
+   "origin": "Southern California",
    "destination": "Hidalgo, TX",
    "n": 1,
    "min": 3587.0,
@@ -122,8 +92,8 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Hopkins, MN",
-   "destination": "Los Angeles, CA",
+   "origin": "Upper Midwest",
+   "destination": "Southern California",
    "n": 1,
    "min": 3355.0,
    "median": 3355.0,
@@ -132,8 +102,8 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Richmond, VA",
-   "destination": "Mcallen, TX",
+   "origin": "Mid-Atlantic",
+   "destination": "McAllen, TX",
    "n": 1,
    "min": 2512.0,
    "median": 2512.0,
@@ -142,27 +112,7 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Lebanon, TN",
-   "destination": "Hidalgo, TX",
-   "n": 1,
-   "min": 1648.0,
-   "median": 1648.0,
-   "max": 1648.0,
-   "last_date": "2025-10-17",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Jeffersonville, IN",
-   "destination": "Hidalgo, TX",
-   "n": 1,
-   "min": 2293.0,
-   "median": 2293.0,
-   "max": 2293.0,
-   "last_date": "2025-06-11",
-   "basis": "paid_freight"
-  },
-  {
-   "origin": "Jacksonville, FL",
+   "origin": "Florida",
    "destination": "Hidalgo, TX",
    "n": 1,
    "min": 1131.0,
@@ -172,8 +122,8 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Las Vegas, NV",
-   "destination": "Bakersfield, CA",
+   "origin": "Southwest (Nevada)",
+   "destination": "Central California",
    "n": 1,
    "min": 1650.99,
    "median": 1650.99,
@@ -182,7 +132,7 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Upper Marlboro, MD",
+   "origin": "Mid-Atlantic",
    "destination": "Hidalgo, TX",
    "n": 1,
    "min": 2616.91,
@@ -242,7 +192,7 @@
    "basis": "public_estimate"
   },
   {
-   "origin": "Pompano Beach, FL",
+   "origin": "Florida",
    "destination": "Hidalgo, TX",
    "n": 0,
    "min": 1200.0,
