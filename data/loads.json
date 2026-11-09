@@ -1,7 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-10-22",
-    "public": true
+    "generated": "2026-11-05",
+    "public": true,
+    "inventory_sheet": "2026-11-05"
   },
   "contact": {
     "company": "Liquidation Pros LLC",
@@ -117,19 +118,19 @@
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "pending",
+      "status": "sold",
       "sold_verified": false,
       "units": 10267,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": null,
+      "price_pickup": 10919.17,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -142,41 +143,39 @@
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
-          },
-          "units": 10267,
-          "retail": 126943.48,
-          "note": {
-            "es": "29.4% ropa/calzado/accesorios por conteo de piezas. 3 de 27 tarimas aún sin manifiesto por SKU.",
-            "en": "29.4% clothing/footwear/accessories by piece count. 3 of 27 pallets not yet itemized by SKU."
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 3,
+        "pallets_manifested": 24,
+        "pieces": 10267,
+        "retail": 126943.48,
+        "pct_retail": 7.77,
+        "clothing_pieces": 3017,
+        "clothing_pct": 29.4,
+        "price_per_piece": 1.06
+      }
     },
     {
       "id": "LP-0Y6D",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "pending",
+      "status": "sold",
       "sold_verified": false,
       "units": 14665,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": null,
+      "price_pickup": 11337.22,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -189,41 +188,39 @@
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
-          },
-          "units": 14665,
-          "retail": 135686.17,
-          "note": {
-            "es": "16.5% ropa/calzado/accesorios por conteo de piezas. 5 de 27 tarimas aún sin manifiesto por SKU.",
-            "en": "16.5% clothing/footwear/accessories by piece count. 5 of 27 pallets not yet itemized by SKU."
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 5,
+        "pallets_manifested": 22,
+        "pieces": 14665,
+        "retail": 135686.17,
+        "pct_retail": 7.07,
+        "clothing_pieces": 2424,
+        "clothing_pct": 16.5,
+        "price_per_piece": 0.77
+      }
     },
     {
       "id": "LP-PBHS",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "pending",
+      "status": "sold",
       "sold_verified": false,
       "units": 10062,
       "pallets": "23",
       "weight_lb": null,
-      "price_pickup": null,
+      "price_pickup": 9671.46,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -236,41 +233,39 @@
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
-          },
-          "units": 10062,
-          "retail": 113734.06,
-          "note": {
-            "es": "22.3% ropa/calzado/accesorios por conteo de piezas. 2 de 23 tarimas aún sin manifiesto por SKU.",
-            "en": "22.3% clothing/footwear/accessories by piece count. 2 of 23 pallets not yet itemized by SKU."
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 23,
+        "pallets_unmanifested": 2,
+        "pallets_manifested": 21,
+        "pieces": 10062,
+        "retail": 113734.06,
+        "pct_retail": 7.89,
+        "clothing_pieces": 2244,
+        "clothing_pct": 22.3,
+        "price_per_piece": 0.96
+      }
     },
     {
       "id": "LP-AHXT",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "pending",
+      "status": "sold",
       "sold_verified": false,
       "units": 25670,
       "pallets": "24",
       "weight_lb": null,
-      "price_pickup": null,
+      "price_pickup": 8314.54,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -283,41 +278,39 @@
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
-          },
-          "units": 25670,
-          "retail": 119543.45,
-          "note": {
-            "es": "9.9% ropa/calzado/accesorios por conteo de piezas. 1 de 24 tarimas aún sin manifiesto por SKU.",
-            "en": "9.9% clothing/footwear/accessories by piece count. 1 of 24 pallets not yet itemized by SKU."
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 24,
+        "pallets_unmanifested": 1,
+        "pallets_manifested": 23,
+        "pieces": 25670,
+        "retail": 119543.45,
+        "pct_retail": 6.66,
+        "clothing_pieces": 2537,
+        "clothing_pct": 9.9,
+        "price_per_piece": 0.32
+      }
     },
     {
       "id": "LP-HV3A",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "pending",
+      "status": "sold",
       "sold_verified": false,
       "units": 24719,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": null,
+      "price_pickup": 12019.65,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -330,22 +323,20 @@
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [
-        {
-          "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
-          },
-          "units": 24719,
-          "retail": 152989.31,
-          "note": {
-            "es": "11.1% ropa/calzado/accesorios por conteo de piezas. 6 de 27 tarimas aún sin manifiesto por SKU.",
-            "en": "11.1% clothing/footwear/accessories by piece count. 6 of 27 pallets not yet itemized by SKU."
-          }
-        }
-      ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest": [],
+      "manifest_status": "none",
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 6,
+        "pallets_manifested": 21,
+        "pieces": 24719,
+        "retail": 152989.31,
+        "pct_retail": 6.48,
+        "clothing_pieces": 2733,
+        "clothing_pct": 11.1,
+        "price_per_piece": 0.49
+      }
     },
     {
       "id": "LP-WYIU",
@@ -646,19 +637,19 @@
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
       },
       "status": "available",
       "sold_verified": false,
       "units": 23487,
       "pallets": "26",
       "weight_lb": null,
-      "price_pickup": 26146,
+      "price_pickup": 26146.22,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -674,38 +665,72 @@
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 23487,
-          "retail": 350263.74,
-          "note": {
-            "es": "54.1% ropa/calzado/accesorios por conteo de piezas.",
-            "en": "54.1% clothing/footwear/accessories by piece count."
-          }
+          "units": 12714
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 7071
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 2796
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 906
         }
       ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest_status": "itemized",
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 0,
+        "pallets_manifested": 26,
+        "pieces": 23487,
+        "retail": 350263.74,
+        "pct_retail": 7.46,
+        "clothing_pieces": 12714,
+        "clothing_pct": 54.1,
+        "price_per_piece": 1.11,
+        "mix": {
+          "clothing": 12714,
+          "gm": 7071,
+          "hba": 2796,
+          "food": 906
+        }
+      },
+      "manifest_file": "data/manifests/LP-K2RT.json"
     },
     {
       "id": "LP-M7QX",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "available",
+      "status": "sold",
       "sold_verified": false,
       "units": 17744,
       "pallets": "25",
       "weight_lb": null,
-      "price_pickup": 13890,
+      "price_pickup": 13889.91,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -721,38 +746,71 @@
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 17744,
-          "retail": 179222.54,
-          "note": {
-            "es": "32.1% ropa/calzado/accesorios por conteo de piezas.",
-            "en": "32.1% clothing/footwear/accessories by piece count."
-          }
+          "units": 5693
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 9718
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 2299
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 34
         }
       ],
       "manifest_status": "parsed",
-      "categories_seen": []
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 25,
+        "pallets_unmanifested": 0,
+        "pallets_manifested": 25,
+        "pieces": 17744,
+        "retail": 179222.54,
+        "pct_retail": 7.75,
+        "clothing_pieces": 5693,
+        "clothing_pct": 32.1,
+        "price_per_piece": 0.78,
+        "mix": {
+          "clothing": 5693,
+          "gm": 9718,
+          "hba": 2299,
+          "food": 34
+        }
+      }
     },
     {
       "id": "LP-T4LN",
       "po": null,
       "retailer": "Target",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "available",
+      "status": "sold",
       "sold_verified": false,
       "units": 12379,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": 14936,
+      "price_pickup": 18166.89,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -768,38 +826,71 @@
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 12379,
-          "retail": 147933.61,
-          "note": {
-            "es": "42.5% ropa/calzado/accesorios por conteo de piezas. 11 tarimas aún sin manifiesto por SKU.",
-            "en": "42.5% clothing/footwear/accessories by piece count. 11 pallets not yet itemized by SKU."
-          }
+          "units": 5259
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 5231
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 1492
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 397
         }
       ],
       "manifest_status": "parsed",
-      "categories_seen": []
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 11,
+        "pallets_manifested": 16,
+        "pieces": 12379,
+        "retail": 147933.61,
+        "pct_retail": 9.68,
+        "clothing_pieces": 5259,
+        "clothing_pct": 42.5,
+        "price_per_piece": 1.47,
+        "mix": {
+          "clothing": 5259,
+          "gm": 5231,
+          "hba": 1492,
+          "food": 397
+        }
+      }
     },
     {
       "id": "LP-R9WC",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "available",
+      "status": "sold",
       "sold_verified": false,
       "units": 19603,
       "pallets": "25",
       "weight_lb": null,
-      "price_pickup": 20437,
+      "price_pickup": 20437.27,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -815,38 +906,71 @@
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 19603,
-          "retail": 256112.37,
-          "note": {
-            "es": "49.2% ropa/calzado/accesorios por conteo de piezas. 2 tarimas aún sin manifiesto por SKU.",
-            "en": "49.2% clothing/footwear/accessories by piece count. 2 pallets not yet itemized by SKU."
-          }
+          "units": 9652
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 8045
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 1778
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 128
         }
       ],
       "manifest_status": "parsed",
-      "categories_seen": []
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 25,
+        "pallets_unmanifested": 2,
+        "pallets_manifested": 23,
+        "pieces": 19603,
+        "retail": 256112.37,
+        "pct_retail": 7.71,
+        "clothing_pieces": 9652,
+        "clothing_pct": 49.2,
+        "price_per_piece": 1.04,
+        "mix": {
+          "clothing": 9652,
+          "gm": 8045,
+          "hba": 1778,
+          "food": 128
+        }
+      }
     },
     {
       "id": "LP-N3PZ",
       "po": null,
       "retailer": "Target",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "available",
+      "status": "sold",
       "sold_verified": false,
       "units": 18184,
       "pallets": "26",
       "weight_lb": null,
-      "price_pickup": 10000,
+      "price_pickup": 9592.74,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -862,38 +986,71 @@
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 18184,
-          "retail": 118217.45,
-          "note": {
-            "es": "11.7% ropa/calzado/accesorios por conteo de piezas.",
-            "en": "11.7% clothing/footwear/accessories by piece count."
-          }
+          "units": 2133
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 15102
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 650
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 299
         }
       ],
       "manifest_status": "parsed",
-      "categories_seen": []
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 0,
+        "pallets_manifested": 26,
+        "pieces": 18184,
+        "retail": 118217.45,
+        "pct_retail": 8.11,
+        "clothing_pieces": 2133,
+        "clothing_pct": 11.7,
+        "price_per_piece": 0.53,
+        "mix": {
+          "clothing": 2133,
+          "gm": 15102,
+          "hba": 650,
+          "food": 299
+        }
+      }
     },
     {
       "id": "LP-J6YV",
       "po": null,
       "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "available",
+      "status": "sold",
       "sold_verified": false,
       "units": 14518,
       "pallets": "27",
       "weight_lb": null,
-      "price_pickup": 14762,
+      "price_pickup": 14762.21,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -909,38 +1066,57 @@
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 14518,
-          "retail": 176944.95,
-          "note": {
-            "es": "43.8% ropa/calzado/accesorios por conteo de piezas.",
-            "en": "43.8% clothing/footwear/accessories by piece count."
-          }
+          "units": 6357
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 6079
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 2071
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 11
         }
       ],
       "manifest_status": "parsed",
-      "categories_seen": []
+      "categories_seen": [],
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 0,
+        "pallets_manifested": 27,
+        "pieces": 14518,
+        "retail": 176944.95,
+        "pct_retail": 8.34,
+        "clothing_pieces": 6357,
+        "clothing_pct": 43.8,
+        "price_per_piece": 1.02,
+        "mix": {
+          "clothing": 6357,
+          "gm": 6079,
+          "hba": 2071,
+          "food": 11
+        }
+      }
     },
     {
-      "id": "LP-VQ2M",
+      "id": "LP-J8L3",
       "po": null,
-      "retailer": "Target",
-      "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
-      },
-      "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
-      },
-      "status": "available",
-      "sold_verified": false,
-      "units": 14162,
-      "pallets": "25",
       "weight_lb": null,
-      "price_pickup": 11552,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -949,45 +1125,204 @@
         "state": "TX"
       },
       "freight_control": "buyer",
-      "listed": "2026-10-22",
+      "listed": "2026-11-05",
       "photos": [],
       "sample": "gm",
       "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Sin manifiesto",
+        "en": "Full Truckload · Unmanifested"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": null,
+      "pallets": "26",
+      "price_pickup": 11700.0,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 26,
+        "pallets_manifested": 0
+      },
+      "manifest": [],
+      "manifest_status": "unmanifested"
+    },
+    {
+      "id": "LP-CZJ5",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Sin manifiesto",
+        "en": "Full Truckload · Unmanifested"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": null,
+      "pallets": "27",
+      "price_pickup": 12150.0,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 27,
+        "pallets_manifested": 0
+      },
+      "manifest": [],
+      "manifest_status": "unmanifested"
+    },
+    {
+      "id": "LP-MD7H",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Sin manifiesto",
+        "en": "Full Truckload · Unmanifested"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": null,
+      "pallets": "27",
+      "price_pickup": 12150.0,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 27,
+        "pallets_manifested": 0
+      },
+      "manifest": [],
+      "manifest_status": "unmanifested"
+    },
+    {
+      "id": "LP-5W6P",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 17551,
+      "pallets": "27",
+      "price_pickup": 13334.66,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 3,
+        "pallets_manifested": 24,
+        "pieces": 17551,
+        "retail": 166290.34,
+        "pct_retail": 7.39,
+        "clothing_pieces": 5245,
+        "clothing_pct": 29.9,
+        "price_per_piece": 0.76,
+        "mix": {
+          "clothing": 5245,
+          "gm": 9704,
+          "hba": 1425,
+          "food": 42,
+          "unclassified": 1135
+        }
+      },
       "manifest": [
         {
           "category": {
-            "es": "Mercancía general (incluye ropa/calzado)",
-            "en": "General merchandise (includes clothing/footwear)"
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
           },
-          "units": 14162,
-          "retail": 154456.25,
-          "note": {
-            "es": "30.5% ropa/calzado/accesorios por conteo de piezas.",
-            "en": "30.5% clothing/footwear/accessories by piece count."
-          }
+          "units": 5245
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 9704
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 1425
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 42
+        },
+        {
+          "category": {
+            "es": "Sin clasificar",
+            "en": "Unclassified"
+          },
+          "units": 1135
         }
       ],
-      "manifest_status": "parsed",
-      "categories_seen": []
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-5W6P.json"
     },
     {
-      "id": "LP-ZF8K",
+      "id": "LP-SM48",
       "po": null,
-      "retailer": "Target",
-      "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
-      },
-      "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
-      },
-      "status": "available",
-      "sold_verified": false,
-      "units": null,
-      "pallets": "26",
       "weight_lb": null,
-      "price_pickup": 13405,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -996,32 +1331,79 @@
         "state": "TX"
       },
       "freight_control": "buyer",
-      "listed": "2026-10-22",
+      "listed": "2026-11-05",
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [],
-      "manifest_status": "none",
-      "categories_seen": []
-    },
-    {
-      "id": "LP-DW5H",
-      "po": null,
-      "retailer": "Target",
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
       "program": {
-        "es": "Bulk · Mercancía general",
-        "en": "Bulk · General Merchandise"
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
       },
       "title": {
-        "es": "Tráiler completo · Mercancía general",
-        "en": "Full Truckload · General Merchandise"
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
       },
       "status": "available",
       "sold_verified": false,
-      "units": null,
-      "pallets": "26",
+      "units": 14053,
+      "pallets": "27",
+      "price_pickup": 14889.28,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 5,
+        "pallets_manifested": 22,
+        "pieces": 14053,
+        "retail": 167505.16,
+        "pct_retail": 7.55,
+        "clothing_pieces": 6486,
+        "clothing_pct": 46.2,
+        "price_per_piece": 1.06,
+        "mix": {
+          "clothing": 6486,
+          "gm": 7010,
+          "hba": 496,
+          "food": 61
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 6486
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 7010
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 496
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 61
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-SM48.json"
+    },
+    {
+      "id": "LP-3XCL",
+      "po": null,
       "weight_lb": null,
-      "price_pickup": 11009,
       "price_delivered": null,
       "condition_code": "returns_mixed",
       "location": {
@@ -1030,13 +1412,479 @@
         "state": "TX"
       },
       "freight_control": "buyer",
-      "listed": "2026-10-22",
+      "listed": "2026-11-05",
       "photos": [],
       "sample": "gm",
       "video": null,
-      "manifest": [],
-      "manifest_status": "none",
-      "categories_seen": []
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 15029,
+      "pallets": "27",
+      "price_pickup": 12288.58,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 3,
+        "pallets_manifested": 24,
+        "pieces": 15029,
+        "retail": 144091.57,
+        "pct_retail": 7.59,
+        "clothing_pieces": 5568,
+        "clothing_pct": 37.0,
+        "price_per_piece": 0.82,
+        "mix": {
+          "clothing": 5568,
+          "gm": 8909,
+          "hba": 382,
+          "food": 170
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 5568
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 8909
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 382
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 170
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-3XCL.json"
+    },
+    {
+      "id": "LP-6DXE",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 14128,
+      "pallets": "25",
+      "price_pickup": 16076.94,
+      "stats": {
+        "pallets_total": 25,
+        "pallets_unmanifested": 5,
+        "pallets_manifested": 20,
+        "pieces": 14128,
+        "retail": 185137.43,
+        "pct_retail": 7.47,
+        "clothing_pieces": 7398,
+        "clothing_pct": 52.4,
+        "price_per_piece": 1.14,
+        "mix": {
+          "clothing": 7398,
+          "gm": 6306,
+          "hba": 379,
+          "food": 45
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 7398
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 6306
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 379
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 45
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-6DXE.json"
+    },
+    {
+      "id": "LP-KSDK",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 16776,
+      "pallets": "27",
+      "price_pickup": 12486.96,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 1,
+        "pallets_manifested": 26,
+        "pieces": 16776,
+        "retail": 169752.0,
+        "pct_retail": 7.09,
+        "clothing_pieces": 5866,
+        "clothing_pct": 35.0,
+        "price_per_piece": 0.74,
+        "mix": {
+          "clothing": 5866,
+          "gm": 10659,
+          "hba": 214,
+          "food": 37
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 5866
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 10659
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 214
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 37
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-KSDK.json"
+    },
+    {
+      "id": "LP-3FMN",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 14948,
+      "pallets": "26",
+      "price_pickup": 14936.38,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 7,
+        "pallets_manifested": 19,
+        "pieces": 14948,
+        "retail": 152082.39,
+        "pct_retail": 7.75,
+        "clothing_pieces": 5631,
+        "clothing_pct": 37.7,
+        "price_per_piece": 1.0,
+        "mix": {
+          "clothing": 5631,
+          "gm": 8882,
+          "hba": 358,
+          "food": 77
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 5631
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 8882
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 358
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 77
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-3FMN.json"
+    },
+    {
+      "id": "LP-VBL5",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 9183,
+      "pallets": "27",
+      "price_pickup": 11038.7,
+      "stats": {
+        "pallets_total": 27,
+        "pallets_unmanifested": 10,
+        "pallets_manifested": 17,
+        "pieces": 9183,
+        "retail": 84370.41,
+        "pct_retail": 7.75,
+        "clothing_pieces": 2722,
+        "clothing_pct": 29.6,
+        "price_per_piece": 1.2,
+        "mix": {
+          "clothing": 2722,
+          "gm": 6116,
+          "hba": 271,
+          "food": 74
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 2722
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 6116
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 271
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 74
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-VBL5.json"
+    },
+    {
+      "id": "LP-TVTA",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "Texas",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-05",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 7970,
+      "pallets": "26",
+      "price_pickup": 10372.14,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 4,
+        "pallets_manifested": 22,
+        "pieces": 7970,
+        "retail": 110608.36,
+        "pct_retail": 7.75,
+        "clothing_pieces": 4133,
+        "clothing_pct": 51.9,
+        "price_per_piece": 1.3,
+        "mix": {
+          "clothing": 4133,
+          "gm": 3333,
+          "hba": 382,
+          "food": 122
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 4133
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 3333
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 382
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 122
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-TVTA.json"
     }
   ]
 }

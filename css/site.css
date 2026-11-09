@@ -276,3 +276,50 @@ dialog .dlg-body { padding: 1.1rem; max-height: 75vh; overflow: auto; }
 /* 320px phones: grid tracks must be allowed to shrink below their content width */
 @media (max-width: 559px) { .form .row { grid-template-columns: minmax(0, 1fr); } }
 input, select, textarea { min-width: 0; max-width: 100%; }
+
+/* ---- Marketplace listing (B-Stock-style lot cards, toolbar, manifest viewer) ---- */
+.loads-tools { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: end; margin: 0 0 1rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.loads-tools:empty { display: none; }
+.loads-tools label { display: grid; gap: .2rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.loads-tools select, .itools select, .itools input { min-height: 44px; border: 1px solid #bcbcbc; border-radius: 8px; padding: 0 .6rem; font: inherit; font-size: .95rem; color: var(--ink); background: #fff; text-transform: none; letter-spacing: 0; font-weight: 500; }
+.tools-count { margin-left: auto; font-size: .9rem; color: var(--ink-2); font-weight: 650; align-self: center; }
+.card.lot .stats { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "price pct" "retail retail"; gap: .25rem .75rem; align-items: end; margin: .2rem 0 0; padding: .65rem 0 .2rem; border-top: 1px solid var(--line); }
+.card.lot .st-price { grid-area: price; } .card.lot .st-pct { grid-area: pct; text-align: right; } .card.lot .st-retail { grid-area: retail; display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; padding-top: .35rem; border-top: 1px dashed var(--line); }
+.card.lot .st-retail dd { font-size: .95rem; font-weight: 650; }
+.card.lot .stats-2 { grid-template-columns: 1fr 1fr; grid-template-areas: none; }
+.card.lot .st dt { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.card.lot .st dd { margin: 0; font-size: 1.05rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.card.lot .st-price dd { font-size: 1.4rem; font-weight: 850; letter-spacing: -0.02em; }
+.card.lot .st-pct dd { color: var(--red-dark); }
+.mix { display: grid; gap: .35rem; }
+.mixbar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: var(--line); }
+.mixbar i { display: block; height: 100%; }
+.mixleg { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .1rem .8rem; font-size: .8rem; color: var(--ink-2); }
+.mixleg li { display: inline-flex; align-items: center; gap: .3rem; }
+.mixleg i, .mixtab i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: .1rem; }
+.mx-clothing { background: var(--red); }
+.mx-gm { background: var(--ink); }
+.mx-hba { background: #8a8a8a; }
+.mx-food { background: #bdbdbd; }
+.mx-other { background: var(--line); }
+.mixtab td:first-child { white-space: normal; }
+.lotmeta { display: flex; flex-wrap: wrap; gap: .1rem .9rem; font-size: .85rem; color: var(--ink-2); }
+.lotmeta b { color: var(--ink); font-weight: 650; }
+.kv.kv6 { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 560px) { .kv.kv6 { grid-template-columns: repeat(3, 1fr); } }
+.kv.kv6 .hl { background: #fde8e9; }
+.kv.kv6 .hl b { color: var(--red-dark); }
+.kv.kv6 small { font-size: .75rem; font-weight: 500; color: var(--muted); }
+.mh { font-size: 1rem; margin: 1.1rem 0 .5rem; }
+.hint { color: var(--muted); font-size: .8rem; margin: .5rem 0; }
+.itools { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: end; }
+.itools label { display: grid; gap: .2rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.itools input { min-width: min(100%, 260px); }
+.itab td:first-child { min-width: 14rem; }
+.pager { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: .8rem; font-size: .9rem; color: var(--ink-2); }
+.pager .btn[disabled] { opacity: .45; cursor: not-allowed; }
+@media (max-width: 559px) { .itab .c-unit { display: none; } .itab td:first-child { min-width: 0; } .loads-tools label { flex: 1 1 40%; } .loads-tools select { width: 100%; } .tools-count { margin-left: 0; flex: 1 1 auto; } }
+.card.lot .ph { aspect-ratio: 16/9; }
+.card.lot .ph { display: block; overflow: hidden; }
+.card.lot .ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card.lot .ph > img { object-position: center 35%; }

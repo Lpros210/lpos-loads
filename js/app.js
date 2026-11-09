@@ -128,7 +128,7 @@
       contactp_h1: "Contacto", contactp_lead: "Hablamos español e inglés. WhatsApp es lo más rápido.",
       e404_h1: "Página no encontrada", e404_p: "El enlace puede estar mal escrito o la página ya no existe.", e404_cta: "Volver al inicio",
       back: "Todas las cargas", ref: "Ref.", listed: "Llegó", sale_window: "Primero en reservar", window_note: "Primero en reservar, primero en cargar.",
-      condition_h: "Condición", manifest_h: "Manifiesto por categoría", photos_h: "Fotos del tráiler",
+      condition_h: "Condición", manifest_h: "Manifiesto", photos_h: "Fotos del tráiler",
       manifest_pending: "El manifiesto completo (CSV del vendedor) está disponible. Pídalo por WhatsApp con la referencia de la carga; el desglose por categoría se mostrará aquí cuando lo importemos.",
       manifest_none: "Esta carga se vendió sin manifiesto por categoría. Categorías vistas en el tráiler:",
       cat: "Categoría", qty: "Unidades", retail: "Valor de tienda", note: "Nota",
@@ -151,6 +151,21 @@
       pending_banner: "Esta carga ya está reservada/vendida y no está disponible por ahora. Entre a la lista de espera para la siguiente.",
       err_required: "Faltan datos obligatorios.",
       any: "Cualquiera",
+      see_manifest: "Ver lote y manifiesto",
+      st_price: "Precio", st_retail: "Valor de tienda", st_pct: "% del valor", st_pieces: "Piezas", st_pallets: "Tarimas", st_clothing: "Ropa", st_ppp: "Por pieza",
+      pallets_unm: "sin manifiesto", pallets_man: "con manifiesto", pcs: "piezas", pallets_l: "tarimas", per_piece: "por pieza",
+      mix_clothing: "Ropa", mix_gm: "Mercancía general", mix_hba: "Salud y belleza", mix_food: "Alimentos", mix_other: "Otros",
+      mix_clothing_l: "Ropa, calzado y accesorios", mix_gm_l: "Mercancía general (juguetes, hogar, otros)", mix_hba_l: "Salud, belleza y esenciales", mix_food_l: "Alimentos y bebidas", mix_other_l: "Sin clasificar",
+      tools_sort: "Ordenar", tools_clothing: "Ropa", tools_manifest: "Manifiesto", tools_count: "camiones", tools_reset: "Quitar filtros", tools_none: "Ninguna carga coincide con estos filtros.",
+      sort_new: "Más recientes", sort_price_asc: "Precio: menor a mayor", sort_price_desc: "Precio: mayor a menor", sort_pct_asc: "% del valor: menor primero", sort_cloth_desc: "Más ropa primero", sort_pieces_desc: "Más piezas primero",
+      f_cloth_any: "Cualquiera", f_cloth_hi: "40% o más", f_cloth_lo: "Menos de 20%", f_man_any: "Cualquiera", f_man_item: "Con lista de artículos", f_man_none: "Sin manifiesto",
+      mix_h: "Qué trae (por piezas)", mix_note: "Piezas por categoría, estimadas a partir de la descripción de cada artículo. Valor de tienda ≠ precio de reventa.",
+      pct_note: "% del valor = precio de las tarimas con manifiesto ÷ valor de tienda del manifiesto. Las tarimas sin manifiesto se cobran aparte ($450 c/u) y no entran en este %.",
+      items_h: "Lista de artículos", items_search: "Buscar artículo", items_search_ph: "Ej. zapatos, juguete", items_sort: "Ordenar", items_loading: "Cargando la lista…", items_error: "No se pudo cargar la lista. Pídala por WhatsApp.",
+      isort_value: "Valor total", isort_unit: "Precio de tienda unitario", isort_qty: "Cantidad", isort_az: "A–Z",
+      i_item: "Artículo", i_qty: "Cant.", i_unit: "Precio tienda", i_ext: "Valor total", i_showing: "Mostrando", i_of: "de", i_lines: "artículos", i_prev: "Anterior", i_next: "Siguiente", i_page: "Página", i_empty: "Ningún artículo coincide con la búsqueda.",
+      items_sum: "líneas de artículo", unm_note: "Este tráiler no tiene manifiesto: se cobra por tarima ($450 c/u) y no hay lista de contenido. Se vende tal como llega.",
+      list_sold: "La lista de artículos solo se publica mientras la carga está disponible.",
     },
     en: {
       tagline: "Liquidation truckloads · Pickup in Texas",
@@ -248,7 +263,7 @@
       contactp_h1: "Contact", contactp_lead: "We speak Spanish and English. WhatsApp is fastest.",
       e404_h1: "Page not found", e404_p: "The link may be mistyped, or the page no longer exists.", e404_cta: "Back to home",
       back: "All loads", ref: "Ref.", listed: "Landed", sale_window: "First to reserve", window_note: "First to reserve, first to load.",
-      condition_h: "Condition", manifest_h: "Manifest by category", photos_h: "Truck photos",
+      condition_h: "Condition", manifest_h: "Manifest", photos_h: "Truck photos",
       manifest_pending: "The full manifest (seller CSV) is available. Ask on WhatsApp with the load reference; the category breakdown will show here once imported.",
       manifest_none: "This load sold without a category manifest. Categories seen in the truck:",
       cat: "Category", qty: "Units", retail: "Retail value", note: "Note",
@@ -271,6 +286,21 @@
       pending_banner: "This load is reserved/sold and not available right now. Join the waitlist for the next one.",
       err_required: "Required fields are missing.",
       any: "Any",
+      see_manifest: "View lot & manifest",
+      st_price: "Price", st_retail: "Retail value", st_pct: "% of retail", st_pieces: "Pieces", st_pallets: "Pallets", st_clothing: "Clothing", st_ppp: "Per piece",
+      pallets_unm: "unmanifested", pallets_man: "manifested", pcs: "pieces", pallets_l: "pallets", per_piece: "per piece",
+      mix_clothing: "Clothing", mix_gm: "General merch", mix_hba: "Health & beauty", mix_food: "Food", mix_other: "Other",
+      mix_clothing_l: "Clothing, shoes & accessories", mix_gm_l: "General merchandise (toys, home, other)", mix_hba_l: "Health, beauty & essentials", mix_food_l: "Food & beverage", mix_other_l: "Unclassified",
+      tools_sort: "Sort", tools_clothing: "Clothing", tools_manifest: "Manifest", tools_count: "trucks", tools_reset: "Clear filters", tools_none: "No loads match these filters.",
+      sort_new: "Newest", sort_price_asc: "Price: low to high", sort_price_desc: "Price: high to low", sort_pct_asc: "% of retail: lowest first", sort_cloth_desc: "Most clothing first", sort_pieces_desc: "Most pieces first",
+      f_cloth_any: "Any", f_cloth_hi: "40% or more", f_cloth_lo: "Under 20%", f_man_any: "Any", f_man_item: "With item list", f_man_none: "Unmanifested",
+      mix_h: "What's in it (by pieces)", mix_note: "Pieces per category, estimated from each item description. Retail value ≠ resale price.",
+      pct_note: "% of retail = price of the manifested pallets ÷ retail value of the manifest. Unmanifested pallets are priced separately ($450 each) and are not in this %.",
+      items_h: "Item list", items_search: "Search items", items_search_ph: "e.g. shoes, toy", items_sort: "Sort", items_loading: "Loading the item list…", items_error: "Could not load the item list. Ask for it on WhatsApp.",
+      isort_value: "Total retail", isort_unit: "Unit retail", isort_qty: "Quantity", isort_az: "A–Z",
+      i_item: "Item", i_qty: "Qty", i_unit: "Unit retail", i_ext: "Total retail", i_showing: "Showing", i_of: "of", i_lines: "items", i_prev: "Previous", i_next: "Next", i_page: "Page", i_empty: "No items match your search.",
+      items_sum: "item lines", unm_note: "This truck has no manifest: it is priced per pallet ($450 each) and there is no item list. Sold as it arrives.",
+      list_sold: "The item list is only published while the load is available.",
     },
   };
 
@@ -281,7 +311,7 @@
   let DATA = null;
   const t = (k) => (T[lang] && T[lang][k]) || T.es[k] || k;
   const L = (obj) => (obj && typeof obj === "object" ? (obj[lang] || obj.es || "") : (obj || ""));
-  const priceTxt = (l) => l.price_pickup == null ? t("price_tbd") : money(l.price_pickup);
+  const priceTxt = (l) => l.price_pickup == null ? t("price_tbd") : (l.price_pickup % 1 ? money2(l.price_pickup) : money(l.price_pickup));
   const money = (n) => n == null ? "—" : new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
   const num = (n) => n == null ? "—" : new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US").format(n);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -358,30 +388,49 @@
     const cls = load.status === "available" ? "pill-live" : load.status === "pending" ? "pill-warn" : "pill-sold";
     return `<span class="pill ${cls}">${esc(t(k))}</span>`;
   }
+  /* B-Stock-style lot card: price / retail value / % of retail up front, then pieces + pallets + category mix. */
+  const MIX = [["clothing", "mix_clothing"], ["gm", "mix_gm"], ["hba", "mix_hba"], ["food", "mix_food"], ["other", "mix_other"]];
+  const pct1 = (n) => (Math.round(n * 10) / 10).toLocaleString(lang === "es" ? "es-MX" : "en-US", { minimumFractionDigits: 0, maximumFractionDigits: 1 }) + "%";
+  const pct2 = (n) => n.toLocaleString(lang === "es" ? "es-MX" : "en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
+  function mixParts(st) {
+    if (!st || !st.pieces) return null;
+    let m = st.mix;
+    if (!m) m = { clothing: st.clothing_pieces, other: st.pieces - st.clothing_pieces };
+    else if (m.unclassified) { m = Object.assign({}, m, { other: m.unclassified }); delete m.unclassified; }
+    return MIX.filter(([k]) => m[k] > 0).map(([k, lab]) => ({ k, lab, n: m[k], pct: 100 * m[k] / st.pieces }));
+  }
+  function mixBar(st, legend) {
+    const parts = mixParts(st);
+    if (!parts) return "";
+    const txt = parts.map((p) => `${t(p.lab)} ${pct1(p.pct)}`).join(", ");
+    return `<div class="mix"><div class="mixbar" role="img" aria-label="${esc(txt)}">${parts.map((p) => `<i class="mx-${p.k}" style="width:${p.pct.toFixed(2)}%"></i>`).join("")}</div>${legend ? `<ul class="mixleg">${parts.map((p) => `<li><i class="mx-${p.k}"></i>${esc(t(p.lab))} <b>${esc(pct1(p.pct))}</b></li>`).join("")}</ul>` : ""}</div>`;
+  }
+  function statBlock(load) {
+    const st = load.stats;
+    const pr = (cls, lab, val) => `<div class="st ${cls}"><dt>${esc(t(lab))}</dt><dd>${val}</dd></div>`;
+    if (!st || !st.pieces) return `<dl class="stats stats-2">${pr("st-price", "st_price", esc(priceTxt(load)))}${pr("", "st_pallets", esc(load.pallets || "—"))}</dl>`;
+    return `<dl class="stats">${pr("st-price", "st_price", esc(priceTxt(load)))}${pr("st-pct", "st_pct", esc(pct2(st.pct_retail)))}${pr("st-retail", "st_retail", esc(money(st.retail)))}</dl>`;
+  }
   function card(load) {
-    const perUnit = load.units && load.price_pickup ? (load.price_pickup / load.units) : null;
+    const st = load.stats;
     const href = "load.html?id=" + encodeURIComponent(load.id);
-    return `<article class="card">
+    const palTxt = st ? `${num(st.pallets_total)} ${t("pallets_l")}${st.pallets_unmanifested ? ` (${num(st.pallets_unmanifested)} ${t("pallets_unm")})` : ""}` : `${esc(load.pallets)} ${t("pallets_l")}`;
+    const meta = st && st.pieces
+      ? `<span><b>${num(st.pieces)}</b> ${esc(t("pcs"))}</span><span><b>${esc(palTxt)}</b></span><span><b>${esc(money2(st.price_per_piece))}</b> ${esc(t("per_piece"))}</span>`
+      : `<span>${load.units ? `<b>${num(load.units)}</b> ${esc(t("pcs"))}` : ""}</span><span><b>${esc(palTxt)}</b></span>`;
+    return `<article class="card lot">
       <a class="ph" href="${href}" aria-label="${esc(L(load.title))}">${photoBlock(load)}
         <div class="tags">${statusPill(load)}${load.status === "available" ? `<span class="pill pill-red">${esc(t("sale_window"))}</span>` : ""}</div>
       </a>
       <div class="body">
         <div class="retailer">${esc(load.retailer)} · ${esc(t("ref"))} ${esc(load.id)}</div>
         <h3><a href="${href}" style="text-decoration:none">${esc(L(load.title))}</a></h3>
-        <div class="meta">
-          <div>${esc(t("units"))}: <b>${num(load.units)}</b></div>
-          <div>${esc(t("pallets"))}: <b>${esc(load.pallets)}</b></div>
-          <div>${esc(t("location"))}: <b>${esc(t("pickup_label"))}</b></div>
-          <div>${esc(t("condition"))}: <b>${esc(t("cond_" + load.condition_code).split(" (")[0].split(",")[0])}</b></div>
-        </div>
-        <div class="ship">${shipLine(load, href)}</div>
-        <div class="price">
-          <div><strong>${priceTxt(load)}</strong><br><small>${esc(t("price_pickup_short"))}</small></div>
-          <div class="unit">${perUnit ? `<b>${money2(perUnit)}</b><br><small>${esc(t("per_unit"))}</small>` : `<small>${esc(t("delivered_quote"))}</small>`}</div>
-        </div>
-        ${load.status === "available"
-          ? `<div class="cta-row"><a class="btn btn-red btn-sm" href="${href}#reserve">${esc(t("reserve"))}</a><a class="btn btn-line btn-sm" href="${href}">${esc(t("see_load"))}</a></div>`
-          : `<div class="cta-row"><a class="btn btn-line btn-sm" href="${href}">${esc(t("see_load"))}</a></div>`}
+        ${statBlock(load)}
+        ${mixBar(st, true)}
+        <div class="lotmeta">${meta}</div>
+        <div class="cta-row">${load.status === "available"
+          ? `<a class="btn btn-red btn-sm" href="${href}">${esc(t("see_manifest"))}</a><a class="btn btn-line btn-sm" href="${href}#reserve">${esc(t("reserve"))}</a>`
+          : `<a class="btn btn-line btn-sm" href="${href}">${esc(t("see_load"))}</a>`}</div>
       </div>
     </article>`;
   }
@@ -420,6 +469,43 @@
       <div class="notify-out"></div></div>`;
   }
 
+  /* Marketplace toolbar: sort + clothing mix + manifest filter. State lives across language toggles. */
+  const view = { sort: "new", cloth: "any", man: "any" };
+  function filterLoads(live) {
+    let r = live.filter((l) => {
+      const st = l.stats;
+      if (view.cloth === "hi" && !(st && st.clothing_pct >= 40)) return false;
+      if (view.cloth === "lo" && !(st && st.clothing_pct < 20)) return false;
+      if (view.man === "item" && l.manifest_status !== "itemized") return false;
+      if (view.man === "none" && l.manifest_status !== "unmanifested") return false;
+      return true;
+    });
+    const key = { price_asc: (l) => l.price_pickup, price_desc: (l) => -l.price_pickup, pct_asc: (l) => l.stats && l.stats.pct_retail, cloth_desc: (l) => l.stats && -l.stats.clothing_pct, pieces_desc: (l) => l.stats && -l.stats.pieces }[view.sort];
+    if (key) r = r.map((l, i) => [l, i]).sort((a, b) => { const x = key(a[0]), y = key(b[0]); if (x == null && y == null) return a[1] - b[1]; if (x == null) return 1; if (y == null) return -1; return x - y || a[1] - b[1]; }).map((p) => p[0]);
+    else r = r.map((l, i) => [l, i]).sort((a, b) => (b[0].listed || "").localeCompare(a[0].listed || "") || (!!(b[0].stats && b[0].stats.pieces) - !!(a[0].stats && a[0].stats.pieces)) || a[1] - b[1]).map((p) => p[0]);
+    return r;
+  }
+  function renderTools(live, grid) {
+    const host = document.getElementById("loads-tools");
+    const paint = () => {
+      const r = filterLoads(live);
+      grid.innerHTML = r.length ? r.map(card).join("") : `<div class="empty">${esc(t("tools_none"))}</div>`;
+      const c = document.getElementById("loads-count");
+      if (c) c.textContent = `${r.length} / ${live.length} ${t("tools_count")}`;
+    };
+    if (host) {
+      const opt = (v, cur, k) => `<option value="${v}"${v === cur ? " selected" : ""}>${esc(t(k))}</option>`;
+      host.innerHTML = `<label>${esc(t("tools_sort"))}<select data-v="sort">${[["new", "sort_new"], ["price_asc", "sort_price_asc"], ["price_desc", "sort_price_desc"], ["pct_asc", "sort_pct_asc"], ["cloth_desc", "sort_cloth_desc"], ["pieces_desc", "sort_pieces_desc"]].map(([v, k]) => opt(v, view.sort, k)).join("")}</select></label>
+        <label>${esc(t("tools_clothing"))}<select data-v="cloth">${[["any", "f_cloth_any"], ["hi", "f_cloth_hi"], ["lo", "f_cloth_lo"]].map(([v, k]) => opt(v, view.cloth, k)).join("")}</select></label>
+        <label>${esc(t("tools_manifest"))}<select data-v="man">${[["any", "f_man_any"], ["item", "f_man_item"], ["none", "f_man_none"]].map(([v, k]) => opt(v, view.man, k)).join("")}</select></label>
+        <span class="tools-count" id="loads-count" aria-live="polite"></span>
+        <button type="button" class="btn btn-line btn-sm" data-reset>${esc(t("tools_reset"))}</button>`;
+      host.querySelectorAll("select").forEach((el) => el.addEventListener("change", () => { view[el.dataset.v] = el.value; paint(); }));
+      host.querySelector("[data-reset]").addEventListener("click", () => { view.sort = "new"; view.cloth = "any"; view.man = "any"; host.querySelectorAll("select").forEach((el) => { el.value = view[el.dataset.v]; }); paint(); });
+    }
+    paint();
+  }
+
   function renderHome() {
     // R2561: id prefix, not the (possibly scrubbed/"confidential") retailer
     // text field, decides the e-commerce section -- see outputs/continuous-cto/
@@ -431,7 +517,11 @@
     const sold = DATA.loads.filter((l) => l.status !== "available" && l.status !== "on_hold" && l.status !== "pending" && !isEcom(l));
     const g = document.getElementById("loads-grid");
     // R-pending-sort: status is the primary sort key -- available, then on-hold, then pending, always below available.
-    if (g) g.innerHTML = (avail.length || held.length || pending.length) ? avail.concat(held, pending).map(card).join("") : sourcingNext();
+    if (g) {
+      const live = avail.concat(held, pending);
+      if (!live.length) { g.innerHTML = sourcingNext(); const tl = document.getElementById("loads-tools"); if (tl) tl.innerHTML = ""; }
+      else { renderTools(live, g); }
+    }
     bindNotify();
     { const sec = document.getElementById("loads"); if (sec) { const pl = sec.querySelector(".sec-head .pill-live"), sp = sec.querySelector(".sec-head p"); if (pl) pl.style.display = avail.length ? "" : "none"; if (sp && !avail.length) sp.textContent = lang === "es" ? "Próximamente" : "Coming up"; } } // R3754: no green "Disponible" pill / fixed-price copy over an empty list
     const s = document.getElementById("sold-grid");
@@ -541,6 +631,50 @@
   }
 
   /* ---------- load detail ---------- */
+  /* Manifest block: category mix from the sheet + searchable, paged item list (data/manifests/<id>.json, fetched on demand). */
+  function manifestBlock(load) {
+    const st = load.stats, parts = mixParts(st);
+    let h = "";
+    if (parts) {
+      h += `<h3 class="mh">${esc(t("mix_h"))}</h3>${mixBar(st, false)}<div class="table-wrap"><table class="mixtab"><thead><tr><th>${esc(t("cat"))}</th><th class="num">${esc(t("st_pieces"))}</th><th class="num">%</th></tr></thead><tbody>${parts.map((p) => `<tr><td><i class="mx-${p.k}"></i>${esc(t(p.lab + "_l"))}</td><td class="num">${num(p.n)}</td><td class="num">${esc(pct1(p.pct))}</td></tr>`).join("")}</tbody></table></div><p class="hint">${esc(t("mix_note"))}</p>`;
+      h += `<p class="hint">${esc(t("pct_note"))}</p>`;
+    }
+    if (load.manifest_status === "itemized") h += `<h3 class="mh">${esc(t("items_h"))}</h3><div id="items-host" class="items" aria-live="polite"><p class="hint">${esc(t("items_loading"))}</p></div>`;
+    else if (load.manifest_status === "unmanifested") h += `<div class="notice">${esc(t("unm_note"))}</div>`;
+    else if (load.status !== "available") h += `<p class="hint">${esc(t("list_sold"))}</p>`;
+    return h;
+  }
+  const itemsCache = {};
+  function initItemList(load) {
+    const host = document.getElementById("items-host");
+    if (!host || !load.manifest_file) return;
+    const PER = 50;
+    const state = { q: "", sort: "value", page: 0 };
+    const draw = (data) => {
+      const rows = data.items;
+      const needle = state.q.trim().toLowerCase();
+      let r = needle ? rows.filter((x) => x[0].toLowerCase().includes(needle)) : rows.slice();
+      if (state.sort === "unit") r.sort((a, b) => b[2] - a[2]);
+      else if (state.sort === "qty") r.sort((a, b) => b[1] - a[1]);
+      else if (state.sort === "az") r.sort((a, b) => a[0].localeCompare(b[0]));
+      const pages = Math.max(1, Math.ceil(r.length / PER));
+      state.page = Math.min(state.page, pages - 1);
+      const from = state.page * PER, slice = r.slice(from, from + PER);
+      const pcs = r.reduce((a, x) => a + x[1], 0);
+      const so = (v, k) => `<option value="${v}"${state.sort === v ? " selected" : ""}>${esc(t(k))}</option>`;
+      host.innerHTML = `<div class="itools"><label>${esc(t("items_search"))}<input type="search" data-q value="${esc(state.q)}" placeholder="${esc(t("items_search_ph"))}" autocomplete="off"></label>
+        <label>${esc(t("items_sort"))}<select data-s>${so("value", "isort_value")}${so("unit", "isort_unit")}${so("qty", "isort_qty")}${so("az", "isort_az")}</select></label></div>
+        <p class="hint" role="status">${num(r.length)} ${esc(t("items_sum"))} · ${num(pcs)} ${esc(t("pcs"))}</p>
+        ${slice.length ? `<div class="table-wrap"><table class="itab"><thead><tr><th>${esc(t("i_item"))}</th><th class="num">${esc(t("i_qty"))}</th><th class="num c-unit">${esc(t("i_unit"))}</th><th class="num">${esc(t("i_ext"))}</th></tr></thead><tbody>${slice.map((x) => `<tr><td>${esc(x[0])}</td><td class="num">${num(x[1])}</td><td class="num c-unit">${esc(money2(x[2]))}</td><td class="num">${esc(money2(x[1] * x[2]))}</td></tr>`).join("")}</tbody></table></div>
+        <div class="pager"><button type="button" class="btn btn-line btn-sm" data-pg="-1"${state.page === 0 ? " disabled" : ""}>← ${esc(t("i_prev"))}</button><span>${esc(t("i_page"))} ${num(state.page + 1)} ${esc(t("i_of"))} ${num(pages)}</span><button type="button" class="btn btn-line btn-sm" data-pg="1"${state.page >= pages - 1 ? " disabled" : ""}>${esc(t("i_next"))} →</button></div>` : `<p class="empty">${esc(t("i_empty"))}</p>`}`;
+      const q = host.querySelector("[data-q]");
+      q.addEventListener("input", () => { state.q = q.value; state.page = 0; const pos = q.selectionStart; draw(data); const q2 = host.querySelector("[data-q]"); q2.focus(); q2.setSelectionRange(pos, pos); });
+      host.querySelector("[data-s]").addEventListener("change", (e) => { state.sort = e.target.value; state.page = 0; draw(data); });
+      host.querySelectorAll("[data-pg]").forEach((b) => b.addEventListener("click", () => { state.page += Number(b.dataset.pg); draw(data); const tb = host.querySelector(".itools"); if (tb) tb.scrollIntoView({ block: "nearest" }); }));
+    };
+    const p = itemsCache[load.manifest_file] || (itemsCache[load.manifest_file] = fetch(load.manifest_file).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }));
+    p.then(draw).catch(() => { delete itemsCache[load.manifest_file]; host.innerHTML = `<div class="notice">${esc(t("items_error"))}</div>`; });
+  }
   function renderDetail() {
     const id = new URLSearchParams(location.search).get("id");
     const load = DATA.loads.find((l) => l.id === id) || DATA.loads[0];
@@ -567,7 +701,10 @@
       ? `<section class="block"><h2>${esc(t("video_h"))}</h2><video controls muted playsinline preload="none" poster="${esc(load.video.poster || "")}" src="${esc(load.video.src)}" width="1600" height="900"></video></section>` : "";
 
     let manifest;
-    if (load.manifest && load.manifest.length) {
+    const st = load.stats;
+    if (st && (st.pieces || st.pallets_unmanifested)) {
+      manifest = manifestBlock(load);
+    } else if (load.manifest && load.manifest.length) {
       manifest = `<div class="table-wrap"><table><thead><tr><th>${esc(t("cat"))}</th><th class="num">${esc(t("qty"))}</th><th class="num">${esc(t("retail"))}</th><th>${esc(t("note"))}</th></tr></thead><tbody>${load.manifest.map((m) => `<tr><td>${esc(L(m.category))}</td><td class="num">${num(m.units)}</td><td class="num">${money(m.retail)}</td><td>${esc(L(m.note))}</td></tr>`).join("")}</tbody></table></div><p class="hint" style="color:var(--muted);font-size:.8rem;margin-top:.5rem">${esc(t("retail_note"))}</p>`;
     } else if (load.manifest_status === "csv_attached_in_zoho") {
       manifest = `<div class="notice">${esc(t("manifest_pending"))} <a data-wa="${esc((lang === "es" ? "Hola, me interesa el manifiesto de la carga " : "Hi, I'd like the manifest for load ") + load.id)}" href="#">WhatsApp →</a></div>`;
@@ -576,6 +713,20 @@
     }
 
     const isAvail = load.status === "available";
+    const kvHtml = st && st.pieces ? `<div class="kv kv6">
+          <div><span>${esc(t("st_price"))}</span><b>${esc(priceTxt(load))}</b></div>
+          <div><span>${esc(t("st_retail"))}</span><b>${esc(money(st.retail))}</b></div>
+          <div class="hl"><span>${esc(t("st_pct"))}</span><b>${esc(pct2(st.pct_retail))}</b></div>
+          <div><span>${esc(t("st_pieces"))}</span><b>${num(st.pieces)}</b></div>
+          <div><span>${esc(t("st_pallets"))}</span><b>${num(st.pallets_total)}${st.pallets_unmanifested ? ` <small>(${num(st.pallets_unmanifested)} ${esc(t("pallets_unm"))})</small>` : ""}</b></div>
+          <div><span>${esc(t("st_clothing"))}</span><b>${esc(pct1(st.clothing_pct))}</b> <small>${esc(money2(st.price_per_piece))} ${esc(t("per_piece"))}</small></div>
+        </div>` : `<div class="kv">
+          <div><span>${esc(t("units"))}</span><b>${num(load.units)}</b></div>
+          <div><span>${esc(t("pallets"))}</span><b>${esc(load.pallets)}</b></div>
+          <div><span>${esc(t("weight"))}</span><b>${load.weight_lb ? num(load.weight_lb) + " lb" : "—"}</b></div>
+          <div><span>${esc(t("location"))}</span><b>${esc(t("pickup_label"))}</b></div>
+        </div>`;
+    const statsFirst = !!(st && st.pieces);
     root.innerHTML = `
       <div class="main">
         <div class="d-head">
@@ -584,14 +735,10 @@
           <div class="sub">${statusPill(load)} <span>${esc(t("ref"))} ${esc(load.id)}</span>${load.po ? `<span>· ${esc(load.po)}</span>` : ""}<span>· ${esc(t("listed"))} ${esc(fmtDate(load.listed))}</span></div>
         </div>
         ${!isAvail ? `<div class="notice" style="margin-bottom:1rem">${esc(load.status === "on_hold" ? t("hold_banner") : load.status === "pending" ? t("pending_banner") : t("sold_banner"))} <a href="index.html#waitlist">${esc(t("nav_waitlist"))} →</a></div>` : ""}
+        ${statsFirst ? kvHtml : ""}
         ${photos}
         ${video}
-        <div class="kv">
-          <div><span>${esc(t("units"))}</span><b>${num(load.units)}</b></div>
-          <div><span>${esc(t("pallets"))}</span><b>${esc(load.pallets)}</b></div>
-          <div><span>${esc(t("weight"))}</span><b>${load.weight_lb ? num(load.weight_lb) + " lb" : "—"}</b></div>
-          <div><span>${esc(t("location"))}</span><b>${esc(t("pickup_label"))}</b></div>
-        </div>
+        ${statsFirst ? "" : kvHtml}
         <section class="block"><h2>${esc(t("condition_h"))}</h2><div class="cond"><p><b>${esc(t(condKey))}.</b> ${esc(t(condKey + "_p"))}</p></div></section>
         <section class="block"><h2>${esc(t("manifest_h"))}</h2>${manifest}</section>
         <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(t("pickup_label"))}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
@@ -616,6 +763,7 @@
         </div>
       </aside>`;
     renderQuote(document.getElementById("quote-widget"), load);
+    initItemList(load);
     const sticky = document.getElementById("sticky");
     if (sticky) {
       sticky.hidden = !isAvail;
