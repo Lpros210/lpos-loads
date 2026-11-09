@@ -388,7 +388,7 @@
     const cls = load.status === "available" ? "pill-live" : load.status === "pending" ? "pill-warn" : "pill-sold";
     return `<span class="pill ${cls}">${esc(t(k))}</span>`;
   }
-  /* B-Stock-style lot card: price / retail value / % of retail up front, then pieces + pallets + category mix. */
+  /* Marketplace-style lot card: price / retail value / % of retail up front, then pieces + pallets + category mix. */
   const MIX = [["clothing", "mix_clothing"], ["gm", "mix_gm"], ["hba", "mix_hba"], ["food", "mix_food"], ["other", "mix_other"]];
   const pct1 = (n) => (Math.round(n * 10) / 10).toLocaleString(lang === "es" ? "es-MX" : "en-US", { minimumFractionDigits: 0, maximumFractionDigits: 1 }) + "%";
   const pct2 = (n) => n.toLocaleString(lang === "es" ? "es-MX" : "en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
