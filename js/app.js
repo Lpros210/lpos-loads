@@ -37,6 +37,15 @@
       nav_quote: "Cotizar envío",
       lead_h2: "Entre a la lista de compradores", lead_sub: "Las cargas nuevas se avisan primero a la lista. Déjenos su WhatsApp y le escribimos cuando llegue algo que le sirva.",
       f_wa: "WhatsApp", f_buy: "Qué compra", lead_submit: "Entrar a la lista",
+      su_h2: "Reciba las cargas nuevas por correo", su_sub: "Un correo corto con las cargas disponibles. Sin spam: se da de baja cuando quiera.",
+      su_name: "Nombre", su_email: "Correo", su_wa: "WhatsApp (opcional)", su_type: "Tipo de comprador", su_interests: "Qué le interesa", su_lang: "Idioma preferido",
+      su_t_pallet: "Revendedor de tarimas", su_t_flea: "Pulga / tianguis", su_t_online: "Revendedor en línea", su_t_mx: "Comprador en México", su_t_other: "Otro",
+      su_i_cloth: "Mucha ropa", su_i_gm: "Mercancía general", su_i_elec: "Electrónicos", su_i_shoes: "Zapatos", su_i_home: "Hogar y muebles",
+      su_l_es: "Español", su_l_en: "Inglés",
+      su_consent_email: "Sí, quiero recibir correos de Liquidation Pros con cargas disponibles y novedades. Puedo darme de baja en cualquier momento.",
+      su_consent_wa: "Sí, también quiero avisos por WhatsApp en este número (puedo escribir STOP para salir).",
+      su_pop_t: "Cargas nuevas por correo", su_pop_b: "Reciba las cargas disponibles en su correo. Sin spam.", su_pop_go: "Suscribirme", su_pop_x: "Cerrar", su_submit: "Suscribirme", su_fine: "Le enviaremos un correo para confirmar. Solo entra a la lista cuando confirme.",
+      su_done: "Gracias. Le enviaremos un correo corto para confirmar su dirección. Hasta que confirme no recibirá nada más.", su_err_wa: "Escriba su WhatsApp o desmarque el aviso por WhatsApp.",
       lead_done: "Guardado. Se abrió WhatsApp con su mensaje: toque Enviar ahí. Si no, use los botones:",
       sample_h: "Tráiler de muestra", sample_badge: "Muestra", sample_note_card: "Foto de muestra de un tráiler similar",
       video_h: "Video del tráiler",
@@ -50,8 +59,21 @@
       q_wa_lpos_p: "¿Prefiere que lo coticemos nosotros? Escríbanos y le respondemos en 1 hora.",
       nav_loads: "Cargas", nav_how: "Cómo funciona", nav_waitlist: "Lista de espera", nav_guide: "Guía", nav_faq: "Preguntas", nav_contact: "Contacto",
       hero_eyebrow: "Mayorista B2B · Hidalgo, Texas",
-      hero_h1: "Tráileres completos de liquidación, a precio fijo. Sin subastas.",
-      hero_lead: "Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega. Las cargas se venden rápido: entre a la lista de espera para que le avisemos primero.",
+      hero_h1: "Compre tráileres completos de mercancía de liquidación. Vea qué trae antes de pagar.",
+      hero_lead: "Escoja una carga, vea qué trae, pague y recoja en Texas. Precio fijo por tráiler, sin subastas.",
+      hero_cta_how: "Cómo funciona", fact_from: "desde, por tráiler completo", fact_unit: "por unidad, en la carga más barata",
+      hp_k: "Carga de menor precio ahora", hp_units: "unidades", hp_pallets: "tarimas", hp_unit: "por unidad", hp_cta: "Ver esta carga", hp_per: "por tráiler",
+      hp_note: "Precio con recogida en Texas, sin flete. Devoluciones y sobrantes, se vende como está.",
+      buyers_h: "Para quién es", buyers_sub: "Compradores que revenden y necesitan un costo por unidad que les cierre.",
+      buyers1_h: "Vendedores de pulgas y tianguis", buyers1_p: "Variedad para surtir el puesto: ropa, juguetes, hogar y belleza. El costo por unidad aparece en cada carga.",
+      buyers2_h: "Dueños de tiendas de ropa", buyers2_p: "Cargas con mucha ropa: filtre por porcentaje de ropa y revise el desglose por categoría antes de comprar.",
+      buyers3_h: "Boutiques y revendedores en línea", buyers3_p: "Compre una carga y venda pieza por pieza. Cada carga muestra piezas, categorías y precio por unidad para calcular su margen.",
+      gate_t: "Los 10 artículos de mayor valor", gate_note: "Mostramos 10 de {n} artículos. El resto es para cuentas gratis.",
+      gate_h: "Ver manifiesto completo ({n} artículos) — cree una cuenta gratis",
+      gate_p: "Déjenos su correo y le desbloqueamos el manifiesto completo de esta carga. Todavía no hay inicio de sesión: le avisamos por correo cuando esté listo.",
+      gate_submit: "Pedir acceso gratis",
+      gate_done: "Listo. Recibimos su solicitud y le desbloquearemos el manifiesto completo de esta carga. Le avisamos por correo; todavía no hay inicio de sesión.",
+      su_err_rate: "Demasiados envíos seguidos. Intente de nuevo en unos minutos.", ts_err: "Complete la verificación de seguridad.",
       hero_cta_loads: "Ver cargas disponibles", hero_cta_wait: "Entrar a la lista de espera",
       fact_loads: "cargas disponibles", fact_window: "precio fijo por tráiler", fact_border: "recoja con su transportista",
       hero_caption: "Tráiler de muestra: foto real de un tráiler que recibimos (mayo 2026).",
@@ -114,7 +136,7 @@
       ftr_privacy: "Aviso de privacidad", ftr_terms: "Términos de venta", ftr_contact: "Contacto",
       priv_h1: "Aviso de privacidad", priv_updated: "Última actualización: septiembre 2026",
       priv_lead: "Este aviso explica, en lenguaje sencillo, qué datos recopilamos cuando usted usa el formulario de cotización o nos escribe por WhatsApp, y cómo los usamos.",
-      priv_collect_h: "Qué datos recopilamos", priv_collect_p: "Cuando llena el formulario de cotización, lista de espera o contacto, o nos escribe por WhatsApp, guardamos: su nombre, número de WhatsApp/teléfono, ciudad de entrega o destino, qué le interesa comprar, presupuesto (si lo indica) y cualquier comentario que nos deje. No pedimos ni guardamos datos de tarjeta de pago en el sitio. También usamos Google Analytics para contar visitas y clics (páginas vistas, clics a WhatsApp o teléfono, envíos de formularios); Google puede usar cookies para esto. Los formularios se guardan en nuestro CRM (Zoho).",
+      priv_collect_h: "Qué datos recopilamos", priv_collect_p: "Cuando llena el formulario de cotización, lista de espera o contacto, o nos escribe por WhatsApp, guardamos: su nombre, número de WhatsApp/teléfono, ciudad de entrega o destino, qué le interesa comprar, presupuesto (si lo indica) y cualquier comentario que nos deje. No pedimos ni guardamos datos de tarjeta de pago en el sitio. También usamos Google Analytics para contar visitas y clics (páginas vistas, clics a WhatsApp o teléfono, envíos de formularios); Google puede usar cookies para esto. Los formularios se guardan en nuestro CRM (Zoho). Si se suscribe al correo, también guardamos su correo, tipo de comprador, intereses, idioma y el registro de su consentimiento (texto, fecha y hora). Puede darse de baja en cualquier momento respondiendo \"BAJA\" a cualquier correo nuestro.",
       priv_use_h: "Para qué los usamos", priv_use_p: "Solo para responder su cotización o solicitud, avisarle de cargas disponibles que coincidan con lo que busca, y coordinar recolección o flete. No los usamos para nada más.",
       priv_share_h: "No vendemos sus datos", priv_share_p: "Liquidation Pros LLC no vende ni renta su información a terceros. Sus datos solo se usan internamente para atenderlo.",
       priv_delete_h: "Cómo pedir que borremos sus datos", priv_delete_p: "Escríbanos por WhatsApp o al correo juan@lpros.biz pidiendo que eliminemos su información y lo hacemos.",
@@ -172,6 +194,15 @@
       nav_quote: "Shipping quote",
       lead_h2: "Join the buyer list", lead_sub: "New loads go to the list first. Leave your WhatsApp and we message you when a fit lands.",
       f_wa: "WhatsApp", f_buy: "What you buy", lead_submit: "Join the list",
+      su_h2: "Get new loads by email", su_sub: "One short email with the loads available. No spam: unsubscribe any time.",
+      su_name: "Name", su_email: "Email", su_wa: "WhatsApp (optional)", su_type: "Buyer type", su_interests: "What you want", su_lang: "Preferred language",
+      su_t_pallet: "Pallet reseller", su_t_flea: "Flea market", su_t_online: "Online reseller", su_t_mx: "Mexico-side buyer", su_t_other: "Other",
+      su_i_cloth: "Clothing-heavy", su_i_gm: "General merchandise", su_i_elec: "Electronics", su_i_shoes: "Shoes", su_i_home: "Home and furniture",
+      su_l_es: "Spanish", su_l_en: "English",
+      su_consent_email: "Yes, send me emails from Liquidation Pros about available loads and updates. I can unsubscribe at any time.",
+      su_consent_wa: "Yes, also send me WhatsApp notices at this number (I can reply STOP to opt out).",
+      su_pop_t: "New loads by email", su_pop_b: "Get the available loads in your inbox. No spam.", su_pop_go: "Sign me up", su_pop_x: "Close", su_submit: "Sign me up", su_fine: "We will email you to confirm. You join the list only after you confirm.",
+      su_done: "Thanks. We will send you a short email to confirm your address. Until you confirm you will not get anything else.", su_err_wa: "Enter your WhatsApp number or untick the WhatsApp notices box.",
       lead_done: "Saved. WhatsApp opened with your message: tap Send there. If not, use the buttons:",
       sample_h: "Sample truck", sample_badge: "Sample", sample_note_card: "Sample photo of a similar trailer",
       video_h: "Trailer video",
@@ -185,8 +216,21 @@
       q_wa_lpos_p: "Prefer we quote it? Message us and we answer within 1 hour.",
       nav_loads: "Loads", nav_how: "How it works", nav_waitlist: "Waitlist", nav_guide: "Guide", nav_faq: "FAQ", nav_contact: "Contact",
       hero_eyebrow: "B2B wholesaler · Hidalgo, Texas",
-      hero_h1: "Full liquidation truckloads at a fixed price. No auctions.",
-      hero_lead: "Buy the whole load today, pick up in Texas or ask for a delivered quote to your warehouse. Loads sell fast — join the waitlist to hear first.",
+      hero_h1: "Buy full truckloads of liquidation merchandise. See what is inside before you pay.",
+      hero_lead: "Pick a load, see what is in it, pay, and pick up in Texas. Fixed price per truckload, no auctions.",
+      hero_cta_how: "How it works", fact_from: "from, per full truckload", fact_unit: "per unit, on the lowest-priced load",
+      hp_k: "Lowest-priced load right now", hp_units: "units", hp_pallets: "pallets", hp_unit: "per unit", hp_cta: "View this load", hp_per: "per truckload",
+      hp_note: "Texas pickup price, freight not included. Returns and overstock, sold as-is.",
+      buyers_h: "Who buys from us", buyers_sub: "Resellers who need a cost per unit that works.",
+      buyers1_h: "Swap-meet and flea-market vendors", buyers1_p: "Variety to stock the stall: clothing, toys, home and beauty. The cost per unit shows on every load.",
+      buyers2_h: "Clothing store owners", buyers2_p: "Clothing-heavy loads: filter by clothing share and check the category mix before you buy.",
+      buyers3_h: "Boutique and online resellers", buyers3_p: "Buy a load and sell piece by piece. Every load shows pieces, categories and cost per unit so you can work out your margin.",
+      gate_t: "Top 10 items by value", gate_note: "Showing 10 of {n} items. The rest is for free accounts.",
+      gate_h: "See full manifest ({n} items) — create a free account",
+      gate_p: "Leave your email and we will unlock the full manifest for this load. There is no login yet: we email you when it is ready.",
+      gate_submit: "Request free access",
+      gate_done: "Done. We got your request and will unlock the full manifest for this load. We will email you; there is no login yet.",
+      su_err_rate: "Too many submissions in a row. Please try again in a few minutes.", ts_err: "Please complete the security check.",
       hero_cta_loads: "See available loads", hero_cta_wait: "Join the waitlist",
       fact_loads: "loads available", fact_window: "fixed price per truckload", fact_border: "pickup with your own carrier",
       hero_caption: "Sample truck: real photo of a trailer we received (May 2026).",
@@ -249,7 +293,7 @@
       ftr_privacy: "Privacy notice", ftr_terms: "Terms of sale", ftr_contact: "Contact",
       priv_h1: "Privacy notice", priv_updated: "Last updated: September 2026",
       priv_lead: "This notice explains, in plain language, what data we collect when you use the quote form or message us on WhatsApp, and how we use it.",
-      priv_collect_h: "What data we collect", priv_collect_p: "When you fill in the quote, waitlist or contact form, or message us on WhatsApp, we save: your name, WhatsApp/phone number, delivery city or destination, what you're interested in buying, budget (if given) and any notes you leave. We do not ask for or store payment card data on the site. We also use Google Analytics to count visits and clicks (page views, WhatsApp/phone clicks, form submits); Google may use cookies for this. Form submissions are stored in our CRM (Zoho).",
+      priv_collect_h: "What data we collect", priv_collect_p: "When you fill in the quote, waitlist or contact form, or message us on WhatsApp, we save: your name, WhatsApp/phone number, delivery city or destination, what you're interested in buying, budget (if given) and any notes you leave. We do not ask for or store payment card data on the site. We also use Google Analytics to count visits and clicks (page views, WhatsApp/phone clicks, form submits); Google may use cookies for this. Form submissions are stored in our CRM (Zoho). If you join the email list we also save your email, buyer type, interests, language and a record of your consent (wording, date and time). You can unsubscribe any time by replying \"UNSUBSCRIBE\" to any of our emails.",
       priv_use_h: "What we use it for", priv_use_p: "Only to answer your quote or request, tell you about available loads that match what you're looking for, and coordinate pickup or freight. We do not use it for anything else.",
       priv_share_h: "We do not sell your data", priv_share_p: "Liquidation Pros LLC does not sell or rent your information to third parties. Your data is only used internally to help you.",
       priv_delete_h: "How to request deletion", priv_delete_p: "Message us on WhatsApp or email juan@lpros.biz asking us to delete your information and we will.",
@@ -529,6 +573,18 @@
     const az = document.getElementById("returns-grid");
     if (az) { const ecLoads = DATA.loads.filter(isEcom); az.innerHTML = ecLoads.length ? ecLoads.map(card).join("") : ""; const azSec = document.getElementById("returns"); if (azSec) azSec.hidden = !ecLoads.length; }
     const n = document.getElementById("fact-loads"); if (n) n.textContent = String(avail.length);
+    { /* honest numbers: lowest price / per-unit among AVAILABLE loads that have a price and unit count */
+      const pr = avail.filter((l) => l.price_pickup && l.units).sort((a, b) => a.price_pickup - b.price_pickup)[0];
+      const fp = document.getElementById("fact-from"), fu = document.getElementById("fact-unit"), hp = document.getElementById("hero-panel");
+      if (pr) {
+        const pu = pr.price_pickup / pr.units, puTxt = new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD" }).format(pu);
+        if (fp) fp.textContent = money(pr.price_pickup);
+        if (fu) fu.textContent = puTxt;
+        if (hp) hp.innerHTML = `<div class="hp-k">${esc(t("hp_k"))}</div><div class="hp-price">${esc(money(pr.price_pickup))} <small>${esc(t("hp_per"))}</small></div>
+          <div class="hp-meta"><div><b>${esc(num(pr.units))}</b><span>${esc(t("hp_units"))}</span></div><div><b>${esc(pr.pallets)}</b><span>${esc(t("hp_pallets"))}</span></div><div><b>${esc(puTxt)}</b><span>${esc(t("hp_unit"))}</span></div></div>
+          <a class="btn btn-red" href="load.html?id=${encodeURIComponent(pr.id)}">${esc(t("hp_cta"))}</a><p class="hp-note">${esc(t("hp_note"))}</p>`;
+      } else if (hp) hp.innerHTML = "";
+    }
     const hp = document.getElementById("hero-photo");
     if (hp) {
       const p = DATA.sample_trucks.gm.photos[0];
@@ -645,32 +701,28 @@
     return h;
   }
   const itemsCache = {};
+  /* INTERIM GATE: data/manifests/<id>.json is a public TEASER only (top 10 + total_items). The full manifest is not on this static site;
+     the locked rows below are skeleton bars with no real data. A static site cannot truly gate: see outputs/portal-design/INTERIM_GATE_NOTES.md. */
   function initItemList(load) {
     const host = document.getElementById("items-host");
     if (!host || !load.manifest_file) return;
-    const PER = 50;
-    const state = { q: "", sort: "value", page: 0 };
     const draw = (data) => {
-      const rows = data.items;
-      const needle = state.q.trim().toLowerCase();
-      let r = needle ? rows.filter((x) => x[0].toLowerCase().includes(needle)) : rows.slice();
-      if (state.sort === "unit") r.sort((a, b) => b[2] - a[2]);
-      else if (state.sort === "qty") r.sort((a, b) => b[1] - a[1]);
-      else if (state.sort === "az") r.sort((a, b) => a[0].localeCompare(b[0]));
-      const pages = Math.max(1, Math.ceil(r.length / PER));
-      state.page = Math.min(state.page, pages - 1);
-      const from = state.page * PER, slice = r.slice(from, from + PER);
-      const pcs = r.reduce((a, x) => a + x[1], 0);
-      const so = (v, k) => `<option value="${v}"${state.sort === v ? " selected" : ""}>${esc(t(k))}</option>`;
-      host.innerHTML = `<div class="itools"><label>${esc(t("items_search"))}<input type="search" data-q value="${esc(state.q)}" placeholder="${esc(t("items_search_ph"))}" autocomplete="off"></label>
-        <label>${esc(t("items_sort"))}<select data-s>${so("value", "isort_value")}${so("unit", "isort_unit")}${so("qty", "isort_qty")}${so("az", "isort_az")}</select></label></div>
-        <p class="hint" role="status">${num(r.length)} ${esc(t("items_sum"))} · ${num(pcs)} ${esc(t("pcs"))}</p>
-        ${slice.length ? `<div class="table-wrap"><table class="itab"><thead><tr><th>${esc(t("i_item"))}</th><th class="num">${esc(t("i_qty"))}</th><th class="num c-unit">${esc(t("i_unit"))}</th><th class="num">${esc(t("i_ext"))}</th></tr></thead><tbody>${slice.map((x) => `<tr><td>${esc(x[0])}</td><td class="num">${num(x[1])}</td><td class="num c-unit">${esc(money2(x[2]))}</td><td class="num">${esc(money2(x[1] * x[2]))}</td></tr>`).join("")}</tbody></table></div>
-        <div class="pager"><button type="button" class="btn btn-line btn-sm" data-pg="-1"${state.page === 0 ? " disabled" : ""}>← ${esc(t("i_prev"))}</button><span>${esc(t("i_page"))} ${num(state.page + 1)} ${esc(t("i_of"))} ${num(pages)}</span><button type="button" class="btn btn-line btn-sm" data-pg="1"${state.page >= pages - 1 ? " disabled" : ""}>${esc(t("i_next"))} →</button></div>` : `<p class="empty">${esc(t("i_empty"))}</p>`}`;
-      const q = host.querySelector("[data-q]");
-      q.addEventListener("input", () => { state.q = q.value; state.page = 0; const pos = q.selectionStart; draw(data); const q2 = host.querySelector("[data-q]"); q2.focus(); q2.setSelectionRange(pos, pos); });
-      host.querySelector("[data-s]").addEventListener("change", (e) => { state.sort = e.target.value; state.page = 0; draw(data); });
-      host.querySelectorAll("[data-pg]").forEach((b) => b.addEventListener("click", () => { state.page += Number(b.dataset.pg); draw(data); const tb = host.querySelector(".itools"); if (tb) tb.scrollIntoView({ block: "nearest" }); }));
+      const rows = data.items, n = data.total_items || rows.length, more = n > rows.length;
+      host.innerHTML = `<p class="hint" role="status">${esc(t("gate_t"))}${more ? " · " + esc(t("gate_note").replace("{n}", num(n))) : ""}</p>
+        <div class="table-wrap"><table class="itab"><thead><tr><th>${esc(t("i_item"))}</th><th class="num">${esc(t("i_qty"))}</th><th class="num c-unit">${esc(t("i_unit"))}</th><th class="num">${esc(t("i_ext"))}</th></tr></thead><tbody>${rows.map((x) => `<tr><td>${esc(x[0])}</td><td class="num">${num(x[1])}</td><td class="num c-unit">${esc(money2(x[2]))}</td><td class="num">${esc(money2(x[1] * x[2]))}</td></tr>`).join("")}</tbody></table></div>
+        ${more ? `<div class="mgate" data-gate><div class="mg-rows" aria-hidden="true">${"<i></i>".repeat(8)}</div>
+        <div class="mg-wall" role="region" aria-labelledby="mg-h"><h3 id="mg-h">${esc(t("gate_h").replace("{n}", num(n)))}</h3><p>${esc(t("gate_p"))}</p>
+        <form class="form" data-signup="manifest-gate" data-load="${esc(load.id)}" novalidate>
+          <div class="row"><label><span>${esc(t("su_name"))} *</span><input name="name" required autocomplete="name"></label><label><span>${esc(t("su_email"))} *</span><input name="email" type="email" required autocomplete="email" inputmode="email"></label></div>
+          <div class="row"><label><span>${esc(t("su_wa"))}</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel"></label><label><span>${esc(t("su_type"))}</span><select name="buyer_type"><option value="pallet reseller">${esc(t("su_t_pallet"))}</option><option value="flea market">${esc(t("su_t_flea"))}</option><option value="online reseller">${esc(t("su_t_online"))}</option><option value="mexico-side buyer">${esc(t("su_t_mx"))}</option><option value="other">${esc(t("su_t_other"))}</option></select></label></div>
+          <input type="hidden" name="pref_lang" value="${lang}">
+          <label class="check"><input type="checkbox" name="consent_email" required><span>${esc(t("su_consent_email"))}</span></label>
+          <label class="check"><input type="checkbox" name="wa_optin"><span>${esc(t("su_consent_wa"))}</span></label>
+          <div class="signup-out" aria-live="polite"></div>
+          <button class="btn btn-red btn-block" type="submit">${esc(t("gate_submit"))}</button>
+        </form><div class="gate-out" aria-live="polite"></div></div></div>` : ""}`;
+      const gf = host.querySelector("form[data-signup]");
+      if (gf) { addHoney(gf); addTurnstile(gf); bindSignupForm(gf); }
     };
     const p = itemsCache[load.manifest_file] || (itemsCache[load.manifest_file] = fetch(load.manifest_file).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }));
     p.then(draw).catch(() => { delete itemsCache[load.manifest_file]; host.innerHTML = `<div class="notice">${esc(t("items_error"))}</div>`; });
@@ -875,7 +927,27 @@
      Until set, nothing is sent (forms still save locally and open WhatsApp). Honeypot "website" (see addHoney) drops bots. */
   const LEAD_ENDPOINT = "https://crm.zoho.com/crm/WebToLeadForm";
   const LEAD_HIDDEN = { xnQsjsdp: "6c04bcbb155dafd7131cd32f2a8918ad2a0259cc208917fba20a6c2267aef4d3", xmIwtLD: "f361a53796c5122305d5f49d479ba39acab74b69c8d6d1460620faa0fa330c67081a64d4476b558bd07f4cd8dbe4b667", actionType: "TGVhZHM=", returnURL: "https://www.lpros.biz/" };
+  /* Cloudflare Turnstile (bot check) -- OFF by default. Set enabled:true and paste the PUBLIC site key; never put the secret here.
+     A static site cannot verify the token: the Worker/portal must call siteverify (see outputs/portal-design/INTERIM_GATE_NOTES.md). */
+  const TURNSTILE = { enabled: false, siteKey: "TURNSTILE_SITE_KEY_PLACEHOLDER" };
+  function addTurnstile(form) {
+    if (!TURNSTILE.enabled || form.querySelector(".cf-turnstile")) return;
+    const d = document.createElement("div"); d.className = "cf-turnstile ts-box"; d.dataset.sitekey = TURNSTILE.siteKey; form.insertBefore(d, form.querySelector("button[type=submit]"));
+    if (!document.getElementById("ts-api")) { const sc = document.createElement("script"); sc.id = "ts-api"; sc.src = "https://challenges.cloudflare.com/turnstile/v0/api.js"; sc.async = true; sc.defer = true; document.head.appendChild(sc); }
+  }
+  /* Minimal client-side rate/backoff: <3s on the form = bot (silent), filled honeypot = bot (silent), 15s then 30s gaps between submits, max 3 per 10 min.
+     Client-side only: it slows casual abuse, it does not stop a scripted client. */
+  function submitGuard(form) {
+    if ((form.elements.website && form.elements.website.value) || Date.now() - Number(form.dataset.t || 0) < 3000) return "bot";
+    if (TURNSTILE.enabled && !(form.elements["cf-turnstile-response"] && form.elements["cf-turnstile-response"].value)) return "ts";
+    const now = Date.now(); let a = [];
+    try { a = JSON.parse(localStorage.getItem("lpos.rl") || "[]").filter((x) => now - x < 6e5); } catch (e) {}
+    if (a.length >= 3 || (a.length && now - a[a.length - 1] < 15000 * Math.pow(2, a.length - 1))) return "rate";
+    a.push(now); try { localStorage.setItem("lpos.rl", JSON.stringify(a)); } catch (e) {}
+    return null;
+  }
   function addHoney(form) {
+    form.dataset.t = form.dataset.t || String(Date.now());
     if (form.querySelector('input[name="website"]')) return;
     const d = document.createElement("div");
     d.setAttribute("aria-hidden", "true");
@@ -895,7 +967,7 @@
       if (rec.phone) p.set("Mobile", rec.phone);
       if (rec.city || rec.dest) p.set("City", rec.city || rec.dest);
       p.set("Lead Source", "Web Download"); // picklist has no "Website"; the webform also tags every lead "website"
-      p.set("Description", ["form: " + key.replace("lpos.", ""), "lang: " + rec.lang, rec.buy && "buy: " + rec.buy, rec.retailers && "wants: " + rec.retailers, rec.budget && "budget: " + rec.budget, rec.offer && "offer: " + rec.offer, rec.load && "load: " + rec.load, (rec.notes || rec.msg) && "notes: " + (rec.notes || rec.msg), "page: " + location.pathname, "utm: " + JSON.stringify(u)].filter(Boolean).join("\n"));
+      p.set("Description", ["form: " + key.replace("lpos.", ""), "lang: " + rec.lang, rec.buy && "buy: " + rec.buy, rec.retailers && "wants: " + rec.retailers, rec.budget && "budget: " + rec.budget, rec.offer && "offer: " + rec.offer, rec.load && "load: " + rec.load, (rec.notes || rec.msg) && "notes: " + (rec.notes || rec.msg), "page: " + location.pathname, "utm: " + JSON.stringify(u), ...(rec.desc_extra || [])].filter(Boolean).join("\n"));
       fetch(LEAD_ENDPOINT, { method: "POST", mode: "no-cors", body: p, keepalive: true }).catch(() => {});
     } catch (e) {}
   }
@@ -1019,13 +1091,71 @@
 
 
   /* ---------- lead capture (hero): localStorage + WhatsApp + mailto leads@ ---------- */
+
+  /* Email signup (double opt-in). Posts to the same Zoho Web-to-Lead path; the consent record (exact text shown, language,
+     timestamp) rides in Description. IP is not collected client-side. The confirmation email is a DRAFT a human sends (see outputs/email-system). */
+  /* Reusable: any <form data-signup="SOURCE"> with the same fields works (e.g. data-signup="manifest-gate" for the gated-manifest account form).
+     Also exposed as window.lposBindSignup(form). SOURCE becomes the tag/source line in the Zoho lead. */
+  function bindSignup() { document.querySelectorAll("form[data-signup]").forEach(bindSignupForm); initSignupPop(); }
+  function bindSignupForm(form) {
+    if (!form || form.dataset.bound) return;
+    form.dataset.bound = "1";
+    const source = form.dataset.signup || "website-signup";
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const wa = form.elements.wa_optin, ph = form.elements.phone;
+      ph.setCustomValidity(wa.checked && !ph.value.trim() ? t("su_err_wa") : "");
+      if (!form.reportValidity()) return;
+      const so = (form.closest(".mg-wall") && form.closest(".mg-wall").querySelector(".gate-out")) || form.querySelector(".signup-out");
+      const g = submitGuard(form), done = t(source === "manifest-gate" ? "gate_done" : "su_done");
+      if (g === "bot") { if (so) so.innerHTML = `<div class="notice ok" role="status">${esc(done)}</div>`; return; }
+      if (g) { form.querySelector(".signup-out").innerHTML = `<div class="notice" role="alert">${esc(t(g === "ts" ? "ts_err" : "su_err_rate"))}</div>`; return; }
+      const f = Object.fromEntries(new FormData(form).entries());
+      const interests = [...form.querySelectorAll('input[name="interest"]:checked')].map((i) => i.value).join(",");
+      const ts = new Date().toISOString();
+      const waOk = !!(f.phone && wa.checked);
+      const rec = { ts, lang, name: f.name, email: f.email, phone: f.phone, website: f.website, desc_extra: [
+        "tag: " + source, "source: " + source, "buyer_type: " + f.buyer_type, "interests: " + interests, "pref_lang: " + f.pref_lang,
+        "consent_email: yes (checkbox, unticked by default) @ " + ts, "consent_email_text[" + lang + "]: " + t("su_consent_email"),
+        "consent_whatsapp: " + (waOk ? "yes @ " + ts + " | text: " + t("su_consent_wa") : "no"), "double_opt_in: pending", "signup_form: v1"].concat(form.dataset.load ? ["load: " + form.dataset.load, "manifest_gate: full manifest requested (no login exists yet; unlock manually)"] : []) };
+      saveLocal("lpos.signup", rec);
+      if (so) so.innerHTML = `<div class="notice ok" role="status">${esc(done)}</div>`;
+      if (source === "manifest-gate") form.hidden = true;
+      try { localStorage.setItem("lpos.signup_pop", String(Date.now())); } catch (e) {}
+      const pop = document.getElementById("signup-pop"); if (pop) pop.hidden = true;
+      form.reset();
+    });
+  }
+
+  window.lposBindSignup = (f) => bindSignupForm(f);
+  /* Gentle slide-in: never in the first view, never blocking, dismissible, remembered 14 days. Triggers: 25s, 45% scroll, or exit intent (desktop). */
+  function initSignupPop() {
+    const pop = document.getElementById("signup-pop"), target = document.getElementById("signup");
+    if (!pop || !target || pop.dataset.bound) return;
+    pop.dataset.bound = "1";
+    const KEY = "lpos.signup_pop", DAYS14 = 14 * 864e5;
+    try { if (Date.now() - Number(localStorage.getItem(KEY) || 0) < DAYS14) return; } catch (e) {}
+    let shown = false;
+    const hide = () => { pop.hidden = true; try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} };
+    const show = () => { const r = target.getBoundingClientRect(); if (shown || (r.top < innerHeight && r.bottom > 0)) return; /* not while the form itself is on screen */ shown = true; pop.hidden = false; };
+    pop.querySelector("[data-pop-close]").addEventListener("click", hide);
+    pop.addEventListener("keydown", (e) => { if (e.key === "Escape") hide(); });
+    pop.querySelector("[data-pop-go]").addEventListener("click", () => { hide(); target.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); setTimeout(() => target.querySelector("input[name=name]").focus({ preventScroll: true }), 400); });
+    setTimeout(show, 25000);
+    addEventListener("scroll", () => { if (scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight) > 0.45) show(); }, { passive: true });
+    document.addEventListener("mouseout", (e) => { if (e.clientY <= 0 && !e.relatedTarget) show(); });
+  }
+
   function bindLead() {
     const form = document.getElementById("f-lead");
     if (!form) return;
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
+      const g = submitGuard(form);
+      if (g && g !== "bot") { document.getElementById("lead-out").innerHTML = `<div class="notice" role="alert">${esc(t(g === "ts" ? "ts_err" : "su_err_rate"))}</div>`; return; }
       const f = Object.fromEntries(new FormData(form).entries());
+      if (g === "bot") f.website = "bot";
       saveLocal("lpos.leads", { ts: new Date().toISOString(), lang, ...f });
       const subject = `LEAD | ${f.name} | ${f.city}`;
       const body = ["LEAD", `Nombre: ${f.name}`, `WhatsApp: ${f.phone}`, `Ciudad: ${f.city}`, `Compra: ${f.buy}`, `Idioma: ${lang}`, `Fuente: sitio web ${new Date().toISOString().slice(0, 10)}`].join("\n");
@@ -1040,7 +1170,7 @@
 
   /* ---------- boot ---------- */
   function render() {
-    document.querySelectorAll("form").forEach(addHoney);
+    document.querySelectorAll("form").forEach((f) => { addHoney(f); addTurnstile(f); });
     applyStatic();
     if (document.getElementById("loads-grid")) renderHome();
     if (document.getElementById("detail")) renderDetail();
@@ -1053,6 +1183,6 @@
     if (e.target.closest("[data-close]")) document.getElementById("dlg").close();
   });
   Promise.all([fetch("data/loads.json").then((r) => r.json()), fetch("data/lanes.json").then((r) => r.json()).catch(() => ({ lanes: [] }))])
-    .then(([d, ln]) => { DATA = d; DATA.lanes = ln.lanes; render(); bindWaitlist(); bindLead(); })
+    .then(([d, ln]) => { DATA = d; DATA.lanes = ln.lanes; render(); bindWaitlist(); bindLead(); bindSignup(); })
     .catch(() => { const g = document.getElementById("loads-grid") || document.getElementById("detail"); if (g) g.innerHTML = `<div class="empty">${lang === "es" ? "No se pudieron cargar las cargas. Escríbanos por WhatsApp." : "Could not load the listings. Message us on WhatsApp."}</div>`; });
 })();

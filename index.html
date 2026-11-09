@@ -854,34 +854,19 @@
     <div class="wrap">
       <div>
         <div class="eyebrow" data-i18n="hero_eyebrow">Mayorista B2B · Hidalgo, Texas</div>
-        <h1 data-i18n="hero_h1">Tráileres completos de devoluciones de grandes tiendas, a precio fijo. Sin subastas.</h1>
-        <p class="hero-sub" data-i18n="hero_lead">Compre la carga completa hoy, recoja en Texas o pídanos cotización puesta en su bodega.</p>
+        <h1 data-i18n="hero_h1">Compre tráileres completos de mercancía de liquidación. Vea qué trae antes de pagar.</h1>
+        <p class="hero-sub" data-i18n="hero_lead">Escoja una carga, vea qué trae, pague y recoja en Texas. Precio fijo por tráiler, sin subastas.</p>
         <div class="cta">
           <a class="btn btn-red" href="#loads" data-i18n="hero_cta_loads">Ver cargas disponibles</a>
-          <a class="btn btn-line" href="#waitlist" data-i18n="hero_cta_wait">Entrar a la lista de espera</a>
+          <a class="btn btn-line" href="#how" data-i18n="hero_cta_how">Cómo funciona</a>
         </div>
         <div class="facts">
+          <div><b id="fact-from">–</b><span data-i18n="fact_from">desde, por tráiler completo</span></div>
+          <div><b id="fact-unit">–</b><span data-i18n="fact_unit">por unidad, en la carga más barata</span></div>
           <div><b id="fact-loads">–</b><span data-i18n="fact_loads">cargas disponibles</span></div>
-          <div><b>USD</b><span data-i18n="fact_window">precio fijo por tráiler</span></div>
-          <div><b>Texas</b><span data-i18n="fact_border">recoja con su transportista</span></div>
         </div>
       </div>
-      <form class="form lead" id="f-lead" novalidate>
-        <h2 id="waitlist" data-i18n="lead_h2">Entre a la lista de compradores</h2>
-        <p data-i18n="lead_sub" class="lead-sub"></p>
-        <div class="row">
-          <label><span data-i18n="f_name">Nombre</span> *<input name="name" required autocomplete="name"></label>
-          <label><span data-i18n="f_wa">WhatsApp</span> *<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+52 81 1234 5678"></label>
-        </div>
-        <div class="row">
-          <label><span data-i18n="f_city">Ciudad de entrega</span> *<input name="city" required placeholder="Ciudad, Estado"></label>
-          <label><span data-i18n="f_buy">Qué compra</span>
-            <select name="buy"><option value="Mercancía general / General merchandise">Mercancía general / General merchandise</option><option value="Ropa / Clothing">Ropa / Clothing</option><option value="Zapatos / Shoes">Zapatos / Shoes</option><option value="HBA">HBA</option><option value="Muebles / Furniture">Muebles / Furniture</option><option value="Cualquiera / Any" data-i18n="any">Cualquiera</option></select></label>
-        </div>
-        <label class="check"><input type="checkbox" name="consent" required><span data-i18n="f_consent"></span></label>
-        <div id="lead-out"></div>
-        <button class="btn btn-red btn-block" type="submit" data-i18n="lead_submit">Entrar a la lista</button>
-      </form>
+      <aside class="hero-panel" id="hero-panel" aria-live="polite"></aside>
     </div>
   </section>
 
@@ -902,7 +887,18 @@
     </div>
   </section>
 
-  <section class="sec sec-alt" id="other-cats">
+  <section class="sec sec-alt" id="buyers">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 data-i18n="buyers_h">Para quién es</h2><p data-i18n="buyers_sub"></p></div></div>
+      <div class="buyers">
+        <article><h3 data-i18n="buyers1_h"></h3><p data-i18n="buyers1_p"></p></article>
+        <article><h3 data-i18n="buyers2_h"></h3><p data-i18n="buyers2_p"></p></article>
+        <article><h3 data-i18n="buyers3_h"></h3><p data-i18n="buyers3_p"></p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="other-cats">
     <div class="wrap">
       <div class="sec-head"><div><h2 data-i18n="other_cat_h">Otras categorías</h2><p data-i18n="other_cat_sub">Agotado por ahora. Deje su correo y le avisamos cuando haya disponibilidad.</p></div></div>
       <div class="sourcing-grid">
@@ -983,7 +979,54 @@
     </div>
   </section>
 
-  <section class="sec sec-alt" id="contact">
+  <section class="sec sec-alt" id="signup">
+    <div class="wrap two">
+      <form class="form lead" id="f-signup" data-signup="website-signup" novalidate>
+        <h2 data-i18n="su_h2">Reciba las cargas nuevas por correo</h2>
+        <p class="lead-sub" data-i18n="su_sub"></p>
+        <div class="row">
+          <label><span data-i18n="su_name">Nombre</span> *<input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="su_email">Correo</span> *<input name="email" type="email" required autocomplete="email" inputmode="email"></label>
+        </div>
+        <div class="row">
+          <label><span data-i18n="su_wa">WhatsApp (opcional)</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+52 81 1234 5678"></label>
+          <label><span data-i18n="su_type">Tipo de comprador</span>
+            <select name="buyer_type"><option value="pallet reseller" data-i18n="su_t_pallet"></option><option value="flea market" data-i18n="su_t_flea"></option><option value="online reseller" data-i18n="su_t_online"></option><option value="mexico-side buyer" data-i18n="su_t_mx"></option><option value="other" data-i18n="su_t_other"></option></select></label>
+        </div>
+        <fieldset class="su-int"><legend data-i18n="su_interests">Qué le interesa</legend>
+          <label class="check"><input type="checkbox" name="interest" value="clothing-heavy"><span data-i18n="su_i_cloth"></span></label>
+          <label class="check"><input type="checkbox" name="interest" value="general merchandise"><span data-i18n="su_i_gm"></span></label>
+          <label class="check"><input type="checkbox" name="interest" value="electronics"><span data-i18n="su_i_elec"></span></label>
+          <label class="check"><input type="checkbox" name="interest" value="shoes"><span data-i18n="su_i_shoes"></span></label>
+          <label class="check"><input type="checkbox" name="interest" value="home and furniture"><span data-i18n="su_i_home"></span></label>
+        </fieldset>
+        <label><span data-i18n="su_lang">Idioma preferido</span><select name="pref_lang"><option value="es" data-i18n="su_l_es"></option><option value="en" data-i18n="su_l_en"></option></select></label>
+        <label class="check"><input type="checkbox" name="consent_email" required><span data-i18n="su_consent_email"></span></label>
+        <label class="check"><input type="checkbox" name="wa_optin"><span data-i18n="su_consent_wa"></span></label>
+        <p class="hint" data-i18n="su_fine"></p>
+        <div class="signup-out" aria-live="polite"></div>
+        <button class="btn btn-red btn-block" type="submit" data-i18n="su_submit">Suscribirme</button>
+      </form>
+      <form class="form lead" id="f-lead" novalidate>
+        <h2 id="waitlist" data-i18n="lead_h2">Entre a la lista de compradores</h2>
+        <p data-i18n="lead_sub" class="lead-sub"></p>
+        <div class="row">
+          <label><span data-i18n="f_name">Nombre</span> *<input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="f_wa">WhatsApp</span> *<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+52 81 1234 5678"></label>
+        </div>
+        <div class="row">
+          <label><span data-i18n="f_city">Ciudad de entrega</span> *<input name="city" required placeholder="Ciudad, Estado"></label>
+          <label><span data-i18n="f_buy">Qué compra</span>
+            <select name="buy"><option value="Mercancía general / General merchandise">Mercancía general / General merchandise</option><option value="Ropa / Clothing">Ropa / Clothing</option><option value="Zapatos / Shoes">Zapatos / Shoes</option><option value="HBA">HBA</option><option value="Muebles / Furniture">Muebles / Furniture</option><option value="Cualquiera / Any" data-i18n="any">Cualquiera</option></select></label>
+        </div>
+        <label class="check"><input type="checkbox" name="consent" required><span data-i18n="f_consent"></span></label>
+        <div id="lead-out"></div>
+        <button class="btn btn-red btn-block" type="submit" data-i18n="lead_submit">Entrar a la lista</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
     <div class="wrap two">
       <div>
         <h2 data-i18n="contact_h2">Contacto</h2>
@@ -1017,6 +1060,12 @@
     <div><div class="fine" data-i18n="ftr_fine"></div><div class="ftr-links"><a href="privacidad.html" data-i18n="ftr_privacy">Aviso de privacidad</a><a href="terminos.html" data-i18n="ftr_terms">Términos de venta</a><a href="contacto.html" data-i18n="ftr_contact">Contacto</a></div></div>
   </div>
 </footer>
+<aside id="signup-pop" class="su-pop" role="complementary" aria-labelledby="su-pop-t" hidden>
+  <button type="button" class="su-pop-x" data-pop-close data-i18n="su_pop_x" aria-label="Cerrar">Cerrar</button>
+  <b id="su-pop-t" data-i18n="su_pop_t"></b>
+  <p data-i18n="su_pop_b"></p>
+  <button type="button" class="btn btn-red" data-pop-go data-i18n="su_pop_go"></button>
+</aside>
 <script src="js/app.js" defer></script>
 </body>
 </html>
