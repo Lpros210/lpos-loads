@@ -1183,6 +1183,6 @@
     if (e.target.closest("[data-close]")) document.getElementById("dlg").close();
   });
   Promise.all([fetch("data/loads.json").then((r) => r.json()), fetch("data/lanes.json").then((r) => r.json()).catch(() => ({ lanes: [] }))])
-    .then(([d, ln]) => { DATA = d; DATA.lanes = ln.lanes; render(); bindWaitlist(); bindLead(); bindSignup(); })
+    .then(([d, ln]) => { d.loads = d.loads.filter((l) => l.status !== "hidden"); /* hidden = pulled from the public list, data kept */ DATA = d; DATA.lanes = ln.lanes; render(); bindWaitlist(); bindLead(); bindSignup(); })
     .catch(() => { const g = document.getElementById("loads-grid") || document.getElementById("detail"); if (g) g.innerHTML = `<div class="empty">${lang === "es" ? "No se pudieron cargar las cargas. Escríbanos por WhatsApp." : "Could not load the listings. Message us on WhatsApp."}</div>`; });
 })();
