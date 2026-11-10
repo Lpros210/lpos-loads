@@ -3,7 +3,7 @@
  "lanes": [
   {
    "origin": "Upper Midwest",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 7,
    "min": 1948.0,
    "median": 2478.0,
@@ -13,7 +13,7 @@
   },
   {
    "origin": "Southeast (Carolinas)",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 6,
    "min": 2139.0,
    "median": 2677.83,
@@ -33,7 +33,7 @@
   },
   {
    "origin": "North Texas",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 9,
    "min": 210.95,
    "median": 1037.24,
@@ -43,7 +43,7 @@
   },
   {
    "origin": "Central Plains",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 4,
    "min": 1993.0,
    "median": 2598.68,
@@ -63,7 +63,7 @@
   },
   {
    "origin": "Midwest (Ohio Valley)",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 2,
    "min": 2293.0,
    "median": 2746.5,
@@ -73,7 +73,7 @@
   },
   {
    "origin": "Mid-South",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 2,
    "min": 1648.0,
    "median": 2324.0,
@@ -83,7 +83,7 @@
   },
   {
    "origin": "Southern California",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 1,
    "min": 3587.0,
    "median": 3587.0,
@@ -113,7 +113,7 @@
   },
   {
    "origin": "Florida",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 1,
    "min": 1131.0,
    "median": 1131.0,
@@ -133,7 +133,7 @@
   },
   {
    "origin": "Mid-Atlantic",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 1,
    "min": 2616.91,
    "median": 2616.91,
@@ -142,7 +142,7 @@
    "basis": "paid_freight"
   },
   {
-   "origin": "Hidalgo, TX",
+   "origin": "Texas",
    "destination": "Monterrey, NL",
    "n": 0,
    "min": 700.0,
@@ -152,7 +152,7 @@
    "basis": "public_estimate"
   },
   {
-   "origin": "Hidalgo, TX",
+   "origin": "Texas",
    "destination": "San Luis Potosi, SLP",
    "n": 0,
    "min": 1600.0,
@@ -162,7 +162,7 @@
    "basis": "public_estimate"
   },
   {
-   "origin": "Hidalgo, TX",
+   "origin": "Texas",
    "destination": "Guadalajara, JAL",
    "n": 0,
    "min": 2500.0,
@@ -172,7 +172,7 @@
    "basis": "public_estimate"
   },
   {
-   "origin": "Hidalgo, TX",
+   "origin": "Texas",
    "destination": "Leon, GTO",
    "n": 0,
    "min": 2300.0,
@@ -182,7 +182,7 @@
    "basis": "public_estimate"
   },
   {
-   "origin": "Hidalgo, TX",
+   "origin": "Texas",
    "destination": "Mexico City, CDMX",
    "n": 0,
    "min": 2700.0,
@@ -193,7 +193,7 @@
   },
   {
    "origin": "Florida",
-   "destination": "Hidalgo, TX",
+   "destination": "Texas",
    "n": 0,
    "min": 1200.0,
    "median": 1700.0,

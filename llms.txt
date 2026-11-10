@@ -3,7 +3,7 @@
 > Liquidation Pros sells full truckloads and pallets of big-box retail liquidation merchandise
 > (customer returns and overstock general merchandise) at fixed prices — no auctions, no
 > bidding. Manifests are shared before purchase.
-> Buyer picks up in Texas with their own carrier (exact pickup location confirmed on reservation). Company address: Hidalgo, TX.
+> Buyer picks up in Texas with their own carrier (exact pickup location confirmed on reservation).
 > Freight can be quoted to US destinations. LPOS does not book freight to Mexico; buyers in Mexico pick up
 > in Texas or send their own carrier. Primary market: resellers and liquidation buyers in Texas, the Rio
 > Grande Valley, and Mexico (Reynosa, Monterrey, Guadalajara, Mexico City and beyond). Site and support are
@@ -11,7 +11,7 @@
 
 ## Company
 - Legal name: Liquidation Pros LLC
-- Pickup / mailing address: 709 W Joe Pate Blvd, Hidalgo, TX 78557, USA
+- Pickup: Texas (exact pickup location confirmed on reservation)
 - Phone / WhatsApp: +1 956-996-6545 (https://wa.me/19569966545)
 - Email: juan@lpros.biz
 - Hours: Mon–Sat 8am–6pm (Texas time)

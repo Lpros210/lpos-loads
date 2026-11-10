@@ -35,10 +35,7 @@ ORG = {
     "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "709 W Joe Pate Blvd",
-        "addressLocality": "Hidalgo",
         "addressRegion": "TX",
-        "postalCode": "78557",
         "addressCountry": "US",
     },
     "areaServed": [
