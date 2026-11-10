@@ -125,7 +125,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 10267,
       "pallets": "27",
@@ -170,7 +170,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 14665,
       "pallets": "27",
@@ -215,7 +215,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 10062,
       "pallets": "23",
@@ -260,7 +260,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 25670,
       "pallets": "24",
@@ -305,7 +305,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 24719,
       "pallets": "27",
@@ -350,7 +350,7 @@
         "es": "Tráiler completo · Hogar, juguetes, almacenaje",
         "en": "Full Truckload · Home, toys, storage"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": null,
       "pallets": "22–26",
@@ -725,7 +725,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 17744,
       "pallets": "25",
@@ -805,7 +805,7 @@
         "es": "Tráiler completo · Mixto con mucha ropa",
         "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 12379,
       "pallets": "27",
@@ -885,7 +885,7 @@
         "es": "Tráiler completo · Mixto con mucha ropa",
         "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 19603,
       "pallets": "25",
@@ -965,7 +965,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 18184,
       "pallets": "26",
@@ -1045,7 +1045,7 @@
         "es": "Tráiler completo · Mixto con mucha ropa",
         "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "sold",
+      "status": "hidden",
       "sold_verified": false,
       "units": 14518,
       "pallets": "27",

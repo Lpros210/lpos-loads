@@ -569,7 +569,7 @@
     bindNotify();
     { const sec = document.getElementById("loads"); if (sec) { const pl = sec.querySelector(".sec-head .pill-live"), sp = sec.querySelector(".sec-head p"); if (pl) pl.style.display = avail.length ? "" : "none"; if (sp && !avail.length) sp.textContent = lang === "es" ? "Próximamente" : "Coming up"; } } // R3754: no green "Disponible" pill / fixed-price copy over an empty list
     const s = document.getElementById("sold-grid");
-    if (s) s.innerHTML = sold.map(card).join("");
+    if (s) s.innerHTML = sold.map(card).join(""); { const ss = document.getElementById("sold"); if (ss) ss.hidden = !sold.length; }
     const az = document.getElementById("returns-grid");
     if (az) { const ecLoads = DATA.loads.filter(isEcom); az.innerHTML = ecLoads.length ? ecLoads.map(card).join("") : ""; const azSec = document.getElementById("returns"); if (azSec) azSec.hidden = !ecLoads.length; }
     const n = document.getElementById("fact-loads"); if (n) n.textContent = String(avail.length);
