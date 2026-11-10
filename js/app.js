@@ -535,7 +535,7 @@
       const r = filterLoads(live);
       grid.innerHTML = r.length ? r.map(card).join("") : `<div class="empty">${esc(t("tools_none"))}</div>`;
       const c = document.getElementById("loads-count");
-      if (c) c.textContent = `${r.length} / ${live.length} ${t("tools_count")}`;
+      if (c) c.textContent = ""; /* no public count of available loads */
     };
     if (host) {
       const opt = (v, cur, k) => `<option value="${v}"${v === cur ? " selected" : ""}>${esc(t(k))}</option>`;
