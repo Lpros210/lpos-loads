@@ -1831,7 +1831,7 @@
         "es": "Tráiler completo · Mixto con mucha ropa",
         "en": "Full Truckload · Mixed, clothing-heavy"
       },
-      "status": "available",
+      "status": "hidden",
       "sold_verified": false,
       "units": 7970,
       "pallets": "26",

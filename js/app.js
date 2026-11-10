@@ -584,6 +584,7 @@
           <div class="hp-meta"><div><b>${esc(num(pr.units))}</b><span>${esc(t("hp_units"))}</span></div><div><b>${esc(pr.pallets)}</b><span>${esc(t("hp_pallets"))}</span></div><div><b>${esc(puTxt)}</b><span>${esc(t("hp_unit"))}</span></div></div>
           <a class="btn btn-red" href="load.html?id=${encodeURIComponent(pr.id)}">${esc(t("hp_cta"))}</a><p class="hp-note">${esc(t("hp_note"))}</p>`;
       } else if (hp) hp.innerHTML = "";
+      { const fc = fp && fp.closest(".facts"); if (fc) fc.style.display = pr ? "" : "none"; } /* no dashes in the hero when nothing is available */
     }
     const hp = document.getElementById("hero-photo");
     if (hp) {
