@@ -1750,7 +1750,7 @@
         "es": "Tráiler completo · Mercancía general mixta",
         "en": "Full Truckload · Mixed General Merchandise"
       },
-      "status": "available",
+      "status": "hidden",
       "sold_verified": false,
       "units": 9183,
       "pallets": "27",
