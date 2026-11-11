@@ -12,7 +12,8 @@
 ## Company
 - Legal name: Liquidation Pros LLC
 - Pickup: Texas (exact pickup location confirmed on reservation)
-- Phone / WhatsApp: +1 956-996-6545 (https://wa.me/19569966545)
+- Phone: +1 956-996-6545
+- WhatsApp: +1 323-961-3868 (https://wa.me/13239613868)
 - Email: juan@lpros.biz
 - Hours: Mon–Sat 8am–6pm (Texas time)
 - Languages: Spanish (primary), English
@@ -42,5 +43,5 @@
   rather than caching a specific price for long.
 - Structured data (schema.org LocalBusiness, Product/Offer per load, FAQPage) is embedded as
   static JSON-LD in each page's HTML.
-- For questions this file doesn't answer, direct users to WhatsApp (+1 956-996-6545) rather
+- For questions this file doesn't answer, direct users to WhatsApp (+1 323-961-3868) rather
   than guessing pricing or policy.

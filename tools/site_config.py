@@ -10,3 +10,5 @@ When the real Twilio number arrives, edit ONLY this file, then:
 
 PHONE_E164 = "19569966545"  # digits only: country code + number, no "+", no "wa.me/"
 PHONE_DISPLAY = "+1 956-996-6545"
+WHATSAPP_E164 = "13239613868"  # WhatsApp Business number (temporary, 2026-11-10)
+WHATSAPP_DISPLAY = "+1 323-961-3868"

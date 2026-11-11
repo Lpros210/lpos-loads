@@ -14,11 +14,11 @@ sitemap.xml regen note already in that file).
 """
 import json, os, re
 
-from site_config import PHONE_E164
+from site_config import PHONE_E164, WHATSAPP_E164
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://lpros210.github.io/lpos-loads/"
-WA = "https://wa.me/" + PHONE_E164
+WA = "https://wa.me/" + WHATSAPP_E164
 
 with open(os.path.join(ROOT, "data", "loads.json"), encoding="utf-8") as f:
     LOADS = json.load(f)

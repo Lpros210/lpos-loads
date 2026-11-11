@@ -6,7 +6,7 @@
      Single source of truth is tools/site_config.py (PHONE_E164) — the static JSON-LD in every
      page's <script type="application/ld+json"> blocks is generated from that file by
      tools/gen_seo.py. This constant has no build step, so keep it matching PHONE_E164 by hand. */
-  const WHATSAPP = "19569966545";
+  const WHATSAPP = "13239613868";
   /* ANALYTICS: GA4 property "www.lpros.com - GA4" (existing, verified live 2026-10-10). Meta Pixel / Google Ads
      conversion IDs: none confirmed yet (see outputs/continuous-cto/TRACKING_IDS_CHECK_2026-10-10.md); set them here when chosen. */
   const TRACKING = { GA4_ID: "G-X6LHSY1HBH", META_PIXEL_ID: "", GOOGLE_ADS_ID: "" };
@@ -404,7 +404,7 @@
   function fillContact() {
     const c = DATA.contact;
     document.querySelectorAll("[data-wa]").forEach((a) => { a.href = waLink(a.dataset.wa || (lang === "es" ? "Hola, vi su sitio de cargas." : "Hi, I saw your loads site.")); a.target = "_blank"; a.rel = "noopener"; });
-    document.querySelectorAll("[data-tel]").forEach((a) => { a.href = "tel:+" + WHATSAPP; a.textContent = c.phone_display; });
+    document.querySelectorAll("[data-tel]").forEach((a) => { a.href = "tel:+19569966545"; a.textContent = c.phone_display; });
     document.querySelectorAll("[data-mail]").forEach((a) => { a.href = "mailto:" + c.email; a.textContent = c.email; });
     document.querySelectorAll("[data-addr]").forEach((el) => { el.textContent = c.address; });
     document.querySelectorAll("[data-hours]").forEach((el) => { el.textContent = L(c.hours); });
