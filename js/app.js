@@ -354,6 +354,7 @@
   if (lang !== "en") lang = "es"; // Spanish-first default; EN only when the buyer chose it
   let DATA = null;
   const t = (k) => (T[lang] && T[lang][k]) || T.es[k] || k;
+  const pk = (l) => (l && l.location && l.location.city === "San Antonio") ? "FOB San Antonio, TX" : t("pickup_label"); /* per-load pickup text: FOB city when the load carries one */
   const L = (obj) => (obj && typeof obj === "object" ? (obj[lang] || obj.es || "") : (obj || ""));
   const priceTxt = (l) => l.price_pickup == null ? t("price_tbd") : (l.price_pickup % 1 ? money2(l.price_pickup) : money(l.price_pickup));
   const money = (n) => n == null ? "—" : new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -481,7 +482,7 @@
   function shipLine(load, href) {
     return load.freight_control === "seller"
       ? `🚚 <a href="${href}#quote">${esc(t("ship_seller"))}</a>`
-      : `📍 ${esc(t("ship_pickup"))} ${esc(t("pickup_label"))} · <a href="${href}#quote">${esc(t("quote"))}</a>`;
+      : `📍 ${esc(t("ship_pickup"))} ${esc(pk(load))} · <a href="${href}#quote">${esc(t("quote"))}</a>`;
   }
   function money2(n) { return new Intl.NumberFormat(lang === "es" ? "es-MX" : "en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
   function isBorderPickup(load) { return false; } // pickup city unconfirmed per load; generic Texas copy only
@@ -707,7 +708,7 @@
   function initItemList(load) {
     const host = document.getElementById("items-host");
     if (!host || !load.manifest_file) return;
-    const draw = (data) => {
+    const drawGated = (data) => {
       const rows = data.items, n = data.total_items || rows.length, more = n > rows.length;
       host.innerHTML = `<p class="hint" role="status">${esc(t("gate_t"))}${more ? " · " + esc(t("gate_note").replace("{n}", num(n))) : ""}</p>
         <div class="table-wrap"><table class="itab"><thead><tr><th>${esc(t("i_item"))}</th><th class="num">${esc(t("i_qty"))}</th><th class="num c-unit">${esc(t("i_unit"))}</th><th class="num">${esc(t("i_ext"))}</th></tr></thead><tbody>${rows.map((x) => `<tr><td>${esc(x[0])}</td><td class="num">${num(x[1])}</td><td class="num c-unit">${esc(money2(x[2]))}</td><td class="num">${esc(money2(x[1] * x[2]))}</td></tr>`).join("")}</tbody></table></div>
@@ -725,6 +726,32 @@
       const gf = host.querySelector("form[data-signup]");
       if (gf) { addHoney(gf); addTurnstile(gf); bindSignupForm(gf); }
     };
+    const PER = 50;
+    const state = { q: "", sort: "value", page: 0 };
+    const drawFull = (data) => {
+      const rows = data.items;
+      const needle = state.q.trim().toLowerCase();
+      let r = needle ? rows.filter((x) => x[0].toLowerCase().includes(needle)) : rows.slice();
+      if (state.sort === "unit") r.sort((a, b) => b[2] - a[2]);
+      else if (state.sort === "qty") r.sort((a, b) => b[1] - a[1]);
+      else if (state.sort === "az") r.sort((a, b) => a[0].localeCompare(b[0]));
+      const pages = Math.max(1, Math.ceil(r.length / PER));
+      state.page = Math.min(state.page, pages - 1);
+      const from = state.page * PER, slice = r.slice(from, from + PER);
+      const pcs = r.reduce((a, x) => a + x[1], 0);
+      const so = (v, k) => `<option value="${v}"${state.sort === v ? " selected" : ""}>${esc(t(k))}</option>`;
+      host.innerHTML = `<div class="itools"><label>${esc(t("items_search"))}<input type="search" data-q value="${esc(state.q)}" placeholder="${esc(t("items_search_ph"))}" autocomplete="off"></label>
+        <label>${esc(t("items_sort"))}<select data-s>${so("value", "isort_value")}${so("unit", "isort_unit")}${so("qty", "isort_qty")}${so("az", "isort_az")}</select></label></div>
+        <p class="hint" role="status">${num(r.length)} ${esc(t("items_sum"))} · ${num(pcs)} ${esc(t("pcs"))}</p>
+        ${slice.length ? `<div class="table-wrap"><table class="itab"><thead><tr><th>${esc(t("i_item"))}</th><th class="num">${esc(t("i_qty"))}</th><th class="num c-unit">${esc(t("i_unit"))}</th><th class="num">${esc(t("i_ext"))}</th></tr></thead><tbody>${slice.map((x) => `<tr><td>${esc(x[0])}</td><td class="num">${num(x[1])}</td><td class="num c-unit">${esc(money2(x[2]))}</td><td class="num">${esc(money2(x[1] * x[2]))}</td></tr>`).join("")}</tbody></table></div>
+        <div class="pager"><button type="button" class="btn btn-line btn-sm" data-pg="-1"${state.page === 0 ? " disabled" : ""}>← ${esc(t("i_prev"))}</button><span>${esc(t("i_page"))} ${num(state.page + 1)} ${esc(t("i_of"))} ${num(pages)}</span><button type="button" class="btn btn-line btn-sm" data-pg="1"${state.page >= pages - 1 ? " disabled" : ""}>${esc(t("i_next"))} →</button></div>` : `<p class="empty">${esc(t("i_empty"))}</p>`}`;
+      const q = host.querySelector("[data-q]");
+      q.addEventListener("input", () => { state.q = q.value; state.page = 0; const pos = q.selectionStart; drawFull(data); const q2 = host.querySelector("[data-q]"); q2.focus(); q2.setSelectionRange(pos, pos); });
+      host.querySelector("[data-s]").addEventListener("change", (e) => { state.sort = e.target.value; state.page = 0; drawFull(data); });
+      host.querySelectorAll("[data-pg]").forEach((b) => b.addEventListener("click", () => { state.page += Number(b.dataset.pg); drawFull(data); const tb = host.querySelector(".itools"); if (tb) tb.scrollIntoView({ block: "nearest" }); }));
+    };
+    /* v2 + gated = teaser + signup wall (older loads); v1 = full public item list with search/sort/paging (loads listed 2026-11-12, Juan: full manifests available) */
+    const draw = (data) => (data.gated ? drawGated(data) : drawFull(data));
     const p = itemsCache[load.manifest_file] || (itemsCache[load.manifest_file] = fetch(load.manifest_file).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }));
     p.then(draw).catch(() => { delete itemsCache[load.manifest_file]; host.innerHTML = `<div class="notice">${esc(t("items_error"))}</div>`; });
   }
@@ -777,7 +804,7 @@
           <div><span>${esc(t("units"))}</span><b>${num(load.units)}</b></div>
           <div><span>${esc(t("pallets"))}</span><b>${esc(load.pallets)}</b></div>
           <div><span>${esc(t("weight"))}</span><b>${load.weight_lb ? num(load.weight_lb) + " lb" : "—"}</b></div>
-          <div><span>${esc(t("location"))}</span><b>${esc(t("pickup_label"))}</b></div>
+          <div><span>${esc(t("location"))}</span><b>${esc(pk(load))}</b></div>
         </div>`;
     const statsFirst = !!(st && st.pieces);
     root.innerHTML = `
@@ -794,8 +821,8 @@
         ${statsFirst ? "" : kvHtml}
         <section class="block"><h2>${esc(t("condition_h"))}</h2><div class="cond"><p><b>${esc(t(condKey))}.</b> ${esc(t(condKey + "_p"))}</p></div></section>
         <section class="block"><h2>${esc(t("manifest_h"))}</h2>${manifest}</section>
-        <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(t("pickup_label"))}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
-        <section class="block"><h2>${esc(t("border_h"))}</h2><div class="notice"><p>${isBorderPickup(load) ? esc(t("border_p")) : `${esc(t("border_line_h"))} ${esc(t("pickup_label"))}. <a href="preguntas.html#faq-border">${esc(t("border_faq_link"))}</a>`}</p></div></section>
+        <section class="block"><h2>${esc(t("location"))}</h2><div class="cond"><p><b>${esc(t("pickup_h"))} ${esc(pk(load))}.</b> ${esc(t("pickup_p"))}</p><p style="margin-top:.5rem"><b>${esc(t("delivered_h"))}.</b> ${esc(t("delivered_p"))}</p></div></section>
+        <section class="block"><h2>${esc(t("border_h"))}</h2><div class="notice"><p>${isBorderPickup(load) ? esc(t("border_p")) : `${esc(t("border_line_h"))} ${esc(pk(load))}. <a href="preguntas.html#faq-border">${esc(t("border_faq_link"))}</a>`}</p></div></section>
         <section class="block" id="quote"><h2>${esc(t("quote_h"))}</h2><div id="quote-widget"></div></section>
       </div>
       <aside class="side">
@@ -803,7 +830,7 @@
           <div class="p-main"><strong>${priceTxt(load)}</strong><span>USD</span></div>
           <div class="p-sub">${esc(t("price_pickup"))}${perUnit ? ` · ${money2(perUnit)} ${esc(t("per_unit"))}` : ""}</div>
           <div class="opts">
-            <div class="opt"><div><b>${esc(t("opt_pickup"))}</b><small>${esc(t("pickup_label"))}</small></div><div class="amt">${priceTxt(load)}</div></div>
+            <div class="opt"><div><b>${esc(t("opt_pickup"))}</b><small>${esc(pk(load))}</small></div><div class="amt">${priceTxt(load)}</div></div>
             <div class="opt"><div><b>${esc(t("opt_delivered"))}</b><small>TX</small></div><div class="amt">${load.price_delivered ? money(load.price_delivered) : (lang === "es" ? "Cotizar" : "Quote")}</div></div>
           </div>
           ${isAvail ? `<div class="actions">

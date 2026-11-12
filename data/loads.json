@@ -1885,6 +1885,411 @@
       ],
       "manifest_status": "itemized",
       "manifest_file": "data/manifests/LP-TVTA.json"
+    },
+    {
+      "id": "LP-2923",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 9195,
+      "pallets": "26",
+      "price_pickup": 11373.36,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 1,
+        "pallets_manifested": 25,
+        "pieces": 9195,
+        "retail": 130188.92,
+        "pct_retail": 8.74,
+        "clothing_pieces": 4529,
+        "clothing_pct": 49.3,
+        "price_per_piece": 1.24,
+        "mix": {
+          "clothing": 4529,
+          "gm": 3532,
+          "hba": 1112,
+          "food": 22
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 4529
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 3532
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 1112
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 22
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-2923.json"
+    },
+    {
+      "id": "LP-DBZ5",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 9436,
+      "pallets": "26",
+      "price_pickup": 13315.44,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 4,
+        "pallets_manifested": 22,
+        "pieces": 9436,
+        "retail": 138837.5,
+        "pct_retail": 9.59,
+        "clothing_pieces": 4808,
+        "clothing_pct": 51.0,
+        "price_per_piece": 1.41,
+        "mix": {
+          "clothing": 4808,
+          "gm": 3704,
+          "hba": 812,
+          "food": 112
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 4808
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 3704
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 812
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 112
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-DBZ5.json"
+    },
+    {
+      "id": "LP-VCKS",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mercancía general mixta",
+        "en": "Full Truckload · Mixed General Merchandise"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 11672,
+      "pallets": "26",
+      "price_pickup": 12022.74,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 0,
+        "pallets_manifested": 26,
+        "pieces": 11672,
+        "retail": 127068.88,
+        "pct_retail": 9.46,
+        "clothing_pieces": 4112,
+        "clothing_pct": 35.2,
+        "price_per_piece": 1.03,
+        "mix": {
+          "clothing": 4112,
+          "gm": 6496,
+          "hba": 988,
+          "food": 76
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 4112
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 6496
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 988
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 76
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-VCKS.json"
+    },
+    {
+      "id": "LP-3P33",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 10223,
+      "pallets": "26",
+      "price_pickup": 14294.25,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 5,
+        "pallets_manifested": 21,
+        "pieces": 10223,
+        "retail": 132764.78,
+        "pct_retail": 10.77,
+        "clothing_pieces": 4835,
+        "clothing_pct": 47.3,
+        "price_per_piece": 1.4,
+        "mix": {
+          "clothing": 4835,
+          "gm": 4588,
+          "hba": 795,
+          "food": 5
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 4835
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 4588
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 795
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 5
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-3P33.json"
+    },
+    {
+      "id": "LP-32JJ",
+      "po": null,
+      "weight_lb": null,
+      "price_delivered": null,
+      "condition_code": "returns_mixed",
+      "location": {
+        "name": "Liquidation Pros",
+        "city": "San Antonio",
+        "state": "TX"
+      },
+      "freight_control": "buyer",
+      "listed": "2026-11-12",
+      "photos": [],
+      "sample": "gm",
+      "video": null,
+      "categories_seen": [],
+      "retailer": "Liquidation Pros",
+      "program": {
+        "es": "Mercancía general (devoluciones y retiros de anaquel)",
+        "en": "General Merchandise (customer returns and shelf pulls)"
+      },
+      "title": {
+        "es": "Tráiler completo · Mixto con mucha ropa",
+        "en": "Full Truckload · Mixed, clothing-heavy"
+      },
+      "status": "available",
+      "sold_verified": false,
+      "units": 11349,
+      "pallets": "26",
+      "price_pickup": 13408.91,
+      "stats": {
+        "pallets_total": 26,
+        "pallets_unmanifested": 1,
+        "pallets_manifested": 25,
+        "pieces": 11349,
+        "retail": 170138.22,
+        "pct_retail": 7.88,
+        "clothing_pieces": 5999,
+        "clothing_pct": 52.9,
+        "price_per_piece": 1.18,
+        "mix": {
+          "clothing": 5999,
+          "gm": 4397,
+          "hba": 920,
+          "food": 33
+        }
+      },
+      "manifest": [
+        {
+          "category": {
+            "es": "Ropa, calzado y accesorios",
+            "en": "Clothing, shoes & accessories"
+          },
+          "units": 5999
+        },
+        {
+          "category": {
+            "es": "Mercancía general (juguetes, hogar, otros)",
+            "en": "General merchandise (toys, home, other)"
+          },
+          "units": 4397
+        },
+        {
+          "category": {
+            "es": "Salud, belleza y esenciales",
+            "en": "Health, beauty & essentials"
+          },
+          "units": 920
+        },
+        {
+          "category": {
+            "es": "Alimentos y bebidas",
+            "en": "Food & beverage"
+          },
+          "units": 33
+        }
+      ],
+      "manifest_status": "itemized",
+      "manifest_file": "data/manifests/LP-32JJ.json"
     }
   ]
 }
